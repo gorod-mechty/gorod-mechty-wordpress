@@ -10,43 +10,13 @@
     ],
     content:[
         {
-            block: 'header',
-            content: [
-                //  the link around logo can be used on inner pages
-                // {
-                //     block: 'b-link',
-                //     mods: { type: 'logo' },
-                //     url: '/',
-                //     content:
-                    {
-                        block: 'logo',
-                        src: '/i/logo.png',
-                        content: 'Город мечты'
-                    // }
-                },
-                {
-                    block: 'nav',
-                    content: [
-                        {
-                            elem: 'item',
-                            elemMods: { state: 'current' },
-                            content: 'Главная'
-                        },
-                        {
-                            elem: 'item',
-                            content: {
-                                block: 'b-link',
-                                url: '/contact/',
-                                content: 'Контактная информация'
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             block: 'content',
             content: [
+                {
+                    block: 'logo',
+                    src: '/i/logo.png',
+                    content: 'Город мечты'
+                },
                 {
                     block: 'intro',
                     content: [
