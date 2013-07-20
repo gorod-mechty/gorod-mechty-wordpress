@@ -1,26 +1,19 @@
-/*global MAKE:true */
+/* jshint node:true */
+/* global MAKE */
 
-"use strict";
+require('bem-environ/lib/nodes');
 
-process.env.YENV = 'production';
+//process.env.YENV = 'production';
 
 MAKE.decl('Arch', {
 
     blocksLevelsRegexp: /^.+?\.blocks/,
-
     bundlesLevelsRegexp: /^.+?\.bundles$/,
 
-    getLibraries: function() {
-
-        return {
-            'bem-bl': {
-                type: 'git',
-                url: 'git://github.com/bem/bem-bl.git',
-                treeish: '0.3'
-            }
-        };
-
-    }
+    libraries: [
+        'bem-bl @ 0.3'
+        // , 'bem-controls @ v1'
+    ]
 
 });
 
@@ -28,6 +21,7 @@ MAKE.decl('Arch', {
 MAKE.decl('BundleNode', {
 
     getTechs: function() {
+
         return [
             'bemjson.js',
             'bemdecl.js',
@@ -35,13 +29,10 @@ MAKE.decl('BundleNode', {
             'bemhtml',
             'js',
             'css',
-            // 'ie.css',
-            // 'ie6.css',
-            // 'ie7.css',
-            // 'ie8.css',
-            // 'ie9.css',
+            'ie.css',
             'html'
         ];
+
     }
 
 });

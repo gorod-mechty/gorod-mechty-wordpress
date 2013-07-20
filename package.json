@@ -1,16 +1,17 @@
 {
   "author": "",
-  "name": "bem-project-stub",
-  "version": "0.0.1",
+  "name": "gorod-mechty-www",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem/project-stub.git"
+    "url": "git://github.com/tadatuta/gorod-mechty-www.git"
   },
   "engines": {
-    "node": "0.6 | 0.7 | 0.8 | 0.9"
+    "node": "0.6 | 0.7 | 0.8 | 0.9 | 0.10"
   },
   "dependencies": {
-    "bem" : "*"
+    "bem" : "*",
+    "bem-environ": "1.1.x"
   },
   "devDependencies": {},
   "private": true
