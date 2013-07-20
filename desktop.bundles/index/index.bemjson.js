@@ -4,7 +4,7 @@
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '_index.css' },
-        // { elem: 'css', url: '_index', ie: true },
+        { elem: 'css', url: '_index.ie.css', ie: 'gte IE 7' },
         { elem: 'meta', attrs: { name: 'description', content: 'Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня' }}
         // , { elem: 'meta', attrs: { name: 'keywords', content: '' }}
     ],
@@ -114,8 +114,7 @@
                     ]
                 }
             ]
-        }
-        // , { block: 'i-jquery', mods: { version: '1.8.3' } },
-        // { elem: 'js', url: '_index.js' }
+        }, { block: 'i-jquery', mods: { version: '1.8.3' } },
+        { elem: 'js', url: '_index.js' }
     ]
 })
