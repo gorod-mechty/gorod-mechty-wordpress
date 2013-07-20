@@ -91,7 +91,7 @@
                     content: [
                         '©&nbsp;2013 Проект «Город Мечты»',
                         { tag: 'br' },
-                        { block: 'b-link', url: 'mailto:info@gorod-mechty.org.ua', content: 'info@gorod-mechty.org.ua' }
+                        { block: 'b-link', url: 'mailto:info@gorod-mechty.org', content: 'info@gorod-mechty.org' }
                     ]
                 },
                 {
