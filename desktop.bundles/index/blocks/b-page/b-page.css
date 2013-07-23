@@ -1,7 +1,15 @@
 .b-page {
     background: #f4f8fb;
-    font: 18px/24px Verdana, Arial, sans-serif;
+    font: 15px 'PT Sans', sans-serif;
     padding: 0 25px;
     margin: 0;
     min-width: 790px;
+}
+
+.b-page__inner{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid red;
+    background: url("../../../../i/tree.png") no-repeat top 250px right -40px;
+    overflow: hidden;
 }

@@ -1,7 +1,6 @@
 /* Logo link now is block-level, no invisible clickable area around logo */
 .b-link_type_logo {
     float: left;
-    margin-left: 41px;
 }
 
 .b-link_type_logo .logo {

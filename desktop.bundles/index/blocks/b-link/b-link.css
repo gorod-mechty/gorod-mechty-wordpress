@@ -1,3 +1,7 @@
 .b-link {
     color: #d23e33;
+    font: bold 18px 'PT Sans', sans-serif;
+}
+.b-link:hover{
+    text-decoration: none;
 }
