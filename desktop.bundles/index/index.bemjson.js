@@ -111,7 +111,10 @@
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'italic-link'},
+									mods: {
+										type: 'italic-link',
+										style: 'margin-link'
+									},
 									content: [
 										{
 											block: 'b-icon',
@@ -142,7 +145,10 @@
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'italic-link'},
+									mods: {
+										type: 'italic-link',
+										style: 'margin-link'
+									},
 									content: [
 										{
 											block: 'b-icon',
@@ -173,7 +179,10 @@
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'italic-link'},
+									mods: {
+										type: 'italic-link',
+										style: 'margin-link'
+									},
 									content: [
 										{
 											block: 'b-icon',
@@ -255,117 +264,219 @@
 							content: 'Стать партнёром'
 						}
 					]
+				},
+				{
+					block: 'news-block',
+					content:[
+						{
+							block: 'h2-title',
+							content: 'Новости'
+						},
+						{
+							elem: 'news',
+							content: [
+								'12 октября',
+								{
+									block: 'b-link',
+									url: '/',
+									mods: { type: 'italic-link'},
+									content: 'В Гаспре коммунальный пляж урезали в четыре раза'
+								}
+							]
+						},
+						{
+							elem: 'news',
+							content: [
+								'05 сентября',
+								{
+									block: 'b-link',
+									url: '/',
+									mods: { type: 'italic-link'},
+									content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время '
+								}							]
+						},
+						{
+							elem: 'news',
+							content: [
+									'01 сентября',
+								{
+									block: 'b-link',
+									url: '/',
+									mods: { type: 'italic-link'},
+									content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» '
+								}
+							]
+						},
+						{
+							block: 'regular-text',
+							mods: { style: 'margin-text'},
+							content:[
+								'Больше — ',
+								{
+									block: 'b-link',
+									url: '/',
+									mods: { type: 'regular-link'},
+									content: 'в архиве'
+								}
+							]
+						}
+					]
+				},
+				{
+					block: 'cashflow-block',
+					content: [
+						{
+							block: 'h2-title',
+							content: 'Денежный поток'
+						},
+						{
+							elem: 'cashflow',
+							content: [
+								{
+									block: 'bold-title',
+									content: '↓150 грн.'
+								},
+								'от ',
+								{
+									block: 'bold-text',
+									content: 'Константина Константинопольского '
+
+								},
+								{
+									block: 'br'
+								},
+								'в 15:35, 07 июня 2013'
+							]
+						},
+						{
+							elem: 'cashflow',
+							content: [
+								{
+									block: 'bold-title',
+									content: '↑18200 грн.'
+								},
+								{
+									block: 'bold-text',
+									content: 'на закупку материалов для установки скамеек в центральном парке'
+
+								},
+								{
+									block: 'br'
+								},
+								'в 15:35, 07 июня 2013'
+							]
+						},
+						{
+							elem: 'cashflow',
+							content: [
+								{
+									block: 'bold-title',
+									content: '↓1100 грн.'
+								},
+								'от',
+								{
+									block: 'bold-text',
+									content: ' Андрея М.'
+
+								},
+								{
+									block: 'br'
+								},
+								'в 15:35, 07 июня 2013'
+							]
+						},
+						{
+							block: 'regular-text',
+							mods: { style: 'margin-text'},
+							content:[
+								'Показать ',
+								{
+									block: 'b-link',
+									url: '/',
+									mods: { type: 'regular-link'},
+									content: 'весь список'
+								}
+							]
+						}
+
+					]
+
+				},
+				{
+					block: 'footer',
+					content: [
+						{
+							block: 'regular-text',
+							mods: { style: 'footer-text'},
+							content: '© 2013  БО «Фонд Город Мечты»'
+						},
+						{
+							block: 'b-link',
+							url: 'mailto:info@gorod-mechty.org',
+							mods: { type: 'footer-link'},
+							content: 'info@gorod-mechty.org'
+						},
+						{
+							block: 'socials',
+							content:[
+								{
+									elem: 'social-item',
+									content:[
+										{
+											block: 'b-link',
+											url: '/',
+											mods: { type: 'social-link'},
+											content: [
+												{
+													block: 'b-icon',
+													url: '../../../i/social-one.png',
+													alt: 'img',
+													mods: { type: 'socials-img'}
+												},
+												'ВКонтакте'
+											]
+										}
+									]
+								},
+								{
+									elem: 'social-item',
+									content:[
+										{
+											block: 'b-link',
+											url: '/',
+											mods: { type: 'social-link'},
+											content: [
+												{
+													block: 'b-icon',
+													url: '../../../i/social-two.png',
+													alt: 'img',
+													mods: { type: 'socials-img'}
+												},
+												'FaceBook'
+											]
+										}
+									]
+								},
+								{
+									block: 'regular-text',
+									mods: { style: 'dev-text'},
+									content:[
+										'Создание сайта — ',
+										{
+											block: 'b-link',
+											url: 'http://tadatuta.ru',
+											mods: { type: 'regular-link'},
+											content: 'студия «Тадатута»'
+										}
+									]
+								}
+							]
+						}
+					]
 				}
 			]
 
 
 		}
-//        {
-//            block: 'header',
-//            content: [
-//                //  the link around logo can be used on inner pages
-//                // {
-//                //     block: 'b-link',
-//                //     mods: { type: 'logo' },
-//                //     url: '/',
-//                //     content:
-//                    {
-//                        block: 'logo',
-//                        src: '/i/logo.png',
-//                        content: 'Город мечты'
-//                    // }
-//                },
-//                {
-//                    block: 'nav',
-//                    content: [
-//                        {
-//                            elem: 'item',
-//                            elemMods: { state: 'current' },
-//                            content: 'Главная'
-//                        },
-//                        {
-//                            elem: 'item',
-//                            content: {
-//                                block: 'b-link',
-//                                url: '/contact/',
-//                                content: 'Контактная информация'
-//                            }
-//                        }
-//                    ]
-//                }
-//            ]
-//        },
-//        {
-//            block: 'content',
-//            content: [
-//                {
-//                    block: 'intro',
-//                    content: [
-//                        {
-//                            elem: 'accent',
-//                            content: [
-//                                {
-//                                    elem: 'highlight',
-//                                    content: 'Ты'
-//                                },
-//                                ' тоже ',
-//                                {
-//                                    elem: 'highlight',
-//                                    content: 'можешь'
-//                                },
-//                                ' помочь сделать мир ',
-//                                {
-//                                    elem: 'highlight',
-//                                    content: 'лучше'
-//                                },
-//                                '!'
-//                            ]
-//                        },
-//                        {
-//                            tag: 'p',
-//                            content: 'Мы стремимся сделать наш город, страну и мир прекраснее, красивее и удобнее для жизни.'
-//                        }
-//                    ]
-//
-//                },
-//                {
-//                    tag: 'p',
-//                    content: '…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему? Перечень того, что мешает – на самом деле лишь список отговорок и оправданий собственной бездеятельности. Мы ждем, когда начнут, наконец, работать депутаты и чиновники, когда жилищно-коммунальные службы сделают наш район, город, страну пригодной для жизни. А надо ли ждать? Все больше наших неравнодушных соотечественников понимают, что свобода – это, прежде всего, ответственность за все, что происходит вокруг. И если не начать преображать окружающий нас мир, он так и останется помойкой…'
-//                },
-//                {
-//                    tag: 'p',
-//                    content: 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Мы хотим, чтобы Город Пользы перестал быть просто воротами на южный берег Крыма, а железнодорожный вокзал – его единственной достопримечательностью. Мы хотим жить в цветущем городе, по которому не стыдно пройтись самому и который не стыдно показать друзьям. «Город мечты» намерен осуществлять проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня его жителей.'
-//                },
-//                {
-//                    tag: 'p',
-//                    content: 'Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки и дожидаться перемен, мы приглашаем к сотрудничеству. Предприятия, учреждения, общественные организации и просто неравнодушные люди – вместе мы сможем сделать наш любимый город настоящим Городом Мечты!'
-//                }
-//            ]
-//        },
-//        {
-//            block: 'footer',
-//            content: [
-//                {
-//                    elem: 'copy',
-//                    content: [
-//                        '©&nbsp;2013 Проект «Город Мечты»',
-//                        { tag: 'br' },
-//                        { block: 'b-link', url: 'mailto:info@gorod-mechty.org.ua', content: 'info@gorod-mechty.org.ua' }
-//                    ]
-//                },
-//                {
-//                    elem: 'dev',
-//                    content: [
-//                        {
-//                            block: 'b-link',
-//                            url: 'http://tadatuta.ru/',
-//                            content: 'Создание сайта'
-//                        },
-//                        ' — студия «Тадатута»'
-//                    ]
-//                }
-//            ]
-//        }, { block: 'i-jquery', mods: { version: '1.8.3' } },
-//        { elem: 'js', url: '_index.js' }
     ]
 })

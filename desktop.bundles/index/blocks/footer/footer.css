@@ -1,22 +1,7 @@
 .footer {
-    max-width: 960px;
-    min-width: 790px;
-    margin: auto;
-    padding: 48px 0 30px;
-    font-size: 13px;
+    margin: 60px 0 0 0;
     border-top: 1px solid #000;
     overflow: hidden;
-}
-
-.footer__copy {
-    float: left;
-    margin-left: 5px;
-    padding-left: 2ex;
-    text-indent: -2.5ex;
-    line-height: 21px;
-}
-
-.footer__dev {
-    float: right;
-    margin-top: -2px;
+    clear: both;
+    padding: 30px 0 35px 0;
 }

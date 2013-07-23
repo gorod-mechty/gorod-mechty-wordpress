@@ -1,0 +1,6 @@
+block banking {
+
+    elem title-green{
+            tag: 'span'
+        }
+}

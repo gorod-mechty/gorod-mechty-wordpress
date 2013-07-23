@@ -1,0 +1,10 @@
+.cashflow-block{
+    float: left;
+    width: 235px;
+    margin: 50px 0 0 90px;
+}
+.cashflow-block__cashflow{
+    font: 13px 'PT Sans', sans-serif;
+    color: #909090;
+    margin: 25px 0 0 0;
+}

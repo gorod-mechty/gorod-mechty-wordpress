@@ -1,0 +1,15 @@
+.projects{
+    margin: 25px 0 0 0;
+    clear: both;
+    overflow: hidden;
+}
+.projects__item{
+    width: 160px;
+    font: bold 18px 'PT Sans', sans-serif;
+    position: relative;
+    float: left;
+    margin: 0 60px 0 0;
+}
+.projects__item_type_min-title{
+    margin: 20px 0 0 0;
+}
