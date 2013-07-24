@@ -4,5 +4,6 @@
     width: 100%;
 }
 .footer__text{
-
+    margin: 0 27px 0 0;
+    float: left;
 }
