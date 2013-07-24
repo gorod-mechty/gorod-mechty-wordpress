@@ -1,10 +1,10 @@
-.news-block{
+.news{
     margin: 50px 0 0 75px;
     width: 200px;
     float: left;
 }
 
-.news-block__news{
+.news__news-item{
     font: 13px 'PT Sans', sans-serif;
     color: #909090;
     margin: 30px 0 0  0;

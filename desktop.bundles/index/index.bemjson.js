@@ -12,6 +12,7 @@
     content:[
 		{
 			elem: 'inner',
+            mix: {block: 'clearfix'},
 			content: [
 				{
 					block: 'b-link',
@@ -85,14 +86,21 @@
 					]
 				},
 				{
-					block: 'b-link',
-					mods: { type: 'main-content-link'},
-					url: '/about/',
-					content: 'Наши проекты'
+					block: 'heading_level_2',
+                    mods: { type: 'main-heading'},
+                    content:[
+                        {
+                            block: 'b-link',
+                            mods: { type: 'main-content-link'},
+                            url: '/about/',
+                            content: 'Наши проекты'
+                        }
+                    ]
 				},
 				{
 					block: 'projects',
-					content: [
+                    mix: {block: 'clearfix'},
+                    content: [
 						{
 							elem: 'item',
 							content: [
@@ -113,7 +121,7 @@
 									url: '/',
 									mods: {
 										type: 'italic-link',
-										style: 'margin-link'
+										style: 'project-link'
 									},
 									content: [
 										{
@@ -147,7 +155,7 @@
 									url: '/',
 									mods: {
 										type: 'italic-link',
-										style: 'margin-link'
+										style: 'project-link'
 									},
 									content: [
 										{
@@ -181,7 +189,7 @@
 									url: '/',
 									mods: {
 										type: 'italic-link',
-										style: 'margin-link'
+										style: 'project-link'
 									},
 									content: [
 										{
@@ -220,12 +228,11 @@
 							]
 						},
 						{
-							block: 'projects__item',
+							block: 'content-title',
 							content: 'Перевести деньги',
-							mods: {type: 'min-title'}
 						},
 						{
-							block: 'regular-text',
+							block: 'text',
 							content:[
 								'БО "Фонд Місто Мрії" в ',
 								{
@@ -255,7 +262,7 @@
 							content: 'Быть волонтёром'
 						},
 						{
-							block: 'br'
+							tag: 'br'
 						},
 						{
 							block: 'b-link',
@@ -266,16 +273,19 @@
 					]
 				},
 				{
-					block: 'news-block',
+					block: 'news',
 					content:[
 						{
-							block: 'h2-title',
+							block: 'heading_level_2',
 							content: 'Новости'
 						},
 						{
-							elem: 'news',
+							elem: 'news-item',
 							content: [
-								'12 октября',
+                                {
+                                    block: 'date',
+                                    content: '12 октября'
+                                },
 								{
 									block: 'b-link',
 									url: '/',
@@ -285,9 +295,12 @@
 							]
 						},
 						{
-							elem: 'news',
+							elem: 'news-item',
 							content: [
-								'05 сентября',
+                                {
+                                    block: 'date',
+                                    content: '12 октября'
+                                },
 								{
 									block: 'b-link',
 									url: '/',
@@ -296,9 +309,12 @@
 								}							]
 						},
 						{
-							elem: 'news',
+							elem: 'news-item',
 							content: [
-									'01 сентября',
+                                {
+                                    block: 'date',
+                                    content: '12 октября'
+                                },
 								{
 									block: 'b-link',
 									url: '/',
@@ -308,7 +324,7 @@
 							]
 						},
 						{
-							block: 'regular-text',
+							block: 'text',
 							mods: { style: 'margin-text'},
 							content:[
 								'Больше — ',
@@ -323,70 +339,73 @@
 					]
 				},
 				{
-					block: 'cashflow-block',
+					block: 'cashflow',
 					content: [
 						{
-							block: 'h2-title',
+							block: 'heading_level_2',
 							content: 'Денежный поток'
 						},
 						{
-							elem: 'cashflow',
+							elem: 'cashflow-item',
 							content: [
 								{
-									block: 'bold-title',
+									block: 'heading-title',
 									content: '↓150 грн.'
 								},
 								'от ',
 								{
-									block: 'bold-text',
+									block: 'heading-text',
 									content: 'Константина Константинопольского '
 
 								},
-								{
-									block: 'br'
-								},
-								'в 15:35, 07 июня 2013'
+                                {
+                                    block: 'date',
+                                    content: 'в 15:35, 07 июня 2013'
+                                }
+
 							]
 						},
 						{
-							elem: 'cashflow',
+							elem: 'cashflow-item',
 							content: [
 								{
-									block: 'bold-title',
+									block: 'heading-title',
 									content: '↑18200 грн.'
 								},
 								{
-									block: 'bold-text',
+									block: 'heading-text',
 									content: 'на закупку материалов для установки скамеек в центральном парке'
 
 								},
-								{
-									block: 'br'
-								},
-								'в 15:35, 07 июня 2013'
+                                {
+                                    block: 'date',
+                                    content: 'в 15:35, 07 июня 2013'
+                                }
+
 							]
 						},
 						{
-							elem: 'cashflow',
+							elem: 'cashflow-item',
 							content: [
 								{
-									block: 'bold-title',
+									block: 'heading-title',
 									content: '↓1100 грн.'
 								},
 								'от',
 								{
-									block: 'bold-text',
+									block: 'heading-text',
 									content: ' Андрея М.'
 
 								},
-								{
-									block: 'br'
-								},
-								'в 15:35, 07 июня 2013'
+                                {
+                                    block: 'date',
+                                    content: 'в 15:35, 07 июня 2013'
+                                }
+
 							]
 						},
 						{
-							block: 'regular-text',
+							block: 'text',
 							mods: { style: 'margin-text'},
 							content:[
 								'Показать ',
@@ -404,9 +423,10 @@
 				},
 				{
 					block: 'footer',
-					content: [
+                    mix: {block: 'clearfix'},
+                    content: [
 						{
-							block: 'regular-text',
+							block: 'text',
 							mods: { style: 'footer-text'},
 							content: '© 2013  БО «Фонд Город Мечты»'
 						},
@@ -425,16 +445,8 @@
 										{
 											block: 'b-link',
 											url: '/',
-											mods: { type: 'social-link'},
-											content: [
-												{
-													block: 'b-icon',
-													url: '../../../i/social-one.png',
-													alt: 'img',
-													mods: { type: 'socials-img'}
-												},
-												'ВКонтакте'
-											]
+											mods: { type: 'social-link-one'},
+											content: 'ВКонтакте'
 										}
 									]
 								},
@@ -444,34 +456,26 @@
 										{
 											block: 'b-link',
 											url: '/',
-											mods: { type: 'social-link'},
-											content: [
-												{
-													block: 'b-icon',
-													url: '../../../i/social-two.png',
-													alt: 'img',
-													mods: { type: 'socials-img'}
-												},
-												'FaceBook'
-											]
-										}
-									]
-								},
-								{
-									block: 'regular-text',
-									mods: { style: 'dev-text'},
-									content:[
-										'Создание сайта — ',
-										{
-											block: 'b-link',
-											url: 'http://tadatuta.ru',
-											mods: { type: 'regular-link'},
-											content: 'студия «Тадатута»'
+											mods: { type: 'social-link-two'},
+											content: 'FaceBook'
 										}
 									]
 								}
 							]
-						}
+						},
+                        {
+                            block: 'text',
+                            mods: { style: 'dev-text'},
+                            content:[
+                                'Создание сайта — ',
+                                {
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    mods: { type: 'regular-link'},
+                                    content: 'студия «Тадатута»'
+                                }
+                            ]
+                        }
 					]
 				}
 			]

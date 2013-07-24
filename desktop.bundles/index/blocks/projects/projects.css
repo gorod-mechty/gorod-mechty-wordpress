@@ -1,7 +1,6 @@
 .projects{
     margin: 25px 0 0 0;
     clear: both;
-    overflow: hidden;
 }
 .projects__item{
     width: 160px;

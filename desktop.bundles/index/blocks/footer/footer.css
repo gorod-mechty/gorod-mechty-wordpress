@@ -1,7 +1,8 @@
 .footer {
-    margin: 60px 0 0 0;
     border-top: 1px solid #000;
-    overflow: hidden;
-    clear: both;
     padding: 30px 0 35px 0;
+    width: 100%;
+}
+.footer__text{
+
 }
