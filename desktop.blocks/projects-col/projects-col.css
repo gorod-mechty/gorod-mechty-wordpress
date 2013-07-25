@@ -1,0 +1,16 @@
+.projects-col
+{
+    width:280px;
+    border: 1px solid red;
+    float: left;
+    margin: 35px 0 0 0;
+}
+
+.projects-col__title
+{
+    font: bold 18px 'PT Sans', sans-serif;
+}
+.projects-col__list
+{
+    font: bold 18px 'PT Sans', sans-serif;
+}

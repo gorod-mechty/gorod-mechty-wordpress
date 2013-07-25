@@ -1,0 +1,835 @@
+20:38:12.033 - [32minfo[39m: bem 0.6.10
+20:38:12.037 - [34mdebug[39m: http_parser 1.0
+20:38:12.037 - [34mdebug[39m: node 0.10.13
+20:38:12.037 - [34mdebug[39m: v8 3.14.5.9
+20:38:12.037 - [34mdebug[39m: ares 1.9.0-DEV
+20:38:12.037 - [34mdebug[39m: uv 0.10.12
+20:38:12.037 - [34mdebug[39m: zlib 1.2.3
+20:38:12.038 - [34mdebug[39m: modules 11
+20:38:12.038 - [34mdebug[39m: openssl 1.0.1e
+20:38:12.101 - [35msilly[39m: File 'c:\Users\Ivan\gorod-mechty-www\.bem\make.js' exists
+20:38:12.101 - [35msilly[39m: File 'c:\Users\Ivan\gorod-mechty-www\.bem\make.js' read, evaling
+20:38:12.139 - [35msilly[39m: File 'c:\Users\Ivan\gorod-mechty-www\.bem\make.js' evaled
+20:38:12.142 - [35msilly[39m: Going to run createCommonNodes()
+20:38:12.144 - [35msilly[39m: Going to run createBlockLibrariesNodes()
+20:38:12.171 - [35msilly[39m: Going to run createBlocksLevelsNodes()
+20:38:12.189 - [35msilly[39m: Going to run createBundlesLevelsNodes()
+20:38:12.201 - [35msilly[39m: Going to run createCustomNodes()
+20:38:12.202 - [32minfo[39m: Graph:
+== root
+ all
+   build
+     libs
+       libs\bem-bl
+     common.blocks*
+       libs
+         libs\bem-bl
+     desktop.blocks*
+       libs
+         libs\bem-bl
+     desktop.bundles*
+       libs
+         libs\bem-bl
+       common.blocks*
+         libs
+           libs\bem-bl
+       desktop.blocks*
+         libs
+           libs\bem-bl
+
+20:38:12.206 - [32minfo[39m: [i] Going to build 'all' [1]
+20:38:12.248 - [36mverbose[39m: HEAD is at e15d72baf829d9fdf280c2066de082a204ae1e45 wanted is 0.3
+20:38:12.248 - [36mverbose[39m: e15d72baf829d9fdf280c2066de082a204ae1e45 resolves to refs/heads/0.3
+20:38:12.248 - [36mverbose[39m: [?] Node 'libs\bem-bl' is valid [1]
+20:38:12.249 - [32minfo[39m: [t] isValid() time for "libs\bem-bl" [1]: [31m40ms[m
+20:38:12.249 - [32minfo[39m: [*] make 'libs\bem-bl' [1]
+20:38:14.521 - [32minfo[39m: Installing dependencies for libs\bem-bl library (npm prune && npm update)
+20:38:48.932 - [36mverbose[39m: cd c:\Users\Ivan\gorod-mechty-www\libs\bem-bl && git show-ref --head
+[=] Log of make 'libs\bem-bl' [1]
+cd c:\Users\Ivan\gorod-mechty-www\libs\bem-bl && git fetch origin  &&  git checkout 0.3 
+Already on '0.3'
+
+npm cache clean
+npm prune
+npm update
+20:38:48.932 - [32minfo[39m: [t] Build time for "libs\bem-bl" [1]: [31m36724ms[m
+20:38:48.933 - [36mverbose[39m: [?] Node 'libs' is expired [1]
+20:38:48.933 - [32minfo[39m: [t] isValid() time for "libs" [1]: [31m0ms[m
+20:38:48.934 - [32minfo[39m: [*] make 'libs' [1]
+20:38:48.934 - [36mverbose[39m: [=] Log of make 'libs' [1]
+20:38:48.934 - [32minfo[39m: [t] Build time for "libs" [1]: [31m1ms[m
+20:38:48.935 - [36mverbose[39m: [?] Node 'common.blocks*' is expired [1]
+20:38:48.935 - [36mverbose[39m: [*] make 'common.blocks*' [1]
+20:38:48.936 - [36mverbose[39m: [?] Node 'desktop.blocks*' is expired [1]
+20:38:48.936 - [36mverbose[39m: [*] make 'desktop.blocks*' [1]
+
+[31;1mWARNING!
+Tech modules API V1 is not recommended to use, because it is slow.
+Please use tech modules API V2, it makes your build process faster!
+[0m
+20:38:49.025 - [34mdebug[39m: scan c:\Users\Ivan\gorod-mechty-www\common.blocks: [31m78ms[m
+20:38:49.067 - [34mdebug[39m: scan c:\Users\Ivan\gorod-mechty-www\desktop.blocks: [31m33ms[m
+20:38:49.107 - [36mverbose[39m: [=] Log of make 'common.blocks*' [1]
+20:38:49.109 - [36mverbose[39m: [=] Log of make 'desktop.blocks*' [1]
+20:38:49.129 - [36mverbose[39m: [?] Node 'common.blocks\link-block*' is expired [1]
+20:38:49.129 - [36mverbose[39m: [*] make 'common.blocks\link-block*' [1]
+20:38:49.129 - [36mverbose[39m: [?] Node 'desktop.blocks\b-icon*' is expired [1]
+20:38:49.129 - [36mverbose[39m: [*] make 'desktop.blocks\b-icon*' [1]
+20:38:49.130 - [36mverbose[39m: [?] Node 'desktop.blocks\b-link*' is expired [1]
+20:38:49.130 - [36mverbose[39m: [*] make 'desktop.blocks\b-link*' [1]
+20:38:49.130 - [36mverbose[39m: [?] Node 'desktop.blocks\b-page*' is expired [1]
+20:38:49.130 - [36mverbose[39m: [*] make 'desktop.blocks\b-page*' [1]
+20:38:49.130 - [36mverbose[39m: [?] Node 'desktop.blocks\banking*' is expired [1]
+20:38:49.130 - [36mverbose[39m: [*] make 'desktop.blocks\banking*' [1]
+20:38:49.131 - [36mverbose[39m: [?] Node 'desktop.blocks\cashflow*' is expired [1]
+20:38:49.131 - [36mverbose[39m: [*] make 'desktop.blocks\cashflow*' [1]
+20:38:49.131 - [36mverbose[39m: [?] Node 'desktop.blocks\cashflow-table*' is expired [1]
+20:38:49.131 - [36mverbose[39m: [*] make 'desktop.blocks\cashflow-table*' [1]
+20:38:49.131 - [36mverbose[39m: [?] Node 'desktop.blocks\clearfix*' is expired [1]
+20:38:49.131 - [36mverbose[39m: [*] make 'desktop.blocks\clearfix*' [1]
+20:38:49.132 - [36mverbose[39m: [?] Node 'desktop.blocks\content*' is expired [1]
+20:38:49.132 - [36mverbose[39m: [*] make 'desktop.blocks\content*' [1]
+20:38:49.132 - [36mverbose[39m: [?] Node 'desktop.blocks\copyright*' is expired [1]
+20:38:49.132 - [36mverbose[39m: [*] make 'desktop.blocks\copyright*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'common.blocks\link-block*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'desktop.blocks\b-icon*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'desktop.blocks\b-link*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'desktop.blocks\b-page*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'desktop.blocks\banking*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'desktop.blocks\cashflow*' [1]
+20:38:49.133 - [36mverbose[39m: [=] Log of make 'desktop.blocks\cashflow-table*' [1]
+20:38:49.134 - [36mverbose[39m: [=] Log of make 'desktop.blocks\clearfix*' [1]
+20:38:49.134 - [36mverbose[39m: [=] Log of make 'desktop.blocks\content*' [1]
+20:38:49.134 - [36mverbose[39m: [=] Log of make 'desktop.blocks\copyright*' [1]
+20:38:49.138 - [36mverbose[39m: [?] Node 'desktop.blocks\date*' is expired [1]
+20:38:49.138 - [36mverbose[39m: [*] make 'desktop.blocks\date*' [1]
+20:38:49.138 - [36mverbose[39m: [?] Node 'desktop.blocks\description*' is expired [1]
+20:38:49.138 - [36mverbose[39m: [*] make 'desktop.blocks\description*' [1]
+20:38:49.138 - [36mverbose[39m: [?] Node 'desktop.blocks\footer*' is expired [1]
+20:38:49.138 - [36mverbose[39m: [*] make 'desktop.blocks\footer*' [1]
+20:38:49.138 - [36mverbose[39m: [?] Node 'desktop.blocks\formated-text*' is expired [1]
+20:38:49.139 - [36mverbose[39m: [*] make 'desktop.blocks\formated-text*' [1]
+20:38:49.139 - [36mverbose[39m: [?] Node 'desktop.blocks\header*' is expired [1]
+20:38:49.139 - [36mverbose[39m: [*] make 'desktop.blocks\header*' [1]
+20:38:49.140 - [36mverbose[39m: [?] Node 'desktop.blocks\heading-text*' is expired [1]
+20:38:49.140 - [36mverbose[39m: [*] make 'desktop.blocks\heading-text*' [1]
+20:38:49.140 - [36mverbose[39m: [?] Node 'desktop.blocks\heading-title*' is expired [1]
+20:38:49.140 - [36mverbose[39m: [*] make 'desktop.blocks\heading-title*' [1]
+20:38:49.140 - [36mverbose[39m: [?] Node 'desktop.blocks\heading_level_2*' is expired [1]
+20:38:49.140 - [36mverbose[39m: [*] make 'desktop.blocks\heading_level_2*' [1]
+20:38:49.140 - [36mverbose[39m: [?] Node 'desktop.blocks\heading_level_4*' is expired [1]
+20:38:49.140 - [36mverbose[39m: [*] make 'desktop.blocks\heading_level_4*' [1]
+20:38:49.140 - [36mverbose[39m: [?] Node 'desktop.blocks\intro*' is expired [1]
+20:38:49.140 - [36mverbose[39m: [*] make 'desktop.blocks\intro*' [1]
+20:38:49.141 - [36mverbose[39m: [=] Log of make 'desktop.blocks\date*' [1]
+20:38:49.141 - [36mverbose[39m: [=] Log of make 'desktop.blocks\description*' [1]
+20:38:49.141 - [36mverbose[39m: [=] Log of make 'desktop.blocks\footer*' [1]
+20:38:49.141 - [36mverbose[39m: [=] Log of make 'desktop.blocks\formated-text*' [1]
+20:38:49.142 - [36mverbose[39m: [=] Log of make 'desktop.blocks\header*' [1]
+20:38:49.142 - [36mverbose[39m: [=] Log of make 'desktop.blocks\heading-text*' [1]
+20:38:49.142 - [36mverbose[39m: [=] Log of make 'desktop.blocks\heading-title*' [1]
+20:38:49.143 - [36mverbose[39m: [=] Log of make 'desktop.blocks\heading_level_2*' [1]
+20:38:49.144 - [36mverbose[39m: [=] Log of make 'desktop.blocks\heading_level_4*' [1]
+20:38:49.144 - [36mverbose[39m: [=] Log of make 'desktop.blocks\intro*' [1]
+20:38:49.147 - [36mverbose[39m: [?] Node 'desktop.blocks\logo*' is expired [1]
+20:38:49.148 - [36mverbose[39m: [*] make 'desktop.blocks\logo*' [1]
+20:38:49.148 - [36mverbose[39m: [?] Node 'desktop.blocks\nav*' is expired [1]
+20:38:49.148 - [36mverbose[39m: [*] make 'desktop.blocks\nav*' [1]
+20:38:49.148 - [36mverbose[39m: [?] Node 'desktop.blocks\news*' is expired [1]
+20:38:49.148 - [36mverbose[39m: [*] make 'desktop.blocks\news*' [1]
+20:38:49.148 - [36mverbose[39m: [?] Node 'desktop.blocks\projects*' is expired [1]
+20:38:49.148 - [36mverbose[39m: [*] make 'desktop.blocks\projects*' [1]
+20:38:49.148 - [36mverbose[39m: [?] Node 'desktop.blocks\socials*' is expired [1]
+20:38:49.148 - [36mverbose[39m: [*] make 'desktop.blocks\socials*' [1]
+20:38:49.149 - [36mverbose[39m: [?] Node 'desktop.blocks\text*' is expired [1]
+20:38:49.149 - [36mverbose[39m: [*] make 'desktop.blocks\text*' [1]
+20:38:49.149 - [36mverbose[39m: [?] Node 'common.blocks' is expired [1]
+20:38:49.149 - [36mverbose[39m: [*] make 'common.blocks' [1]
+20:38:49.150 - [36mverbose[39m: [=] Log of make 'desktop.blocks\logo*' [1]
+20:38:49.150 - [36mverbose[39m: [=] Log of make 'desktop.blocks\nav*' [1]
+20:38:49.150 - [36mverbose[39m: [=] Log of make 'desktop.blocks\news*' [1]
+20:38:49.150 - [36mverbose[39m: [=] Log of make 'desktop.blocks\projects*' [1]
+20:38:49.150 - [36mverbose[39m: [=] Log of make 'desktop.blocks\socials*' [1]
+20:38:49.150 - [36mverbose[39m: [=] Log of make 'desktop.blocks\text*' [1]
+20:38:49.151 - [36mverbose[39m: [=] Log of make 'common.blocks' [1]
+20:38:49.152 - [36mverbose[39m: [?] Node 'desktop.blocks' is expired [1]
+20:38:49.152 - [36mverbose[39m: [*] make 'desktop.blocks' [1]
+20:38:49.152 - [36mverbose[39m: [=] Log of make 'desktop.blocks' [1]
+20:38:49.153 - [36mverbose[39m: [?] Node 'desktop.bundles*' is expired [1]
+20:38:49.154 - [36mverbose[39m: [*] make 'desktop.bundles*' [1]
+
+[31;1mWARNING!
+Legacy tech modules API support is deprecated!
+It will be removed in bem-tools@1.0.0, please use tech modules API V2.
+[0m
+20:38:49.305 - [34mdebug[39m: scan c:\Users\Ivan\gorod-mechty-www\desktop.bundles: [31m142ms[m
+20:38:49.309 - [36mverbose[39m: [=] Log of make 'desktop.bundles*' [1]
+20:38:49.313 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow*' is expired [1]
+20:38:49.314 - [36mverbose[39m: [*] make 'desktop.bundles\cashflow*' [1]
+20:38:49.314 - [36mverbose[39m: [?] Node 'desktop.bundles\index*' is expired [1]
+20:38:49.314 - [36mverbose[39m: [*] make 'desktop.bundles\index*' [1]
+20:38:49.316 - [36mverbose[39m: [?] Node 'desktop.bundles\project*' is expired [1]
+20:38:49.316 - [36mverbose[39m: [*] make 'desktop.bundles\project*' [1]
+20:38:49.317 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+20:38:49.319 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+20:38:49.319 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+20:38:49.328 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+20:38:49.328 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+20:38:49.366 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+20:38:49.367 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+20:38:49.368 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+20:38:49.369 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\cashflow\cashflow.bemhtml.js
+20:38:49.370 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+20:38:49.380 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+20:38:49.380 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\cashflow\cashflow.js
+20:38:49.381 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+20:38:49.391 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+20:38:49.391 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\cashflow\cashflow.css
+20:38:49.392 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+20:38:49.403 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+20:38:49.403 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\cashflow\cashflow.ie.css
+20:38:49.404 - [34mdebug[39m: Using create-html-node() to create node for tech html
+20:38:49.407 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+20:38:49.407 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+20:38:49.408 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+20:38:49.409 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+20:38:49.420 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+20:38:49.420 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+20:38:49.443 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+20:38:49.443 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+20:38:49.445 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+20:38:49.445 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\index\index.bemhtml.js
+20:38:49.445 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+20:38:49.456 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+20:38:49.457 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\index\index.js
+20:38:49.457 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+20:38:49.468 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+20:38:49.468 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\index\index.css
+20:38:49.469 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+20:38:49.496 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+20:38:49.496 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\index\index.ie.css
+20:38:49.498 - [34mdebug[39m: Using create-html-node() to create node for tech html
+20:38:49.500 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+20:38:49.501 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+20:38:49.501 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+20:38:49.501 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+20:38:49.511 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+20:38:49.512 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+20:38:49.526 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+20:38:49.527 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+20:38:49.528 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+20:38:49.528 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\project\project.bemhtml.js
+20:38:49.528 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+20:38:49.536 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+20:38:49.536 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\project\project.js
+20:38:49.537 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+20:38:49.545 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+20:38:49.545 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\project\project.css
+20:38:49.546 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+20:38:49.553 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+20:38:49.553 - [34mdebug[39m: Creating borschik nodes for desktop.bundles\project\project.ie.css
+20:38:49.554 - [34mdebug[39m: Using create-html-node() to create node for tech html
+20:38:49.555 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+20:38:49.556 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow*' [1]
+20:38:49.556 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index*' [1]
+20:38:49.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project*' [1]
+20:38:49.558 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.bemjson.js' is expired [1]
+20:38:49.558 - [36mverbose[39m: [*] make 'desktop.bundles\cashflow\cashflow.bemjson.js' [1]
+20:38:49.558 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.bemjson.js' is expired [1]
+20:38:49.558 - [36mverbose[39m: [*] make 'desktop.bundles\index\index.bemjson.js' [1]
+20:38:49.559 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.bemjson.js' is expired [1]
+20:38:49.559 - [36mverbose[39m: [*] make 'desktop.bundles\project\project.bemjson.js' [1]
+20:38:49.560 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.bemjson.js' [1]
+20:38:49.561 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.bemjson.js' [1]
+20:38:49.561 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.bemjson.js' [1]
+20:38:49.563 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.bemdecl.js' is expired [1]
+20:38:49.563 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.bemdecl.js" [1]: [31m1ms[m
+20:38:49.563 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.bemdecl.js' [1]
+20:38:49.563 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.bemdecl.js' is expired [1]
+20:38:49.563 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.bemdecl.js" [1]: [31m0ms[m
+20:38:49.563 - [32minfo[39m: [*] make 'desktop.bundles\index\index.bemdecl.js' [1]
+20:38:49.564 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.bemdecl.js' is expired [1]
+20:38:49.564 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.bemdecl.js" [1]: [31m1ms[m
+20:38:49.564 - [32minfo[39m: [*] make 'desktop.bundles\project\project.bemdecl.js' [1]
+
+[31;1mWARNING!
+Command "bem create block" is deprecated!
+It will be removed in bem-tools@1.0.0, please use `bem create -b ...` command instead.
+[0m
+20:38:49.629 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.bemdecl.js' [1]
+bem.create.block(forked=false, {
+    "force": false,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www",
+    "level": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "forceTech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\bemdecl.js.js"
+}, {
+    "names": "cashflow"
+})
+20:38:49.629 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.bemdecl.js" [1]: [31m67ms[m
+20:38:49.629 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.bemdecl.js' [1]
+bem.create.block(forked=false, {
+    "force": false,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www",
+    "level": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "forceTech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\bemdecl.js.js"
+}, {
+    "names": "index"
+})
+20:38:49.629 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.bemdecl.js" [1]: [31m66ms[m
+20:38:49.630 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.bemdecl.js' [1]
+bem.create.block(forked=false, {
+    "force": false,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www",
+    "level": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "forceTech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\bemdecl.js.js"
+}, {
+    "names": "project"
+})
+20:38:49.630 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.bemdecl.js" [1]: [31m67ms[m
+20:38:49.632 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.deps.js' is expired [1]
+20:38:49.632 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.deps.js" [1]: [31m1ms[m
+20:38:49.632 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.deps.js' [1]
+20:38:49.632 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.deps.js' is expired [1]
+20:38:49.632 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.deps.js" [1]: [31m0ms[m
+20:38:49.632 - [32minfo[39m: [*] make 'desktop.bundles\index\index.deps.js' [1]
+20:38:49.633 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.deps.js' is expired [1]
+20:38:49.633 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.deps.js" [1]: [31m1ms[m
+20:38:49.633 - [32minfo[39m: [*] make 'desktop.bundles\project\project.deps.js' [1]
+20:38:49.685 - [34mdebug[39m: scan c:\Users\Ivan\gorod-mechty-www\libs\bem-bl\blocks-common: [31m43ms[m
+20:38:49.765 - [34mdebug[39m: scan c:\Users\Ivan\gorod-mechty-www\libs\bem-bl\blocks-desktop: [31m79ms[m
+20:38:49.851 - [36mverbose[39m: c:\Users\Ivan\gorod-mechty-www\desktop.bundles\cashflow\cashflow.deps.js is not valid
+20:38:49.851 - [36mverbose[39m: c:\Users\Ivan\gorod-mechty-www\desktop.bundles\project\project.deps.js is not valid
+20:38:49.851 - [36mverbose[39m: c:\Users\Ivan\gorod-mechty-www\desktop.bundles\index\index.deps.js is not valid
+20:38:49.992 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.deps.js' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.bemdecl.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\deps.js.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:49.992 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.deps.js" [1]: [31m360ms[m
+20:38:50.000 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.bemhtml' is expired [1]
+20:38:50.000 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.bemhtml" [1]: [31m1ms[m
+20:38:50.000 - [32minfo[39m: [*] make 'desktop.bundles\project\project.bemhtml' [1]
+20:38:50.000 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.js' is expired [1]
+20:38:50.001 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.js" [1]: [31m2ms[m
+20:38:50.001 - [32minfo[39m: [*] make 'desktop.bundles\project\project.js' [1]
+20:38:50.001 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.css' is expired [1]
+20:38:50.001 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.css" [1]: [31m2ms[m
+20:38:50.001 - [32minfo[39m: [*] make 'desktop.bundles\project\project.css' [1]
+20:38:50.002 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.ie.css' is expired [1]
+20:38:50.002 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.ie.css" [1]: [31m3ms[m
+20:38:50.002 - [32minfo[39m: [*] make 'desktop.bundles\project\project.ie.css' [1]
+20:38:50.044 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.deps.js' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.bemdecl.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\deps.js.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.044 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.deps.js" [1]: [31m413ms[m
+20:38:50.049 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.bemhtml' is expired [1]
+20:38:50.049 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.bemhtml" [1]: [31m3ms[m
+20:38:50.049 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.bemhtml' [1]
+20:38:50.049 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.js' is expired [1]
+20:38:50.050 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.js" [1]: [31m4ms[m
+20:38:50.050 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.js' [1]
+20:38:50.053 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.css' is expired [1]
+20:38:50.054 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.css" [1]: [31m7ms[m
+20:38:50.054 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.css' [1]
+20:38:50.054 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.ie.css' is expired [1]
+20:38:50.054 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.ie.css" [1]: [31m7ms[m
+20:38:50.054 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.ie.css' [1]
+20:38:50.119 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.120 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.120 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.121 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\project\project.js is not valid
+20:38:50.123 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\project\project.css is not valid
+20:38:50.125 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\project\project.ie.css is not valid
+20:38:50.147 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.js' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\js-i.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.147 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.js" [1]: [31m148ms[m
+20:38:50.147 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.css' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\css.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.147 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.css" [1]: [31m148ms[m
+20:38:50.148 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.ie.css' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\ie.css.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.148 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.ie.css" [1]: [31m149ms[m
+20:38:50.149 - [36mverbose[39m: [?] Node 'desktop.bundles\project\_project.js' is expired [1]
+20:38:50.150 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\_project.js" [1]: [31m1ms[m
+20:38:50.150 - [32minfo[39m: [*] make 'desktop.bundles\project\_project.js' [1]
+20:38:50.150 - [36mverbose[39m: [?] Node 'desktop.bundles\project\_project.css' is expired [1]
+20:38:50.150 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\_project.css" [1]: [31m1ms[m
+20:38:50.150 - [32minfo[39m: [*] make 'desktop.bundles\project\_project.css' [1]
+20:38:50.151 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\project\_project.js'
+20:38:50.154 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\project\_project.css'
+20:38:50.161 - [36mverbose[39m: [?] Node 'desktop.bundles\project\_project.ie.css' is expired [1]
+20:38:50.161 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\_project.ie.css" [1]: [31m10ms[m
+20:38:50.161 - [32minfo[39m: [*] make 'desktop.bundles\project\_project.ie.css' [1]
+20:38:50.162 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\project\_project.ie.css'
+20:38:50.222 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.248 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\cashflow\cashflow.js is not valid
+20:38:50.258 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.js' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\js-i.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.259 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.js" [1]: [31m213ms[m
+20:38:50.260 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\_cashflow.js' is expired [1]
+20:38:50.260 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\_cashflow.js" [1]: [31m0ms[m
+20:38:50.260 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\_cashflow.js' [1]
+20:38:50.263 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\cashflow\_cashflow.js'
+20:38:50.283 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.283 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.284 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\cashflow\cashflow.css is not valid
+20:38:50.286 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\cashflow\cashflow.ie.css is not valid
+20:38:50.351 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.css' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\css.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.351 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.css" [1]: [31m305ms[m
+20:38:50.351 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.ie.css' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\ie.css.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.352 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.ie.css" [1]: [31m305ms[m
+20:38:50.354 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\_cashflow.css' is expired [1]
+20:38:50.354 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\_cashflow.css" [1]: [31m0ms[m
+20:38:50.354 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\_cashflow.css' [1]
+20:38:50.355 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\cashflow\_cashflow.css'
+20:38:50.361 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\_cashflow.ie.css' is expired [1]
+20:38:50.361 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\_cashflow.ie.css" [1]: [31m6ms[m
+20:38:50.361 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\_cashflow.ie.css' [1]
+20:38:50.362 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\cashflow\_cashflow.ie.css'
+20:38:50.377 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.deps.js' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.bemdecl.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\deps.js.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.377 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.deps.js" [1]: [31m745ms[m
+20:38:50.379 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.bemhtml' is expired [1]
+20:38:50.379 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.bemhtml" [1]: [31m1ms[m
+20:38:50.379 - [32minfo[39m: [*] make 'desktop.bundles\index\index.bemhtml' [1]
+20:38:50.379 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.js' is expired [1]
+20:38:50.379 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.js" [1]: [31m0ms[m
+20:38:50.379 - [32minfo[39m: [*] make 'desktop.bundles\index\index.js' [1]
+20:38:50.725 - [35msilly[39m: getBuildPaths: [31m1ms[m
+20:38:50.725 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\index\index.js is not valid
+20:38:50.740 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.js' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\js-i.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.741 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.js" [1]: [31m362ms[m
+20:38:50.742 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.css' is expired [1]
+20:38:50.742 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.css" [1]: [31m1ms[m
+20:38:50.742 - [32minfo[39m: [*] make 'desktop.bundles\index\index.css' [1]
+20:38:50.801 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:50.802 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\index\index.css is not valid
+20:38:50.944 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.css' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\css.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:50.944 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.css" [1]: [31m203ms[m
+20:38:50.945 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.ie.css' is expired [1]
+20:38:50.946 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.ie.css" [1]: [31m1ms[m
+20:38:50.946 - [32minfo[39m: [*] make 'desktop.bundles\index\index.ie.css' [1]
+20:38:51.046 - [35msilly[39m: getBuildPaths: [31m0ms[m
+20:38:51.047 - [36mverbose[39m: file c:\Users\Ivan\gorod-mechty-www\desktop.bundles\index\index.ie.css is not valid
+20:38:51.172 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.ie.css' [1]
+bem.build(forked=false, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\node_modules\\bem\\lib\\techs\\v2\\ie.css.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:51.173 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.ie.css" [1]: [31m228ms[m
+20:38:51.174 - [36mverbose[39m: [?] Node 'desktop.bundles\index\_index.js' is expired [1]
+20:38:51.174 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\_index.js" [1]: [31m0ms[m
+20:38:51.174 - [32minfo[39m: [*] make 'desktop.bundles\index\_index.js' [1]
+20:38:51.175 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\index\_index.js'
+20:38:53.413 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\project\_project.ie.css': {"code":0}
+20:38:53.414 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\_project.ie.css' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.ie.css",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\_project.ie.css",
+    "tech": "css-fast"
+})
+20:38:53.414 - [32minfo[39m: [t] Build time for "desktop.bundles\project\_project.ie.css" [1]: [31m3263ms[m
+20:38:53.415 - [36mverbose[39m: [?] Node 'desktop.bundles\index\_index.css' is expired [1]
+20:38:53.415 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\_index.css" [1]: [31m0ms[m
+20:38:53.415 - [32minfo[39m: [*] make 'desktop.bundles\index\_index.css' [1]
+20:38:53.416 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\index\_index.css'
+20:38:53.426 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\cashflow\_cashflow.css': {"code":0}
+20:38:53.427 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\_cashflow.css' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.css",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\_cashflow.css",
+    "tech": "css-fast"
+})
+20:38:53.427 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\_cashflow.css" [1]: [31m3073ms[m
+20:38:53.428 - [36mverbose[39m: [?] Node 'desktop.bundles\index\_index.ie.css' is expired [1]
+20:38:53.428 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\_index.ie.css" [1]: [31m1ms[m
+20:38:53.428 - [32minfo[39m: [*] make 'desktop.bundles\index\_index.ie.css' [1]
+20:38:53.428 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\index\_index.ie.css'
+20:38:53.451 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\project\_project.css': {"code":0}
+20:38:53.451 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\_project.css' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.css",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\_project.css",
+    "tech": "css-fast"
+})
+20:38:53.451 - [32minfo[39m: [t] Build time for "desktop.bundles\project\_project.css" [1]: [31m3302ms[m
+20:38:53.460 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\project\_project.ie.css' with code 0
+20:38:53.480 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\cashflow\_cashflow.css' with code 0
+20:38:53.489 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\cashflow\_cashflow.ie.css': {"code":0}
+20:38:53.490 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\_cashflow.ie.css' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.ie.css",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\_cashflow.ie.css",
+    "tech": "css-fast"
+})
+20:38:53.490 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\_cashflow.ie.css" [1]: [31m3135ms[m
+20:38:53.758 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\project\_project.css' with code 0
+20:38:53.830 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\cashflow\_cashflow.ie.css' with code 0
+20:38:54.150 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\cashflow\_cashflow.js': {"code":0}
+20:38:54.151 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\_cashflow.js' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.js",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\_cashflow.js",
+    "tech": "js"
+})
+20:38:54.151 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\_cashflow.js" [1]: [31m3891ms[m
+20:38:54.161 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\project\_project.js': {"code":0}
+20:38:54.162 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\_project.js' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.js",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\_project.js",
+    "tech": "js"
+})
+20:38:54.162 - [32minfo[39m: [t] Build time for "desktop.bundles\project\_project.js" [1]: [31m4013ms[m
+20:38:54.172 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\project\_project.js' with code 0
+20:38:54.175 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\index\_index.js': {"code":0}
+20:38:54.176 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\_index.js' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.js",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\_index.js",
+    "tech": "js"
+})
+20:38:54.176 - [32minfo[39m: [t] Build time for "desktop.bundles\index\_index.js" [1]: [31m3002ms[m
+20:38:54.236 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\index\_index.js' with code 0
+20:38:54.237 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\cashflow\_cashflow.js' with code 0
+20:38:54.296 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\index\_index.css': {"code":0}
+20:38:54.296 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\_index.css' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.css",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\_index.css",
+    "tech": "css-fast"
+})
+20:38:54.296 - [32minfo[39m: [t] Build time for "desktop.bundles\index\_index.css" [1]: [31m881ms[m
+20:38:54.330 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\index\_index.css' with code 0
+20:38:54.397 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\index\_index.ie.css': {"code":0}
+20:38:54.398 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\_index.ie.css' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.ie.css",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\_index.ie.css",
+    "tech": "css-fast"
+})
+20:38:54.398 - [32minfo[39m: [t] Build time for "desktop.bundles\index\_index.ie.css" [1]: [31m971ms[m
+20:38:54.417 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\index\_index.ie.css' with code 0
+20:38:56.443 - [34mdebug[39m: Message from bembuild worker for node 'desktop.bundles\index\index': {"code":0}
+20:38:56.443 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.bemhtml' [1]
+bem.build(forked=true, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common\\i-bem\\bem\\techs\\v2\\bemhtml.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:56.443 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.bemhtml" [1]: [31m6065ms[m
+20:38:56.445 - [36mverbose[39m: [?] Node 'desktop.bundles\index\_index.bemhtml.js' is expired [1]
+20:38:56.445 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\_index.bemhtml.js" [1]: [31m0ms[m
+20:38:56.445 - [32minfo[39m: [*] make 'desktop.bundles\index\_index.bemhtml.js' [1]
+20:38:56.446 - [36mverbose[39m: [?] Node 'desktop.bundles\index\index.html' is expired [1]
+20:38:56.446 - [32minfo[39m: [t] isValid() time for "desktop.bundles\index\index.html" [1]: [31m1ms[m
+20:38:56.451 - [32minfo[39m: [*] make 'desktop.bundles\index\index.html' [1]
+20:38:56.452 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\index\_index.bemhtml.js'
+20:38:56.490 - [34mdebug[39m: Exit of bembuild worker for node 'desktop.bundles\index\index' with code 0
+20:38:56.604 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\index.html' [1]
+bem.create.block(forked=false, {
+    "force": false,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www",
+    "level": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "forceTech": "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common\\i-bem\\bem\\techs\\html.js"
+}, {
+    "names": "index"
+})
+20:38:56.604 - [32minfo[39m: [t] Build time for "desktop.bundles\index\index.html" [1]: [31m159ms[m
+20:38:57.610 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\index\_index.bemhtml.js': {"code":0}
+20:38:57.610 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index\_index.bemhtml.js' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\index.bemhtml.js",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\index\\_index.bemhtml.js",
+    "tech": "js"
+})
+20:38:57.610 - [32minfo[39m: [t] Build time for "desktop.bundles\index\_index.bemhtml.js" [1]: [31m1165ms[m
+20:38:57.611 - [36mverbose[39m: [?] Node 'desktop.bundles\index' is expired [1]
+20:38:57.612 - [36mverbose[39m: [*] make 'desktop.bundles\index' [1]
+20:38:57.616 - [36mverbose[39m: [=] Log of make 'desktop.bundles\index' [1]
+20:38:57.625 - [34mdebug[39m: Message from bembuild worker for node 'desktop.bundles\project\project': {"code":0}
+20:38:57.626 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\index\_index.bemhtml.js' with code 0
+20:38:57.626 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.bemhtml' [1]
+bem.build(forked=true, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common\\i-bem\\bem\\techs\\v2\\bemhtml.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:57.626 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.bemhtml" [1]: [31m7627ms[m
+20:38:57.627 - [36mverbose[39m: [?] Node 'desktop.bundles\project\_project.bemhtml.js' is expired [1]
+20:38:57.627 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\_project.bemhtml.js" [1]: [31m0ms[m
+20:38:57.628 - [32minfo[39m: [*] make 'desktop.bundles\project\_project.bemhtml.js' [1]
+20:38:57.628 - [36mverbose[39m: [?] Node 'desktop.bundles\project\project.html' is expired [1]
+20:38:57.628 - [32minfo[39m: [t] isValid() time for "desktop.bundles\project\project.html" [1]: [31m1ms[m
+20:38:57.628 - [32minfo[39m: [*] make 'desktop.bundles\project\project.html' [1]
+20:38:57.628 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\project\_project.bemhtml.js'
+20:38:57.684 - [34mdebug[39m: Exit of bembuild worker for node 'desktop.bundles\project\project' with code 0
+20:38:57.690 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\project.html' [1]
+bem.create.block(forked=false, {
+    "force": false,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www",
+    "level": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "forceTech": "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common\\i-bem\\bem\\techs\\html.js"
+}, {
+    "names": "project"
+})
+20:38:57.690 - [32minfo[39m: [t] Build time for "desktop.bundles\project\project.html" [1]: [31m63ms[m
+20:38:57.724 - [34mdebug[39m: Message from bembuild worker for node 'desktop.bundles\cashflow\cashflow': {"code":0}
+20:38:57.725 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.bemhtml' [1]
+bem.build(forked=true, {
+    "outputLevel": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "level": [
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-desktop",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\common.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.blocks",
+        "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\blocks"
+    ],
+    "declaration": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.deps.js",
+    "tech": "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common\\i-bem\\bem\\techs\\v2\\bemhtml.js",
+    "outputName": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow",
+    "force": true,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www"
+})
+20:38:57.725 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.bemhtml" [1]: [31m7679ms[m
+20:38:57.727 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\_cashflow.bemhtml.js' is expired [1]
+20:38:57.727 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\_cashflow.bemhtml.js" [1]: [31m1ms[m
+20:38:57.727 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\_cashflow.bemhtml.js' [1]
+20:38:57.727 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow\cashflow.html' is expired [1]
+20:38:57.727 - [32minfo[39m: [t] isValid() time for "desktop.bundles\cashflow\cashflow.html" [1]: [31m1ms[m
+20:38:57.727 - [32minfo[39m: [*] make 'desktop.bundles\cashflow\cashflow.html' [1]
+20:38:57.727 - [34mdebug[39m: Launching borschik worker for node 'desktop.bundles\cashflow\_cashflow.bemhtml.js'
+20:38:57.776 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\cashflow.html' [1]
+bem.create.block(forked=false, {
+    "force": false,
+    "root": "c:\\Users\\Ivan\\gorod-mechty-www",
+    "level": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles",
+    "forceTech": "c:\\Users\\Ivan\\gorod-mechty-www\\libs\\bem-bl\\blocks-common\\i-bem\\bem\\techs\\html.js"
+}, {
+    "names": "cashflow"
+})
+20:38:57.776 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\cashflow.html" [1]: [31m50ms[m
+20:38:57.788 - [34mdebug[39m: Exit of bembuild worker for node 'desktop.bundles\cashflow\cashflow' with code 0
+20:38:58.106 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\cashflow\_cashflow.bemhtml.js': {"code":0}
+20:38:58.106 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow\_cashflow.bemhtml.js' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\cashflow.bemhtml.js",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\cashflow\\_cashflow.bemhtml.js",
+    "tech": "js"
+})
+20:38:58.106 - [32minfo[39m: [t] Build time for "desktop.bundles\cashflow\_cashflow.bemhtml.js" [1]: [31m380ms[m
+20:38:58.107 - [36mverbose[39m: [?] Node 'desktop.bundles\cashflow' is expired [1]
+20:38:58.107 - [36mverbose[39m: [*] make 'desktop.bundles\cashflow' [1]
+20:38:58.122 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\cashflow\_cashflow.bemhtml.js' with code 0
+20:38:58.126 - [36mverbose[39m: [=] Log of make 'desktop.bundles\cashflow' [1]
+20:38:58.130 - [34mdebug[39m: Message from borschik worker for node 'desktop.bundles\project\_project.bemhtml.js': {"code":0}
+20:38:58.130 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project\_project.bemhtml.js' [1]
+borschik({
+    "input": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\project.bemhtml.js",
+    "output": "c:\\Users\\Ivan\\gorod-mechty-www\\desktop.bundles\\project\\_project.bemhtml.js",
+    "tech": "js"
+})
+20:38:58.130 - [32minfo[39m: [t] Build time for "desktop.bundles\project\_project.bemhtml.js" [1]: [31m503ms[m
+20:38:58.131 - [36mverbose[39m: [?] Node 'desktop.bundles\project' is expired [1]
+20:38:58.131 - [36mverbose[39m: [*] make 'desktop.bundles\project' [1]
+20:38:58.134 - [36mverbose[39m: [=] Log of make 'desktop.bundles\project' [1]
+20:38:58.134 - [36mverbose[39m: [?] Node 'desktop.bundles' is expired [1]
+20:38:58.134 - [36mverbose[39m: [*] make 'desktop.bundles' [1]
+20:38:58.136 - [36mverbose[39m: [=] Log of make 'desktop.bundles' [1]
+20:38:58.136 - [36mverbose[39m: [?] Node 'build' is expired [1]
+20:38:58.137 - [32minfo[39m: [t] isValid() time for "build" [1]: [31m1ms[m
+20:38:58.137 - [32minfo[39m: [*] make 'build' [1]
+20:38:58.137 - [36mverbose[39m: [=] Log of make 'build' [1]
+20:38:58.137 - [32minfo[39m: [t] Build time for "build" [1]: [31m1ms[m
+20:38:58.138 - [36mverbose[39m: [?] Node 'all' is expired [1]
+20:38:58.138 - [32minfo[39m: [t] isValid() time for "all" [1]: [31m0ms[m
+20:38:58.138 - [32minfo[39m: [*] make 'all' [1]
+20:38:58.138 - [36mverbose[39m: [=] Log of make 'all' [1]
+20:38:58.138 - [32minfo[39m: [t] Build time for "all" [1]: [31m0ms[m
+20:38:58.140 - [32minfo[39m: [t] Build total: [31m46102ms[m
+20:38:58.146 - [34mdebug[39m: Exit of borschik worker for node 'desktop.bundles\project\_project.bemhtml.js' with code 0

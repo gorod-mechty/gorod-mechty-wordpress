@@ -3,8 +3,8 @@
     title: 'Симферополь — Город мечты',
     favicon: '/favicon.ico',
     head: [
-        { elem: 'css', url: '_cashflow.css' },
-        { elem: 'css', url: '_cashflow.ie.css', ie: 'gte IE 7' },
+        { elem: 'css', url: '_project.css' },
+        { elem: 'css', url: '_project.ie.css', ie: 'gte IE 7' },
         { elem: 'css', url: 'http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic-ext,latin-ext,cyrillic' },
         { elem: 'meta', attrs: { name: 'description', content: 'Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня' }}
         // , { elem: 'meta', attrs: { name: 'keywords', content: '' }}
@@ -73,47 +73,31 @@
                         {
                             block: 'heading_level_2',
                             mods: { type: 'header'},
-                            content: 'Денежный поток'
+                            content: 'Проекты'
                         },
                         {
                             tag: "p",
-                            content: '…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему? '
+                            content: 'Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки, дожидаясь перемен, мы приглашаем к сотрудничеству.'
                         }
                     ]
                 },
                 {
-                    block: 'link-block',
-                    mix:{block: 'clearfix'},
-                    content: [
-                        {
-                            block: 'b-link',
-                            mods: { type: 'cur'},
-                            url: '#',
-                            content: "Все"
-                        },
-                        {
-                            block: 'b-link',
-                            mods: { type: 'dashed'},
-                            url: '#',
-                            content: "Поступления"
-                        },
-                        {
-                            block: 'b-link',
-                            mods: { type: 'dashed'},
-                            url: '#',
-                            content: "Траты"
-                        }
-                    ]
-                },
-                {
-                    block: 'cashflow-table',
+                    block: 'projects-col',
                     content:[
                         {
-                            tag: 'tr',
+                            elem: 'title',
+                            content: 'Сделано'
+                        },
+                        {
+                            elem: 'list',
                             content: [
                                 {
-                                    elem: "item",
-                                    content: 'ololo'
+                                    elem: 'item',
+                                    content: [
+                                        {
+
+                                        }
+                                    ]
                                 }
                             ]
                         }

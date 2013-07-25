@@ -16,15 +16,10 @@
 			content: [
 				{
 					block: 'b-link',
-					mods: { type: 'logo'},
+                    mix: {block: 'logo'},
 					url: '/',
-					content:
-					{
-						block: 'logo',
-						mods: {type: 'logo'},
-						src: '/i/logo.png',
-						content: 'Город мечты'
-					}
+					content:""
+
 				},
 				{
 					block: 'nav',
@@ -73,14 +68,14 @@
 					]
 				},
 				{
-					block: 'discription',
+					block: 'description',
 					content: [
 						{
-							elem: 'item',
+							tag: "p",
 							content: 'Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки, дожидаясь перемен, мы приглашаем к сотрудничеству.'
 						},
 						{
-							elem: 'item',
+                            tag: "p",
 							content: 'Предприятия, учреждения, общественные организации и просто неравнодушные люди – вместе мы сможем сделать наш любимый город настоящим Городом Мечты!'
 						}
 					]
@@ -105,13 +100,12 @@
 							elem: 'item',
 							content: [
 								{
-									block: 'title',
+									elem: 'title',
 									content: [
 										'Сделано ',
 										{
 											block: 'b-link',
 											url: '/',
-											mods: { type: 'project-title-link'},
 											content: '(Х проектов)'
 										}
 									]
@@ -120,15 +114,14 @@
 									block: 'b-link',
 									url: '/',
 									mods: {
-										type: 'italic-link',
-										style: 'project-link'
+										style: 'italic',
+										type: 'project'
 									},
 									content: [
 										{
 											block: 'b-icon',
 											url: '../../../i/project-img-one.png',
-											alt: 'img',
-											mods: { type: 'project-link-img'}
+											alt: 'img'
 										},
 										'В ближайшем будущем  мы планируем взяться за освещение на улицах города'
 									]
@@ -139,13 +132,12 @@
 							elem: 'item',
 							content: [
 								{
-									block: 'title',
+									elem: 'title',
 									content: [
 										'Делаем ',
 										{
 											block: 'b-link',
 											url: '/',
-											mods: { type: 'project-title-link'},
 											content: '(Х проектов)'
 										}
 									]
@@ -154,15 +146,14 @@
 									block: 'b-link',
 									url: '/',
 									mods: {
-										type: 'italic-link',
-										style: 'project-link'
+										style: 'italic',
+										type: 'project'
 									},
 									content: [
 										{
 											block: 'b-icon',
 											url: '../../../i/project-img-two.png',
-											alt: 'img',
-											mods: { type: 'project-link-img'}
+											alt: 'img'
 										},
 										'Сейчас мы работаем над установкой площадок под мусорные баки'
 									]
@@ -173,13 +164,12 @@
 							elem: 'item',
 							content: [
 								{
-									block: 'title',
+									elem: 'title',
 									content: [
 										'Планы ',
 										{
 											block: 'b-link',
 											url: '/',
-											mods: { type: 'project-title-link'},
 											content: '(Х проектов)'
 										}
 									]
@@ -188,15 +178,14 @@
 									block: 'b-link',
 									url: '/',
 									mods: {
-										type: 'italic-link',
-										style: 'project-link'
+										style: 'italic',
+										type: 'project'
 									},
 									content: [
 										{
 											block: 'b-icon',
 											url: '../../../i/project-img-three.png',
-											alt: 'img',
-											mods: { type: 'project-link-img'}
+											alt: 'img'
 										},
 										'Мы установили 24 удобные скамейки в центральном парке'
 									]
@@ -228,8 +217,8 @@
 							]
 						},
 						{
-							block: 'content-title',
-							content: 'Перевести деньги',
+							block: 'heading_level_4',
+							content: 'Перевести деньги'
 						},
 						{
 							block: 'text',
@@ -244,15 +233,18 @@
 							]
 						},
 						{
-							block: 'formated-text',
+							block: 'text',
+                            mods: {style: 'formatted'},
 							content: 'Счет 	26001060922547'
 						},
 						{
-							block: 'formated-text',
+                            block: 'text',
+                            mods: {style: 'formatted'},
 							content: 'ОКПО 	38711011'
 						},
 						{
-							block: 'formated-text',
+                            block: 'text',
+                            mods: {style: 'formatted'},
 							content: 'МФО 	384436'
 						},
 						{
@@ -289,7 +281,7 @@
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'italic-link'},
+									mods: { style: 'italic'},
 									content: 'В Гаспре коммунальный пляж урезали в четыре раза'
 								}
 							]
@@ -304,7 +296,7 @@
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'italic-link'},
+									mods: { style: 'italic'},
 									content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время '
 								}							]
 						},
@@ -318,20 +310,20 @@
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'italic-link'},
+									mods: { style: 'italic'},
 									content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» '
 								}
 							]
 						},
 						{
 							block: 'text',
-							mods: { style: 'margin-text'},
-							content:[
+                            mix:{block: 'news', elem:'more'},
+                            content:[
 								'Больше — ',
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'regular-link'},
+									mods: { type: 'normal'},
 									content: 'в архиве'
 								}
 							]
@@ -346,11 +338,11 @@
 							content: 'Денежный поток'
 						},
 						{
-							elem: 'cashflow-item',
+							elem: 'item',
 							content: [
 								{
 									block: 'heading-title',
-									content: '↓150 грн.'
+									content: '↓150 грн'
 								},
 								'от ',
 								{
@@ -366,11 +358,11 @@
 							]
 						},
 						{
-							elem: 'cashflow-item',
+							elem: 'item',
 							content: [
 								{
 									block: 'heading-title',
-									content: '↑18200 грн.'
+									content: '↑18200 грн'
 								},
 								{
 									block: 'heading-text',
@@ -385,11 +377,11 @@
 							]
 						},
 						{
-							elem: 'cashflow-item',
+							elem: 'item',
 							content: [
 								{
 									block: 'heading-title',
-									content: '↓1100 грн.'
+									content: '↓1100 грн'
 								},
 								'от',
 								{
@@ -406,13 +398,13 @@
 						},
 						{
 							block: 'text',
-							mods: { style: 'margin-text'},
+							mix:{block: 'news', elem:'more'},
 							content:[
 								'Показать ',
 								{
 									block: 'b-link',
 									url: '/',
-									mods: { type: 'regular-link'},
+									mods: { type: 'normal'},
 									content: 'весь список'
 								}
 							]
@@ -420,67 +412,66 @@
 
 					]
 
-				},
-				{
-					block: 'footer',
-                    mix: {block: 'clearfix'},
-                    content: [
-						{
-							block: 'text',
-                            mix: { block: 'footer', elem: 'text' },
-							content: '© 2013  БО «Фонд Город Мечты»'
-						},
-						{
-							block: 'b-link',
-							url: 'mailto:info@gorod-mechty.org',
-							mods: { type: 'footer-link'},
-							content: 'info@gorod-mechty.org'
-						},
-						{
-							block: 'socials',
-							content:[
-								{
-									elem: 'social-item',
-									content:[
-										{
-											block: 'b-link',
-											url: '/',
-											mods: { type: 'social-link-one'},
-											content: 'ВКонтакте'
-										}
-									]
-								},
-								{
-									elem: 'social-item',
-									content:[
-										{
-											block: 'b-link',
-											url: '/',
-											mods: { type: 'social-link-two'},
-											content: 'FaceBook'
-										}
-									]
-								}
-							]
-						},
-                        {
-                            block: 'text',
-                            mods: { style: 'dev-text'},
-                            content:[
-                                'Создание сайта — ',
-                                {
-                                    block: 'b-link',
-                                    url: 'http://tadatuta.ru',
-                                    mods: { type: 'regular-link'},
-                                    content: 'студия «Тадатута»'
-                                }
-                            ]
-                        }
-					]
 				}
 			]
 
 
-		}
+		},
+        {
+            block: 'footer',
+            mix: {block: 'clearfix'},
+            content: [
+                {
+                    block: 'text',
+                    mix: { block: 'footer', elem: 'text' },
+                    content: '© 2013  БО «Фонд Город Мечты»'
+                },
+                {
+                    block: 'b-link',
+                    url: 'mailto:info@gorod-mechty.org',
+                    mods: { type: 'footer-link'},
+                    content: 'info@gorod-mechty.org'
+                },
+                {
+                    block: 'socials',
+                    content:[
+                        {
+                            elem: 'social-item',
+                            content:[
+                                {
+                                    block: 'b-link',
+                                    url: '/',
+                                    mods: { type: 'vk'},
+                                    content: 'ВКонтакте'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'social-item',
+                            content:[
+                                {
+                                    block: 'b-link',
+                                    url: '/',
+                                    mods: { type: 'fb'},
+                                    content: 'FaceBook'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block: 'copyright',
+                    content:[
+                        'Создание сайта — ',
+                        {
+                            block: 'b-link',
+                            url: 'http://tadatuta.ru',
+                            mods: { type: 'normal'},
+                            content: 'студия «Тадатута»'
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 })
