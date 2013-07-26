@@ -1,0 +1,16 @@
+.cf-table-title
+{
+    border: 1px solid green;
+    margin: 50px auto 0;
+    width: 960px;
+    color: #629d42;
+}
+.cf-table-title__item
+{
+    border: 1px solid brown;
+    float: left;
+}
+.cf-table-title__first
+{
+    width: 150px;
+}

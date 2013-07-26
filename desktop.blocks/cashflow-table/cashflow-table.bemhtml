@@ -1,3 +1,9 @@
 block cashflow-table {
     tag: 'table'
 }
+elem row {
+    tag: 'tr'
+}
+elem item {
+    tag: 'td'
+}

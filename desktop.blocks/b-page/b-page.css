@@ -3,7 +3,9 @@
     font: 15px 'PT Sans', arial, sans-serif;
     margin: 0;
     height: 100%;
-    background: url("../../../../i/tree.png") no-repeat top 250px right 400px;
+}
+.b-page__main{
+    background: #f4f8fb url("../../../../i/tree.png") no-repeat top 250px right 400px;
 }
 
 .b-page__inner{

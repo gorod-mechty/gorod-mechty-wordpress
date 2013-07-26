@@ -106,14 +106,28 @@
                     ]
                 },
                 {
+                    block: 'cf-table-title',
+                    content: [
+                        {
+                            elem: 'item',
+                            mix:{block: 'cf-table-title', elem:'first'},
+                            content: 'Сумма'
+                        },
+                        {
+                            elem: 'item',
+                            content: 'Дата/Время'
+                        }
+                    ]
+                },
+                {
                     block: 'cashflow-table',
                     content:[
                         {
-                            tag: 'tr',
+                            elem: 'row',
                             content: [
                                 {
                                     elem: "item",
-                                    content: 'ololo'
+                                    content: 'Сумма'
                                 }
                             ]
                         }
@@ -123,6 +137,18 @@
             ]
 
 
+        },
+        {
+            block: 'button',
+            mix: {block: 'clearfix'},
+            content:[
+                {
+                    block: 'b-link',
+                    mods: { type: 'button'},
+                    url: '#',
+                    content: 'Загрузить ещё'
+                }
+            ]
         },
         {
             block: 'footer',

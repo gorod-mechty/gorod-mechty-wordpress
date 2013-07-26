@@ -1,5 +1,6 @@
 ({
     block: 'b-page',
+    mix: {block: 'b-page', elem: 'main'},
     title: 'Симферополь — Город мечты',
     favicon: '/favicon.ico',
     head: [
@@ -120,7 +121,7 @@
 									content: [
 										{
 											block: 'b-icon',
-											url: '../../../i/project-img-one.png',
+											url: '../../../i/projects-img-one.png',
 											alt: 'img'
 										},
 										'В ближайшем будущем  мы планируем взяться за освещение на улицах города'
