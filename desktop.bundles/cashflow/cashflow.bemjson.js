@@ -68,7 +68,7 @@
                     ]
                 },
                 {
-                    block: 'description',
+                    block: 'content',
                     content: [
                         {
                             block: 'heading_level_2',

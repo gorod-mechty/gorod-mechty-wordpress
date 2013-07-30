@@ -121,7 +121,7 @@
 									content: [
 										{
 											block: 'b-icon',
-											url: '../../../i/projects-img-one.png',
+											url: '../../../i/project-img-one.png',
 											alt: 'img'
 										},
 										'В ближайшем будущем  мы планируем взяться за освещение на улицах города'
