@@ -1,0 +1,11 @@
+
+.partners__item{
+    margin: 50px 0 0 0;
+}
+.partners__text{
+    margin:0 0 0 200px;
+}
+.partners__item .b-icon{
+    float: left;
+    margin: 0 40px 0 0;
+}

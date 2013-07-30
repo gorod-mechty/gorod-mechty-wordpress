@@ -10,4 +10,7 @@
     border-top-left-radius: 30px;
     float: left;
     margin: 0 20px 0 0;
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
 }
