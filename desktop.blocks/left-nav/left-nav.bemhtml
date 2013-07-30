@@ -1,0 +1,7 @@
+block left-nav {
+    tag: 'ul',
+    
+    elem item {
+        tag: 'li'
+    }
+}
