@@ -1,0 +1,25 @@
+.project-cash
+{
+    width: 235px;
+    float: left;
+    margin: 0 0 20px 0;
+}
+.project-cash__item
+{
+    margin: 5px 0 0 0;
+    font: 15px 'PT Sans', sans-serif;
+
+}
+.project-cash__item span
+{
+    color: #629d42;
+}
+.project-cash a
+{
+   display: inline;}
+.project-cash__docs
+{
+    font-size: 15px;
+    font-style: italic;
+    margin: 75px 0 0 0;
+}

@@ -1,0 +1,3 @@
+block project-cash {
+    elem item, tag: 'pre'
+}

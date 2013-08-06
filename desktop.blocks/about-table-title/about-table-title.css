@@ -1,0 +1,14 @@
+.about-table-title
+{
+    margin: 25px 0 0 -10px;
+    color: #629d42;
+    overflow: hidden;
+    font-size: 15px;
+    font-style: italic;
+    padding: 0 0 0 10px;
+}
+.about-table-title__item
+{
+    float: left;
+    margin: 0 43px 0 0;
+}

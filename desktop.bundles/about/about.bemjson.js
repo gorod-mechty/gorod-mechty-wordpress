@@ -168,6 +168,72 @@
                             mix: {block: 'clearfix'},
                             mods: { type: 'content'},
                             content: 'Подзаголовок'
+                        },
+                        {
+                            block: 'about-table-title',
+                            content: [
+                                {
+                                    elem: 'item',
+                                    content: 'Раздел таблицы 1'
+                                },
+                                {
+                                    elem: 'item',
+                                    content: 'Раздел таблицы 2'
+                                },{
+                                    elem: 'item',
+                                    content: 'Раздел таблицы 3'
+                                },{
+                                    elem: 'item',
+                                    content: 'Раздел таблицы 4'
+                                },
+                            ]
+                        },
+                        {
+                            block: 'about-table',
+                            content: [
+                                {
+                                    elem: 'row',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 1'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 2'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 3'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 4'
+                                        },
+                                    ]
+                                },
+                                {
+                                    elem: 'row',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 5'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 6'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 7'
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: 'Ячейка 8'
+                                        },
+                                    ]
+                                }
+                            ]
                         }
 
                     ]
