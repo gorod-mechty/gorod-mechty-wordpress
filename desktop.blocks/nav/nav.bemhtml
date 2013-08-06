@@ -1,5 +1,5 @@
 block nav {
-    tag: 'ul',
+    tag: 'ul'
     
     elem item {
         tag: 'li'

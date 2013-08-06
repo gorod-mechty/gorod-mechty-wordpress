@@ -1,16 +1,32 @@
 .cf-table-title
 {
-    border: 1px solid green;
     margin: 50px auto 0;
     width: 960px;
     color: #629d42;
+    overflow: hidden;
 }
 .cf-table-title__item
 {
-    border: 1px solid brown;
     float: left;
 }
-.cf-table-title__first
+.cf-table-title__sum
 {
     width: 150px;
+    padding: 0 0 0 20px
+}
+.cf-table-title__date
+{
+    width: 110px;
+}
+.cf-table-title__from
+{
+    width: 180px;
+}
+.cf-table-title__project
+{
+    width: 270px;
+}
+.cf-table-title__comments
+{
+    width: 230px;
 }
