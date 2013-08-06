@@ -12,7 +12,7 @@
     ],
     content:[
 		{
-			elem: 'inner',
+			elem: 'inner main',
             mix: {block: 'clearfix'},
 			content: [
 				{

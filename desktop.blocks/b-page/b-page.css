@@ -4,12 +4,13 @@
     margin: 0;
     height: 100%;
 }
-.b-page__main{
-    background: #f4f8fb url("../../../../i/tree.png") no-repeat top 250px right 170px;
-}
-
 .b-page__inner{
     width: 1000px;
     margin: auto;
     min-height: 100%;
+}
+.main{
+
+   background: #f4f8fb url("../../../../i/tree.png") no-repeat top 250px right -45px;
+
 }

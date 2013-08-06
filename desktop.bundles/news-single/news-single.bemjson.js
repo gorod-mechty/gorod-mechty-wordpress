@@ -79,21 +79,6 @@
                     ]
                 },
                 {
-                    block: 'left-nav',
-                    content:[
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "К списку новостей"
-                            }
-                        }
-                    ]
-                },
-                {
                     block: 'news-list',
                     content: [
                         {
@@ -137,7 +122,23 @@
                             ]
                         }
                     ]
+                },
+                {
+                    block: 'left-nav',
+                    content:[
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods:{type: 'left-nav'},
+                                url: '/',
+                                content: "К списку новостей"
+                            }
+                        }
+                    ]
                 }
+                
 
 
             ]
