@@ -167,55 +167,43 @@
                                             elem: 'list',
                                             content: [
                                                 {
-                                                    elem: 'item',
-                                                    content:[
-                                                        {
-                                                            block: 'b-icon',
-                                                            url: '../../../i/single-project-preview.png',
-                                                            alt: 'img'
-                                                        }
-                                                    ]
+                                                    block: 'b-icon',
+                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
                                                 },
                                                 {
-                                                    elem: 'item',
-                                                    content:[
-                                                        {
-                                                            block: 'b-icon',
-                                                            url: '../../../i/single-project-preview.png',
-                                                            alt: 'img'
-                                                        }
-                                                    ]
+                                                    block: 'b-icon',
+                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
                                                 },
                                                 {
-                                                    elem: 'item',
-                                                    content:[
-                                                        {
-                                                            block: 'b-icon',
-                                                            url: '../../../i/single-project-preview.png',
-                                                            alt: 'img'
-                                                        }
-                                                    ]
+                                                    block: 'b-icon',
+                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
                                                 },
                                                 {
-                                                    elem: 'item',
-                                                    content:[
-                                                        {
-                                                            block: 'b-icon',
-                                                            url: '../../../i/single-project-preview.png',
-                                                            alt: 'img'
-                                                        }
-                                                    ]
+                                                    block: 'b-icon',
+                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
                                                 },
                                                 {
-                                                    elem: 'item',
-                                                    content:[
-                                                        {
-                                                            block: 'b-icon',
-                                                            url: '../../../i/single-project-preview.png',
-                                                            alt: 'img'
-                                                        }
-                                                    ]
+                                                    block: 'b-icon',
+                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
                                                 },
+                                                {
+                                                    elem: 'nav-l',
+                                                    content:''
+                                                },
+                                                {
+                                                    elem: 'nav-r',
+                                                    content:''
+                                                }
                                             ]
                                         },
                                         {

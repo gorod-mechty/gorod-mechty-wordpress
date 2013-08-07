@@ -8,20 +8,60 @@
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
-
 }
 .project-slider__list
 {
     height: 95px;
+    width: 569px;
     background: #a5a8aa;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
+    position: relative;
 }
 .project-slider__item
 {
     margin: 5px 0 0 5px;
     float: left;
     width: 115px;
+    display: block;
+    background: #000000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.project-slider__item:hover
+{
+    margin: 1px -4px 0 1px;
+    border: 4px solid red;
+    float: left;
+    width: 115px;
+    display: block;
+    background: #000000;
+    opacity: 1;
+}
+.project-slider__nav-l
+{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    background: url("../../../../i/single-project-arow-left.png");
+}
+.project-slider__nav-l:hover
+{
+    background: url("../../../../i/single-project-arow-left-active.png");
+}
+.project-slider__nav-r
+{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    position: absolute;
+    left: 530px;
+    top: 35px;
+    background: url("../../../../i/single-project-arow-right.png");
+}
+.project-slider__nav-r:hover
+{
+    background: url("../../../../i/single-project-arow-right-active.png");
 }
