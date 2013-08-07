@@ -7,5 +7,6 @@
 {
     font-style: italic;
     background: url("../../i/dot.png")no-repeat top 10px left 0;
+    background: url("../../i/dot.png") left 10px no-repeat\0/;
     padding:  0 0 0 20px;
 }

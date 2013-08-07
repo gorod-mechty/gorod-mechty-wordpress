@@ -11,4 +11,5 @@
 }
 .main{
    background: url("../../../../i/tree.png") no-repeat top 250px right -45px;
+   background: url("../../../../i/tree.png") no-repeat right 250px\0/;
 }
