@@ -12,9 +12,6 @@
     ],
     content:[
 		{
-			elem: 'wrapper',
-			content: [
-				{
 			elem: 'inner main',
             mix: {block: 'clearfix'},
 			content: [
@@ -416,10 +413,6 @@
 
 					]
 
-				},
-				{
-					elem: 'compens',
-					conten: ''
 				}
 			]
 
@@ -481,7 +474,5 @@
                 }
             ]
         }
-			]
-		}
     ]
 })

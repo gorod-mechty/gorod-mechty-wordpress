@@ -11,9 +11,6 @@
     ],
     content:[
         {
-            elem: 'wrapper',
-            content: [
-                {
             elem: 'inner',
             mix: {block: 'clearfix'},
             content: [
@@ -197,12 +194,12 @@
                             ]
                         }
                     ]
-                },
-                {
-                    elem: 'compens',
-                    content: ''
                 }
+
+
             ]
+
+
         },
         {
             block: 'footer',
@@ -258,8 +255,6 @@
                         }
                     ]
                 }
-            ]
-        }
             ]
         }
     ]

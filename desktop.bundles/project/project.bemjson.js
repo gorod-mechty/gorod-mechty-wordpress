@@ -11,9 +11,6 @@
     ],
     content:[
         {
-            elem: 'wrapper',
-            content: [
-                {
             elem: 'inner',
             mix: {block: 'clearfix'},
             content: [
@@ -386,12 +383,11 @@
                             content: 'Загрузить ещё'
                         }
                     ]
-                },
-                {
-                    elem: 'compens',
-                    content: ''
                 }
+
             ]
+
+
         },
         {
             block: 'footer',
@@ -447,8 +443,6 @@
                         }
                     ]
                 }
-            ]
-        }
             ]
         }
     ]
