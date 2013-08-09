@@ -8,8 +8,11 @@
     width: 1000px;
     margin: auto;
     min-height: 100%;
+    position: relative;
 }
-.main{
-   background: url("../../../../i/tree.png") no-repeat top 250px right -45px;
-   background: url("../../../../i/tree.png") no-repeat right 250px\0/;
+.b-page__main{
+   position: absolute;
+   top: 17%;
+   left: 50%;
+   margin: 0 0 0 140px;
 }

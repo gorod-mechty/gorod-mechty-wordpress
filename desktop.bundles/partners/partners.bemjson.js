@@ -15,11 +15,55 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
-
+                    block: 'sidebar',
+                    content:[
+                        {
+                            block: 'b-link',
+                            mix: {block: 'logo'},
+                            url: '/',
+                            content:""
+                        },
+                        {
+                            block: 'submenu',
+                            content:[
+                                {
+                                    elem: 'item',
+                                    content:[
+                                        {
+                                            block: 'b-link',
+                                            mods:{type: 'left-nav'},
+                                            url: '/',
+                                            content: "Реквизиты"
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: 'Партнеры'
+                                },
+                                {
+                                    elem: 'item',
+                                    content:
+                                    {
+                                        block: 'b-link',
+                                        mods:{type: 'left-nav'},
+                                        url: '/',
+                                        content: "Волонтёры"
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    content:
+                                    {
+                                        block: 'b-link',
+                                        mods:{type: 'left-nav'},
+                                        url: '/',
+                                        content: "Расходные материалы"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     block: 'nav',
@@ -71,8 +115,8 @@
                     block: 'content',
                     content: [
                         {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
+                            block: 'heading',
+                            mods: { level: 1},
                             content: 'Сотрудничество'
                         },
                         {
@@ -85,11 +129,6 @@
                                 {
                                     elem: 'item',
                                     content: [
-                                        {
-                                            block: 'b-icon',
-                                            url: '../../../i/partners-one.png',
-                                            alt: 'img'
-                                        },
                                         {
                                             elem:'text',
                                             content: [
@@ -104,7 +143,14 @@
                                                     block: 'b-link',
                                                     url: '/',
                                                     mods: { type: 'normal'},
-                                                    content: 'gorod-mechty.org'
+                                                    content: [
+                                                        'gorod-mechty.org',
+                                                        {
+                                                            block: 'b-icon',
+                                                            url: '../../../i/partners-one.png',
+                                                            alt: 'img'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -114,11 +160,6 @@
                                 {
                                     elem: 'item',
                                     content: [
-                                        {
-                                            block: 'b-icon',
-                                            url: '../../../i/partners-two.png',
-                                            alt: 'img'
-                                        },
                                         {
                                             elem:'text',
                                             content: [
@@ -133,7 +174,14 @@
                                                     block: 'b-link',
                                                     url: '/',
                                                     mods: { type: 'normal'},
-                                                    content: 'gorod-mechty.org'
+                                                    content: [
+                                                        'gorod-mechty.org',
+                                                        {
+                                                            block: 'b-icon',
+                                                            url: '../../../i/partners-two.png',
+                                                            alt: 'img'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
@@ -143,11 +191,6 @@
                                 {
                                     elem: 'item',
                                     content: [
-                                        {
-                                            block: 'b-icon',
-                                            url: '../../../i/partners-three.png',
-                                            alt: 'img'
-                                        },
                                         {
                                             elem:'text',
                                             content: [
@@ -162,21 +205,22 @@
                                                     block: 'b-link',
                                                     url: '/',
                                                     mods: { type: 'normal'},
-                                                    content: 'gorod-mechty.org'
+                                                    content: [
+                                                        'gorod-mechty.org',
+                                                        {
+                                                            block: 'b-icon',
+                                                            url: '../../../i/partners-three.png',
+                                                            alt: 'img'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
-
                                     ]
                                 },
                                 {
                                     elem: 'item',
                                     content: [
-                                        {
-                                            block: 'b-icon',
-                                            url: '../../../i/partners-four.png',
-                                            alt: 'img'
-                                        },
                                         {
                                             elem:'text',
                                             content: [
@@ -191,69 +235,24 @@
                                                     block: 'b-link',
                                                     url: '/',
                                                     mods: { type: 'normal'},
-                                                    content: 'gorod-mechty.org'
+                                                    content: [
+                                                       'gorod-mechty.org',
+                                                       {
+                                                            block: 'b-icon',
+                                                            url: '../../../i/partners-four.png',
+                                                            alt: 'img'
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         }
-
                                     ]
                                 }
                             ]
                         }
-
-                    ]
-                },
-                {
-                    block: 'left-nav',
-                    content:[
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "Реквизиты"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'cur'},
-                                url: '/',
-                                content: "Партнёры"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "Волонтёры"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "Расходные материалы"
-                            }
-                        }
                     ]
                 }
-
-
-
             ]
-
-
         },
         {
             block: 'footer',

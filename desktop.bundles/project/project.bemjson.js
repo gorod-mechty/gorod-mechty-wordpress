@@ -71,8 +71,8 @@
                     block: 'description',
                     content: [
                         {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
+                            block: 'heading',
+                            mods: { level: 1},
                             content: 'Проекты'
                         },
                         {

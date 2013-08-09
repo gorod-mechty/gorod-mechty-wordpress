@@ -1,7 +1,8 @@
 .b-link_type_vk{
-    font: 15px 'PT Sans', sans-serif;
+    font-size: 15px;    
     display: block;
     height: 27px;
-    padding: 0 0 0 35px;
-    background: url("../../../../../i/socials.png") no-repeat;
+    padding: 2px 0 0 35px;
+    background: url("../../../../../i/socials.png") no-repeat top -36px left 0;
+    white-space: nowrap;
 }

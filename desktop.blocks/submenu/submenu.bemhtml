@@ -1,4 +1,4 @@
-block left-nav {
+block submenu {
     tag: 'ul',
     
     elem item {

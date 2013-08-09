@@ -1,10 +1,12 @@
 .news{
-    margin: 50px 0 0 75px;
-    width: 200px;
+    margin: 0;
     float: left;
+    width: 540px;
+    list-style: none;
+    padding: 0;
 }
 
-.news__news-item{
+.news__item{
     font: 13px 'PT Sans', sans-serif;
     color: #909090;
     margin: 30px 0 0  0;

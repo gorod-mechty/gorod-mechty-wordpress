@@ -1,4 +1,6 @@
 .b-link_style_italic{
-    font: italic 15px 'PT Sans', sans-serif;
+    font-size: 15px;
     display: block;
+    font-style: italic;
+    font-weight: normal;
 }

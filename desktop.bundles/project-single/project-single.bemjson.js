@@ -15,11 +15,31 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
-
+                    block: 'sidebar',
+                    content: [
+                        {
+                            block: 'b-link',
+                            mix: {block: 'logo'},
+                            url: '/',
+                            content:""
+                        },
+                        {
+                            block: 'submenu',
+                            content:[
+                                {
+                                    elem: 'item',
+                                    content:[
+                                        {
+                                            block: 'b-link',
+                                            mods:{type: 'left-nav'},
+                                            url: '/',
+                                            content: "К списку проектов"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     block: 'nav',
@@ -71,8 +91,8 @@
                     block: 'content',
                     content: [
                         {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
+                            block: 'heading',
+                            mods: { level: 1},
                             content: 'Монтаж площадок под контейнеры'
                         },
                         {
@@ -198,11 +218,11 @@
                                                 },
                                                 {
                                                     elem: 'nav-l',
-                                                    content:''
+                                                    content:'◀'
                                                 },
                                                 {
                                                     elem: 'nav-r',
-                                                    content:''
+                                                    content:'▶'
                                                 }
                                             ]
                                         },
@@ -213,32 +233,11 @@
                                         }
                                     ]
                                 }
-
                             ]
                         }
                     ]
-                },
-                {
-                    block: 'left-nav',
-                    content:[
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "К списку проектов"
-                            }
-                        }
-                    ]
                 }
-
-
-
             ]
-
-
         },
         {
             block: 'footer',

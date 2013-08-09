@@ -15,11 +15,45 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
-
+                    block: 'sidebar',
+                    content:[
+                        {
+                            block: 'b-link',
+                            mix: {block: 'logo'},
+                            url: '/',
+                            content:""
+                        },
+                        {
+                            block: 'submenu',
+                            content:[
+                                {
+                                    elem: 'item',
+                                    content: '2013'
+                                },
+                                {
+                                    elem: 'item',
+                                    content:
+                                    {
+                                        block: 'b-link',
+                                        mods:{type: 'left-nav'},
+                                        url: '/',
+                                        content: "2012"
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    content:[
+                                        {
+                                            block: 'b-link',
+                                            mods:{type: 'left-nav'},
+                                            url: '/',
+                                            content: "2011"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     block: 'nav',
@@ -68,138 +102,96 @@
                     ]
                 },
                 {
-                    block: 'description',
-                    content: [
-                        {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
-                            content: 'Сотрудничество'
-                        }
-
-                    ]
-                },
-                {
-                    block: 'left-nav',
+                    block: 'content',
                     content:[
                         {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'cur'},
-                                url: '/',
-                                content: "2013"
-                            }
+                            block: 'heading',
+                            mods: { level:2},
+                            content: 'Сотрудничество'
                         },
                         {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "2012"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "2011"
-                            }
-                        }
-                    ]
-                },
-                {
-                    block: 'news',
-                    mix: {block: 'clearfix'},
-                    mix: {block: 'news-list'},
-                    content: [
-                        {
-                            elem: 'news-item',
+                            block: 'news',
                             content: [
                                 {
-                                    block: 'date',
-                                    content: '15 октября'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'date',
+                                            content: '15 октября'
+                                        },
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                            mods: { style: 'italic'},
+                                            content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» области.'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'b-link',
-                                    url: '/',
-                                    mods: { style: 'italic'},
-                                    content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» области.'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'news-item',
-                            content: [
-                                {
-                                    block: 'date',
-                                    content: '15 октября'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'date',
+                                            content: '15 октября'
+                                        },
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                            mods: { style: 'italic'},
+                                            content: 'В Гаспре коммунальный пляж урезали в четыре раза.'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'b-link',
-                                    url: '/',
-                                    mods: { style: 'italic'},
-                                    content: 'В Гаспре коммунальный пляж урезали в четыре раза.'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'news-item',
-                            content: [
-                                {
-                                    block: 'date',
-                                    content: '15 октября'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'date',
+                                            content: '15 октября'
+                                        },
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                            mods: { style: 'italic'},
+                                            content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время шторма.'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'b-link',
-                                    url: '/',
-                                    mods: { style: 'italic'},
-                                    content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время шторма.'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'news-item',
-                            content: [
-                                {
-                                    block: 'date',
-                                    content: '15 октября'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'date',
+                                            content: '15 октября'
+                                        },
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                            mods: { style: 'italic'},
+                                            content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» области.'
+                                        }
+                                    ]
                                 },
                                 {
-                                    block: 'b-link',
-                                    url: '/',
-                                    mods: { style: 'italic'},
-                                    content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» области.'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'news-item',
-                            content: [
-                                {
-                                    block: 'date',
-                                    content: '15 октября'
-                                },
-                                {
-                                    block: 'b-link',
-                                    url: '/',
-                                    mods: { style: 'italic'},
-                                    content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время шторма.'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'date',
+                                            content: '15 октября'
+                                        },
+                                        {
+                                            block: 'b-link',
+                                            url: '/',
+                                           mods: { style: 'italic'},
+                                           content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время шторма.'
+                                       }
+                                   ]
                                 }
                             ]
                         }
                     ]
                 }
-
-
             ]
-
-
         },
         {
             block: 'footer',

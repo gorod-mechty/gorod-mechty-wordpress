@@ -6,6 +6,7 @@
         { elem: 'css', url: '_about.css' },
         { elem: 'css', url: '_about.ie.css', ie: 'gte IE 7' },
         { elem: 'css', url: 'http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic-ext,latin-ext,cyrillic' },
+        { elem: 'css', url: 'http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,latin-ext,cyrillic-ext' },
         { elem: 'meta', attrs: { name: 'description', content: 'Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня' }}
         // , { elem: 'meta', attrs: { name: 'keywords', content: '' }}
     ],
@@ -15,11 +16,45 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
-
+                    block: 'sidebar',
+                    content:[
+                        {
+                            block: 'b-link',
+                            mix: {block: 'logo'},
+                            url: '/',
+                            content:""
+                        },
+                        {
+                            block: 'submenu',
+                            content:[
+                                {
+                                    elem: 'item',
+                                    content: 'Что такое фонд'
+                                },
+                                {
+                                    elem: 'item',
+                                    content:
+                                    {
+                                        block: 'b-link',
+                                        mods:{type: 'left-nav'},
+                                        url: '/',
+                                        content: "Наши цели"
+                                    }
+                                },
+                                {
+                                    elem: 'item',
+                                    content:[
+                                        {
+                                            block: 'b-link',
+                                            mods:{type: 'left-nav'},
+                                            url: '/',
+                                            content: "Стать участником"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                    ]
                 },
                 {
                     block: 'nav',
@@ -71,8 +106,8 @@
                     block: 'content',
                     content: [
                         {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
+                            block: 'heading',
+                            mods: { level: 1},
                             content: 'О фонде'
                         },
                         {
@@ -164,9 +199,9 @@
                             ]
                         },
                         {
-                            block: 'heading_level_2',
+                            block: 'heading',
                             mix: {block: 'clearfix'},
-                            mods: { type: 'content'},
+                            mods: { level: 2},
                             content: 'Подзаголовок'
                         },
                         {
@@ -235,53 +270,9 @@
                                 }
                             ]
                         }
-
                     ]
-                },
-                {
-                    block: 'left-nav',
-                    content:[
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'cur'},
-                                url: '/',
-                                content: "Что такое фонд"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "Наши цели"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "Стать участником"
-                            }
-                        }
-                    ]
-                },
-                {
-
                 }
-
-
-
             ]
-
-
         },
         {
             block: 'footer',

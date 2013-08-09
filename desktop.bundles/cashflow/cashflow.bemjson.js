@@ -71,8 +71,8 @@
                     block: 'content',
                     content: [
                         {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
+                            block: 'heading',
+                            mods: { level: 1},
                             content: 'Денежный поток'
                         },
                         {
@@ -83,7 +83,6 @@
                 },
                 {
                     block: 'link-block',
-                    mix:{block: 'clearfix'},
                     content: [
                         {
                             block: 'b-link',

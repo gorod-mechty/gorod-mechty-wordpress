@@ -15,11 +15,32 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
-
+                    block: 'sidebar',
+                    content:[
+                        {
+                            block: 'b-link',
+                            mix: {block: 'logo'},
+                            url: '/',
+                            content:""
+                        },
+                        {
+                            block: 'submenu',
+                            content:[
+                                {
+                                    elem: 'item',
+                                    content:
+                                    [
+                                        {
+                                            block: 'b-link',
+                                            mods:{type: 'left-nav'},
+                                            url: '/',
+                                            content: "К списку новостей"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     block: 'nav',
@@ -68,35 +89,35 @@
                     ]
                 },
                 {
-                    block: 'description',
+                    block: 'content',
                     content: [
                         {
-                            block: 'heading_level_2',
-                            mods: { type: 'header'},
+                            block: 'heading',
+                            mods: { level: 2},
                             content: 'Севастополь предлагают лишить всех привилегий и сделать админцентром'
-                        }
-
-                    ]
-                },
-                {
-                    block: 'news-list',
-                    content: [
+                        },
                         {
-                            elem: 'news-item',
+                            block: 'news-single',
                             content: [
                                 {
                                     block: 'date',
                                     content: '15 октября'
-                                },
+                                    },
                                 {
                                     tag: "p",
                                     content: 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Мы хотим, чтобы Город Пользы перестал быть просто воротами на южный берег Крыма, а вокзал – его единственной достопримечательностью. '
                                 },
                                 {
-                                    block: 'b-icon',
-                                    mix: {block: 'news-list', elem: 'img-l'},
-                                    url: '../../../i/news-single-img.png',
-                                    alt: 'img'
+
+                                    block: 'thumb',
+                                    mods: { side: 'left'},
+                                    content:[
+                                        {
+                                            block: 'b-icon',
+                                            url: '../../../i/news-single-img.png',
+                                            alt: 'img'
+                                        }
+                                    ]
                                 },
                                 {
                                     tag: 'p',
@@ -116,34 +137,13 @@
                                             content: 'проекты'
                                         },
                                         ' в области озеленения и благоустройства Симферополя.'
-
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    block: 'left-nav',
-                    content:[
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods:{type: 'left-nav'},
-                                url: '/',
-                                content: "К списку новостей"
-                            }
-                        }
-                    ]
                 }
-                
-
-
             ]
-
-
         },
         {
             block: 'footer',

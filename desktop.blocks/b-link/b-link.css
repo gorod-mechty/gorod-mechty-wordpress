@@ -1,6 +1,6 @@
 .b-link {
     color: #d23e33;
-    font: bold 18px 'PT Sans', sans-serif;
+    font-size: 18px;
 }
 .b-link:hover{
     text-decoration: none;
