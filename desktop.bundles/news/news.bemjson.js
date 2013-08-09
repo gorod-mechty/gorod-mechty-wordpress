@@ -106,7 +106,7 @@
                     content:[
                         {
                             block: 'heading',
-                            mods: { level:2},
+                            mods: { level:1},
                             content: 'Сотрудничество'
                         },
                         {
