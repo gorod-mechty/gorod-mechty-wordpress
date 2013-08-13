@@ -1,7 +1,8 @@
-.b-link {
+.b-link
+{
     color: #d23e33;
-    font-size: 18px;
 }
-.b-link:hover{
+.b-link:hover
+{
     text-decoration: none;
 }

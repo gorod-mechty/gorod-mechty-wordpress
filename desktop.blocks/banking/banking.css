@@ -1,4 +1,5 @@
-.banking{
+.banking
+{
     border: 3px solid #d23e33;
     border-radius: 30px;
     width: 325px;
@@ -11,9 +12,17 @@
     background: #ffffff;
     padding: 30px;
 }
-.banking__title{
-    font: 24px 'PT Serif', sans-serif;
+.banking__title
+{
+    font: 24px 'PT Serif', serif;
 }
-.banking__title-green{
+.banking__title-green
+{
     color: #339e37;
+}
+.banking__details
+{
+    font-size: 15px;
+    display: block;
+    margin: 5px 0 0 0;
 }

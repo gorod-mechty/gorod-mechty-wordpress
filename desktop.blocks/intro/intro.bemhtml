@@ -1,5 +1,0 @@
-block intro {
-    elem highlight {
-        tag: 'em'
-    }
-}

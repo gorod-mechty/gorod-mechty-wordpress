@@ -31,7 +31,6 @@
                                     content:[
                                         {
                                             block: 'b-link',
-                                            mods:{type: 'left-nav'},
                                             url: '/',
                                             content: "К списку проектов"
                                         }
@@ -49,6 +48,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/about/',
                                 content: "О фонде"
                             }
@@ -63,6 +63,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/news/',
                                 content: "Новости"
                             }
@@ -72,6 +73,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/partnership/',
                                 content: "Сотрудничество"
                             }
@@ -81,6 +83,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/cashflow/',
                                 content: "Денежный поток"
                             }
@@ -128,7 +131,6 @@
                                             content: [
                                                 {
                                                     block: 'b-link',
-                                                    mods: {type: 'normal'},
                                                     url: '/',
                                                      content: 'Собрано:',
                                                 },
@@ -140,7 +142,6 @@
                                             content: [
                                                 {
                                                     block: 'b-link',
-                                                    mods: {type: 'normal'},
                                                     url: '/',
                                                      content: 'Потрачено:',
                                                 },
@@ -244,38 +245,36 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'text',
-                    mix: { block: 'footer', elem: 'text' },
+                    elem: 'text',
                     content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    block: 'b-link',
+                    elem: 'link',
                     url: 'mailto:info@gorod-mechty.org',
-                    mods: { type: 'footer-link'},
                     content: 'info@gorod-mechty.org'
                 },
                 {
                     block: 'socials',
                     content:[
                         {
-                            elem: 'social-item',
+                            elem: 'item',
                             content:[
                                 {
-                                    block: 'b-link',
+                                    elem: 'link',
+                                    elemMods: {type: 'vk'},
                                     url: '/',
-                                    mods: { type: 'vk'},
                                     content: 'ВКонтакте'
                                 }
                             ]
                         },
                         {
-                            elem: 'social-item',
+                            elem: 'item',
                             content:[
                                 {
-                                    block: 'b-link',
+                                    elem: 'link',
+                                    elemMods: {type: 'fb'},
                                     url: '/',
-                                    mods: { type: 'fb'},
-                                    content: 'FaceBook'
+                                    content: 'ВКонтакте'
                                 }
                             ]
                         }
@@ -288,7 +287,6 @@
                         {
                             block: 'b-link',
                             url: 'http://tadatuta.ru',
-                            mods: { type: 'normal'},
                             content: 'студия «Тадатута»'
                         }
                     ]

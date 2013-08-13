@@ -1,11 +1,12 @@
-.b-link_type_dashed{
+.b-link_type_dashed
+{
     display: inline-block;
     border-bottom: 1px dashed ;
     color: #d23e33;
     text-decoration: none;
     margin: 0 0 0 20px;
-    font-size: 15px;
 }
-.b-link_type_dashed:hover{
+.b-link_type_dashed:hover
+{
     border: none;
 }

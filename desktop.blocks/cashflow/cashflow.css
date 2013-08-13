@@ -1,13 +1,22 @@
-.cashflow{
+.cashflow
+{
     float: left;
     width: 235px;
     margin: 50px 0 0 90px;
 }
-.cashflow__item{
+.cashflow__item
+{
     font-size: 13px;
     color: #909090;
     margin: 25px 0 0 0;
 }
-.cashflow__more{
+.cashflow__more
+{
     margin: 55px 0 0 0;
+}
+.cahflow__date
+{
+	font-size: 13px;
+    color: #909090;
+    margin: 5px 0;
 }

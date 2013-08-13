@@ -1,4 +1,5 @@
-.news{
+.news
+{
     margin: 0;
     float: left;
     width: 540px;
@@ -6,11 +7,13 @@
     padding: 0;
 }
 
-.news__item{
+.news__item
+{
     font: 13px 'PT Sans', sans-serif;
     color: #909090;
     margin: 30px 0 0  0;
 }
-.news__more{
+.news__more
+{
     margin: 55px 0 0 0;
 }

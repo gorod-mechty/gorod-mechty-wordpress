@@ -1,18 +1,18 @@
-.b-page {
+.b-page
+{
     background: #f4f8fb;
     font: 15px 'PT Sans', arial, sans-serif;
     margin: 0;
     height: 100%;
 }
-.b-page__inner{
+.b-page__inner
+{
     width: 1000px;
     margin: auto;
     min-height: 100%;
     position: relative;
 }
-.b-page__main{
-   position: absolute;
-   top: 17%;
-   left: 50%;
-   margin: 0 0 0 140px;
+.b-page__inner_state_main
+{
+   background: url('../../../../i/tree.png') no-repeat top 250px left 590px;
 }

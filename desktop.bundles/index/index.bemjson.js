@@ -14,13 +14,8 @@
         {
             elem: 'inner',
             mix: { block: 'clearfix' },
+            elemMods: {state: 'main'},
             content: [
-                {
-                    block: 'b-icon',
-                    mix:{ block: 'b-page', elem: 'main'},
-                    url: '../../../../i/tree.png',
-                    alt: 'img'
-                },
                 {
                     block: 'logo'
                 },
@@ -32,6 +27,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/about/',
                                 content: "О фонде"
                             }
@@ -46,6 +42,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/news/',
                                 content: "Новости"
                             }
@@ -55,6 +52,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/partnership/',
                                 content: "Сотрудничество"
                             }
@@ -64,6 +62,7 @@
                             content:
                             {
                                 block: 'b-link',
+                                mods: {type: 'nav'},
                                 url: '/cashflow/',
                                 content: "Денежный поток"
                             }
@@ -90,7 +89,7 @@
                     content:[
                         {
                             block: 'b-link',
-                            mods: { type: 'main-content-link' },
+                            mods: { type: 'main' },
                             url: '/about/',
                             content: 'Наши проекты'
                         }
@@ -118,7 +117,6 @@
                                     block: 'b-link',
                                     url: '/',
                                     mods: {
-                                        style: 'italic',
                                         type: 'project'
                                     },
                                     content: [
@@ -150,7 +148,6 @@
                                     block: 'b-link',
                                     url: '/',
                                     mods: {
-                                        style: 'italic',
                                         type: 'project'
                                     },
                                     content: [
@@ -182,7 +179,6 @@
                                     block: 'b-link',
                                     url: '/',
                                     mods: {
-                                        style: 'italic',
                                         type: 'project'
                                     },
                                     content: [
@@ -221,7 +217,8 @@
                             ]
                         },
                         {
-                            block: 'heading_level_4',
+                            block: 'heading',
+                            mods:{ level: 4},
                             content: 'Перевести деньги'
                         },
                         {
@@ -231,30 +228,26 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { type: 'regular-link'},
                                     content: 'Приватбанке'
                                 }
                             ]
                         },
                         {
-                            block: 'text',
-                            mods: {style: 'formatted'},
+                            elem: 'details',
                             content: 'Счет  26001060922547'
                         },
                         {
-                            block: 'text',
-                            mods: {style: 'formatted'},
+                            elem: 'details',
                             content: 'ОКПО  38711011'
                         },
                         {
-                            block: 'text',
-                            mods: {style: 'formatted'},
+                            elem: 'details',
                             content: 'МФО   384436'
                         },
                         {
                             block: 'b-link',
                             url: '/',
-                            mods: { type: 'block-link'},
+                            mods: { type: 'block'},
                             content: 'Быть волонтёром'
                         },
                         {
@@ -263,7 +256,7 @@
                         {
                             block: 'b-link',
                             url: '/',
-                            mods: { type: 'block-link'},
+                            mods: { type: 'block'},
                             content: 'Стать партнёром'
                         }
                     ]
@@ -277,10 +270,10 @@
                             content: 'Новости'
                         },
                         {
-                            elem: 'news-item',
+                            elem: 'item',
                             content: [
                                 {
-                                    block: 'date',
+                                    elem: 'date',
                                     content: '12 октября'
                                 },
                                 {
@@ -292,10 +285,10 @@
                             ]
                         },
                         {
-                            elem: 'news-item',
+                            elem: 'item',
                             content: [
                                 {
-                                    block: 'date',
+                                    elem: 'date',
                                     content: '12 октября'
                                 },
                                 {
@@ -306,10 +299,10 @@
                                 }                           ]
                         },
                         {
-                            elem: 'news-item',
+                            elem: 'item',
                             content: [
                                 {
-                                    block: 'date',
+                                    elem: 'date',
                                     content: '12 октября'
                                 },
                                 {
@@ -328,7 +321,6 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { type: 'normal'},
                                     content: 'в архиве'
                                 }
                             ]
@@ -347,7 +339,7 @@
                             elem: 'item',
                             content: [
                                 {
-                                    block: 'heading-title',
+                                    block: 'title',
                                     content: '↓150 грн'
                                 },
                                 'от ',
@@ -357,7 +349,7 @@
 
                                 },
                                 {
-                                    block: 'date',
+                                    elem: 'date',
                                     content: 'в 15:35, 07 июня 2013'
                                 }
 
@@ -367,7 +359,7 @@
                             elem: 'item',
                             content: [
                                 {
-                                    block: 'heading-title',
+                                    block: 'title',
                                     content: '↑18200 грн'
                                 },
                                 {
@@ -376,7 +368,7 @@
 
                                 },
                                 {
-                                    block: 'date',
+                                    elem: 'date',
                                     content: 'в 15:35, 07 июня 2013'
                                 }
 
@@ -386,7 +378,7 @@
                             elem: 'item',
                             content: [
                                 {
-                                    block: 'heading-title',
+                                    block: 'title',
                                     content: '↓1100 грн'
                                 },
                                 'от',
@@ -396,7 +388,7 @@
 
                                 },
                                 {
-                                    block: 'date',
+                                    elem: 'date',
                                     content: 'в 15:35, 07 июня 2013'
                                 }
 
@@ -404,13 +396,12 @@
                         },
                         {
                             block: 'text',
-                            mix:{block: 'news', elem:'more'},
+                            mix: {block: 'news', elem:'more'},
                             content:[
                                 'Показать ',
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { type: 'normal'},
                                     content: 'весь список'
                                 }
                             ]
@@ -424,38 +415,36 @@
             mix: {block: 'clearfix'},
             content: [
                 {
-                    block: 'text',
-                    mix: { block: 'footer', elem: 'text' },
+                    elem: 'text',
                     content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    block: 'b-link',
+                    elem: 'link',
                     url: 'mailto:info@gorod-mechty.org',
-                    mods: { type: 'footer-link'},
                     content: 'info@gorod-mechty.org'
                 },
                 {
                     block: 'socials',
                     content:[
                         {
-                            elem: 'social-item',
+                            elem: 'item',
                             content:[
                                 {
-                                    block: 'b-link',
+                                    elem: 'link',
+                                    elemMods: {type: 'vk'},
                                     url: '/',
-                                    mods: { type: 'vk'},
                                     content: 'ВКонтакте'
                                 }
                             ]
                         },
                         {
-                            elem: 'social-item',
+                            elem: 'item',
                             content:[
                                 {
-                                    block: 'b-link',
+                                    elem: 'link',
+                                    elemMods: {type: 'fb'},
                                     url: '/',
-                                    mods: { type: 'fb'},
-                                    content: 'FaceBook'
+                                    content: 'ВКонтакте'
                                 }
                             ]
                         }
@@ -468,7 +457,6 @@
                         {
                             block: 'b-link',
                             url: 'http://tadatuta.ru',
-                            mods: { type: 'normal'},
                             content: 'студия «Тадатута»'
                         }
                     ]

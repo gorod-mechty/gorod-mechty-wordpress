@@ -1,0 +1,6 @@
+block socials{
+	elem link {
+        tag: 'a'
+        attrs: { href: this.ctx.url }
+    }
+}
