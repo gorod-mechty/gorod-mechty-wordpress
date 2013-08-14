@@ -15,4 +15,5 @@
 .b-page__inner_state_main
 {
    background: url('../../../../i/tree.png') no-repeat top 250px left 590px;
+   background: url('../../../../i/tree.png') no-repeat left 250px top 590px\0/;
 }
