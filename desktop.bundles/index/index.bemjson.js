@@ -14,7 +14,7 @@
         {
             elem: 'inner',
             mix: { block: 'clearfix' },
-            elemMods: {state: 'main'},
+            elemMods: { state: 'main' },
             content: [
                 {
                     block: 'logo'
@@ -27,24 +27,24 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/about/',
-                                content: "О фонде"
+                                content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
+                            elemMods: { state: 'current' },
+                            content: 'Проекты'
                         },
                         {
                             elem: 'item',
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/news/',
-                                content: "Новости"
+                                content: 'Новости'
                             }
                         },
                         {
@@ -52,9 +52,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/partnership/',
-                                content: "Сотрудничество"
+                                content: 'Сотрудничество'
                             }
                         },
                         {
@@ -62,9 +62,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: {type: 'nav' },
                                 url: '/cashflow/',
-                                content: "Денежный поток"
+                                content: 'Денежный поток'
                             }
                         }
                     ]
@@ -86,7 +86,7 @@
                     block: 'heading',
                     mods: { level: 2 },
                     mix: { block: 'main-heading' },
-                    content:[
+                    content: [
                         {
                             block: 'b-link',
                             mods: { type: 'main' },
@@ -97,7 +97,7 @@
                 },
                 {
                     block: 'projects',
-                    mix: {block: 'clearfix' },
+                    mix: { block: 'clearfix' },
                     content: [
                         {
                             elem: 'item',
@@ -223,8 +223,8 @@
                         },
                         {
                             block: 'text',
-                            content:[
-                                'БО "Фонд Місто Мрії" в ',
+                            content: [
+                                'БО «Фонд Місто Мрії» в ',
                                 {
                                     block: 'b-link',
                                     url: '/',
@@ -247,7 +247,7 @@
                         {
                             block: 'b-link',
                             url: '/',
-                            mods: { type: 'block'},
+                            mods: { type: 'block' },
                             content: 'Быть волонтёром'
                         },
                         {
@@ -256,14 +256,14 @@
                         {
                             block: 'b-link',
                             url: '/',
-                            mods: { type: 'block'},
+                            mods: { type: 'block' },
                             content: 'Стать партнёром'
                         }
                     ]
                 },
                 {
                     block: 'news-list',
-                    content:[
+                    content: [
                         {
                             block: 'heading',
                             mods: {level: 1},
@@ -279,7 +279,7 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { style: 'italic'},
+                                    mods: { style: 'italic' },
                                     content: 'В Гаспре коммунальный пляж урезали в четыре раза'
                                 }
                             ]
@@ -294,7 +294,7 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { style: 'italic'},
+                                    mods: { style: 'italic' },
                                     content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время '
                                 }                           ]
                         },
@@ -308,15 +308,15 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { style: 'italic'},
+                                    mods: { style: 'italic' },
                                     content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» '
                                 }
                             ]
                         },
                         {
                             block: 'text',
-                            mix:{block: 'news', elem:'more'},
-                            content:[
+                            mix:{block: 'news', elem:'more' },
+                            content: [
                                 'Больше — ',
                                 {
                                     block: 'b-link',
@@ -396,8 +396,8 @@
                         },
                         {
                             block: 'text',
-                            mix: {block: 'news', elem:'more'},
-                            content:[
+                            mix: { block: 'news', elem: 'more' },
+                            content: [
                                 'Показать ',
                                 {
                                     block: 'b-link',
@@ -412,7 +412,7 @@
         },
         {
             block: 'footer',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     elem: 'text',
@@ -425,13 +425,13 @@
                 },
                 {
                     block: 'socials',
-                    content:[
+                    content: [
                         {
                             elem: 'item',
-                            content:[
+                            content: [
                                 {
                                     elem: 'link',
-                                    elemMods: {type: 'vk'},
+                                    elemMods: { type: 'vk' },
                                     url: '/',
                                     content: 'ВКонтакте'
                                 }
@@ -439,10 +439,10 @@
                         },
                         {
                             elem: 'item',
-                            content:[
+                            content: [
                                 {
                                     elem: 'link',
-                                    elemMods: {type: 'fb'},
+                                    elemMods: { type: 'fb' },
                                     url: '/',
                                     content: 'ВКонтакте'
                                 }
@@ -452,7 +452,7 @@
                 },
                 {
                     block: 'copyright',
-                    content:[
+                    content: [
                         'Создание сайта — ',
                         {
                             block: 'b-link',
