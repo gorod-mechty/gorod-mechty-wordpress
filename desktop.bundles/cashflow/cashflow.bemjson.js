@@ -3,8 +3,8 @@
     title: 'Симферополь — Город мечты',
     favicon: '/favicon.ico',
     head: [
-        { elem: 'css', url: '_cashflow.css' },
-        { elem: 'css', url: '_cashflow.ie.css', ie: 'gte IE 7' },
+        { elem: 'css', url: '../merged/_merged.css' },
+        { elem: 'css', url: '../merged/_merged.ie.css', ie: 'gte IE 7' },
         { elem: 'css', url: 'http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic-ext,latin-ext,cyrillic' },
         { elem: 'meta', attrs: { name: 'description', content: 'Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня' }}
         // , { elem: 'meta', attrs: { name: 'keywords', content: '' }}
@@ -238,7 +238,7 @@
                                 {
                                     elem: "item",
                                     mix:{block: 'cashflow-table', elem:'date'},
-                                    content: [  
+                                    content: [
                                         '05 мая',
                                         {
                                             elem: 'br'
@@ -410,7 +410,7 @@
                                 {
                                     elem: "item",
                                     mix:{block: 'cashflow-table', elem:'date'},
-                                    content: [  
+                                    content: [
                                         '05 мая',
                                         {
                                             elem: 'br'

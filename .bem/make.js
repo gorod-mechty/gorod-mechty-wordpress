@@ -36,3 +36,9 @@ MAKE.decl('BundleNode', {
     }
 
 });
+
+MAKE.decl('BundlesLevelNode', {
+    buildMergedBundle: function() {
+        return true;
+    }
+});
