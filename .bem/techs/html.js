@@ -28,7 +28,7 @@ exports.techMixin = {
 
                 tidy(html, tidyOpts, function(err, html) {
                     if (err) {
-                        deferred.reject(new Error(error));
+                        deferred.reject(new Error(err));
                     } else {
                         deferred.resolve(html);
                     }
