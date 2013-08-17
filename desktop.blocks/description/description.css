@@ -1,8 +1,24 @@
 .description
 {
-    width: 525px;
+    width: 535px;
     float: left;
     margin: 10px 0 0 50px;
     font-size: 18px;
     color: #504e4e;
+}
+
+@media (max-width: 960px)
+{
+    .description
+    {
+        margin: 10px 0 0 17px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .description
+    {
+        width: 580px;
+        margin: 10px 0 0 180px;
+    }
 }

@@ -7,13 +7,33 @@
 }
 .b-page__inner
 {
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 768px;
     margin: auto;
     min-height: 100%;
     position: relative;
+    padding: 0 20px;
 }
 .b-page__inner_state_main
 {
-   background: url('../../../../i/tree.png') no-repeat top 250px left 590px;
-   background: url('../../../../i/tree.png') no-repeat left 250px top 590px\0/;
+   background: url('../../../../i/tree.png') no-repeat top 250px left 595px;
+}
+
+@media (max-width: 960px)
+{
+   .b-page__inner_state_main
+    {
+       background: url('../../../../i/tree.png') no-repeat top 385px left 500px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .b-page__inner
+    {
+        max-width: 1320px;
+    }
+    .b-page__inner_state_main
+    {
+       background: url('../../../../i/tree.png') no-repeat top 250px left 910px;
+    }
 }

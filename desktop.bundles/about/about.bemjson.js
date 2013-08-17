@@ -13,20 +13,20 @@
     content:[
         {
             elem: 'inner',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'sidebar',
-                    content:[
+                    content: [
                         {
                             block: 'b-link',
-                            mix: {block: 'logo'},
+                            mix: { block: 'logo' },
                             url: '/',
-                            content:""
+                            content: ''
                         },
                         {
                             block: 'submenu',
-                            content:[
+                            content: [
                                 {
                                     elem: 'item',
                                     content: 'Что такое фонд'
@@ -37,16 +37,16 @@
                                     {
                                         block: 'b-link',
                                         url: '/',
-                                        content: "Наши цели"
+                                        content: 'Наши цели'
                                     }
                                 },
                                 {
                                     elem: 'item',
-                                    content:[
+                                    content: [
                                         {
                                             block: 'b-link',
                                             url: '/',
-                                            content: "Стать участником"
+                                            content: 'Стать участником'
                                         }
                                     ]
                                 }
@@ -62,24 +62,24 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/about/',
-                                content: "О фонде"
+                                content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
+                            elemMods: { state: 'current' },
+                            content: 'Проекты'
                         },
                         {
                             elem: 'item',
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/news/',
-                                content: "Новости"
+                                content: 'Новости'
                             }
                         },
                         {
@@ -87,9 +87,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/partnership/',
-                                content: "Сотрудничество"
+                                content: 'Сотрудничество'
                             }
                         },
                         {
@@ -97,9 +97,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/cashflow/',
-                                content: "Денежный поток"
+                                content: 'Денежный поток'
                             }
                         }
                     ]
@@ -109,7 +109,7 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: { level: 1},
+                            mods: { level: 1 },
                             content: 'О фонде'
                         },
                         {
@@ -118,7 +118,7 @@
                         },
                         {
                             elem: 'img-r',
-                            content:[
+                            content: [
                                 {
                                     block: 'b-icon',
                                     url: '../../../i/project-img-one.png',
@@ -128,7 +128,7 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { style: 'italic'},
+                                    mods: { style: 'italic' },
                                     content: 'описание к изображению'
                                 }
                             ]
@@ -144,14 +144,14 @@
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { type: 'big'},
+                                    mods: { type: 'big' },
                                     content: '«Город мечты»'
                                 },
                                 ' намерен осуществлять ',
                                 {
                                     block: 'b-link',
                                     url: '/',
-                                    mods: { type: 'big'},
+                                    mods: { type: 'big' },
                                     content: 'проекты'
                                 },
                                 ' в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня жителей.'
@@ -160,7 +160,7 @@
                         },
                         {
                             block: 'b-icon',
-                            mix: {block: 'content', elem: 'img-l'},
+                            mix: { block: 'content', elem: 'img-l' },
                             url: '../../../i/news-single-img.png',
                             alt: 'img'
                         },
@@ -177,7 +177,7 @@
                                 },
                                 {
                                     block: 'content-list',
-                                    content:[
+                                    content: [
                                         {
                                             elem: 'item',
                                             content: 'государственные'
@@ -197,54 +197,59 @@
                                     tag:'br'
                                 },
                                 '—  просто неравнодушные люди'
-
                             ]
                         },
                         {
                             block: 'heading',
-                            mix: {block: 'clearfix'},
+                            mix: { block: 'clearfix' },
                             mods: { level: 2},
                             content: 'Подзаголовок'
                         },
                         {
-                            block: 'about-table-title',
-                            content: [
-                                {
-                                    elem: 'item',
-                                    content: 'Раздел таблицы 1'
-                                },
-                                {
-                                    elem: 'item',
-                                    content: 'Раздел таблицы 2'
-                                },{
-                                    elem: 'item',
-                                    content: 'Раздел таблицы 3'
-                                },{
-                                    elem: 'item',
-                                    content: 'Раздел таблицы 4'
-                                },
-                            ]
-                        },
-                        {
-                            block: 'about-table',
+                            block: 'table',
                             content: [
                                 {
                                     elem: 'row',
                                     content: [
                                         {
-                                            elem: 'item',
+                                            elem: 'head',
+                                            content: 'Раздел таблицы 1'
+                                        },
+                                        {
+                                            elem: 'head',
+                                            content: 'Раздел таблицы 2'
+                                        },
+                                        {
+                                            elem: 'head',
+                                            content: 'Раздел таблицы 3'
+                                        },
+                                        {
+                                            elem: 'head',
+                                            content: 'Раздел таблицы 4'
+                                        },
+                                    ]
+                                },
+                                {
+                                    elem: 'row',
+                                    content: [
+                                        {
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 1'
                                         },
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 2'
                                         },
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 3'
                                         },
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 4'
                                         },
                                     ]
@@ -253,19 +258,23 @@
                                     elem: 'row',
                                     content: [
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 5'
                                         },
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 6'
                                         },
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 7'
                                         },
                                         {
-                                            elem: 'item',
+                                            elem: 'cell',
+                                            elemMods: { style: 'italic'},
                                             content: 'Ячейка 8'
                                         },
                                     ]
@@ -273,57 +282,57 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            block: 'footer',
-            mix: {block: 'clearfix'},
-            content: [
-                {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
-                    content:[
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
                         {
-                            elem: 'item',
-                            content:[
+                            elem: 'text',
+                            content: '© 2013  БО Фонд Город Мечты'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
+                            content: [
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'vk'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'item',
-                            content:[
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'fb'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'copyright',
-                    content:[
-                        'Создание сайта — ',
-                        {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
                         }
                     ]
                 }

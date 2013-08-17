@@ -29,3 +29,27 @@
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
 }
+
+@media (max-width: 960px)
+{
+    .nav
+    {
+        margin: 20px 0 0 5px;
+    }
+    .nav__item
+    {
+        margin: 20px 0 0 -5px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .nav
+    {
+        margin: 20px 0 0 130px;
+    }
+    .nav__item
+    {
+        margin: 20px 0 0 35px;
+    }
+}

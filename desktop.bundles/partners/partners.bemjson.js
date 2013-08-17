@@ -12,27 +12,27 @@
     content:[
         {
             elem: 'inner',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'sidebar',
                     content:[
                         {
                             block: 'b-link',
-                            mix: {block: 'logo'},
+                            mix: { block: 'logo' },
                             url: '/',
-                            content:""
+                            content:''
                         },
                         {
                             block: 'submenu',
                             content:[
                                 {
                                     elem: 'item',
-                                    content:[
+                                    content: [
                                         {
                                             block: 'b-link',
                                             url: '/',
-                                            content: "Реквизиты"
+                                            content: 'Реквизиты'
                                         }
                                     ]
                                 },
@@ -46,7 +46,7 @@
                                     {
                                         block: 'b-link',
                                         url: '/',
-                                        content: "Волонтёры"
+                                        content: 'Волонтёры'
                                     }
                                 },
                                 {
@@ -55,7 +55,7 @@
                                     {
                                         block: 'b-link',
                                         url: '/',
-                                        content: "Расходные материалы"
+                                        content: 'Расходные материалы'
                                     }
                                 }
                             ]
@@ -70,24 +70,24 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/about/',
-                                content: "О фонде"
+                                content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
+                            elemMods: { state: 'current' },
+                            content: 'Проекты'
                         },
                         {
                             elem: 'item',
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/news/',
-                                content: "Новости"
+                                content: 'Новости'
                             }
                         },
                         {
@@ -95,9 +95,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/partnership/',
-                                content: "Сотрудничество"
+                                content: 'Сотрудничество'
                             }
                         },
                         {
@@ -107,7 +107,7 @@
                                 block: 'b-link',
                                 mods: {type: 'nav'},
                                 url: '/cashflow/',
-                                content: "Денежный поток"
+                                content: 'Денежный поток'
                             }
                         }
                     ]
@@ -117,7 +117,7 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: { level: 1},
+                            mods: { level: 1 },
                             content: 'Сотрудничество'
                         },
                         {
@@ -126,7 +126,7 @@
                         },
                         {
                             block: 'partners',
-                            content:[
+                            content: [
                                 {
                                     elem: 'item',
                                     content: [
@@ -161,7 +161,7 @@
                                     elem: 'item',
                                     content: [
                                         {
-                                            elem:'text',
+                                            elem: 'text',
                                             content: [
                                                 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия.',
                                                 {
@@ -173,7 +173,7 @@
                                                 {
                                                     block: 'b-link',
                                                     url: '/',
-                                                    mods: { type: 'normal'},
+                                                    mods: { type: 'normal' },
                                                     content: [
                                                         'gorod-mechty.org',
                                                         {
@@ -185,14 +185,13 @@
                                                 }
                                             ]
                                         }
-
                                     ]
                                 },
                                 {
                                     elem: 'item',
                                     content: [
                                         {
-                                            elem:'text',
+                                            elem: 'text',
                                             content: [
                                                 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Предприятия, учреждения, общественные организации и просто неравнодушные люди – вместе мы сможем сделать наш любимый город настоящим Городом Мечты!',
                                                 {
@@ -221,7 +220,7 @@
                                     elem: 'item',
                                     content: [
                                         {
-                                            elem:'text',
+                                            elem: 'text',
                                             content: [
                                                 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Предприятия, учреждения, общественные организации и просто неравнодушные люди – вместе мы сможем сделать наш любимый город настоящим Городом Мечты!',
                                                 {
@@ -249,57 +248,57 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            block: 'footer',
-            mix: {block: 'clearfix'},
-            content: [
-                {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
-                    content:[
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
                         {
-                            elem: 'item',
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
                             content:[
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'vk'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'item',
-                            content:[
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'fb'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'copyright',
-                    content:[
-                        'Создание сайта — ',
-                        {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
                         }
                     ]
                 }

@@ -2,7 +2,7 @@
 {
     float: left;
     width: 235px;
-    margin: 50px 0 0 90px;
+    margin: 50px 0 60px 45px;
 }
 .cashflow__item
 {
@@ -19,4 +19,24 @@
 	font-size: 13px;
     color: #909090;
     margin: 5px 0;
+}
+
+@media (max-width: 960px)
+{
+    .cashflow
+    {
+        float: left;
+        width: 155px;
+        margin: 110px 0 60px 20px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .cashflow
+    {
+        float: left;
+        width: 235px;
+        margin: 35px 0 60px 130px;
+    }
 }

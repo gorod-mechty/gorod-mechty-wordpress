@@ -12,27 +12,27 @@
     content:[
         {
             elem: 'inner',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'sidebar',
                     content: [
                         {
                             block: 'b-link',
-                            mix: {block: 'logo'},
+                            mix: { block: 'logo' },
                             url: '/',
-                            content:""
+                            content:''
                         },
                         {
                             block: 'submenu',
-                            content:[
+                            content: [
                                 {
                                     elem: 'item',
-                                    content:[
+                                    content: [
                                         {
                                             block: 'b-link',
                                             url: '/',
-                                            content: "К списку проектов"
+                                            content: 'К списку проектов'
                                         }
                                     ]
                                 }
@@ -48,24 +48,24 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/about/',
-                                content: "О фонде"
+                                content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
+                            elemMods: { state: 'current' },
+                            content: 'Проекты'
                         },
                         {
                             elem: 'item',
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/news/',
-                                content: "Новости"
+                                content: 'Новости'
                             }
                         },
                         {
@@ -73,9 +73,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/partnership/',
-                                content: "Сотрудничество"
+                                content: 'Сотрудничество'
                             }
                         },
                         {
@@ -83,9 +83,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
+                                mods: { type: 'nav' },
                                 url: '/cashflow/',
-                                content: "Денежный поток"
+                                content: 'Денежный поток'
                             }
                         }
                     ]
@@ -95,21 +95,21 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: { level: 1},
+                            mods: { level: 1 },
                             content: 'Монтаж площадок под контейнеры'
                         },
                         {
                             block: 'project-single',
-                            content:[
+                            content: [
                                 {
                                     block: 'b-icon',
-                                    mix: {block: 'project-single', elem: 'img-l'},
+                                    mix: { block: 'project-single', elem: 'img-l' },
                                     url: '../../../i/single-project-left.png',
                                     alt: 'img'
                                 },
                                 {
                                     block: 'b-icon',
-                                    mix: {block: 'project-single', elem: 'img-r'},
+                                    mix: { block: 'project-single', elem: 'img-r' },
                                     url: '../../../i/single-project-right.png',
                                     alt: 'img'
                                 },
@@ -150,10 +150,10 @@
                                         },
                                         {
                                             elem: 'docs',
-                                            content:[
+                                            content: [
                                                 {
                                                     block: 'b-link',
-                                                    mods: {style: 'italic'},
+                                                    mods: { style: 'italic' },
                                                     url: '/',
                                                      content: 'Скачать',
                                                 },
@@ -189,31 +189,31 @@
                                             content: [
                                                 {
                                                     block: 'b-icon',
-                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    mix: { block: 'project-slider', elem: 'item' },
                                                     url: '../../../i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
-                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    mix: { block: 'project-slider', elem: 'item' },
                                                     url: '../../../i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
-                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    mix: { block: 'project-slider', elem: 'item' },
                                                     url: '../../../i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
-                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    mix: { block: 'project-slider', elem: 'item' },
                                                     url: '../../../i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
-                                                    mix: {block: 'project-slider', elem: 'item'},
+                                                    mix: { block: 'project-slider', elem: 'item' },
                                                     url: '../../../i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
@@ -237,57 +237,57 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            block: 'footer',
-            mix: {block: 'clearfix'},
-            content: [
-                {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
-                    content:[
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
                         {
-                            elem: 'item',
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
                             content:[
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'vk'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'item',
-                            content:[
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'fb'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'copyright',
-                    content:[
-                        'Создание сайта — ',
-                        {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
                         }
                     ]
                 }
