@@ -1,0 +1,11 @@
+block banking {
+
+    elem title-green
+    {
+        tag: 'span'
+    }
+    elem details
+    {
+    	tag: 'pre'
+    }
+}

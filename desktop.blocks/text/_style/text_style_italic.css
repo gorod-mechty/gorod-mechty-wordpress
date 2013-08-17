@@ -1,0 +1,8 @@
+.text_style_italic
+{
+    font-style: italic;
+    max-width: 225px;
+    color: #828282;
+    text-align: center;
+    margin: auto;
+}

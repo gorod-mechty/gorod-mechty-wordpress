@@ -1,0 +1,20 @@
+.partners__item
+{
+    position: relative;
+    margin: 45px 0 0 0;
+}
+.partners__text
+{
+    margin:0 0 0 200px;
+}
+.partners__item .b-icon
+{
+    float: left;
+    margin: 0 40px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.partners a{
+	font-size: 15px;
+}

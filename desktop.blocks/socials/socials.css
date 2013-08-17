@@ -1,0 +1,41 @@
+.socials
+{
+    float: left;
+}
+.socials__item
+{
+    position: relative;
+    float: left;
+    margin: 0 0 0 30px;
+}
+.socials__link
+{
+	display: block;
+    height: 27px;
+    padding: 2px 0 0 35px;
+    color: #d23e33;
+}
+.socials__link_type_vk
+{
+    background: url("../../../../../i/socials.png") no-repeat top -36px left 0;
+}
+.socials__link_type_fb
+{
+    background: url("../../../../../i/socials.png") no-repeat;
+}
+
+
+@media (max-width: 960px)
+{
+    .socials
+    {
+        margin: 0 0 0 30px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .socials
+    {
+        margin: 0 0 0 140px;
+    }
+}

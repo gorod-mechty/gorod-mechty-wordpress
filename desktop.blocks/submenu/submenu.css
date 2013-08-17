@@ -1,0 +1,22 @@
+.submenu 
+{
+    list-style: none;
+    clear: both;
+    padding:65px 0 0 0;
+    width: 140px;
+    font-weight: bold;
+}
+.submenu__item 
+{
+    margin: 0 auto 20px ;
+}
+
+.submenu__item_state_current 
+{
+    color: #fff;
+    background: #007722;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+}

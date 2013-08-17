@@ -1,0 +1,7 @@
+block news {
+    tag: 'ul'
+    
+    elem item {
+        tag: 'li'
+    }
+}

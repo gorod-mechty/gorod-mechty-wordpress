@@ -1,0 +1,46 @@
+.cashflow-table
+{
+    width: 960px;
+    margin: 0 auto 30px;
+    border-top: 1px solid #909090;
+}
+.cashflow-table tr{
+    padding: 20px 0;
+    display: inline-block;
+    width: 960px;
+}
+.cashflow-table tr:nth-child(2n+1){
+    background: #ecf0f3;
+}
+.cashflow-table__item{
+    font-size: 15px;
+    display: inline-block;
+    padding: 20px 0\0/;
+}
+.cashflow-table__sum
+{
+    font-weight: bold;
+    width: 145px;
+    padding: 0 0 0 20px;
+}
+.cashflow-table__date
+{
+    width: 110px;
+    color: #504e4e;
+}
+.cashflow-table__from
+{
+    width: 180px;
+    font-weight: bold;
+    color: #629d42;
+}
+.cashflow-table__project
+{
+    width: 265px;
+}
+.cashflow-table__comment
+{
+    width: 230px;
+    color: #504e4e;
+    font-style: italic;
+}

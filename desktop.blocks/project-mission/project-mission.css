@@ -1,0 +1,15 @@
+.project-mission
+{
+    width: 330px;
+    float: right;
+    font: italic 15px 'PT Sans', sans-serif;
+    color: #504e4e;
+    margin: 0 0 20px 0;
+}
+.project-mission__title{
+    margin: 0 0 10px 0;
+    color: #000000;
+}
+.project-mission__title span{
+    color: #629d42;
+}

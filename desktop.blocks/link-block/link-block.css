@@ -1,0 +1,15 @@
+.link-block
+{
+    margin: 10px 0 20px 20px;
+    float: left;
+    padding: 10px 0 0 0;
+    font-weight: bold;
+}
+
+@media (min-width: 1200px)
+{
+    .link-block
+    {
+        margin: 10px 20px 20px;
+    }
+}

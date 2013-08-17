@@ -1,0 +1,35 @@
+.banking
+{
+    border: 3px solid #d23e33;
+    border-radius: 30px;
+    width: 325px;
+    height: 325px;
+    float: left;
+    margin: 55px 0 0 0;
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    background: #ffffff;
+    padding: 30px;
+}
+.banking__title
+{
+    font: 24px 'PT Serif', serif;
+}
+.banking__title-green
+{
+    color: #339e37;
+}
+.banking__details
+{
+    font-size: 15px;
+    display: block;
+    margin: 5px 0 0 0;
+}
+@media (max-width: 960px)
+{
+    .banking
+    {
+        margin: 130px 0 0 0;
+    }
+}
