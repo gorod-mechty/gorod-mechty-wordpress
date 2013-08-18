@@ -9,7 +9,7 @@
     font: bold 15px 'PT Sans', sans-serif;
     position: relative;
     float: left;
-    margin: 0 60px 0 0;
+    margin: 0 50px 0 0;
 }
 .projects__item_type_min-title
 {
@@ -31,3 +31,18 @@
     -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
 }
+/*@media (max-width: 960px)
+{
+    .projects__item
+    {
+        margin: 0 40px 0 0;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .projects__item
+    {
+        margin: 0 150px 0 0;
+    }
+}*/

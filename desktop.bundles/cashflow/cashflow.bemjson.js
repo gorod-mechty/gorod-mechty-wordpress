@@ -12,13 +12,13 @@
     content:[
         {
             elem: 'inner',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
+                    mix: { block: 'logo' },
+                    url: '../index/index.html',
+                    content:''
 
                 },
                 {
@@ -26,37 +26,23 @@
                     content: [
                         {
                             elem: 'item',
-                            content:
+                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/about/',
-                                content: "О фонде"
+                                mods: { type: 'nav' },
+                                url: '../about/about.html',
+                                content: 'О фонде'
                             }
+                            
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
-                        },
-                        {
-                            elem: 'item',
-                            content:
+                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/news/',
-                                content: "Новости"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/partnership/',
-                                content: "Сотрудничество"
+                                mods: { type: 'nav' },
+                                url: '../projects/projects.html',
+                                content: 'Проекты'
                             }
                         },
                         {
@@ -64,10 +50,25 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/cashflow/',
-                                content: "Денежный поток"
+                                mods: { type: 'nav' },
+                                url: '../news/news.html',
+                                content: 'Новости'
                             }
+                        },
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../partners/partners.html',
+                                content: 'Сотрудничество'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            elemMods: { state: 'current' },
+                            content: 'Денежный поток'
                         }
                     ]
                 },
@@ -76,11 +77,11 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: { level: 1},
+                            mods: { level: 1 },
                             content: 'Денежный поток'
                         },
                         {
-                            tag: "p",
+                            tag: 'p',
                             content: '…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему? '
                         }
                     ]
@@ -90,68 +91,64 @@
                     content: [
                         {
                             block: 'b-link',
-                            mods: { type: 'cur'},
+                            mods: { type: 'cur' },
                             url: '#',
-                            content: "Все"
+                            content: 'Все'
                         },
                         {
                             block: 'b-link',
-                            mods: { type: 'dashed'},
+                            mods: { type: 'dashed' },
                             url: '#',
-                            content: "Поступления"
+                            content: 'Поступления'
                         },
                         {
                             block: 'b-link',
-                            mods: { type: 'dashed'},
+                            mods: { type: 'dashed' },
                             url: '#',
-                            content: "Траты"
+                            content: 'Траты'
                         }
                     ]
                 },
                 {
-                    block: 'cf-table-title',
+                    block: 'table',
                     content: [
-                        {
-                            elem: 'item',
-                            mix:{block: 'cf-table-title', elem:'sum'},
-                            content: 'Сумма'
-                        },
-                        {
-                            elem: 'item',
-                            mix:{block: 'cf-table-title', elem:'date'},
-                            content: 'Дата/Время'
-                        },
-                        {
-                            elem: 'item',
-                            mix:{block: 'cf-table-title', elem:'from'},
-                            content: 'От кого/аноним'
-                        },
-                        {
-                            elem: 'item',
-                            mix:{block: 'cf-table-title', elem:'project'},
-                            content: 'Проект'
-                        },
-                        {
-                            elem: 'item',
-                            mix:{block: 'cf-table-title', elem:'comments'},
-                            content: 'Комментарии'
-                        },
-                    ]
-                },
-                {
-                    block: 'cashflow-table',
-                    content:[
                         {
                             elem: 'row',
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'head',
+                                    content: 'Сумма'
+                                },
+                                {
+                                    elem: 'head',
+                                    content: 'Дата/Время'
+                                },
+                                {
+                                    elem: 'head',
+                                    content: 'От кого/аноним'
+                                },
+                                {
+                                    elem: 'head',
+                                    content: 'Проект'
+                                },
+                                {
+                                    elem: 'head',
+                                    content: 'Комментарии'
+                                },
+                            ]
+                        },
+                        {
+                            elem: 'row',
+                            elemMods: { type: 'cashflow'},
+                            content: [
+                                {
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↑1500 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '08 октября',
                                         {
@@ -161,40 +158,40 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Константин Константинопольский'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
+                                    elem: 'cell',
                                     content:[
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Установка новых скамеек в центральном парке'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Закупка материалов'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↓28000 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '12 ноября',
                                         {
@@ -204,40 +201,40 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Валерий У.'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
-                                    content:[
+                                    elem: 'cell',
+                                    content: [
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Ремонт уличного освещения'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Перевод денег'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↑5 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '05 мая',
                                         {
@@ -247,40 +244,40 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Валерий Валерьевич'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
-                                    content:[
+                                    elem: 'cell',
+                                    content: [
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Установка современных и удобных площадок под мусорные контейнеры'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Закупка площадок, монтирование площадок, краш-тестирование площадок'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↑1500 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '08 октября',
                                         {
@@ -290,40 +287,40 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Константин Константинопольский'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
-                                    content:[
+                                    elem: 'cell',
+                                    content: [
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Установка новых скамеек в центральном парке'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Закупка материалов'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↑1500 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '08 октября',
                                         {
@@ -333,40 +330,40 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Константин Константинопольский'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
+                                    elem: 'cell',
                                     content:[
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Установка новых скамеек в центральном парке'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Закупка материалов'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↓120 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '12 ноября',
                                         {
@@ -376,40 +373,40 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Валерий У.'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
+                                    elem: 'cell',
                                     content:[
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Ремонт уличного освещения'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Перевод денег'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↑10 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '05 мая',
                                         {
@@ -419,40 +416,41 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Валерий Валерьевич'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'project' },
                                     content:[
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Установка современных и удобных площадок под мусорные контейнеры'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Закупка площадок, монтирование площадок, краш-тестирование площадок'
                                 }
                             ]
                         },
                         {
                             elem: 'row',
+                            elemMods: { type: 'cashflow'},
                             content: [
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'sum'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'sum' },
                                     content: '↑1500 грн'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'date'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'date' },
                                     content: [
                                         '08 октября',
                                         {
@@ -462,97 +460,93 @@
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'from'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'from' },
                                     content: 'Константин Константинопольский'
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'project'},
-                                    content:[
+                                    elem: 'cell',
+                                    elemMods: { type: 'project' },
+                                    content: [
                                         {
                                             block: 'b-link',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             url: '#',
                                             content: 'Установка новых скамеек в центральном парке'
                                         }
                                     ]
                                 },
                                 {
-                                    elem: "item",
-                                    mix:{block: 'cashflow-table', elem:'comment'},
+                                    elem: 'cell',
+                                    elemMods: { type: 'comment' },
                                     content: 'Закупка материалов'
                                 }
                             ]
                         }
-
                     ]
-                }
-
-            ]
-
-
-        },
-        {
-            block: 'button',
-            mix: {block: 'clearfix'},
-            content:[
-                {
-                    block: 'b-link',
-                    mods: { type: 'button'},
-                    url: '#',
-                    content: 'Загрузить ещё'
-                }
-            ]
-        },
-        {
-            block: 'footer',
-            mix: {block: 'clearfix'},
-            content: [
-                {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
+                    block: 'button',
+                    mix: { block: 'clearfix' },
                     content:[
                         {
-                            elem: 'item',
-                            content:[
-                                {
-                                    elem: 'link',
-                                    elemMods: {type: 'vk'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
-                                }
-                            ]
-                        },
-                        {
-                            elem: 'item',
-                            content:[
-                                {
-                                    elem: 'link',
-                                    elemMods: {type: 'fb'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
-                                }
-                            ]
+                            block: 'b-link',
+                            mods: { type: 'button' },
+                            url: '#',
+                            content: 'Загрузить ещё'
                         }
                     ]
                 },
                 {
-                    block: 'copyright',
-                    content:[
-                        'Создание сайта — ',
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
                         {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
+                            content: [
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
+                                {
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
+                                }
+                            ]
                         }
                     ]
                 }

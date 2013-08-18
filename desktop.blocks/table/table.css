@@ -1,0 +1,62 @@
+.table
+{
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    border-collapse: collapse;
+}
+.table__row_type_cashflow
+{
+    padding: 20px 0;
+}
+.table__row_type_cashflow:nth-child(2n)
+{
+    background: #ecf0f3;
+}
+.table__cell
+{
+    color: #504e4e;
+    padding: 20px 20px;
+    vertical-align: top;
+}
+.table__cell_style_italic
+{
+    font-style: italic;
+}
+.table__cell_type_sum
+{
+    font-weight: bold;
+    width: 100px;
+}
+.table__cell_type_date
+{
+    color: #504e4e;
+    width: 110px;
+}
+.table__cell_type_from
+{
+    font-weight: bold;
+    color: #629d42;
+}
+.table__cell_type_comment
+{
+    color: #504e4e;
+    font-style: italic;
+}
+.table__head{
+    color: #339e37;
+    border-bottom: 1px solid #909090;
+    font-weight: normal;
+    padding: 0 20px;
+}
+
+@media (max-width: 960px)
+    {
+       .table__head{
+        padding: 0 10px;
+    }
+    .table__cell
+    {
+        padding: 20px 10px;
+    }
+}
