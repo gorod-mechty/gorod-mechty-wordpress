@@ -2,7 +2,7 @@
 {
     width: 730px;
     float: left;
-    margin: 10px 0 0 50px;
+    margin: 10px 0 60px 50px;
     font-size: 18px;
     color: #504e4e;
 }
@@ -42,3 +42,21 @@
 .content__list{
     margin: 10px 0 0 280px;
 }
+
+/*@media (max-width: 960px)
+{
+    .content
+    {
+        width: 580px;
+        margin: 10px 0 60px 15px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .content
+    {
+        width: 740px;
+        margin: 10px 0 60px 180px;
+    }
+}*/

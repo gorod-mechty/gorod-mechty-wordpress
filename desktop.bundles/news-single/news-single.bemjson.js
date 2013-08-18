@@ -9,23 +9,23 @@
         { elem: 'meta', attrs: { name: 'description', content: 'Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня' }}
         // , { elem: 'meta', attrs: { name: 'keywords', content: '' }}
     ],
-    content:[
+    content: [
         {
             elem: 'inner',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'sidebar',
-                    content:[
+                    content: [
                         {
                             block: 'b-link',
-                            mix: {block: 'logo'},
-                            url: '/',
-                            content:""
+                            mix: { block: 'logo' },
+                            url: '../index/index.html',
+                            content:''
                         },
                         {
                             block: 'submenu',
-                            content:[
+                            content: [
                                 {
                                     elem: 'item',
                                     content:
@@ -33,7 +33,7 @@
                                         {
                                             block: 'b-link',
                                             url: '/',
-                                            content: "К списку новостей"
+                                            content: 'К списку новостей'
                                         }
                                     ]
                                 }
@@ -49,24 +49,19 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/about/',
-                                content: "О фонде"
+                                mods: { type: 'nav' },
+                                url: '../about/about.html',
+                                content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
-                        },
-                        {
-                            elem: 'item',
-                            content:
+                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/news/',
-                                content: "Новости"
+                                mods: { type: 'nav' },
+                                url: '../projects/projects.html',
+                                content: 'Проекты'
                             }
                         },
                         {
@@ -74,9 +69,9 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/partnership/',
-                                content: "Сотрудничество"
+                                mods: { type: 'nav' },
+                                url: '../news/news.html',
+                                content: 'Новости'
                             }
                         },
                         {
@@ -84,9 +79,19 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/cashflow/',
-                                content: "Денежный поток"
+                                mods: { type: 'nav' },
+                                url: '../partners/partners.html',
+                                content: 'Сотрудничество'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../cashflow/cashflow.html',
+                                content: 'Денежный поток'
                             }
                         }
                     ]
@@ -96,7 +101,7 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: { level: 1},
+                            mods: { level: 1 },
                             content: 'Севастополь предлагают лишить всех привилегий и сделать админцентром'
                         },
                         {
@@ -107,14 +112,14 @@
                                     content: '15 октября'
                                     },
                                 {
-                                    tag: "p",
+                                    tag: 'p',
                                     content: 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Мы хотим, чтобы Город Пользы перестал быть просто воротами на южный берег Крыма, а вокзал – его единственной достопримечательностью. '
                                 },
                                 {
 
                                     block: 'thumb',
-                                    mods: { side: 'left'},
-                                    content:[
+                                    mods: { side: 'left' },
+                                    content: [
                                         {
                                             block: 'b-icon',
                                             url: '../../../i/news-single-img.png',
@@ -129,14 +134,14 @@
                                         {
                                             block: 'b-link',
                                             url: '/',
-                                            mods: { type: 'big'},
+                                            mods: { type: 'big' },
                                             content: '«Город мечты»'
                                         },
                                         ' намерен осуществлять ',
                                         {
                                             block: 'b-link',
                                             url: '/',
-                                            mods: { type: 'big'},
+                                            mods: { type: 'big' },
                                             content: 'проекты'
                                         },
                                         ' в области озеленения и благоустройства Симферополя.'
@@ -145,57 +150,57 @@
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            block: 'footer',
-            mix: {block: 'clearfix'},
-            content: [
-                {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
-                    content:[
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
                         {
-                            elem: 'item',
-                            content:[
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
+                            content: [
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'vk'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'item',
-                            content:[
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'fb'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'copyright',
-                    content:[
-                        'Создание сайта — ',
-                        {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
                         }
                     ]
                 }

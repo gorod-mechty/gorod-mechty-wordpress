@@ -12,13 +12,13 @@
     content:[
         {
             elem: 'inner',
-            mix: {block: 'clearfix'},
+            mix: { block: 'clearfix' },
             content: [
                 {
                     block: 'b-link',
-                    mix: {block: 'logo'},
-                    url: '/',
-                    content:""
+                    mix: { block: 'logo' },
+                    url: '../index/index.html',
+                    content:''
 
                 },
                 {
@@ -29,34 +29,24 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/about/',
-                                content: "О фонде"
+                                mods: { type: 'nav' },
+                                url: '../about/about.html',
+                                content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
-                            content: "Проекты"
+                            elemMods: { state: 'current' },
+                            content: 'Проекты'
                         },
                         {
                             elem: 'item',
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/news/',
-                                content: "Новости"
-                            }
-                        },
-                        {
-                            elem: 'item',
-                            content:
-                            {
-                                block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/partnership/',
-                                content: "Сотрудничество"
+                                mods: { type: 'nav' },
+                                url: '../news/news.html',
+                                content: 'Новости'
                             }
                         },
                         {
@@ -64,9 +54,19 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav'},
-                                url: '/cashflow/',
-                                content: "Денежный поток"
+                                mods: { type: 'nav' },
+                                url: '../partners/partners.html',
+                                content: 'Сотрудничество'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../cashflow/cashflow.html',
+                                content: 'Денежный поток'
                             }
                         }
                     ]
@@ -76,11 +76,11 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: { level: 1},
+                            mods: { level: 1 },
                             content: 'Проекты'
                         },
                         {
-                            tag: "p",
+                            tag: 'p',
                             content: 'Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки, дожидаясь перемен, мы приглашаем к сотрудничеству.'
                         }
                     ]
@@ -90,7 +90,7 @@
                     content:[
                         {
                             elem: 'title',
-                            mix: { block: 'clearfix'},
+                            mix: { block: 'clearfix' },
                             content: 'Сделано'
                         },
                         {
@@ -101,13 +101,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-one.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-two.png',
                                             alt: 'img'
                                         },
@@ -118,7 +118,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
                                         }
                                     ]
@@ -128,13 +128,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-one.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-two.png',
                                             alt: 'img'
                                         },
@@ -145,7 +145,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 скамейки'
                                         }
                                     ]
@@ -155,13 +155,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-one.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-two.png',
                                             alt: 'img'
                                         },
@@ -172,7 +172,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 современные и удобные скамейки парке'
                                         }
                                     ]
@@ -184,10 +184,10 @@
                 },
                 {
                     block: 'projects-col',
-                    content:[
+                    content: [
                         {
                             elem: 'title',
-                            mix: { block: 'clearfix'},
+                            mix: { block: 'clearfix' },
                             content: 'Делаем'
                         },
                         {
@@ -198,13 +198,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-three.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-four.png',
                                             alt: 'img'
                                         },
@@ -215,7 +215,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 скамейки'
                                         }
                                     ]
@@ -225,13 +225,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-three.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-four.png',
                                             alt: 'img'
                                         },
@@ -242,7 +242,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
                                         }
                                     ]
@@ -252,13 +252,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-three.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-four.png',
                                             alt: 'img'
                                         },
@@ -269,14 +269,13 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили скамейки'
                                         }
                                     ]
                                 }
                             ]
                         }
-
                     ]
                 },
                 {
@@ -284,7 +283,7 @@
                     content:[
                         {
                             elem: 'title',
-                            mix: { block: 'clearfix'},
+                            mix: { block: 'clearfix' },
                             content: 'Планы'
                         },
                         {
@@ -295,13 +294,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-five.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-six.png',
                                             alt: 'img'
                                         },
@@ -312,7 +311,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 современные и удобные скамейки'
                                         }
                                     ]
@@ -322,13 +321,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-five.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-six.png',
                                             alt: 'img'
                                         },
@@ -339,7 +338,7 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
                                         }
                                     ]
@@ -349,13 +348,13 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-l'},
+                                            mix: { block: 'projects-col', elem: 'img-l' },
                                             url: '../../../i/projects-img-five.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
-                                            mix: {block: 'projects-col', elem: 'img-r'},
+                                            mix: { block: 'projects-col', elem: 'img-r' },
                                             url: '../../../i/projects-img-six.png',
                                             alt: 'img'
                                         },
@@ -366,81 +365,77 @@
                                         },
                                         {
                                             block: 'text',
-                                            mods: { style: 'italic'},
+                                            mods: { style: 'italic' },
                                             content: 'Мы установили 24 современные и удобные скамейки'
                                         }
                                     ]
                                 }
                             ]
                         }
-
                     ]
                 },
                 {
                     block: 'button',
-                    mix: {block: 'clearfix'},
+                    mix: { block: 'clearfix' },
                     content:[
                         {
                             block: 'b-link',
-                            mods: { type: 'button'},
+                            mods: { type: 'button' },
                             url: '#',
                             content: 'Загрузить ещё'
                         }
                     ]
-                }
-
-            ]
-
-
-        },
-        {
-            block: 'footer',
-            mix: {block: 'clearfix'},
-            content: [
-                {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
                 },
                 {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
-                    content:[
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
                         {
-                            elem: 'item',
-                            content:[
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
+                            content: [
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'vk'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    elem: 'item',
+                                    content:[
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'item',
-                            content:[
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
                                 {
-                                    elem: 'link',
-                                    elemMods: {type: 'fb'},
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'copyright',
-                    content:[
-                        'Создание сайта — ',
-                        {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
                         }
                     ]
                 }

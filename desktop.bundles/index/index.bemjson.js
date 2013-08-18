@@ -28,14 +28,19 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '/about/',
+                                url: '../about/about.html',
                                 content: 'О фонде'
                             }
                         },
                         {
                             elem: 'item',
-                            elemMods: { state: 'current' },
-                            content: 'Проекты'
+                             content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../projects/projects.html',
+                                content: 'Проекты'
+                            }
                         },
                         {
                             elem: 'item',
@@ -43,7 +48,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '/news/',
+                                url: '../news/news.html',
                                 content: 'Новости'
                             }
                         },
@@ -53,7 +58,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '/partnership/',
+                                url: '../partners/partners.html',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -62,8 +67,8 @@
                             content:
                             {
                                 block: 'b-link',
-                                mods: {type: 'nav' },
-                                url: '/cashflow/',
+                                mods: { type: 'nav' },
+                                url: '../cashflow/cashflow.html',
                                 content: 'Денежный поток'
                             }
                         }
@@ -90,7 +95,7 @@
                         {
                             block: 'b-link',
                             mods: { type: 'main' },
-                            url: '/about/',
+                            url: '../projects/projects.html',
                             content: 'Наши проекты'
                         }
                     ]
@@ -218,7 +223,7 @@
                         },
                         {
                             block: 'heading',
-                            mods:{ level: 4},
+                            mods:{ level: 4 },
                             content: 'Перевести деньги'
                         },
                         {
@@ -266,7 +271,7 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: {level: 1},
+                            mods: { level: 1 },
                             content: 'Новости'
                         },
                         {
@@ -309,13 +314,13 @@
                                     block: 'b-link',
                                     url: '/',
                                     mods: { style: 'italic' },
-                                    content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» '
+                                    content: 'Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» области'
                                 }
                             ]
                         },
                         {
                             block: 'text',
-                            mix:{block: 'news', elem:'more' },
+                            mix: { block: 'news', elem:'more' },
                             content: [
                                 'Больше — ',
                                 {
@@ -332,7 +337,7 @@
                     content: [
                         {
                             block: 'heading',
-                            mods: {level: 1},
+                            mods: { level: 1 },
                             content: 'Денежный поток'
                         },
                         {
@@ -362,9 +367,10 @@
                                     block: 'title',
                                     content: '↑18200 грн'
                                 },
+                                'на ',
                                 {
                                     block: 'heading-text',
-                                    content: 'на закупку материалов для установки скамеек в центральном парке'
+                                    content: 'закупку материалов для установки скамеек в центральном парке'
 
                                 },
                                 {
@@ -407,61 +413,61 @@
                             ]
                         }
                     ]
-				}
-			]
-        },
-        {
-            block: 'footer',
-            mix: { block: 'clearfix' },
-            content: [
+				},
                 {
-                    elem: 'text',
-                    content: '© 2013  БО «Фонд Город Мечты»'
-                },
-                {
-                    elem: 'link',
-                    url: 'mailto:info@gorod-mechty.org',
-                    content: 'info@gorod-mechty.org'
-                },
-                {
-                    block: 'socials',
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
                     content: [
                         {
-                            elem: 'item',
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
                             content: [
                                 {
-                                    elem: 'link',
-                                    elemMods: { type: 'vk' },
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            elem: 'item',
+                            block: 'copyright',
                             content: [
+                                'Создание сайта — ',
                                 {
-                                    elem: 'link',
-                                    elemMods: { type: 'fb' },
-                                    url: '/',
-                                    content: 'ВКонтакте'
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    block: 'copyright',
-                    content: [
-                        'Создание сайта — ',
-                        {
-                            block: 'b-link',
-                            url: 'http://tadatuta.ru',
-                            content: 'студия «Тадатута»'
-                        }
-                    ]
                 }
-            ]
+			]
         }
     ]
 })
