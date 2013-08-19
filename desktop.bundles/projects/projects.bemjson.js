@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Симферополь — Город мечты',
+    title: 'Проекты — Город мечты',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '../merged/_merged.css' },
@@ -17,7 +17,7 @@
                 {
                     block: 'b-link',
                     mix: { block: 'logo' },
-                    url: '../index/index.html',
+                    url: '/',
                     content:''
 
                 },
@@ -30,7 +30,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../about/about.html',
+                                url: '/about/',
                                 content: 'О фонде'
                             }
                         },
@@ -46,7 +46,7 @@
                                 block: 'b-link',
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 content: 'Новости'
                             }
                         },
@@ -57,7 +57,7 @@
                                 block: 'b-link',
                                 mix: { block: 'displayng' },
                                 mods: { type: 'nav' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -68,7 +68,7 @@
                                 block: 'b-link',
                                 mix: { block: 'displayng' },
                                 mods: { type: 'nav' },
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 content: 'Денежный поток'
                             }
                         }
@@ -105,18 +105,18 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/park-preview.png',
+                                            url: '/i/park-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/park-two-preview.png',
+                                            url: '/i/park-two-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-link',
-                                            url: '../project-single/project-single.html',
+                                            url: '/project-single/',
                                             content: 'Высадка декоративных кустарников'
                                         },
                                         {
@@ -148,18 +148,18 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/trees-preview.png',
+                                            url: '/i/trees-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/trees-two-preview.png',
+                                            url: '/i/trees-two-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-link',
-                                            url: '../project-single-two/project-single-two.html',
+                                            url: '/project-single-two/',
                                             content: 'Проект  «100 деревьев»'
                                         },
                                         {
@@ -190,18 +190,18 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/fountain-preview.png',
+                                            url: '/i/fountain-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/fountain-two-preview.png',
+                                            url: '/i/fountain-two-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-link',
-                                            url: '../project-single-three/project-single-three.html',
+                                            url: '/project-single-three/',
                                             content: 'Реконструкция фонтана по ул. Гоголя '
                                         },
                                         {

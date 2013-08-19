@@ -1,7 +1,7 @@
 ({
     block: 'b-page',
     mix: { mods: { page: 'main' } },
-    title: 'Симферополь — Город мечты',
+    title: 'Симферополь — Фонд Город мечты',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '../merged/_merged.css' },
@@ -28,7 +28,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../about/about.html',
+                                url: '/about/',
                                 content: 'О фонде'
                             }
                         },
@@ -38,7 +38,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../projects/projects.html',
+                                url: '/projects/',
                                 content: 'Проекты'
                             }
                         },
@@ -49,7 +49,7 @@
                                 block: 'b-link',
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 content: 'Новости'
                             }
                         },
@@ -60,7 +60,7 @@
                                 block: 'b-link',
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -71,7 +71,7 @@
                                 block: 'b-link',
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 content: 'Денежный поток'
                             }
                         }
@@ -98,7 +98,7 @@
                         {
                             block: 'b-link',
                             mods: { type: 'main' },
-                            url: '../projects/projects.html',
+                            url: '/projects/',
                             content: 'Наши проекты'
                         }
                     ]
@@ -124,14 +124,14 @@
                                 },
                                 {
                                     block: 'b-link',
-                                    url: '../project-single/project-single.html',
+                                    url: '/project-single/',
                                     mods: {
                                         type: 'project'
                                     },
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/park-mini.png',
+                                            url: '/i/park-mini.png',
                                             alt: 'img'
                                         },
                                         'Высадка декоративных кустарников'
@@ -156,14 +156,14 @@
                                 },
                                 {
                                     block: 'b-link',
-                                    url: '../project-single-two/project-single-two.html',
+                                    url: '/project-single-two/',
                                     mods: {
                                         type: 'project'
                                     },
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/trees-mini.png',
+                                            url: '/i/trees-mini.png',
                                             alt: 'img'
                                         },
                                         'Сейчас мы работаем над проектом  «100 деревьев»'
@@ -188,14 +188,14 @@
                                 },
                                 {
                                     block: 'b-link',
-                                    url: '../project-single-three/project-single-three.html',
+                                    url: '/project-single-three/',
                                     mods: {
                                         type: 'project'
                                     },
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/fountain-mini.png',
+                                            url: '/i/fountain-mini.png',
                                             alt: 'img'
                                         },
                                         'Реконструкция городского фонтана по ул. Гоголя'

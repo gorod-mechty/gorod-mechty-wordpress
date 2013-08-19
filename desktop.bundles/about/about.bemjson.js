@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Симферополь — Город мечты',
+    title: 'О фонде — Город мечты',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '../merged/_merged.css' },
@@ -21,8 +21,7 @@
                         {
                             block: 'b-link',
                             mix: { block: 'logo' },
-                            url: '../index/index.html',
-                            content: ''
+                            url: '/'
                         },
                         {
                             block: 'submenu',
@@ -60,7 +59,7 @@
                     content: [
                         {
                             elem: 'item',
-                            elemMods: { state: 'current'},
+                            elemMods: { state: 'current' },
                             content: 'О фонде'
                         },
                         {
@@ -69,7 +68,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../projects/projects.html',
+                                url: '/projects/',
                                 content: 'Проекты'
                             }
                         },
@@ -80,7 +79,7 @@
                                 block: 'b-link',
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 content: 'Новости'
                             }
                         },
@@ -91,7 +90,7 @@
                                 block: 'b-link',
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -103,7 +102,7 @@
                                 mods: { type: 'nav' },
                                 mix: { block: 'displayng' },
 
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 content: 'Денежный поток'
                             }
                         }
@@ -126,7 +125,7 @@
                             content: [
                                 {
                                     block: 'b-icon',
-                                    url: '../../../i/project-img-one.png',
+                                    url: '/i/project-img-one.png',
                                     alt: 'img'
                                 },
                                 'Здесь будет находиться краткое, но очень ёмкое',
@@ -145,17 +144,17 @@
                         {
                             tag: 'p',
                             content: [
-                                'Мы хотим жить в цветущем городе, по которому не стыдно пройтись самому и который не стыдно показать друзьям. ',
+                                'Мы хотим жить в цветущем городе, по которому не стыдно пройтись самому и который не стыдно показать друзьям. «',
                                 {
                                     block: 'b-link',
-                                    url: 'index/index.html',
+                                    url: '/',
                                     mods: { type: 'big' },
-                                    content: '«Город мечты»'
+                                    content: 'Город мечты'
                                 },
-                                ' намерен осуществлять ',
+                                '» намерен осуществлять ',
                                 {
                                     block: 'b-link',
-                                    url: 'projects/projects.html',
+                                    url: '/projects/',
                                     mods: { type: 'big' },
                                     content: 'проекты'
                                 },
@@ -166,7 +165,7 @@
                         {
                             block: 'b-icon',
                             mix: { block: 'content', elem: 'img-l' },
-                            url: '../../../i/news-single-img.png',
+                            url: '/i/news-single-img.png',
                             alt: 'img'
                         },
                         {
@@ -178,35 +177,37 @@
                             content: [
                                 {
                                     elem: 'item',
-                                    elemMods: { type: 'dash'},
-                                    content: ' предприятия и учреждения'
-                                },
-                                {
-                                    block: 'content-list',
+                                    elemMods: { type: 'dash' },
                                     content: [
+                                        'предприятия и учреждения',
                                         {
-                                            elem: 'item',
-                                            content: ' государственные'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            content: ' частные'
-                                        },
-                                        {
-                                            elem: 'item',
-                                            content: ' другие'
+                                            block: 'content-list',
+                                            content: [
+                                                {
+                                                    elem: 'item',
+                                                    content: 'государственные'
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: 'частные'
+                                                },
+                                                {
+                                                    elem: 'item',
+                                                    content: 'другие'
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
                                 {
                                     elem: 'item',
-                                    elemMods: { type: 'dash'},
-                                    content: ' общественные организации'
+                                    elemMods: { type: 'dash' },
+                                    content: 'общественные организации'
                                 },
                                 {
                                     elem: 'item',
-                                    elemMods: { type: 'dash'},
-                                    content: ' просто неравнодушные люди'
+                                    elemMods: { type: 'dash' },
+                                    content: 'просто неравнодушные люди'
                                 }
                             ]
                         },
@@ -214,7 +215,7 @@
                             block: 'heading',
                             mix: { block: 'clearfix' },
                             mix: { block: 'displayng' },
-                            mods: { level: 2},
+                            mods: { level: 2 },
                             content: 'Подзаголовок'
                         },
                         {
@@ -247,22 +248,22 @@
                                     content: [
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 1'
                                         },
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 2'
                                         },
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 3'
                                         },
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 4'
                                         },
                                     ]
@@ -272,22 +273,22 @@
                                     content: [
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 5'
                                         },
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 6'
                                         },
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 7'
                                         },
                                         {
                                             elem: 'cell',
-                                            elemMods: { style: 'italic'},
+                                            elemMods: { style: 'italic' },
                                             content: 'Ячейка 8'
                                         },
                                     ]

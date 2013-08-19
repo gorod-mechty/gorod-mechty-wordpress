@@ -20,7 +20,7 @@
                         {
                             block: 'b-link',
                             mix: { block: 'logo' },
-                            url: '../index/index.html',
+                            url: '/',
                             content:''
                         },
                         {
@@ -31,7 +31,7 @@
                                     content: [
                                         {
                                             block: 'b-link',
-                                            url: '../projects/projects.html',
+                                            url: '/projects/',
                                             content: 'К списку проектов'
                                         }
                                     ]
@@ -49,7 +49,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../about/about.html',
+                                url: '/about/',
                                 content: 'О фонде'
                             }
                         },
@@ -59,7 +59,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../projects/projects.html',
+                                url: '/projects/',
                                 content: 'Проекты'
                             }
                         },
@@ -69,7 +69,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 mix: { block: 'displayng' },
                                 content: 'Новости'
                             }
@@ -80,7 +80,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 mix: { block: 'displayng' },
                                 content: 'Сотрудничество'
                             }
@@ -91,7 +91,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 mix: { block: 'displayng' },
                                 content: 'Денежный поток'
                             }
@@ -112,13 +112,13 @@
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-l' },
-                                    url: '../../../i/trees-left.png',
+                                    url: '/i/trees-left.png',
                                     alt: 'img'
                                 },
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-r' },
-                                    url: '../../../i/trees-right.png',
+                                    url: '/i/trees-right.png',
                                     alt: 'img'
                                 },
                                 {
@@ -200,31 +200,31 @@
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
@@ -240,7 +240,7 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'project-single', elem: 'img-big' },
-                                            url: '../../../i/trees-big.png',
+                                            url: '/i/trees-big.png',
                                             alt: 'img'
                                         }
                                     ]
