@@ -112,13 +112,13 @@
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-l' },
-                                    url: '../../../i/single-project-three-left-temp.png',
+                                    url: '../../../i/fountain-left.png',
                                     alt: 'img'
                                 },
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-r' },
-                                    url: '../../../i/single-project-three-right-temp.png',
+                                    url: '../../../i/fountain-right.png',
                                     alt: 'img'
                                 },
                                 {
@@ -240,7 +240,7 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'project-single', elem: 'img-big' },
-                                            url: '../../../i/single-project-three-big-temp.png',
+                                            url: '../../../i/fountain-big.png',
                                             alt: 'img'
                                         }
                                     ]

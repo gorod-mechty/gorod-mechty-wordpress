@@ -105,13 +105,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/image-3-preview.png',
+                                            url: '../../../i/park-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/image-5-preview.png',
+                                            url: '../../../i/park-two-preview.png',
                                             alt: 'img'
                                         },
                                         {
@@ -148,19 +148,19 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/IMAG0263-preview.png',
+                                            url: '../../../i/trees-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/IMAG0264-preview.png',
+                                            url: '../../../i/trees-two-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-link',
                                             url: '../project-single-two/project-single-two.html',
-                                            content: 'Проект  "100 деревьев"'
+                                            content: 'Проект  «100 деревьев»'
                                         },
                                         {
                                             block: 'text',
@@ -190,13 +190,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/image-6-preview.png',
+                                            url: '../../../i/fountain-preview.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/image-7-preview.png',
+                                            url: '../../../i/fountain-two-preview.png',
                                             alt: 'img'
                                         },
                                         {

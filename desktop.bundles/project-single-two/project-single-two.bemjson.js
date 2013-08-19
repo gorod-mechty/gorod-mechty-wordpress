@@ -104,7 +104,7 @@
                         {
                             block: 'heading',
                             mods: { level: 1 },
-                            content: 'Проект  "100 деревьев"'
+                            content: 'Проект  «100 деревьев»'
                         },
                         {
                             block: 'project-single',
@@ -112,13 +112,13 @@
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-l' },
-                                    url: '../../../i/single-project-two-left-temp.png',
+                                    url: '../../../i/trees-left.png',
                                     alt: 'img'
                                 },
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-r' },
-                                    url: '../../../i/single-project-two-right-temp.png',
+                                    url: '../../../i/trees-right.png',
                                     alt: 'img'
                                 },
                                 {
@@ -240,7 +240,7 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'project-single', elem: 'img-big' },
-                                            url: '../../../i/single-project-two-big-temp.png',
+                                            url: '../../../i/trees-big.png',
                                             alt: 'img'
                                         }
                                     ]

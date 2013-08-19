@@ -2,7 +2,8 @@
 {
     /*width: 330px;*/
     float: right;
-    font: italic 15px 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-style: italic;
     color: #504e4e;
     margin: 0 0 20px 0;
 }

@@ -131,7 +131,7 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/image-3-mini.png',
+                                            url: '../../../i/park-mini.png',
                                             alt: 'img'
                                         },
                                         'Высадка декоративных кустарников'
@@ -163,10 +163,10 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/IMAG0263-mini.png',
+                                            url: '../../../i/trees-mini.png',
                                             alt: 'img'
                                         },
-                                        'Сейчас мы работаем над проектом  "100 деревьев"'
+                                        'Сейчас мы работаем над проектом  «100 деревьев»'
                                     ]
                                 }
                             ]
@@ -195,7 +195,7 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/image-7-mini.png',
+                                            url: '../../../i/fountain-mini.png',
                                             alt: 'img'
                                         },
                                         'Реконструкция городского фонтана по ул. Гоголя'

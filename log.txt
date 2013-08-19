@@ -1,0 +1,932 @@
+23:17:12.428 - [32minfo[39m: bem 0.6.15
+23:17:12.430 - [34mdebug[39m: http_parser 1.0
+23:17:12.431 - [34mdebug[39m: node 0.10.15
+23:17:12.431 - [34mdebug[39m: v8 3.14.5.9
+23:17:12.431 - [34mdebug[39m: ares 1.9.0-DEV
+23:17:12.431 - [34mdebug[39m: uv 0.10.13
+23:17:12.431 - [34mdebug[39m: zlib 1.2.3
+23:17:12.431 - [34mdebug[39m: modules 11
+23:17:12.431 - [34mdebug[39m: openssl 1.0.1e
+23:17:12.467 - [35msilly[39m: File '/Users/ivan/gorod-mechty-www/.bem/make.js' exists
+23:17:12.467 - [35msilly[39m: File '/Users/ivan/gorod-mechty-www/.bem/make.js' read, evaling
+23:17:12.496 - [35msilly[39m: File '/Users/ivan/gorod-mechty-www/.bem/make.js' evaled
+23:17:12.498 - [35msilly[39m: Going to run createCommonNodes()
+23:17:12.500 - [35msilly[39m: Going to run createBlockLibrariesNodes()
+23:17:12.522 - [35msilly[39m: Going to run createBlocksLevelsNodes()
+23:17:12.538 - [35msilly[39m: Going to run createBundlesLevelsNodes()
+23:17:12.551 - [35msilly[39m: Going to run createCustomNodes()
+23:17:12.552 - [32minfo[39m: Graph:
+== root
+ all
+   build
+     libs
+       libs/bem-bl
+     common.blocks*
+       libs
+         libs/bem-bl
+     desktop.blocks*
+       libs
+         libs/bem-bl
+     desktop.bundles*
+       libs
+         libs/bem-bl
+       common.blocks*
+         libs
+           libs/bem-bl
+       desktop.blocks*
+         libs
+           libs/bem-bl
+
+23:17:12.560 - [32minfo[39m: [i] Going to build 'all' [1]
+23:17:12.589 - [36mverbose[39m: HEAD is at 85d26f3b2a60ba20b29fd2d8f43111ad57b7d04a wanted is 0.3
+23:17:12.589 - [36mverbose[39m: 85d26f3b2a60ba20b29fd2d8f43111ad57b7d04a resolves to refs/heads/0.3
+23:17:12.589 - [36mverbose[39m: [?] Node 'libs/bem-bl' is valid [1]
+23:17:12.590 - [32minfo[39m: [t] isValid() time for "libs/bem-bl" [1]: [31m27ms[m
+23:17:12.590 - [32minfo[39m: [*] make 'libs/bem-bl' [1]
+23:17:14.851 - [32minfo[39m: Installing dependencies for libs/bem-bl library (npm prune && npm update)
+23:17:51.876 - [36mverbose[39m: cd /Users/ivan/gorod-mechty-www/libs/bem-bl && git show-ref --head
+[=] Log of make 'libs/bem-bl' [1]
+cd /Users/ivan/gorod-mechty-www/libs/bem-bl && git fetch origin  &&  git checkout 0.3 
+Your branch is behind 'origin/0.3' by 18 commits, and can be fast-forwarded.
+
+From git://github.com/bem/bem-bl
+   85d26f3..88973a2  0.3        -> origin/0.3
+ * [new branch]      apostol.ISL-25.JSCS -> origin/apostol.ISL-25.JSCS
+ * [new branch]      apostol.ISLPAGE-63.errors-iOS5 -> origin/apostol.ISLPAGE-63.errors-iOS5
+ + e3884db...4b41c09 m.nc       -> origin/m.nc  (forced update)
+   37b4d01..714a976  touch-fastclick -> origin/touch-fastclick
+ * [new tag]         0.3.4      -> 0.3.4
+ * [new tag]         0.3.5      -> 0.3.5
+ * [new tag]         0.3.6      -> 0.3.6
+From git://github.com/bem/bem-bl
+ * [new tag]         0.3.7      -> 0.3.7
+ * [new tag]         0.3.8      -> 0.3.8
+Already on '0.3'
+
+npm cache clean
+npm prune
+npm update
+23:17:51.876 - [32minfo[39m: [t] Build time for "libs/bem-bl" [1]: [31m39313ms[m
+23:17:51.878 - [36mverbose[39m: [?] Node 'libs' is expired [1]
+23:17:51.878 - [32minfo[39m: [t] isValid() time for "libs" [1]: [31m0ms[m
+23:17:51.878 - [32minfo[39m: [*] make 'libs' [1]
+23:17:51.879 - [36mverbose[39m: [=] Log of make 'libs' [1]
+23:17:51.879 - [32minfo[39m: [t] Build time for "libs" [1]: [31m1ms[m
+23:17:51.880 - [36mverbose[39m: [?] Node 'common.blocks*' is expired [1]
+23:17:51.881 - [36mverbose[39m: [*] make 'common.blocks*' [1]
+23:17:51.881 - [36mverbose[39m: [?] Node 'desktop.blocks*' is expired [1]
+23:17:51.881 - [36mverbose[39m: [*] make 'desktop.blocks*' [1]
+
+[31;1mWARNING!
+Tech modules API V1 is not recommended to use, because it is slow.
+Please use tech modules API V2, it makes your build process faster!
+[0m
+23:17:51.925 - [34mdebug[39m: scan /Users/ivan/gorod-mechty-www/common.blocks: [31m37ms[m
+23:17:51.950 - [34mdebug[39m: scan /Users/ivan/gorod-mechty-www/desktop.blocks: [31m22ms[m
+23:17:51.993 - [36mverbose[39m: [=] Log of make 'common.blocks*' [1]
+23:17:51.993 - [36mverbose[39m: [=] Log of make 'desktop.blocks*' [1]
+23:17:52.003 - [36mverbose[39m: [?] Node 'common.blocks' is expired [1]
+23:17:52.004 - [36mverbose[39m: [*] make 'common.blocks' [1]
+23:17:52.004 - [36mverbose[39m: [?] Node 'desktop.blocks/b-icon*' is expired [1]
+23:17:52.004 - [36mverbose[39m: [*] make 'desktop.blocks/b-icon*' [1]
+23:17:52.004 - [36mverbose[39m: [?] Node 'desktop.blocks/b-link*' is expired [1]
+23:17:52.004 - [36mverbose[39m: [*] make 'desktop.blocks/b-link*' [1]
+23:17:52.004 - [36mverbose[39m: [?] Node 'desktop.blocks/b-page*' is expired [1]
+23:17:52.004 - [36mverbose[39m: [*] make 'desktop.blocks/b-page*' [1]
+23:17:52.005 - [36mverbose[39m: [?] Node 'desktop.blocks/banking*' is expired [1]
+23:17:52.005 - [36mverbose[39m: [*] make 'desktop.blocks/banking*' [1]
+23:17:52.005 - [36mverbose[39m: [?] Node 'desktop.blocks/button*' is expired [1]
+23:17:52.005 - [36mverbose[39m: [*] make 'desktop.blocks/button*' [1]
+23:17:52.005 - [36mverbose[39m: [?] Node 'desktop.blocks/cashflow*' is expired [1]
+23:17:52.005 - [36mverbose[39m: [*] make 'desktop.blocks/cashflow*' [1]
+23:17:52.005 - [36mverbose[39m: [?] Node 'desktop.blocks/cashflow-table*' is expired [1]
+23:17:52.005 - [36mverbose[39m: [*] make 'desktop.blocks/cashflow-table*' [1]
+23:17:52.006 - [36mverbose[39m: [?] Node 'desktop.blocks/clearfix*' is expired [1]
+23:17:52.006 - [36mverbose[39m: [*] make 'desktop.blocks/clearfix*' [1]
+23:17:52.006 - [36mverbose[39m: [?] Node 'desktop.blocks/content*' is expired [1]
+23:17:52.006 - [36mverbose[39m: [*] make 'desktop.blocks/content*' [1]
+23:17:52.007 - [36mverbose[39m: [=] Log of make 'desktop.blocks/b-icon*' [1]
+23:17:52.007 - [36mverbose[39m: [=] Log of make 'desktop.blocks/b-link*' [1]
+23:17:52.007 - [36mverbose[39m: [=] Log of make 'desktop.blocks/b-page*' [1]
+23:17:52.007 - [36mverbose[39m: [=] Log of make 'desktop.blocks/banking*' [1]
+23:17:52.008 - [36mverbose[39m: [=] Log of make 'desktop.blocks/button*' [1]
+23:17:52.008 - [36mverbose[39m: [=] Log of make 'desktop.blocks/cashflow*' [1]
+23:17:52.008 - [36mverbose[39m: [=] Log of make 'desktop.blocks/cashflow-table*' [1]
+23:17:52.008 - [36mverbose[39m: [=] Log of make 'desktop.blocks/clearfix*' [1]
+23:17:52.008 - [36mverbose[39m: [=] Log of make 'desktop.blocks/content*' [1]
+23:17:52.009 - [36mverbose[39m: [=] Log of make 'common.blocks' [1]
+23:17:52.014 - [36mverbose[39m: [?] Node 'desktop.blocks/content-list*' is expired [1]
+23:17:52.014 - [36mverbose[39m: [*] make 'desktop.blocks/content-list*' [1]
+23:17:52.014 - [36mverbose[39m: [?] Node 'desktop.blocks/copyright*' is expired [1]
+23:17:52.014 - [36mverbose[39m: [*] make 'desktop.blocks/copyright*' [1]
+23:17:52.014 - [36mverbose[39m: [?] Node 'desktop.blocks/description*' is expired [1]
+23:17:52.015 - [36mverbose[39m: [*] make 'desktop.blocks/description*' [1]
+23:17:52.015 - [36mverbose[39m: [?] Node 'desktop.blocks/displayng*' is expired [1]
+23:17:52.015 - [36mverbose[39m: [*] make 'desktop.blocks/displayng*' [1]
+23:17:52.016 - [36mverbose[39m: [?] Node 'desktop.blocks/footer*' is expired [1]
+23:17:52.016 - [36mverbose[39m: [*] make 'desktop.blocks/footer*' [1]
+23:17:52.016 - [36mverbose[39m: [?] Node 'desktop.blocks/formated-text*' is expired [1]
+23:17:52.016 - [36mverbose[39m: [*] make 'desktop.blocks/formated-text*' [1]
+23:17:52.016 - [36mverbose[39m: [?] Node 'desktop.blocks/header*' is expired [1]
+23:17:52.016 - [36mverbose[39m: [*] make 'desktop.blocks/header*' [1]
+23:17:52.016 - [36mverbose[39m: [?] Node 'desktop.blocks/heading*' is expired [1]
+23:17:52.016 - [36mverbose[39m: [*] make 'desktop.blocks/heading*' [1]
+23:17:52.017 - [36mverbose[39m: [?] Node 'desktop.blocks/heading-text*' is expired [1]
+23:17:52.017 - [36mverbose[39m: [*] make 'desktop.blocks/heading-text*' [1]
+23:17:52.018 - [36mverbose[39m: [=] Log of make 'desktop.blocks/content-list*' [1]
+23:17:52.018 - [36mverbose[39m: [=] Log of make 'desktop.blocks/copyright*' [1]
+23:17:52.018 - [36mverbose[39m: [=] Log of make 'desktop.blocks/description*' [1]
+23:17:52.018 - [36mverbose[39m: [=] Log of make 'desktop.blocks/displayng*' [1]
+23:17:52.019 - [36mverbose[39m: [=] Log of make 'desktop.blocks/footer*' [1]
+23:17:52.019 - [36mverbose[39m: [=] Log of make 'desktop.blocks/formated-text*' [1]
+23:17:52.019 - [36mverbose[39m: [=] Log of make 'desktop.blocks/header*' [1]
+23:17:52.019 - [36mverbose[39m: [=] Log of make 'desktop.blocks/heading*' [1]
+23:17:52.019 - [36mverbose[39m: [=] Log of make 'desktop.blocks/heading-text*' [1]
+23:17:52.020 - [36mverbose[39m: [?] Node 'desktop.blocks/link-block*' is expired [1]
+23:17:52.020 - [36mverbose[39m: [*] make 'desktop.blocks/link-block*' [1]
+23:17:52.021 - [36mverbose[39m: [=] Log of make 'desktop.blocks/link-block*' [1]
+23:17:52.025 - [36mverbose[39m: [?] Node 'desktop.blocks/logo*' is expired [1]
+23:17:52.025 - [36mverbose[39m: [*] make 'desktop.blocks/logo*' [1]
+23:17:52.025 - [36mverbose[39m: [?] Node 'desktop.blocks/main-heading*' is expired [1]
+23:17:52.025 - [36mverbose[39m: [*] make 'desktop.blocks/main-heading*' [1]
+23:17:52.027 - [36mverbose[39m: [?] Node 'desktop.blocks/nav*' is expired [1]
+23:17:52.027 - [36mverbose[39m: [*] make 'desktop.blocks/nav*' [1]
+23:17:52.027 - [36mverbose[39m: [?] Node 'desktop.blocks/news*' is expired [1]
+23:17:52.027 - [36mverbose[39m: [*] make 'desktop.blocks/news*' [1]
+23:17:52.027 - [36mverbose[39m: [?] Node 'desktop.blocks/news-list*' is expired [1]
+23:17:52.027 - [36mverbose[39m: [*] make 'desktop.blocks/news-list*' [1]
+23:17:52.027 - [36mverbose[39m: [?] Node 'desktop.blocks/news-single*' is expired [1]
+23:17:52.027 - [36mverbose[39m: [*] make 'desktop.blocks/news-single*' [1]
+23:17:52.028 - [36mverbose[39m: [?] Node 'desktop.blocks/partners*' is expired [1]
+23:17:52.028 - [36mverbose[39m: [*] make 'desktop.blocks/partners*' [1]
+23:17:52.028 - [36mverbose[39m: [?] Node 'desktop.blocks/project-cash*' is expired [1]
+23:17:52.028 - [36mverbose[39m: [*] make 'desktop.blocks/project-cash*' [1]
+23:17:52.028 - [36mverbose[39m: [?] Node 'desktop.blocks/project-date*' is expired [1]
+23:17:52.028 - [36mverbose[39m: [*] make 'desktop.blocks/project-date*' [1]
+23:17:52.029 - [36mverbose[39m: [=] Log of make 'desktop.blocks/logo*' [1]
+23:17:52.029 - [36mverbose[39m: [=] Log of make 'desktop.blocks/main-heading*' [1]
+23:17:52.029 - [36mverbose[39m: [=] Log of make 'desktop.blocks/nav*' [1]
+23:17:52.029 - [36mverbose[39m: [=] Log of make 'desktop.blocks/news*' [1]
+23:17:52.029 - [36mverbose[39m: [=] Log of make 'desktop.blocks/news-list*' [1]
+23:17:52.030 - [36mverbose[39m: [=] Log of make 'desktop.blocks/news-single*' [1]
+23:17:52.030 - [36mverbose[39m: [=] Log of make 'desktop.blocks/partners*' [1]
+23:17:52.030 - [36mverbose[39m: [=] Log of make 'desktop.blocks/project-cash*' [1]
+23:17:52.030 - [36mverbose[39m: [=] Log of make 'desktop.blocks/project-date*' [1]
+23:17:52.031 - [36mverbose[39m: [?] Node 'desktop.blocks/project-mission*' is expired [1]
+23:17:52.031 - [36mverbose[39m: [*] make 'desktop.blocks/project-mission*' [1]
+23:17:52.032 - [36mverbose[39m: [=] Log of make 'desktop.blocks/project-mission*' [1]
+23:17:52.037 - [36mverbose[39m: [?] Node 'desktop.blocks/project-single*' is expired [1]
+23:17:52.038 - [36mverbose[39m: [*] make 'desktop.blocks/project-single*' [1]
+23:17:52.039 - [36mverbose[39m: [?] Node 'desktop.blocks/project-slider*' is expired [1]
+23:17:52.039 - [36mverbose[39m: [*] make 'desktop.blocks/project-slider*' [1]
+23:17:52.039 - [36mverbose[39m: [?] Node 'desktop.blocks/projects*' is expired [1]
+23:17:52.039 - [36mverbose[39m: [*] make 'desktop.blocks/projects*' [1]
+23:17:52.040 - [36mverbose[39m: [?] Node 'desktop.blocks/projects-col*' is expired [1]
+23:17:52.040 - [36mverbose[39m: [*] make 'desktop.blocks/projects-col*' [1]
+23:17:52.040 - [36mverbose[39m: [?] Node 'desktop.blocks/sidebar*' is expired [1]
+23:17:52.040 - [36mverbose[39m: [*] make 'desktop.blocks/sidebar*' [1]
+23:17:52.040 - [36mverbose[39m: [?] Node 'desktop.blocks/socials*' is expired [1]
+23:17:52.040 - [36mverbose[39m: [*] make 'desktop.blocks/socials*' [1]
+23:17:52.041 - [36mverbose[39m: [?] Node 'desktop.blocks/submenu*' is expired [1]
+23:17:52.041 - [36mverbose[39m: [*] make 'desktop.blocks/submenu*' [1]
+23:17:52.041 - [36mverbose[39m: [?] Node 'desktop.blocks/table*' is expired [1]
+23:17:52.041 - [36mverbose[39m: [*] make 'desktop.blocks/table*' [1]
+23:17:52.041 - [36mverbose[39m: [?] Node 'desktop.blocks/text*' is expired [1]
+23:17:52.041 - [36mverbose[39m: [*] make 'desktop.blocks/text*' [1]
+23:17:52.042 - [36mverbose[39m: [=] Log of make 'desktop.blocks/project-single*' [1]
+23:17:52.042 - [36mverbose[39m: [=] Log of make 'desktop.blocks/project-slider*' [1]
+23:17:52.042 - [36mverbose[39m: [=] Log of make 'desktop.blocks/projects*' [1]
+23:17:52.043 - [36mverbose[39m: [=] Log of make 'desktop.blocks/projects-col*' [1]
+23:17:52.043 - [36mverbose[39m: [=] Log of make 'desktop.blocks/sidebar*' [1]
+23:17:52.043 - [36mverbose[39m: [=] Log of make 'desktop.blocks/socials*' [1]
+23:17:52.043 - [36mverbose[39m: [=] Log of make 'desktop.blocks/submenu*' [1]
+23:17:52.043 - [36mverbose[39m: [=] Log of make 'desktop.blocks/table*' [1]
+23:17:52.043 - [36mverbose[39m: [=] Log of make 'desktop.blocks/text*' [1]
+23:17:52.043 - [36mverbose[39m: [?] Node 'desktop.blocks/thumb*' is expired [1]
+23:17:52.044 - [36mverbose[39m: [*] make 'desktop.blocks/thumb*' [1]
+23:17:52.044 - [36mverbose[39m: [=] Log of make 'desktop.blocks/thumb*' [1]
+23:17:52.046 - [36mverbose[39m: [?] Node 'desktop.blocks/title*' is expired [1]
+23:17:52.046 - [36mverbose[39m: [*] make 'desktop.blocks/title*' [1]
+23:17:52.046 - [36mverbose[39m: [=] Log of make 'desktop.blocks/title*' [1]
+23:17:52.047 - [36mverbose[39m: [?] Node 'desktop.blocks' is expired [1]
+23:17:52.047 - [36mverbose[39m: [*] make 'desktop.blocks' [1]
+23:17:52.047 - [36mverbose[39m: [=] Log of make 'desktop.blocks' [1]
+23:17:52.048 - [36mverbose[39m: [?] Node 'desktop.bundles*' is expired [1]
+23:17:52.048 - [36mverbose[39m: [*] make 'desktop.bundles*' [1]
+
+[31;1mWARNING!
+Legacy tech modules API support is deprecated!
+It will be removed in bem-tools@1.0.0, please use tech modules API V2.
+[0m
+23:17:52.128 - [34mdebug[39m: scan /Users/ivan/gorod-mechty-www/desktop.bundles: [31m75ms[m
+23:17:52.150 - [36mverbose[39m: [=] Log of make 'desktop.bundles*' [1]
+23:17:52.156 - [36mverbose[39m: [?] Node 'desktop.bundles/about*' is expired [1]
+23:17:52.156 - [36mverbose[39m: [*] make 'desktop.bundles/about*' [1]
+23:17:52.156 - [36mverbose[39m: [?] Node 'desktop.bundles/cashflow*' is expired [1]
+23:17:52.156 - [36mverbose[39m: [*] make 'desktop.bundles/cashflow*' [1]
+23:17:52.157 - [36mverbose[39m: [?] Node 'desktop.bundles/index*' is expired [1]
+23:17:52.157 - [36mverbose[39m: [*] make 'desktop.bundles/index*' [1]
+23:17:52.157 - [36mverbose[39m: [?] Node 'desktop.bundles/news*' is expired [1]
+23:17:52.157 - [36mverbose[39m: [*] make 'desktop.bundles/news*' [1]
+23:17:52.157 - [36mverbose[39m: [?] Node 'desktop.bundles/news-single*' is expired [1]
+23:17:52.158 - [36mverbose[39m: [*] make 'desktop.bundles/news-single*' [1]
+23:17:52.158 - [36mverbose[39m: [?] Node 'desktop.bundles/partners*' is expired [1]
+23:17:52.158 - [36mverbose[39m: [*] make 'desktop.bundles/partners*' [1]
+23:17:52.158 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single*' is expired [1]
+23:17:52.158 - [36mverbose[39m: [*] make 'desktop.bundles/project-single*' [1]
+23:17:52.158 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single-three*' is expired [1]
+23:17:52.158 - [36mverbose[39m: [*] make 'desktop.bundles/project-single-three*' [1]
+23:17:52.158 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single-two*' is expired [1]
+23:17:52.159 - [36mverbose[39m: [*] make 'desktop.bundles/project-single-two*' [1]
+23:17:52.159 - [36mverbose[39m: [?] Node 'desktop.bundles/projects*' is expired [1]
+23:17:52.159 - [36mverbose[39m: [*] make 'desktop.bundles/projects*' [1]
+23:17:52.161 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.162 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.162 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.169 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.169 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.182 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.182 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.187 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.187 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/about/about.bemhtml.js
+23:17:52.189 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.195 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.195 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/about/about.js
+23:17:52.196 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.201 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.201 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/about/about.css
+23:17:52.202 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.207 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.207 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/about/about.ie.css
+23:17:52.208 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.210 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.210 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.211 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.211 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.216 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.216 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.222 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.222 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.223 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.223 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/cashflow/cashflow.bemhtml.js
+23:17:52.224 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.229 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.229 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/cashflow/cashflow.js
+23:17:52.229 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.234 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.234 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/cashflow/cashflow.css
+23:17:52.235 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.258 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.258 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/cashflow/cashflow.ie.css
+23:17:52.258 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.259 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.260 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.260 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.260 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.264 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.264 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.268 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.268 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.269 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.269 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/index/index.bemhtml.js
+23:17:52.269 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.273 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.273 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/index/index.js
+23:17:52.274 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.278 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.278 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/index/index.css
+23:17:52.278 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.282 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.282 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/index/index.ie.css
+23:17:52.283 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.283 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.284 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.284 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.284 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.288 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.288 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.293 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.293 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.293 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.294 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news/news.bemhtml.js
+23:17:52.294 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.298 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.298 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news/news.js
+23:17:52.298 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.302 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.302 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news/news.css
+23:17:52.302 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.306 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.307 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news/news.ie.css
+23:17:52.307 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.309 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.310 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.310 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.310 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.314 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.314 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.319 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.319 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.319 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.320 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news-single/news-single.bemhtml.js
+23:17:52.320 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.324 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.324 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news-single/news-single.js
+23:17:52.325 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.328 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.328 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news-single/news-single.css
+23:17:52.329 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.333 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.333 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/news-single/news-single.ie.css
+23:17:52.334 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.335 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.337 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.338 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.338 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.342 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.342 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.348 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.348 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.350 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.350 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/partners/partners.bemhtml.js
+23:17:52.350 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.355 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.355 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/partners/partners.js
+23:17:52.356 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.360 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.361 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/partners/partners.css
+23:17:52.361 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.365 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.366 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/partners/partners.ie.css
+23:17:52.366 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.367 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.367 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.368 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.368 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.373 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.373 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.378 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.378 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.379 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.379 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single/project-single.bemhtml.js
+23:17:52.379 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.384 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.384 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single/project-single.js
+23:17:52.385 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.390 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.390 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single/project-single.css
+23:17:52.390 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.395 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.395 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single/project-single.ie.css
+23:17:52.396 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.398 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.398 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.398 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.398 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.404 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.405 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.410 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.410 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.410 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.411 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-three/project-single-three.bemhtml.js
+23:17:52.411 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.415 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.415 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-three/project-single-three.js
+23:17:52.416 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.421 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.422 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-three/project-single-three.css
+23:17:52.422 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.440 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.440 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-three/project-single-three.ie.css
+23:17:52.441 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.441 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.442 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.442 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.442 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.446 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.446 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.451 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.451 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.452 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.452 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-two/project-single-two.bemhtml.js
+23:17:52.452 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.456 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.456 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-two/project-single-two.js
+23:17:52.457 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.460 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.461 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-two/project-single-two.css
+23:17:52.461 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.465 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.465 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/project-single-two/project-single-two.ie.css
+23:17:52.465 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.466 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.467 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.467 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemjson.js
+23:17:52.467 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.471 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech bemdecl.js
+23:17:52.471 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.476 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.476 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.477 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.477 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/projects/projects.bemhtml.js
+23:17:52.478 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.482 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.482 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/projects/projects.js
+23:17:52.483 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.487 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.488 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/projects/projects.css
+23:17:52.488 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.493 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.493 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/projects/projects.ie.css
+23:17:52.494 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.495 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech html
+23:17:52.497 - [36mverbose[39m: [=] Log of make 'desktop.bundles/about*' [1]
+23:17:52.497 - [36mverbose[39m: [=] Log of make 'desktop.bundles/cashflow*' [1]
+23:17:52.497 - [36mverbose[39m: [=] Log of make 'desktop.bundles/index*' [1]
+23:17:52.499 - [36mverbose[39m: [=] Log of make 'desktop.bundles/news*' [1]
+23:17:52.500 - [36mverbose[39m: [=] Log of make 'desktop.bundles/news-single*' [1]
+23:17:52.500 - [36mverbose[39m: [=] Log of make 'desktop.bundles/partners*' [1]
+23:17:52.500 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single*' [1]
+23:17:52.500 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single-three*' [1]
+23:17:52.500 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single-two*' [1]
+23:17:52.500 - [36mverbose[39m: [=] Log of make 'desktop.bundles/projects*' [1]
+23:17:52.507 - [36mverbose[39m: [?] Node 'desktop.bundles/about/about.bemjson.js' is expired [1]
+23:17:52.507 - [36mverbose[39m: [*] make 'desktop.bundles/about/about.bemjson.js' [1]
+23:17:52.507 - [36mverbose[39m: [?] Node 'desktop.bundles/cashflow/cashflow.bemjson.js' is expired [1]
+23:17:52.507 - [36mverbose[39m: [*] make 'desktop.bundles/cashflow/cashflow.bemjson.js' [1]
+23:17:52.507 - [36mverbose[39m: [?] Node 'desktop.bundles/index/index.bemjson.js' is expired [1]
+23:17:52.507 - [36mverbose[39m: [*] make 'desktop.bundles/index/index.bemjson.js' [1]
+23:17:52.507 - [36mverbose[39m: [?] Node 'desktop.bundles/news/news.bemjson.js' is expired [1]
+23:17:52.507 - [36mverbose[39m: [*] make 'desktop.bundles/news/news.bemjson.js' [1]
+23:17:52.507 - [36mverbose[39m: [?] Node 'desktop.bundles/news-single/news-single.bemjson.js' is expired [1]
+23:17:52.508 - [36mverbose[39m: [*] make 'desktop.bundles/news-single/news-single.bemjson.js' [1]
+23:17:52.508 - [36mverbose[39m: [?] Node 'desktop.bundles/partners/partners.bemjson.js' is expired [1]
+23:17:52.508 - [36mverbose[39m: [*] make 'desktop.bundles/partners/partners.bemjson.js' [1]
+23:17:52.508 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single/project-single.bemjson.js' is expired [1]
+23:17:52.508 - [36mverbose[39m: [*] make 'desktop.bundles/project-single/project-single.bemjson.js' [1]
+23:17:52.509 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single-three/project-single-three.bemjson.js' is expired [1]
+23:17:52.509 - [36mverbose[39m: [*] make 'desktop.bundles/project-single-three/project-single-three.bemjson.js' [1]
+23:17:52.509 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single-two/project-single-two.bemjson.js' is expired [1]
+23:17:52.509 - [36mverbose[39m: [*] make 'desktop.bundles/project-single-two/project-single-two.bemjson.js' [1]
+23:17:52.509 - [36mverbose[39m: [?] Node 'desktop.bundles/merged*' is expired [1]
+23:17:52.509 - [36mverbose[39m: [*] make 'desktop.bundles/merged*' [1]
+23:17:52.512 - [34mdebug[39m: Using create-bemjson.js-node() to create node for tech bemjson.js
+23:17:52.513 - [34mdebug[39m: Using create-bemdecl.js-node() to create node for tech bemdecl.js
+23:17:52.517 - [36mverbose[39m: Dependency desktop.bundles/merged/merged.bemjson.js is required to build desktop.bundles/merged/merged.bemdecl.js but does not exist, checking if target already built
+23:17:52.517 - [33mwarn[39m: desktop.bundles/merged/merged.bemdecl.js will not be built because dependency file desktop.bundles/merged/merged.bemjson.js does not exist
+23:17:52.517 - [34mdebug[39m: Using create-deps.js-node() to create node for tech deps.js
+23:17:52.525 - [34mdebug[39m: Using createDefaultOptimizerNode() to create optimizer node for tech deps.js
+23:17:52.525 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech bemhtml
+23:17:52.527 - [34mdebug[39m: Using create-bemhtml-optimizer-node() to create optimizer node for tech bemhtml
+23:17:52.528 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/merged/merged.bemhtml.js
+23:17:52.529 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech js
+23:17:52.535 - [34mdebug[39m: Using create-js-optimizer-node() to create optimizer node for tech js
+23:17:52.536 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/merged/merged.js
+23:17:52.538 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech css
+23:17:52.544 - [34mdebug[39m: Using create-css-optimizer-node() to create optimizer node for tech css
+23:17:52.544 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/merged/merged.css
+23:17:52.546 - [34mdebug[39m: Using createDefaultTechNode() to create node for tech ie.css
+23:17:52.551 - [34mdebug[39m: Using create-ie.css-optimizer-node() to create optimizer node for tech ie.css
+23:17:52.552 - [34mdebug[39m: Creating borschik nodes for desktop.bundles/merged/merged.ie.css
+23:17:52.555 - [34mdebug[39m: Using create-html-node() to create node for tech html
+23:17:52.555 - [36mverbose[39m: Dependency desktop.bundles/merged/merged.bemjson.js is required to build desktop.bundles/merged/merged.html but does not exist, checking if target already built
+23:17:52.556 - [33mwarn[39m: desktop.bundles/merged/merged.html will not be built because dependency file desktop.bundles/merged/merged.bemjson.js does not exist
+23:17:52.556 - [36mverbose[39m: [=] Log of make 'desktop.bundles/about/about.bemjson.js' [1]
+23:17:52.556 - [36mverbose[39m: [=] Log of make 'desktop.bundles/cashflow/cashflow.bemjson.js' [1]
+23:17:52.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles/index/index.bemjson.js' [1]
+23:17:52.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles/news/news.bemjson.js' [1]
+23:17:52.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles/news-single/news-single.bemjson.js' [1]
+23:17:52.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles/partners/partners.bemjson.js' [1]
+23:17:52.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single/project-single.bemjson.js' [1]
+23:17:52.557 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single-three/project-single-three.bemjson.js' [1]
+23:17:52.558 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single-two/project-single-two.bemjson.js' [1]
+23:17:52.558 - [36mverbose[39m: [=] Log of make 'desktop.bundles/merged*' [1]
+23:17:52.564 - [36mverbose[39m: [?] Node 'desktop.bundles/projects/projects.bemjson.js' is expired [1]
+23:17:52.564 - [36mverbose[39m: [*] make 'desktop.bundles/projects/projects.bemjson.js' [1]
+23:17:52.564 - [36mverbose[39m: [?] Node 'desktop.bundles/about/about.bemdecl.js' is expired [1]
+23:17:52.564 - [32minfo[39m: [t] isValid() time for "desktop.bundles/about/about.bemdecl.js" [1]: [31m2ms[m
+23:17:52.564 - [32minfo[39m: [*] make 'desktop.bundles/about/about.bemdecl.js' [1]
+23:17:52.564 - [36mverbose[39m: [?] Node 'desktop.bundles/cashflow/cashflow.bemdecl.js' is expired [1]
+23:17:52.564 - [32minfo[39m: [t] isValid() time for "desktop.bundles/cashflow/cashflow.bemdecl.js" [1]: [31m2ms[m
+23:17:52.564 - [32minfo[39m: [*] make 'desktop.bundles/cashflow/cashflow.bemdecl.js' [1]
+23:17:52.565 - [36mverbose[39m: [?] Node 'desktop.bundles/index/index.bemdecl.js' is expired [1]
+23:17:52.565 - [32minfo[39m: [t] isValid() time for "desktop.bundles/index/index.bemdecl.js" [1]: [31m2ms[m
+23:17:52.565 - [32minfo[39m: [*] make 'desktop.bundles/index/index.bemdecl.js' [1]
+23:17:52.565 - [36mverbose[39m: [?] Node 'desktop.bundles/news/news.bemdecl.js' is expired [1]
+23:17:52.565 - [32minfo[39m: [t] isValid() time for "desktop.bundles/news/news.bemdecl.js" [1]: [31m2ms[m
+23:17:52.565 - [32minfo[39m: [*] make 'desktop.bundles/news/news.bemdecl.js' [1]
+23:17:52.565 - [36mverbose[39m: [?] Node 'desktop.bundles/news-single/news-single.bemdecl.js' is expired [1]
+23:17:52.565 - [32minfo[39m: [t] isValid() time for "desktop.bundles/news-single/news-single.bemdecl.js" [1]: [31m2ms[m
+23:17:52.565 - [32minfo[39m: [*] make 'desktop.bundles/news-single/news-single.bemdecl.js' [1]
+23:17:52.565 - [36mverbose[39m: [?] Node 'desktop.bundles/partners/partners.bemdecl.js' is expired [1]
+23:17:52.566 - [32minfo[39m: [t] isValid() time for "desktop.bundles/partners/partners.bemdecl.js" [1]: [31m2ms[m
+23:17:52.566 - [32minfo[39m: [*] make 'desktop.bundles/partners/partners.bemdecl.js' [1]
+23:17:52.566 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single/project-single.bemdecl.js' is expired [1]
+23:17:52.566 - [32minfo[39m: [t] isValid() time for "desktop.bundles/project-single/project-single.bemdecl.js" [1]: [31m3ms[m
+23:17:52.566 - [32minfo[39m: [*] make 'desktop.bundles/project-single/project-single.bemdecl.js' [1]
+23:17:52.566 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single-three/project-single-three.bemdecl.js' is expired [1]
+23:17:52.566 - [32minfo[39m: [t] isValid() time for "desktop.bundles/project-single-three/project-single-three.bemdecl.js" [1]: [31m3ms[m
+23:17:52.566 - [32minfo[39m: [*] make 'desktop.bundles/project-single-three/project-single-three.bemdecl.js' [1]
+({
+    block: 'b-page',
+    title: 'Симферополь — Город мечты',
+    favicon: '/favicon.ico',
+    head: [
+        { elem: 'css', url: '../merged/_merged.css' },
+        { elem: 'css', url: '../merged/_merged.ie.css', ie: 'gte IE 7' },
+        { elem: 'css', url: 'http://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic-ext,latin-ext,cyrillic' },
+        { elem: 'meta', attrs: { name: 'description', content: 'Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня' }}
+        // , { elem: 'meta', attrs: { name: 'keywords', content: '' }}
+    ],
+    content:[
+        {
+            elem: 'inner',
+            mix: { block: 'clearfix' },
+            content: [
+                {
+                    block: 'sidebar',
+                    content: [
+                        {
+                            block: 'b-link',
+                            mix: { block: 'logo' },
+                            url: '../index/index.html',
+                            content:''
+                        },
+                        {
+                            block: 'submenu',
+                            content: [
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            block: 'b-link',
+                                            url: '../projects/projects.html',
+                                            content: 'К списку проектов'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block: 'nav',
+                    content: [
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../about/about.html',
+                                content: 'О фонде'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                             content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../projects/projects.html',
+                                content: 'Проекты'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../news/news.html',
+                                mix: { block: 'displayng' },
+                                content: 'Новости'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../partners/partners.html',
+                                mix: { block: 'displayng' },
+                                content: 'Сотрудничество'
+                            }
+                        },
+                        {
+                            elem: 'item',
+                            content:
+                            {
+                                block: 'b-link',
+                                mods: { type: 'nav' },
+                                url: '../cashflow/cashflow.html',
+                                mix: { block: 'displayng' },
+                                content: 'Денежный поток'
+                            }
+                        }
+                    ]
+                },
+                {
+                    block: 'content',
+                    content: [
+                        {
+                            block: 'heading',
+                            mods: { level: 1 },
+                            content: 'Высадка декоративных кустарников на территории Детского парка'
+                        },
+                        {
+                            block: 'project-single',
+                            content: [
+                                {
+                                    block: 'b-icon',
+                                    mix: { block: 'project-single', elem: 'img-l' },
+                                    url: '../../../i/single-project-left-temp.png',
+                                    alt: 'img'
+                                },
+                                {
+                                    block: 'b-icon',
+                                    mix: { block: 'project-single', elem: 'img-r' },
+                                    url: '../../../i/single-project-right-temp.png',
+                                    alt: 'img'
+                                },
+                                {
+                                    block:'project-cash',
+                                    mix: { block: 'displayng' },
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    tag: 'span',
+                                                     content: 'Надо собрать:'
+                                                 },
+                                                 '    28500 грн'
+                                            ]
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-link',
+                                                    url: '/',
+                                                     content: 'Собрано:',
+                                                },
+                                                '            8000 грн'
+                                            ]
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-link',
+                                                    url: '/',
+                                                     content: 'Потрачено:',
+                                                },
+                                                '        2500 грн'
+                                            ]
+                                        },
+                                        {
+                                            elem: 'docs',
+                                            content: [
+                                                {
+                                                    block: 'b-link',
+                                                    mods: { style: 'italic' },
+                                                    url: '/',
+                                                     content: 'Скачать',
+                                                },
+                                                {
+                                                    tag: 'span',
+                                                    content: ' документацию'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    block: 'project-date',
+                                    content: [
+                                        {
+                                            elem: 'caption'
+                                            content: 'Даты реализации: '
+                                        },
+                                        '12 мая'
+                                    ]
+                                },
+                                {
+                                    block: 'project-mission',
+                                    content: 'Первая акция Благотворительного фонда «Город мечты» состоялась 12 мая. В Детском парке Симферополя группой добровольцев были высажены несколько десятков приобретенных Фондом декоративных кустарников. Подготовительные работы были проведены заранее: приобретен и доставлен в парк посадочный материал, засыпка, подготовлена почва, уложено агроволокно, которое препятствует росту сорняков. Собравшиеся по призыву Фонда волонтеры, под руководством озеленителя Ирины Калмыковой и под наблюдением директора коммунального учреждения «Детский парк» Александра Шабанова высадили саженцы кустарника, полили их, зачистили и благоустроили площадку. Теперь вход в зооуголок украшает клумба с кустами лаванды, осоки власовидной, юкки, чабреца, очитка, мискантуса зебрина и пр. Все растения акклиматизированы в условиях Крыма, устойчивы к засухе и не требуют сложного ухода.'
+                                },
+                                {
+                                    block: 'project-slider',
+                                    content: [
+                                        {
+                                            elem: 'list',
+                                            mix: { block: 'displayng' },
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'project-slider', elem: 'item' },
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'project-slider', elem: 'item' },
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'project-slider', elem: 'item' },
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'project-slider', elem: 'item' },
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'project-slider', elem: 'item' },
+                                                    url: '../../../i/single-project-preview.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    elem: 'nav-l',
+                                                    content:'◀'
+                                                },
+                                                {
+                                                    elem: 'nav-r',
+                                                    content:'▶'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'b-icon',
+                                            mix: { block: 'project-single', elem: 'img-big' },
+                                            url: '../../../i/single-project-big-temp.png',
+                                            alt: 'img'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    block: 'footer',
+                    mix: { block: 'clearfix' },
+                    content: [
+                        {
+                            elem: 'text',
+                            content: '© 2013  БО «Фонд Город Мечты»'
+                        },
+                        {
+                            elem: 'link',
+                            url: 'mailto:info@gorod-mechty.org',
+                            content: 'info@gorod-mechty.org'
+                        },
+                        {
+                            block: 'socials',
+                            content:[
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'vk' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'item',
+                                    content: [
+                                        {
+                                            elem: 'link',
+                                            elemMods: { type: 'fb' },
+                                            url: '/',
+                                            content: 'ВКонтакте'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block: 'copyright',
+                            content: [
+                                'Создание сайта — ',
+                                {
+                                    block: 'b-link',
+                                    url: 'http://tadatuta.ru',
+                                    content: 'студия «Тадатута»'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+})
+
+23:17:52.695 - [36mverbose[39m: [?] Node 'desktop.bundles/project-single-two/project-single-two.bemdecl.js' is expired [1]
+23:17:52.695 - [32minfo[39m: [t] isValid() time for "desktop.bundles/project-single-two/project-single-two.bemdecl.js" [1]: [31m129ms[m
+23:17:52.695 - [32minfo[39m: [*] make 'desktop.bundles/project-single-two/project-single-two.bemdecl.js' [1]
+23:17:52.727 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single/project-single.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "project-single"
+}, {})
+23:17:52.727 - [32minfo[39m: [t] Build time for "desktop.bundles/project-single/project-single.bemdecl.js" [1]: [31m164ms[m
+23:17:52.728 - [36mverbose[39m: [=] Log of make 'desktop.bundles/projects/projects.bemjson.js' [1]
+23:17:52.732 - [32minfo[39m: [t] Build total: [31m40301ms[m
+23:17:52.759 - [36mverbose[39m: [=] Log of make 'desktop.bundles/about/about.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "about"
+}, {})
+23:17:52.759 - [32minfo[39m: [t] Build time for "desktop.bundles/about/about.bemdecl.js" [1]: [31m197ms[m
+23:17:52.760 - [36mverbose[39m: [=] Log of make 'desktop.bundles/cashflow/cashflow.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "cashflow"
+}, {})
+23:17:52.760 - [32minfo[39m: [t] Build time for "desktop.bundles/cashflow/cashflow.bemdecl.js" [1]: [31m198ms[m
+23:17:52.760 - [36mverbose[39m: [=] Log of make 'desktop.bundles/index/index.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "index"
+}, {})
+23:17:52.760 - [32minfo[39m: [t] Build time for "desktop.bundles/index/index.bemdecl.js" [1]: [31m197ms[m
+23:17:52.760 - [36mverbose[39m: [=] Log of make 'desktop.bundles/news/news.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "news"
+}, {})
+23:17:52.760 - [32minfo[39m: [t] Build time for "desktop.bundles/news/news.bemdecl.js" [1]: [31m197ms[m
+23:17:52.760 - [36mverbose[39m: [=] Log of make 'desktop.bundles/news-single/news-single.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "news-single"
+}, {})
+23:17:52.760 - [32minfo[39m: [t] Build time for "desktop.bundles/news-single/news-single.bemdecl.js" [1]: [31m197ms[m
+23:17:52.760 - [36mverbose[39m: [=] Log of make 'desktop.bundles/partners/partners.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "partners"
+}, {})
+23:17:52.760 - [32minfo[39m: [t] Build time for "desktop.bundles/partners/partners.bemdecl.js" [1]: [31m197ms[m
+23:17:52.760 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single-three/project-single-three.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "project-single-three"
+}, {})
+23:17:52.761 - [32minfo[39m: [t] Build time for "desktop.bundles/project-single-three/project-single-three.bemdecl.js" [1]: [31m197ms[m
+23:17:52.761 - [36mverbose[39m: [=] Log of make 'desktop.bundles/project-single-two/project-single-two.bemdecl.js' [1]
+bem.create(forked=false, {
+    "force": false,
+    "level": "/Users/ivan/gorod-mechty-www/desktop.bundles",
+    "forceTech": "bemdecl.js",
+    "block": "project-single-two"
+}, {})
+23:17:52.761 - [32minfo[39m: [t] Build time for "desktop.bundles/project-single-two/project-single-two.bemdecl.js" [1]: [31m195ms[m
+SyntaxError: Unexpected identifier
+    at exports.techMixin.getCreateResult (/Users/ivan/gorod-mechty-www/node_modules/bem/lib/techs/v2/bemdecl.js.js:18:37)
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/lib/tech/v2.js:120:41
+    at Array.map (native)
+    at exports.Tech.INHERIT.getCreateResults (/Users/ivan/gorod-mechty-www/node_modules/bem/lib/tech/v2.js:119:47)
+    at exports.Tech.INHERIT.create (/Users/ivan/gorod-mechty-www/node_modules/bem/lib/tech/v2.js:90:57)
+    at exports.Tech.INHERIT.createByDecl (/Users/ivan/gorod-mechty-www/node_modules/bem/lib/tech/v2.js:77:25)
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/lib/commands/create.js:101:51
+    at Array.map (native)
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/lib/commands/create.js:100:40
+    at Array.map (native)
+    at Cmd.<anonymous> (/Users/ivan/gorod-mechty-www/node_modules/bem/lib/commands/create.js:99:32)
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/node_modules/coa/lib/cmd.js:429:22
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/node_modules/coa/node_modules/q/q.js:388:35
+From previous event:
+    at Cmd.exports.Cmd.Cmd._do (/Users/ivan/gorod-mechty-www/node_modules/bem/node_modules/coa/lib/cmd.js:424:14)
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/node_modules/coa/lib/cmd.js:510:22
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/node_modules/coa/node_modules/q/q.js:893:30
+    at /Users/ivan/gorod-mechty-www/node_modules/bem/node_modules/coa/node_modules/q/q.js:360:35

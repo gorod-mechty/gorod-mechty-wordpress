@@ -1,0 +1,11 @@
+.project-date
+{
+	margin: 0 0 10px 0;
+    color: #000000;
+    font-style: italic;
+    font-size: 15px;
+}
+.project-date__caption
+{
+	color: #629d42;
+}

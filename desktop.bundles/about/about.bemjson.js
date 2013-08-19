@@ -174,34 +174,40 @@
                             content: 'Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки и дожидаться перемен, мы приглашаем к сотрудничеству:'
                         },
                         {
-                            elem: 'list',
+                            block: 'content-list',
                             content: [
-                                '—  предприятия и учреждения',
                                 {
-                                    tag: 'br'
+                                    elem: 'item',
+                                    elemMods: { type: 'dash'},
+                                    content: ' предприятия и учреждения'
                                 },
                                 {
                                     block: 'content-list',
                                     content: [
                                         {
                                             elem: 'item',
-                                            content: 'государственные'
+                                            content: ' государственные'
                                         },
                                         {
                                             elem: 'item',
-                                            content: 'частные'
+                                            content: ' частные'
                                         },
                                         {
                                             elem: 'item',
-                                            content: 'другие'
+                                            content: ' другие'
                                         }
                                     ]
                                 },
-                                '—  общественные организации',
                                 {
-                                    tag:'br'
+                                    elem: 'item',
+                                    elemMods: { type: 'dash'},
+                                    content: ' общественные организации'
                                 },
-                                '—  просто неравнодушные люди'
+                                {
+                                    elem: 'item',
+                                    elemMods: { type: 'dash'},
+                                    content: ' просто неравнодушные люди'
+                                }
                             ]
                         },
                         {
