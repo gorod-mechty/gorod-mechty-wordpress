@@ -21,7 +21,7 @@ exports.getTechs = function() {
         'ie9.css'       : 'v2/ie9.css',
 
         'bemhtml'       : join(BEMBL_TECHS, 'v2/bemhtml.js'),
-        'html'          : join(PRJ_TECHS, 'html.js')
+        'html'          : join(PRJ_TECHS, 'index.html.js')
     };
 
 };
