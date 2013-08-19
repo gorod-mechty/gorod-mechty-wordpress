@@ -21,24 +21,28 @@ exports.baseTechPath = join(BEMBL_TECHS, 'html.js');
 
 exports.techMixin = {
 
-    getCreateResult: function(path, suffix, vars) {
-        var deferred = Q.defer();
+    getCreateResult: process.env.YENV === 'production' ?
+        function() {
+            return this.__base.apply(this, arguments);
+        } :
+        function(path, suffix, vars) {
+            var deferred = Q.defer();
 
-        return this.__base.apply(this, arguments)
-            .then(function(html) {
+            return this.__base.apply(this, arguments)
+                .then(function(html) {
 
-                tidy(html, tidyOpts, function(err, html) {
-                    if (err) {
-                        deferred.reject(new Error(err));
-                    } else {
-                        deferred.resolve(html);
-                    }
+                    tidy(html, tidyOpts, function(err, html) {
+                        if (err) {
+                            deferred.reject(new Error(err));
+                        } else {
+                            deferred.resolve(html);
+                        }
+                    });
+
+                    return deferred.promise;
+
                 });
 
-                return deferred.promise;
-
-            });
-
-    }
+        }
 
 };
