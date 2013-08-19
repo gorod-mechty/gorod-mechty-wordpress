@@ -124,7 +124,7 @@
                                 },
                                 {
                                     block: 'b-link',
-                                    url: '/',
+                                    url: '../project-single/project-single.html',
                                     mods: {
                                         type: 'project'
                                     },
@@ -156,7 +156,7 @@
                                 },
                                 {
                                     block: 'b-link',
-                                    url: '/',
+                                    url: '../project-single-two/project-single-two.html',
                                     mods: {
                                         type: 'project'
                                     },
@@ -188,7 +188,7 @@
                                 },
                                 {
                                     block: 'b-link',
-                                    url: '/',
+                                    url: '../project-single-three/project-single-three.html',
                                     mods: {
                                         type: 'project'
                                     },

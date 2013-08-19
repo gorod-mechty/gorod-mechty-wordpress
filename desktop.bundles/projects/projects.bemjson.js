@@ -159,7 +159,7 @@
                                         },
                                         {
                                             block: 'b-link',
-                                            url: '#',
+                                            url: '../project-single-two/project-single-two.html',
                                             content: 'Проект  "100 деревьев"'
                                         },
                                         {
@@ -201,7 +201,7 @@
                                         },
                                         {
                                             block: 'b-link',
-                                            url: '#',
+                                            url: '../project-single-three/project-single-three.html',
                                             content: 'Реконструкция фонтана по ул. Гоголя '
                                         },
                                         {
