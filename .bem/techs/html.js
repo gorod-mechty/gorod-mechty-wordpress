@@ -6,10 +6,11 @@ var BEM = require('bem'),
 
     tidy = require('htmltidy').tidy,
     tidyOpts = {
+        charEncoding: 'utf8',
         doctype: 'html5',
-        hideComments: false, //  multi word options can use a hyphen or "camel case"
+        hideComments: false,
         indent: true,
-        'indent-spaces': 4,
+        indentSpaces: 4,
         bare: true,
         breakBeforeBr: true,
         fixUri: true,
