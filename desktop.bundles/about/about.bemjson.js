@@ -26,6 +26,7 @@
                         },
                         {
                             block: 'submenu',
+                            mix: { block: 'displayng' },
                             content: [
                                 {
                                     elem: 'item',
@@ -78,6 +79,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
+                                mix: { block: 'displayng' },
                                 url: '../news/news.html',
                                 content: 'Новости'
                             }
@@ -88,6 +90,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
+                                mix: { block: 'displayng' },
                                 url: '../partners/partners.html',
                                 content: 'Сотрудничество'
                             }
@@ -98,6 +101,8 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
+                                mix: { block: 'displayng' },
+
                                 url: '../cashflow/cashflow.html',
                                 content: 'Денежный поток'
                             }
@@ -143,14 +148,14 @@
                                 'Мы хотим жить в цветущем городе, по которому не стыдно пройтись самому и который не стыдно показать друзьям. ',
                                 {
                                     block: 'b-link',
-                                    url: '/',
+                                    url: 'index/index.html',
                                     mods: { type: 'big' },
                                     content: '«Город мечты»'
                                 },
                                 ' намерен осуществлять ',
                                 {
                                     block: 'b-link',
-                                    url: '/',
+                                    url: 'projects/projects.html',
                                     mods: { type: 'big' },
                                     content: 'проекты'
                                 },
@@ -202,11 +207,13 @@
                         {
                             block: 'heading',
                             mix: { block: 'clearfix' },
+                            mix: { block: 'displayng' },
                             mods: { level: 2},
                             content: 'Подзаголовок'
                         },
                         {
                             block: 'table',
+                            mix: { block: 'displayng' },
                             content: [
                                 {
                                     elem: 'row',

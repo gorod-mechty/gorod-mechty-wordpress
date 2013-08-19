@@ -1,6 +1,7 @@
 .socials
 {
     float: left;
+    display: none;
 }
 .socials__item
 {

@@ -18,6 +18,7 @@
     font-size: 15px;
     font-style: italic;
     margin: 0 0 0 30px;
+    display: none;
 }
 .content__img-l
 {
@@ -28,6 +29,7 @@
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+            display: none;
 }
 .content__img-r .b-icon
 {
@@ -38,9 +40,10 @@
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+            display: none;
 }
 .content__list{
-    margin: 10px 0 0 280px;
+    margin: 10px 0 0 0;
 }
 
 /*@media (max-width: 960px)

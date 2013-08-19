@@ -48,6 +48,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
+                                mix: { block: 'displayng' },
                                 url: '../news/news.html',
                                 content: 'Новости'
                             }
@@ -58,6 +59,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
+                                mix: { block: 'displayng' },
                                 url: '../partners/partners.html',
                                 content: 'Сотрудничество'
                             }
@@ -68,6 +70,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
+                                mix: { block: 'displayng' },
                                 url: '../cashflow/cashflow.html',
                                 content: 'Денежный поток'
                             }
@@ -113,6 +116,7 @@
                                         'Сделано ',
                                         {
                                             block: 'b-link',
+                                            mix: { block: 'displayng' },
                                             url: '/',
                                             content: '(Х проектов)'
                                         }
@@ -127,10 +131,10 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/project-img-one.png',
+                                            url: '../../../i/image-3-mini.png',
                                             alt: 'img'
                                         },
-                                        'В ближайшем будущем  мы планируем взяться за освещение на улицах города'
+                                        'Высадка декоративных кустарников'
                                     ]
                                 }
                             ]
@@ -144,6 +148,7 @@
                                         'Делаем ',
                                         {
                                             block: 'b-link',
+                                            mix: { block: 'displayng' },
                                             url: '/',
                                             content: '(Х проектов)'
                                         }
@@ -158,10 +163,10 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/project-img-two.png',
+                                            url: '../../../i/IMAG0263-mini.png',
                                             alt: 'img'
                                         },
-                                        'Сейчас мы работаем над установкой площадок под мусорные баки'
+                                        'Сейчас мы работаем над проектом  "100 деревьев"'
                                     ]
                                 }
                             ]
@@ -175,6 +180,7 @@
                                         'Планы ',
                                         {
                                             block: 'b-link',
+                                            mix: { block: 'displayng' },
                                             url: '/',
                                             content: '(Х проектов)'
                                         }
@@ -189,10 +195,10 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/project-img-three.png',
+                                            url: '../../../i/image-7-mini.png',
                                             alt: 'img'
                                         },
-                                        'Мы установили 24 удобные скамейки в центральном парке'
+                                        'Реконструкция городского фонтана по ул. Гоголя'
                                     ]
                                 }
                             ]
@@ -232,7 +238,7 @@
                                 'БО «Фонд Місто Мрії» в ',
                                 {
                                     block: 'b-link',
-                                    url: '/',
+                                    url: 'http://privatbank.ua/',
                                     content: 'Приватбанке'
                                 }
                             ]
@@ -252,6 +258,7 @@
                         {
                             block: 'b-link',
                             url: '/',
+                            mix: { block: 'displayng' },
                             mods: { type: 'block' },
                             content: 'Быть волонтёром'
                         },
@@ -261,6 +268,7 @@
                         {
                             block: 'b-link',
                             url: '/',
+                            mix: { block: 'displayng' },
                             mods: { type: 'block' },
                             content: 'Стать партнёром'
                         }
@@ -268,6 +276,7 @@
                 },
                 {
                     block: 'news-list',
+                    mix: { block: 'displayng' },
                     content: [
                         {
                             block: 'heading',
@@ -334,6 +343,7 @@
                 },
                 {
                     block: 'cashflow',
+                    mix: { block: 'displayng' },
                     content: [
                         {
                             block: 'heading',
