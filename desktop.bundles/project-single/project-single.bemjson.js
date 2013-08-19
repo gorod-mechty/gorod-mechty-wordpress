@@ -178,7 +178,7 @@
                                     block: 'project-date',
                                     content: [
                                         {
-                                            elem: 'caption'
+                                            elem: 'caption',
                                             content: 'Даты реализации: '
                                         },
                                         '12 мая'
