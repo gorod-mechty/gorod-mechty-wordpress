@@ -1,6 +1,6 @@
 ({
     block: 'b-page',
-    title: 'Симферополь — Город мечты',
+    title: 'Проекты — Город мечты',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '../merged/_merged.css' },
@@ -17,7 +17,7 @@
                 {
                     block: 'b-link',
                     mix: { block: 'logo' },
-                    url: '../index/index.html',
+                    url: '/',
                     content:''
 
                 },
@@ -30,7 +30,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../about/about.html',
+                                url: '/about/',
                                 content: 'О фонде'
                             }
                         },
@@ -45,7 +45,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 content: 'Новости'
                             }
                         },
@@ -55,7 +55,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -65,7 +65,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 content: 'Денежный поток'
                             }
                         }
@@ -102,13 +102,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-one.png',
+                                            url: '/i/projects-img-one.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-two.png',
+                                            url: '/i/projects-img-two.png',
                                             alt: 'img'
                                         },
                                         {
@@ -129,13 +129,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-one.png',
+                                            url: '/i/projects-img-one.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-two.png',
+                                            url: '/i/projects-img-two.png',
                                             alt: 'img'
                                         },
                                         {
@@ -156,13 +156,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-one.png',
+                                            url: '/i/projects-img-one.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-two.png',
+                                            url: '/i/projects-img-two.png',
                                             alt: 'img'
                                         },
                                         {
@@ -199,13 +199,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-three.png',
+                                            url: '/i/projects-img-three.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-four.png',
+                                            url: '/i/projects-img-four.png',
                                             alt: 'img'
                                         },
                                         {
@@ -226,13 +226,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-three.png',
+                                            url: '/i/projects-img-three.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-four.png',
+                                            url: '/i/projects-img-four.png',
                                             alt: 'img'
                                         },
                                         {
@@ -253,13 +253,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-three.png',
+                                            url: '/i/projects-img-three.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-four.png',
+                                            url: '/i/projects-img-four.png',
                                             alt: 'img'
                                         },
                                         {
@@ -295,13 +295,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-five.png',
+                                            url: '/i/projects-img-five.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-six.png',
+                                            url: '/i/projects-img-six.png',
                                             alt: 'img'
                                         },
                                         {
@@ -322,13 +322,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-five.png',
+                                            url: '/i/projects-img-five.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-six.png',
+                                            url: '/i/projects-img-six.png',
                                             alt: 'img'
                                         },
                                         {
@@ -349,13 +349,13 @@
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '../../../i/projects-img-five.png',
+                                            url: '/i/projects-img-five.png',
                                             alt: 'img'
                                         },
                                         {
                                             block: 'b-icon',
                                             mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '../../../i/projects-img-six.png',
+                                            url: '/i/projects-img-six.png',
                                             alt: 'img'
                                         },
                                         {

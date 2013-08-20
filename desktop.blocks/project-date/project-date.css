@@ -1,0 +1,13 @@
+.project-date
+{
+    margin: 0 0 10px 10px;
+    color: #000000;
+    font-style: italic;
+    font-size: 15px;
+    float: left;
+}
+.project-date__caption
+{
+  color: #629d42;
+  display: inline;
+}

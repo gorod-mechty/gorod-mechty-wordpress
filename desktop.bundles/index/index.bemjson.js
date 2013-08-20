@@ -1,7 +1,7 @@
 ({
     block: 'b-page',
     mix: { mods: { page: 'main' } },
-    title: 'Симферополь — Город мечты',
+    title: 'Симферополь — Фонд Город мечты',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '../merged/_merged.css' },
@@ -28,7 +28,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../about/about.html',
+                                url: '/about/',
                                 content: 'О фонде'
                             }
                         },
@@ -38,7 +38,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../projects/projects.html',
+                                url: '/projects/',
                                 content: 'Проекты'
                             }
                         },
@@ -48,7 +48,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 content: 'Новости'
                             }
                         },
@@ -58,7 +58,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -68,7 +68,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 content: 'Денежный поток'
                             }
                         }
@@ -95,7 +95,7 @@
                         {
                             block: 'b-link',
                             mods: { type: 'main' },
-                            url: '../projects/projects.html',
+                            url: '/projects/',
                             content: 'Наши проекты'
                         }
                     ]
@@ -127,7 +127,7 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/project-img-one.png',
+                                            url: '/i/project-img-one.png',
                                             alt: 'img'
                                         },
                                         'В ближайшем будущем  мы планируем взяться за освещение на улицах города'
@@ -158,7 +158,7 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/project-img-two.png',
+                                            url: '/i/project-img-two.png',
                                             alt: 'img'
                                         },
                                         'Сейчас мы работаем над установкой площадок под мусорные баки'
@@ -189,7 +189,7 @@
                                     content: [
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/project-img-three.png',
+                                            url: '/i/project-img-three.png',
                                             alt: 'img'
                                         },
                                         'Мы установили 24 удобные скамейки в центральном парке'

@@ -6,10 +6,11 @@ var BEM = require('bem'),
 
     tidy = require('htmltidy').tidy,
     tidyOpts = {
+        charEncoding: 'utf8',
         doctype: 'html5',
-        hideComments: false, //  multi word options can use a hyphen or "camel case"
+        hideComments: false,
         indent: true,
-        'indent-spaces': 4,
+        indent-spaces: 4,
         bare: true,
         breakBeforeBr: true,
         fixUri: true,
@@ -20,12 +21,14 @@ exports.baseTechPath = join(BEMBL_TECHS, 'html.js');
 
 exports.techMixin = {
 
-    getCreateResult: function(path, suffix, vars) {
+getCreateResult: process.env.YENV === 'production' ?
+    function() {
+        return this.__base.apply(this, arguments);
+    } :
+    function(path, suffix, vars) {
         var deferred = Q.defer();
-
         return this.__base.apply(this, arguments)
             .then(function(html) {
-
                 tidy(html, tidyOpts, function(err, html) {
                     if (err) {
                         deferred.reject(new Error(err));
@@ -33,11 +36,7 @@ exports.techMixin = {
                         deferred.resolve(html);
                     }
                 });
-
                 return deferred.promise;
-
-            });
-
+        });
     }
-
 };

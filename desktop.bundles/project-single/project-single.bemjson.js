@@ -20,7 +20,7 @@
                         {
                             block: 'b-link',
                             mix: { block: 'logo' },
-                            url: '../index/index.html',
+                            url: '/',
                             content:''
                         },
                         {
@@ -49,7 +49,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../about/about.html',
+                                url: '/about/',
                                 content: 'О фонде'
                             }
                         },
@@ -59,7 +59,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../projects/projects.html',
+                                url: '/projects/',
                                 content: 'Проекты'
                             }
                         },
@@ -69,7 +69,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../news/news.html',
+                                url: '/news/',
                                 content: 'Новости'
                             }
                         },
@@ -79,7 +79,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../partners/partners.html',
+                                url: '/partners/',
                                 content: 'Сотрудничество'
                             }
                         },
@@ -89,7 +89,7 @@
                             {
                                 block: 'b-link',
                                 mods: { type: 'nav' },
-                                url: '../cashflow/cashflow.html',
+                                url: '/cashflow/',
                                 content: 'Денежный поток'
                             }
                         }
@@ -109,13 +109,13 @@
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-l' },
-                                    url: '../../../i/single-project-left.png',
+                                    url: '/i/single-project-left.png',
                                     alt: 'img'
                                 },
                                 {
                                     block: 'b-icon',
                                     mix: { block: 'project-single', elem: 'img-r' },
-                                    url: '../../../i/single-project-right.png',
+                                    url: '/i/single-project-right.png',
                                     alt: 'img'
                                 },
                                 {
@@ -171,20 +171,18 @@
                                     ]
                                 },
                                 {
-                                    block: 'project-mission',
+                                    block: 'project-date',
                                     content: [
                                         {
-                                            elem: 'title',
-                                            content: [
-                                                {
-                                                    tag: 'span',
-                                                    content: 'Даты реализации: '
-                                                },
-                                                '12 октября — в процессе'
-                                            ]
+                                            elem: 'caption',
+                                            content: 'Даты реализации: '
                                         },
-                                        'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Мы хотим, чтобы Город Пользы перестал быть просто воротами на южный берег Крыма, а вокзал – его единственной достопримечательностью.'
+                                        '12 октября - в процессе'
                                     ]
+                                },
+                                {
+                                    block: 'project-mission',
+                                    content: 'Благотворительный фонд «Город мечты» учрежден в Симферополе для того, чтобы все, кому небезразлична судьба нашего города, смогли объединить свои усилия. Мы хотим, чтобы Город Пользы перестал быть просто воротами на южный берег Крыма, а вокзал – его единственной достопримечательностью.'
                                 },
                                 {
                                     block: 'project-slider',
@@ -195,31 +193,31 @@
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
                                                     block: 'b-icon',
                                                     mix: { block: 'project-slider', elem: 'item' },
-                                                    url: '../../../i/single-project-preview.png',
+                                                    url: '/i/single-project-preview.png',
                                                     alt: 'img'
                                                 },
                                                 {
@@ -234,7 +232,8 @@
                                         },
                                         {
                                             block: 'b-icon',
-                                            url: '../../../i/single-project-big.png',
+                                            url: '/i/single-project-big.png',
+                                            mix: { block: 'project-single', elem: 'img-big' },
                                             alt: 'img'
                                         }
                                     ]
