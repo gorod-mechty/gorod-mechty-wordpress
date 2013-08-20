@@ -10,7 +10,7 @@ var BEM = require('bem'),
         doctype: 'html5',
         hideComments: false,
         indent: true,
-        indent-spaces: 4,
+        indentSpaces: 4,
         bare: true,
         breakBeforeBr: true,
         fixUri: true,
@@ -22,21 +22,27 @@ exports.baseTechPath = join(BEMBL_TECHS, 'html.js');
 exports.techMixin = {
 
 getCreateResult: process.env.YENV === 'production' ?
-    function() {
-        return this.__base.apply(this, arguments);
-    } :
-    function(path, suffix, vars) {
-        var deferred = Q.defer();
-        return this.__base.apply(this, arguments)
-            .then(function(html) {
-                tidy(html, tidyOpts, function(err, html) {
-                    if (err) {
-                        deferred.reject(new Error(err));
-                    } else {
-                        deferred.resolve(html);
-                    }
+        function() {
+            return this.__base.apply(this, arguments);
+        } :
+        function(path, suffix, vars) {
+            var deferred = Q.defer();
+
+            return this.__base.apply(this, arguments)
+                .then(function(html) {
+
+                    tidy(html, tidyOpts, function(err, html) {
+                        if (err) {
+                            deferred.reject(new Error(err));
+                        } else {
+                            deferred.resolve(html);
+                        }
+                    });
+
+                    return deferred.promise;
+
                 });
-                return deferred.promise;
-        });
-    }
+
+        }
+
 };
