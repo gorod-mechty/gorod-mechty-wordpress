@@ -26,10 +26,10 @@
     display: block;
     margin: 5px 0 0 0;
 }
-/*@media (max-width: 960px)
+@media (max-width: 960px)
 {
     .banking
     {
         margin: 130px 0 0 0;
     }
-}*/
+}

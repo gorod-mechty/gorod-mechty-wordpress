@@ -1,24 +1,36 @@
 .nav
 {
-    margin: 20px 0 0 25px;
+    margin: 20px 0 0 5%;
     list-style: none;
+    max-width: 850px;
+    width: 75%; 
     padding: 0;
     float: left;
+    text-align: justify;
+    font-size: 0;
+}
+
+.nav:after
+{
+    content: "";
+    display: inline-block;
+    width: 99%;
 }
 
 .nav__item
 {
-    float: left;
-    margin: 20px 0 0 10px;
-    padding: 5px 15px;
+    margin: 20px 0 0 0;
+    padding: 5px 0;
     font-size: 18px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .nav__item_state_current
 {
     color: #fff;
     background: #007722;
+    padding: 5px 15px;
     border: 2px solid #fff;
     font-size: 18px;
 

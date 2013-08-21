@@ -1,8 +1,8 @@
 .cashflow
 {
     float: left;
-    width: 235px;
-    margin: 50px 0 60px 45px;
+    width: 20%;
+    margin: 35px 0 60px 3%;
 }
 .cashflow__item
 {
@@ -20,18 +20,23 @@
     color: #909090;
     margin: 5px 0;
 }
+.cashflow__target
+{
+    font-size: 13px;
+    color: #909090;
+    float: left;
+    padding: 2px 5px 0 0;
+}
 
-/*@media (max-width: 960px)
+@media (max-width: 960px)
 {
     .cashflow
     {
-        float: left;
-        width: 155px;
-        margin: 110px 0 60px 20px;
+        margin: 110px 0 60px 3%;
     }
 }
 
-@media (min-width: 1200px)
+/*@media (min-width: 1200px)
 {
     .cashflow
     {

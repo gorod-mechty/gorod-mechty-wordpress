@@ -215,6 +215,7 @@
                         },
                         {
                             block: 'table',
+                            mods: { type: 'mini' },
                             content: [
                                 {
                                     elem: 'row',
@@ -293,7 +294,6 @@
                 },
                 {
                     block: 'footer',
-                    mix: { block: 'clearfix' },
                     content: [
                         {
                             elem: 'text',
@@ -308,26 +308,16 @@
                             block: 'socials',
                             content: [
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            elem: 'link',
-                                            elemMods: { type: 'vk' },
-                                            url: '/',
-                                            content: 'ВКонтакте'
-                                        }
-                                    ]
+                                    elem: 'link',
+                                    elemMods: { type: 'vk' },
+                                    url: '/',
+                                    content: 'ВКонтакте'
                                 },
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            elem: 'link',
-                                            elemMods: { type: 'fb' },
-                                            url: '/',
-                                            content: 'ВКонтакте'
-                                        }
-                                    ]
+                                    elem: 'link',
+                                    elemMods: { type: 'fb' },
+                                    url: '/',
+                                    content: 'ВКонтакте'
                                 }
                             ]
                         },

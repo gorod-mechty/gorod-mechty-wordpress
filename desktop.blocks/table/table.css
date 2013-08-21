@@ -4,6 +4,7 @@
     font-size: 15px;
     text-align: left;
     border-collapse: collapse;
+    clear: both;
 }
 .table__row_type_cashflow
 {

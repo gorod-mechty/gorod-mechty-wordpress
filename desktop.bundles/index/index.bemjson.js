@@ -300,7 +300,7 @@
                                     block: 'b-link',
                                     url: '/',
                                     mods: { style: 'italic' },
-                                    content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время '
+                                    content: 'В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время шторма'
                                 }                           ]
                         },
                         {
@@ -347,7 +347,10 @@
                                     block: 'title',
                                     content: '↓150 грн'
                                 },
-                                'от ',
+                                {
+                                    elem: 'target',
+                                    content: 'от '
+                                },
                                 {
                                     block: 'heading-text',
                                     content: 'Константина Константинопольского '
@@ -367,7 +370,10 @@
                                     block: 'title',
                                     content: '↑18200 грн'
                                 },
-                                'на ',
+                                {
+                                    elem: 'target',
+                                    content: 'на '
+                                },
                                 {
                                     block: 'heading-text',
                                     content: 'закупку материалов для установки скамеек в центральном парке'
@@ -387,7 +393,10 @@
                                     block: 'title',
                                     content: '↓1100 грн'
                                 },
-                                'от',
+                                {
+                                    elem: 'target',
+                                    content: 'от '
+                                },
                                 {
                                     block: 'heading-text',
                                     content: ' Андрея М.'
@@ -416,7 +425,6 @@
 				},
                 {
                     block: 'footer',
-                    mix: { block: 'clearfix' },
                     content: [
                         {
                             elem: 'text',
@@ -431,26 +439,16 @@
                             block: 'socials',
                             content: [
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            elem: 'link',
-                                            elemMods: { type: 'vk' },
-                                            url: '/',
-                                            content: 'ВКонтакте'
-                                        }
-                                    ]
+                                    elem: 'link',
+                                    elemMods: { type: 'vk' },
+                                    url: '/',
+                                    content: 'ВКонтакте'
                                 },
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            elem: 'link',
-                                            elemMods: { type: 'fb' },
-                                            url: '/',
-                                            content: 'ВКонтакте'
-                                        }
-                                    ]
+                                    elem: 'link',
+                                    elemMods: { type: 'fb' },
+                                    url: '/',
+                                    content: 'ВКонтакте'
                                 }
                             ]
                         },

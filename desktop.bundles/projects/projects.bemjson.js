@@ -86,303 +86,307 @@
                     ]
                 },
                 {
-                    block: 'projects-col',
-                    content:[
-                        {
-                            elem: 'title',
-                            mix: { block: 'clearfix' },
-                            content: 'Сделано'
-                        },
-                        {
-                            elem: 'wrap',
-                            content: [
-                                {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-one.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-two.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Освещение улиц города'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-one.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-two.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Освещение улиц города'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 скамейки'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-one.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-two.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Монтаж площадок под мусорные контейнеры'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 современные и удобные скамейки парке'
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-
-                    ]
-                },
-                {
-                    block: 'projects-col',
+                    block: 'projects-columns',
                     content: [
                         {
-                            elem: 'title',
-                            mix: { block: 'clearfix' },
-                            content: 'Делаем'
+                            elem: 'column',
+                            content:[
+                                {
+                                    elem: 'title',
+                                    mix: { block: 'clearfix' },
+                                    content: 'Сделано'
+                                },
+                                {
+                                    elem: 'wrap',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-one.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-two.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Освещение улиц города'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-one.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-two.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Освещение улиц города'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 скамейки'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-one.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-two.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Монтаж площадок под мусорные контейнеры'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 современные и удобные скамейки парке'
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+
+                            ]
                         },
                         {
-                            elem: 'wrap',
+                            elem: 'column',
                             content: [
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-three.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-four.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Монтаж площадок под мусорные контейнеры'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 скамейки'
-                                        }
-                                    ]
+                                    elem: 'title',
+                                    mix: { block: 'clearfix' },
+                                    content: 'Делаем'
                                 },
                                 {
-                                    elem: 'item',
+                                    elem: 'wrap',
                                     content: [
                                         {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-three.png',
-                                            alt: 'img'
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-three.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-four.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Монтаж площадок под мусорные контейнеры'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 скамейки'
+                                                }
+                                            ]
                                         },
                                         {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-four.png',
-                                            alt: 'img'
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-three.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-four.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Монтаж площадок под мусорные контейнеры'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
+                                                }
+                                            ]
                                         },
                                         {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Монтаж площадок под мусорные контейнеры'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-three.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-four.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Монтаж площадок под контейнеры'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили скамейки'
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-three.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-four.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Монтаж площадок под контейнеры'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили скамейки'
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'projects-col',
-                    content:[
-                        {
-                            elem: 'title',
-                            mix: { block: 'clearfix' },
-                            content: 'Планы'
                         },
                         {
-                            elem: 'wrap',
-                            content: [
+                            elem: 'column',
+                            content:[
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-five.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-six.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Установка скамеек в парке'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 современные и удобные скамейки'
-                                        }
-                                    ]
+                                    elem: 'title',
+                                    mix: { block: 'clearfix' },
+                                    content: 'Планы'
                                 },
                                 {
-                                    elem: 'item',
+                                    elem: 'wrap',
                                     content: [
                                         {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-five.png',
-                                            alt: 'img'
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-five.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-six.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Установка скамеек в парке'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 современные и удобные скамейки'
+                                                }
+                                            ]
                                         },
                                         {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-six.png',
-                                            alt: 'img'
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-five.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-six.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Установка скамеек в парке'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
+                                                }
+                                            ]
                                         },
                                         {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Установка скамеек в парке'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 современные и удобные скамейки в центральном парке нашего города'
-                                        }
-                                    ]
-                                },
-                                {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-l' },
-                                            url: '/i/projects-img-five.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-icon',
-                                            mix: { block: 'projects-col', elem: 'img-r' },
-                                            url: '/i/projects-img-six.png',
-                                            alt: 'img'
-                                        },
-                                        {
-                                            block: 'b-link',
-                                            url: '#',
-                                            content: 'Установка скамеек в парке'
-                                        },
-                                        {
-                                            block: 'text',
-                                            mods: { style: 'italic' },
-                                            content: 'Мы установили 24 современные и удобные скамейки'
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-l' },
+                                                    url: '/i/projects-img-five.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-icon',
+                                                    mix: { block: 'projects-columns', elem: 'img-r' },
+                                                    url: '/i/projects-img-six.png',
+                                                    alt: 'img'
+                                                },
+                                                {
+                                                    block: 'b-link',
+                                                    url: '#',
+                                                    content: 'Установка скамеек в парке'
+                                                },
+                                                {
+                                                    block: 'text',
+                                                    mods: { style: 'italic' },
+                                                    content: 'Мы установили 24 современные и удобные скамейки'
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'button',
-                    mix: { block: 'clearfix' },
-                    content:[
+                        },
                         {
-                            block: 'b-link',
-                            mods: { type: 'button' },
-                            url: '#',
-                            content: 'Загрузить ещё'
+                            block: 'button',
+                            content:[
+                                {
+                                    block: 'b-link',
+                                    mods: { type: 'button' },
+                                    url: '#',
+                                    content: 'Загрузить ещё'
+                                }
+                            ]
                         }
                     ]
                 },
@@ -403,26 +407,16 @@
                             block: 'socials',
                             content: [
                                 {
-                                    elem: 'item',
-                                    content:[
-                                        {
-                                            elem: 'link',
-                                            elemMods: { type: 'vk' },
-                                            url: '/',
-                                            content: 'ВКонтакте'
-                                        }
-                                    ]
+                                    elem: 'link',
+                                    elemMods: { type: 'vk' },
+                                    url: '/',
+                                    content: 'ВКонтакте'
                                 },
                                 {
-                                    elem: 'item',
-                                    content: [
-                                        {
-                                            elem: 'link',
-                                            elemMods: { type: 'fb' },
-                                            url: '/',
-                                            content: 'ВКонтакте'
-                                        }
-                                    ]
+                                    elem: 'link',
+                                    elemMods: { type: 'fb' },
+                                    url: '/',
+                                    content: 'ВКонтакте'
                                 }
                             ]
                         },

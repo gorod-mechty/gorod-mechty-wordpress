@@ -1,19 +1,15 @@
 .socials
 {
     float: left;
-}
-.socials__item
-{
-    position: relative;
-    float: left;
-    margin: 0 0 0 30px;
+    width: 45%;
 }
 .socials__link
 {
-	display: block;
     height: 27px;
     padding: 2px 0 0 35px;
     color: #d23e33;
+    display: inline-block;
+    margin: 0 0 0 10%;
 }
 .socials__link_type_vk
 {

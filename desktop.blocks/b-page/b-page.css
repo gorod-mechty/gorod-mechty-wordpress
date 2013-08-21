@@ -2,30 +2,28 @@
 {
     background: #f4f8fb;
     font: 15px 'PT Sans', arial, sans-serif;
-    margin: 0;
-    height: 100%;
+    margin: auto;
 }
 .b-page__inner
 {
-    width: 1000px;
-    margin: auto;
-    min-height: 100%;
+    max-width: 1920px;
+    min-width: 768px;
+    padding: 0 10%;
     position: relative;
-    padding: 0 20px;
 }
 .b-page__inner_state_main
 {
-   background: url('../../../../i/tree.png') no-repeat top 250px left 595px;
+   background: url('../../../../i/tree.png') no-repeat top 250px left 100%;
 }
-/*
+
 @media (max-width: 960px)
 {
    .b-page__inner_state_main
     {
-       background: url('../../../../i/tree.png') no-repeat top 385px left 500px;
+       background: url('../../../../i/tree.png') no-repeat top 350px left 100%;
     }
 }
-@media (min-width: 1200px)
+/*@media (min-width: 1200px)
 {
     .b-page__inner
     {
