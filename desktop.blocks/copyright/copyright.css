@@ -1,6 +1,5 @@
 .copyright
 {
-    margin: -25px 0 0 0;
     float: right;
 }
 
@@ -9,6 +8,5 @@
     .copyright
         {
             width: 125px;
-            margin: 0;
         }
 }
