@@ -21,6 +21,7 @@
                 },
                 {
                     block: 'nav',
+                    mix: { block: 'clearfix' },
                     content: [
                         {
                             elem: 'item',

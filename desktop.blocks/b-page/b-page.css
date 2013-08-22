@@ -2,7 +2,7 @@
 {
     background: #f4f8fb;
     font: 15px 'PT Sans', arial, sans-serif;
-    margin: auto;
+    margin: 0;
 }
 .b-page__inner
 {
@@ -10,31 +10,28 @@
     min-width: 768px;
     padding: 0 5%;
     position: relative;
+    margin: auto;
 }
 .b-page__inner_state_main
 {
-   background: url('../../../../i/tree.png') no-repeat top 250px left 100%;
+   background: url('../../../../i/tree.png') no-repeat top 220px left 100%;
 }
 
-@media (max-width: 960px)
+@media (max-width: 1050px)
 {
    .b-page__inner_state_main
     {
-       background: url('../../../../i/tree.png') no-repeat top 350px left 500px;
+       background: url('../../../../i/tree.png') no-repeat top 220px left 600px;
     }
     .b-page__inner
     {
-        padding: 0 1%;
+        padding: 0 20px;
     }
 }
-/*@media (min-width: 1200px)
+@media (min-width: 1450px)
 {
-    .b-page__inner
-    {
-        max-width: 1320px;
-    }
     .b-page__inner_state_main
     {
-       background: url('../../../../i/tree.png') no-repeat top 250px left 910px;
+       background: url('../../../../i/tree.png') no-repeat top 220px right 30%;
     }
-}*/
+}

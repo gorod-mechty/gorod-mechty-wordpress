@@ -1,10 +1,10 @@
 .description
 {
     width: 535px;
-    float: left;
     margin: 10px 0 0 5%;
     font-size: 18px;
     color: #504e4e;
+    padding: 65px 40% 0 140px;
 }
 
 /*@media (max-width: 960px)

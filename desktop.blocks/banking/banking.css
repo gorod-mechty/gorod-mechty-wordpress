@@ -3,7 +3,7 @@
     border: 3px solid #d23e33;
     border-radius: 30px;
     width: 325px;
-    height: 325px;
+    /*height: 325px;*/
     float: left;
     margin: 55px 0 60px 0;
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
@@ -30,6 +30,6 @@
 {
     .banking
     {
-        margin: 130px 0 0 0;
+        margin: 55px 0 0 0;
     }
 }

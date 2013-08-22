@@ -20,7 +20,7 @@
                         {
                             block: 'b-link',
                             mix: { block: 'logo' },
-                            url: '../index/index.html',
+                            url: '/',
                             content:''
                         },
                         {
