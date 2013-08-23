@@ -1,7 +1,8 @@
 .socials
 {
     float: left;
-    width: 35%;
+    width: 36%;
+    margin: 0 0 0 5%;
 }
 .socials__link
 {
@@ -9,7 +10,6 @@
     padding: 2px 0 0 35px;
     color: #d23e33;
     display: inline-block;
-    margin: 0 0 0 10%;
 }
 .socials__link_type_vk
 {
@@ -18,20 +18,5 @@
 .socials__link_type_fb
 {
     background: url("../../../../../i/socials.png") no-repeat;
+    margin: 0 0 0 20%;
 }
-/*
-
-@media (max-width: 960px)
-{
-    .socials
-    {
-        margin: 0 0 0 30px;
-    }
-}
-@media (min-width: 1200px)
-{
-    .socials
-    {
-        margin: 0 0 0 140px;
-    }
-}*/

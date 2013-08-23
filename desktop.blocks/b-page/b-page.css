@@ -7,7 +7,6 @@
 .b-page__inner
 {
     max-width: 1920px;
-    min-width: 768px;
     padding: 0 5%;
     position: relative;
     margin: auto;

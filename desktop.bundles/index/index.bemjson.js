@@ -21,7 +21,6 @@
                 },
                 {
                     block: 'nav',
-                    mix: { block: 'clearfix' },
                     content: [
                         {
                             elem: 'item',
@@ -428,13 +427,18 @@
                     block: 'footer',
                     content: [
                         {
-                            elem: 'text',
-                            content: '© 2013  БО «Фонд Город Мечты»'
-                        },
-                        {
-                            elem: 'link',
-                            url: 'mailto:info@gorod-mechty.org',
-                            content: 'info@gorod-mechty.org'
+                            elem: 'contacts',
+                            content: [
+                                {
+                                    elem: 'text',
+                                    content: '© 2013  БО «Фонд Город Мечты»'
+                                },
+                                {
+                                    elem: 'link',
+                                    url: 'mailto:info@gorod-mechty.org',
+                                    content: 'info@gorod-mechty.org'
+                                }
+                            ]
                         },
                         {
                             block: 'socials',
