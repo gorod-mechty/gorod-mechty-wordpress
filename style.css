@@ -22,14 +22,14 @@ Tags: simple
 }
 .b-page__inner_state_main
 {
-   background: url("../../../../img/tree.png") no-repeat top 220px left 100%;
+   background: url("./img/tree.png") no-repeat top 220px left 100%;
 }
 
 @media (max-width: 1050px)
 {
    .b-page__inner_state_main
     {
-       background: url("../../../../img/tree.png") no-repeat top 220px left 600px;
+       background: url("./img/tree.png") no-repeat top 220px left 600px;
     }
     .b-page__inner
     {
@@ -40,7 +40,7 @@ Tags: simple
 {
     .b-page__inner_state_main
     {
-       background: url("../../../../img/tree.png") no-repeat top 220px right 30%;
+       background: url("./img/tree.png") no-repeat top 220px right 30%;
     }
 }
 /* ../../desktop.blocks/b-page/b-page.css end */
@@ -108,7 +108,7 @@ Tags: simple
     height: 163px;
     margin: 50px 0 0 0;
     display: block;
-    background: url("/img/z06FJGtfoJMoqDfWzmMdPiOc9Eg.png");
+    background: url("./img/z06FJGtfoJMoqDfWzmMdPiOc9Eg.png");
 }
 /* ../../desktop.blocks/logo/logo.css end */
 
@@ -449,11 +449,11 @@ Tags: simple
 }
 .socials__link_type_vk
 {
-    background: url("../../../../../img/socials.png") no-repeat top -36px left 0;
+    background: url("./img/socials.png") no-repeat top -36px left 0;
 }
 .socials__link_type_fb
 {
-    background: url("../../../../../img/socials.png") no-repeat;
+    background: url("./img/socials.png") no-repeat;
     margin: 0 0 0 20%;
 }
 /* ../../desktop.blocks/socials/socials.css end */
