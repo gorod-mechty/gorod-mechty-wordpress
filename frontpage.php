@@ -56,17 +56,25 @@
                 <h1 class="heading heading_level_1">
                     Новости
                 </h1>
-                <?php if(have_posts()) : ?>
-                    <?php query_posts('posts_per_page=3'); ?>
-                    <?php while(have_posts()) : the_post(); ?>
-                        <div class="news-list__item" id="post-<?php the_ID(); ?>">
-                            <div class="news-list__date">
-                                <?php the_time('j F'); ?>
+                <div class="news-list">
+                    <h1 class="heading heading_level_1">
+                        Новости
+                    </h1>
+                    <?php if(have_posts()) : ?>
+                        <?php query_posts('posts_per_page=3'); ?>
+                        <?php while(have_posts()) : the_post(); ?>
+                            <div class="news-list__item" id="post-<?php the_ID(); ?>">
+                                <div class="news-list__date">
+                                    <?php the_time('j F'); ?>
+                                </div>
+                                <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
                             </div>
-                            <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+                <div class="text news__more">
+                    Больше - <a class="b-link" href="<?php echo site_url(); ?>/?cat=1">в архиве</a>
+                </div>
             </div>
             <div class="cashflow">
                 <h1 class="heading heading_level_1">

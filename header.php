@@ -19,7 +19,7 @@
         <div class="b-page__inner b-page__inner_state_main clearfix">
             <div class="logo"></div>
             <ul class="nav">
-                <li class="nav__item">
+               <!--  <li class="nav__item">
                     <a class="b-link b-link_type_nav" href="/about/">О фонде</a>
                 </li>
                 <li class="nav__item">
@@ -33,5 +33,7 @@
                 </li>
                 <li class="nav__item">
                     <a class="b-link b-link_type_nav" href="/cashflow/">Денежный поток</a>
-                </li>
+                </li> -->
+                <?php wp_list_pages("title_li=&include=33");?>
+                <?php wp_list_categories("title_li=&include=");?>
             </ul>
