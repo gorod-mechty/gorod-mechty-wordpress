@@ -49,28 +49,25 @@
                 <br>
                 <a class="b-link b-link_type_block" href="/">Стать партнёром</a>
             </div>
+
+
+
             <div class="news-list">
                 <h1 class="heading heading_level_1">
                     Новости
                 </h1>
-                <div class="news-list__item">
-                    <div class="news-list__date">
-                        12 октября
-                    </div><a class="b-link b-link_style_italic" href="/">В Гаспре коммунальный пляж урезали в четыре раза</a>
-                </div>
-                <div class="news-list__item">
-                    <div class="news-list__date">
-                        12 октября
-                    </div><a class="b-link b-link_style_italic" href="/">В Севастополе второй день ищут гражданина Беларуси, унесенного в море во время шторма</a>
-                </div>
-                <div class="news-list__item">
-                    <div class="news-list__date">
-                        12 октября
-                    </div><a class="b-link b-link_style_italic" href="/">Севастополь предлагают лишить всех привилегий и сделать обычным админцентром «Таврической» области</a>
-                </div>
-                <div class="text news__more">
-                    Больше - <a class="b-link" href="/">в архиве</a>
-                </div>
+                <?php if(have_posts()) : ?>
+                    <?php query_posts('posts_per_page=3'); ?>
+                    <?php while(have_posts()) : the_post(); ?>
+                        <li id="post-<?php the_ID(); ?>">
+                        <div class="news-list__item" id="post-<?php the_ID(); ?>">
+                            <div class="news-list__date">
+                                <?php the_time('j F'); ?>
+                            </div>
+                            <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
             <div class="cashflow">
                 <h1 class="heading heading_level_1">
