@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-            <div class="description">
+    <?php if (is_front_page()){ ?>
+                    <?php include(TEMPLATEPATH . '/frontpage.php'); ?>
+                <?php } else{ ?>
+                  <div class="description">
                 <p>
                     Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки, дожидаясь перемен, мы приглашаем к сотрудничеству.
                 </p>
@@ -121,5 +124,7 @@
                 <div class="text news__more">
                     Показать <a class="b-link" href="/">весь список</a>
                 </div>
-            </div>
+            </div> 
+                <?php } ?>
+            
  <?php get_footer(); ?>
