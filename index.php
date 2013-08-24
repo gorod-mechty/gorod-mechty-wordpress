@@ -11,8 +11,13 @@
                                 <li class="news__item" id="post-<?php the_ID(); ?>">
                                     <div class="news__date">
                                         <?php the_time('j F'); ?>
-                                    </div><a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                                    </div>
+                                    <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
                                 </li>
+                            <?php endwhile; else: ?>
+                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                            <?php endif; ?>
+                            <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                             <?php endwhile; else: ?>
                                 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
                             <?php endif; ?>
@@ -20,11 +25,5 @@
                         </ul>
                     </div>
                     <?php } ?>
-                    ?>
-                    <?php endwhile; else: ?>
-                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-                    <?php endif; ?>
-                    <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
-                <?php } ?>
             </div>
 <?php get_footer(); ?>
