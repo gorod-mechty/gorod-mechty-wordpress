@@ -19,6 +19,19 @@
         <div class="b-page__inner b-page__inner_state_main clearfix">
             <div class="logo"></div>
             <ul class="nav">
-                <?php wp_list_pages("title_li=&include=33");?>
-                <?php wp_list_categories("title_li=&include=");?>
+                <li class="nav__item">
+                    <a class="b-link b-link_type_nav" href="/about/">О фонде</a>
+                </li>
+                <li class="nav__item">
+                    <a class="b-link b-link_type_nav" href="/projects/">Проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="b-link b-link_type_nav" href="/news/">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="b-link b-link_type_nav" href="/partners/">Сотрудничество</a>
+                </li>
+                <li class="nav__item">
+                    <a class="b-link b-link_type_nav" href="/cashflow/">Денежный поток</a>
+                </li>
             </ul>
