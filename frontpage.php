@@ -13,17 +13,17 @@
             <div class="projects clearfix">
                 <div class="projects__item">
                     <div class="projects__title">
-                        Сделано <a class="b-link" href="/">(Х проектов)</a>
+                        Сделано <a class="b-link" href="/">(<?php echo get_category(3)->category_count; ?> проектов)</a>
                     </div><a class="b-link b-link_type_project" href="/"><img class="b-icon" src="/i/project-img-one.png" alt="img">В ближайшем будущем мы планируем взяться за освещение на улицах города</a>
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Делаем <a class="b-link" href="/">(Х проектов)</a>
+                        Делаем <a class="b-link" href="/">(<?php echo get_category(4)->category_count; ?> проектов)</a>
                     </div><a class="b-link b-link_type_project" href="/"><img class="b-icon" src="/i/project-img-two.png" alt="img">Сейчас мы работаем над установкой площадок под мусорные баки</a>
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Планы <a class="b-link" href="/">(Х проектов)</a>
+                        Планы <a class="b-link" href="/">(<?php echo get_category(5)->category_count; ?> проектов)</a>
                     </div><a class="b-link b-link_type_project" href="/"><img class="b-icon" src="/i/project-img-three.png" alt="img">Мы установили 24 удобные скамейки в центральном парке</a>
                 </div>
             </div>
@@ -49,29 +49,21 @@
                 <br>
                 <a class="b-link b-link_type_block" href="/">Стать партнёром</a>
             </div>
-
-
-
             <div class="news-list">
                 <h1 class="heading heading_level_1">
                     Новости
                 </h1>
-                <div class="news-list">
-                    <h1 class="heading heading_level_1">
-                        Новости
-                    </h1>
-                    <?php if(have_posts()) : ?>
-                        <?php query_posts('posts_per_page=3'); ?>
-                        <?php while(have_posts()) : the_post(); ?>
-                            <div class="news-list__item" id="post-<?php the_ID(); ?>">
-                              s  <div class="news-list__date">
-                                    <?php the_time('j F'); ?>
-                                </div>
-                                <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                <?php if(have_posts()) : ?>
+                    <?php query_posts('posts_per_page=3'); ?>
+                    <?php while(have_posts()) : the_post(); ?>
+                        <div class="news-list__item" id="post-<?php the_ID(); ?>">
+                            <div class="news-list__date">
+                                <?php the_time('j F'); ?>
                             </div>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                </div>
+                            <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
                 <div class="text news__more">
                     Больше - <a class="b-link" href="<?php echo site_url(); ?>/?cat=1">в архиве</a>
                 </div>

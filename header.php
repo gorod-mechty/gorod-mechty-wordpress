@@ -19,7 +19,6 @@
         <div class="b-page__inner b-page__inner_state_main clearfix">
             <div class="logo"></div>
             <ul class="nav">
-              
                 <?php wp_list_pages("title_li=&include=33");?>
                 <?php wp_list_categories("title_li=&include=");?>
             </ul>
