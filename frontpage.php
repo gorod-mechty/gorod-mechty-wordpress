@@ -59,7 +59,6 @@
                 <?php if(have_posts()) : ?>
                     <?php query_posts('posts_per_page=3'); ?>
                     <?php while(have_posts()) : the_post(); ?>
-                        <li id="post-<?php the_ID(); ?>">
                         <div class="news-list__item" id="post-<?php the_ID(); ?>">
                             <div class="news-list__date">
                                 <?php the_time('j F'); ?>
