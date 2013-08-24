@@ -64,7 +64,7 @@
                         <?php query_posts('posts_per_page=3'); ?>
                         <?php while(have_posts()) : the_post(); ?>
                             <div class="news-list__item" id="post-<?php the_ID(); ?>">
-                                <div class="news-list__date">
+                              s  <div class="news-list__date">
                                     <?php the_time('j F'); ?>
                                 </div>
                                 <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
