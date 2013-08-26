@@ -24,10 +24,8 @@
                                         <div class="partners__item">
                                             <div class="partners__text">
                                                 <?php the_content() ?>
-                                                <br>
-                                                <br>
                                                 <a class="b-link" href="/">
-                                                    "gorod-mechty.org"
+                                                    gorod-mechty.org
                                                     <?php the_post_thumbnail(); ?>
                                                 </a>
                                             </div>
