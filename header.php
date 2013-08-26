@@ -23,15 +23,11 @@
         <?php } ?>
             <div class="logo"></div>
             <ul class="nav">
-                <li class="nav__item">
-                    <a class="b-link b-link_type_nav" href="/about/">О фонде</a>
-                </li>
+                <?php wp_list_pages("title_li=&include=33");?>
                 <li class="nav__item">
                     <a class="b-link b-link_type_nav" href="/projects/">Проекты</a>
                 </li>
-                <li class="nav__item">
-                    <a class="b-link b-link_type_nav" href="/news/">Новости</a>
-                </li>
+                <?php wp_list_categories("title_li=&include=1");?>
                 <li class="nav__item">
                     <a class="b-link b-link_type_nav" href="/partners/">Сотрудничество</a>
                 </li>
