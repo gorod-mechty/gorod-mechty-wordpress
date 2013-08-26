@@ -27,9 +27,29 @@
             <?php include(TEMPLATEPATH . '/sidebar.php'); ?>
         <?php } ?>
             <ul class="nav">
-                <?php wp_list_pages("title_li=&include=33");?> 
-                <?php wp_list_categories("title_li=&include=2");?> 
-                <?php wp_list_categories("title_li=&include=1");?> 
-                <?php wp_list_categories("title_li=&include=6");?> 
-                <?php wp_list_categories("title_li=&include=7");?> 
+                <?php if ( is_page(33)) { ?>
+                    <li class="nav__item nav__item_state_current">О фонде</li>
+                <?php } else{ ?>
+                    <?php wp_list_pages("title_li=&include=33");?> 
+                <?php } ?>
+                <?php if ( is_category(2) { ?>
+                    <li class="nav__item nav__item_state_current">Проекты</li>
+                <?php } else{ ?>
+                    <?php wp_list_categories("title_li=&include=2");?> 
+                <?php } ?>
+                <?php if ( is_category(1) { ?>
+                    <li class="nav__item nav__item_state_current">Новости</li>
+                <?php } else{ ?>
+                    <?php wp_list_categories("title_li=&include=1");?> 
+                <?php } ?>
+                <?php if ( is_category(6) { ?>
+                    <li class="nav__item nav__item_state_current">Сотрудничество</li>
+                <?php } else{ ?>
+                    <?php wp_list_categories("title_li=&include=6");?>
+                <?php } ?>
+                <?php if ( is_category(7) { ?>
+                    <li class="nav__item nav__item_state_current">Денежный поток</li>
+                <?php } else{ ?>
+                    <?php wp_list_categories("title_li=&include=7");?> 
+                <?php } ?>
             </ul>
