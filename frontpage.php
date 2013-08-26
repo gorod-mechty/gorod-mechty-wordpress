@@ -13,17 +13,35 @@
                 <div class="projects__item">
                     <div class="projects__title">
                         Сделано <a class="b-link" href="/">(<?php echo get_category(3)->category_count; ?> проектов)</a>
-                    </div><a class="b-link b-link_type_project" href="/"><img class="b-icon" src="/i/project-img-one.png" alt="img">В ближайшем будущем мы планируем взяться за освещение на улицах города</a>
+                    </div>
+                    <?php if(have_posts()) : ?>
+                        <?php $posts = get_posts( "category=3&showposts=1" ); ?>
+                        <?php while(have_posts()) : the_post(); ?>
+                                <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
                         Делаем <a class="b-link" href="/">(<?php echo get_category(4)->category_count; ?> проектов)</a>
-                    </div><a class="b-link b-link_type_project" href="/"><img class="b-icon" src="/i/project-img-two.png" alt="img">Сейчас мы работаем над установкой площадок под мусорные баки</a>
+                    </div>
+                    <?php if(have_posts()) : ?>
+                        <?php $posts = get_posts( "category=4&showposts=1" ); ?>
+                        <?php while(have_posts()) : the_post(); ?>
+                                <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
                         Планы <a class="b-link" href="/">(<?php echo get_category(5)->category_count; ?> проектов)</a>
-                    </div><a class="b-link b-link_type_project" href="/"><img class="b-icon" src="/i/project-img-three.png" alt="img">Мы установили 24 удобные скамейки в центральном парке</a>
+                    </div>
+                    <?php if(have_posts()) : ?>
+                        <?php $posts = get_posts( "category=5&showposts=1" ); ?>
+                        <?php while(have_posts()) : the_post(); ?>
+                                <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="banking">
@@ -59,7 +77,7 @@
                             <div class="news-list__date">
                                 <?php the_time('j F'); ?>
                             </div>
-                            <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                            <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
