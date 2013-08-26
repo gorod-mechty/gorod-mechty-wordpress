@@ -24,10 +24,12 @@
                                         <div class="partners__item">
                                             <div class="partners__text">
                                                 <?php the_content() ?>
-                                                <a class="b-link" href="/">
-                                                    gorod-mechty.org
-                                                    <?php the_post_thumbnail(); ?>
-                                                </a>
+                                                <?php if ( get_post_meta($post->ID, 'home', true) ) : ?>
+                                                    <a class="b-link" href="<?php echo get_post_meta($post->ID, 'home', true) ?>">
+                                                        <?php echo get_post_meta($post->ID, 'home', true) ?>
+                                                        <?php the_post_thumbnail(); ?>
+                                                    </a>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     <?php endwhile; else: ?>

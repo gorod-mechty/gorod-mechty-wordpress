@@ -7,12 +7,12 @@
                 </p>
             </div>
             <h2 class="heading heading_level_2 main-heading">
-                <a class="b-link b-link_type_main" href="/category/projects/">Наши проекты</a>
+                <a class="b-link b-link_type_main" href="/category/proekty/">Наши проекты</a>
             </h2>
             <div class="projects clearfix">
                 <div class="projects__item">
                     <div class="projects__title">
-                        Сделано <a class="b-link" href="/">(<?php echo get_category(3)->category_count; ?> проектов)</a>
+                        Сделано <a class="b-link" href="/category/proekty/">(<?php echo get_category(3)->category_count; ?> проектов)</a>
                     </div>
                     <?php $posts = get_posts( "category=3&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Делаем <a class="b-link" href="/">(<?php echo get_category(4)->category_count; ?> проектов)</a>
+                        Делаем <a class="b-link" href="/category/proekty/">(<?php echo get_category(4)->category_count; ?> проектов)</a>
                     </div>
                     <?php $posts = get_posts( "category=4&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Планы <a class="b-link" href="/">(<?php echo get_category(5)->category_count; ?> проектов)</a>
+                        Планы <a class="b-link" href="/category/proekty/">(<?php echo get_category(5)->category_count; ?> проектов)</a>
                     </div>
                     <?php $posts = get_posts( "category=5&showposts=1" ); ?>
                     <?php if ($posts) : ?>
