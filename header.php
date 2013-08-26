@@ -16,7 +16,11 @@
         <?php wp_head(); ?>
     </head>
     <body class="b-page b-page__body b-page_page_main">
-        <div class="b-page__inner b-page__inner_state_main clearfix">
+        <?php if ( is_front_page()) { ?>
+            <div class="b-page__inner b-page__inner_state_main clearfix">
+        <?php } else{ ?>
+            <div class="b-page__inner clearfix">
+        <?php } ?>
             <div class="logo"></div>
             <ul class="nav">
                 <li class="nav__item">
