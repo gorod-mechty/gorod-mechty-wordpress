@@ -76,7 +76,7 @@ Tags: simple
 /* ../../desktop.blocks/b-link/b-link.css end */
 
 /* ../../desktop.blocks/b-link/_type/b-link_type_nav.css begin */
-.b-link_type_nav
+.b-link_type_nav, .page_item a, .cat-item a
 {
     font-size: 18px;
     font-weight: bold;

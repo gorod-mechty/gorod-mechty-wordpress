@@ -27,9 +27,9 @@
             
         <?php } ?>
             <ul class="nav">
-                <?php wp_list_pages("title_li=&include=33");?>
-                <?php wp_list_categories("title_li=&include=2");?>
-                <?php wp_list_categories("title_li=&include=1");?>
-                <?php wp_list_categories("title_li=&include=6");?>
-                <?php wp_list_categories("title_li=&include=7");?>
+                <?php wp_list_pages("title_li=&include=33");?> 
+                <?php wp_list_categories("title_li=&include=2");?> 
+                <?php wp_list_categories("title_li=&include=1");?> 
+                <?php wp_list_categories("title_li=&include=6");?> 
+                <?php wp_list_categories("title_li=&include=7");?> 
             </ul>
