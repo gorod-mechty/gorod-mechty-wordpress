@@ -7,7 +7,7 @@
                 </p>
             </div>
             <h2 class="heading heading_level_2 main-heading">
-                <a class="b-link b-link_type_main" href="/projects/">Наши проекты</a>
+                <a class="b-link b-link_type_main" href="/category/projects/">Наши проекты</a>
             </h2>
             <div class="projects clearfix">
                 <div class="projects__item">
@@ -53,7 +53,7 @@
                     Новости
                 </h1>
                 <?php if(have_posts()) : ?>
-                    <?php query_posts('posts_per_page=3'); ?>
+                    <?php $posts = get_posts( "category=1&showposts=3" ); ?>
                     <?php while(have_posts()) : the_post(); ?>
                         <div class="news-list__item" id="post-<?php the_ID(); ?>">
                             <div class="news-list__date">
