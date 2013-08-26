@@ -19,12 +19,12 @@
         <?php if ( is_front_page()) { ?>
             <div class="b-page__inner b-page__inner_state_main clearfix">
             <div class="logo"></div>
-        <?php } else{ ?>
+        <?php } else if ( is_category(2)|| in_category(7)){ ?>
             <div class="b-page__inner clearfix">
             <a class="b-link logo" href="/"></a>
-        <?php } ?>
-        <?php if ( is_category(6)) { ?>
-            
+        <?php } else{ ?>
+            <div class="b-page__inner clearfix">
+            <?php include(TEMPLATEPATH . '/sidebar.php'); ?>
         <?php } ?>
             <ul class="nav">
                 <?php wp_list_pages("title_li=&include=33");?> 
