@@ -18,11 +18,27 @@
                                     <?php endif; ?>
                                     <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                                 </ul>
+                            <?php } else if ( is_category(6)){ ?>
+                                <div class="partners">
+                                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                                        <div class="partners__item">
+                                            <div class="partners__text">
+                                                <?php the_content() ?>
+                                                <br>
+                                                <br>
+                                                <a class="b-link" href="/">
+                                                    "gorod-mechty.org"
+                                                    <?php the_post_thumbnail(); ?>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    <?php endwhile; else: ?>
+                                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                                    <?php endif; ?>
+                                    <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
+                                </div>
                             <?php } else{ ?>
-                                <h2><?php the_title(); ?></h2>
-                                the_content(__('(more...)'));
-                                wp_link_pages();
-                                edit_post_link(__('Edit This'));
+                                <div>0</div>
                             <?php } ?>
                         </div>
                     <?php } ?>
