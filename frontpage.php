@@ -14,33 +14,33 @@
                     <div class="projects__title">
                         Сделано <a class="b-link" href="/">(<?php echo get_category(3)->category_count; ?> проектов)</a>
                     </div>
-                    <?php if(have_posts()) : ?>
-                        <?php $posts = get_posts( "category=3&showposts=1" ); ?>
-                        <?php while(have_posts()) : the_post(); ?>
-                                <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
-                        <?php endwhile; ?>
+                    <?php $posts = get_posts( "category=3&showposts=1" ); ?>
+                    <?php if ($posts) : ?>
+                        <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                            <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
                         Делаем <a class="b-link" href="/">(<?php echo get_category(4)->category_count; ?> проектов)</a>
                     </div>
-                    <?php if(have_posts()) : ?>
-                        <?php $posts = get_posts( "category=4&showposts=1" ); ?>
-                        <?php while(have_posts()) : the_post(); ?>
-                                <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
-                        <?php endwhile; ?>
+                    <?php $posts = get_posts( "category=4&showposts=1" ); ?>
+                    <?php if ($posts) : ?>
+                        <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                            <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
                         Планы <a class="b-link" href="/">(<?php echo get_category(5)->category_count; ?> проектов)</a>
                     </div>
-                    <?php if(have_posts()) : ?>
-                        <?php $posts = get_posts( "category=5&showposts=1" ); ?>
-                        <?php while(have_posts()) : the_post(); ?>
-                                <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
-                        <?php endwhile; ?>
+                    <?php $posts = get_posts( "category=5&showposts=1" ); ?>
+                    <?php if ($posts) : ?>
+                        <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                            <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                        <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
             </div>
@@ -70,17 +70,17 @@
                 <h1 class="heading heading_level_1">
                     Новости
                 </h1>
-                <?php if(have_posts()) : ?>
-                    <?php $posts = get_posts( "category=1&showposts=3" ); ?>
-                    <?php while(have_posts()) : the_post(); ?>
-                        <div class="news-list__item" id="post-<?php the_ID(); ?>">
-                            <div class="news-list__date">
-                                <?php the_time('j F'); ?>
+                <?php $posts = get_posts( "category=1&showposts=3" ); ?>
+                    <?php if ($posts) : ?>
+                        <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                            <div class="news-list__item" id="post-<?php the_ID(); ?>">
+                                <div class="news-list__date">
+                                    <?php the_time('j F'); ?>
+                                </div>
+                                <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                             </div>
-                            <a class="b-link b-link_style_italic" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                        </div>
-                    <?php endwhile; ?>
-                <?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 <div class="text news__more">
                     Больше - <a class="b-link" href="<?php echo site_url(); ?>/?cat=1">в архиве</a>
                 </div>
