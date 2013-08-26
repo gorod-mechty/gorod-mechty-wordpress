@@ -18,20 +18,18 @@
     <body class="b-page b-page__body b-page_page_main">
         <?php if ( is_front_page()) { ?>
             <div class="b-page__inner b-page__inner_state_main clearfix">
+            <div class="logo"></div>
         <?php } else{ ?>
             <div class="b-page__inner clearfix">
+            <a class="b-link logo" href="/"></a>
         <?php } ?>
-            <div class="logo"></div>
+        <?php if ( is_category(6)) { ?>
+            
+        <?php } ?>
             <ul class="nav">
                 <?php wp_list_pages("title_li=&include=33");?>
-                <li class="nav__item">
-                    <a class="b-link b-link_type_nav" href="/projects/">Проекты</a>
-                </li>
+                <?php wp_list_categories("title_li=&include=2");?>
                 <?php wp_list_categories("title_li=&include=1");?>
-                <li class="nav__item">
-                    <a class="b-link b-link_type_nav" href="/partners/">Сотрудничество</a>
-                </li>
-                <li class="nav__item">
-                    <a class="b-link b-link_type_nav" href="/cashflow/">Денежный поток</a>
-                </li>
+                <?php wp_list_categories("title_li=&include=6");?>
+                <?php wp_list_categories("title_li=&include=7");?>
             </ul>

@@ -165,6 +165,10 @@ Tags: simple
     font-weight: bold;
     display: inline-block;
 }
+.nav__item, .page_item, .cat-item a:hover
+{
+    text-decoration: none;
+}
 
 .nav__item_state_current
 {
