@@ -41,6 +41,42 @@
                                 <div>0</div>
                             <?php } ?>
                         </div>
+                    <?php } else if ( is_category(2)){ ?>
+                        <div class="description">
+                            <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
+                            <div class="projects-columns">
+                                <div class="projects-columns__column">
+                                    <div class="projects-columns__title clearfix"><?php echo get_category(3)->category_name; ?></div>
+                                    <div class="projects-columns__wrap">
+                                        <?php $posts = get_posts( "category=3&showposts=3" ); ?>
+                                        <?php if ($posts) : ?>
+                                            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                                <div class="projects-columns__item">
+                                                    <?php if ( get_post_meta($post->ID, 'left', true) ) : ?>
+                                                        <a class="b-link" href="http://<?php echo get_post_meta($post->ID, 'left', true) ?>"></a>
+                                                        <img class="b-icon projects-columns__img-l" src="">
+                                                    <?php endif; ?>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } else{ ?>
+                        <div class="content">
+                            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                                <h1 class="heading heading_level_1"><?php the_title(); ?></h1>
+                                <?php
+                                the_content(__('(more...)'));
+                                wp_link_pages();
+                                edit_post_link(__('Edit This'));
+                                ?>
+                            <?php endwhile; else: ?>
+                                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                            <?php endif; ?>
+                                <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
+                        </div>
                     <?php } ?>
                 <?php } ?>
 <?php get_footer(); ?>
