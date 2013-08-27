@@ -13,6 +13,10 @@ Tags: simple
     font: 15px 'PT Sans', arial, sans-serif;
     margin: 0;
 }
+.b-page a
+{
+    color: #d23e33;
+}
 .b-page__inner
 {
     max-width: 1920px;
@@ -114,7 +118,7 @@ Tags: simple
 /* ../../desktop.blocks/logo/logo.css end */
 
 /* ../../desktop.blocks/submenu/submenu.css begin */
-.submenu 
+.submenu, #submenu 
 {
     list-style: none;
     clear: both;
@@ -122,7 +126,7 @@ Tags: simple
     width: 140px;
     font-weight: bold;
 }
-.submenu__item 
+.submenu__item, #submenu li
 {
     margin: 0 auto 20px ;
 }
