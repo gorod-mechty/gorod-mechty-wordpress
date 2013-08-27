@@ -1,7 +1,9 @@
 <div class="sidebar">
                 <a class="b-link logo" href="/"></a>
+                <?php if (is_page(33)){ ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'submenu' ) ); ?>
+                <?php } else{ ?>
                 <ul class="submenu">
-                    wp_nav_menu
                     <li class="submenu__item">
                         <a class="b-link" href="/">Реквизиты</a>
                     </li>
@@ -13,6 +15,6 @@
                     <li class="submenu__item">
                         <a class="b-link" href="/">Расходные материалы</a>
                     </li>
-                <?php } ?>
                 </ul>
+                <?php } ?>
             </div>
