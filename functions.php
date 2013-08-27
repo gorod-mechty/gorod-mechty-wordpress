@@ -1,6 +1,7 @@
 <?php add_theme_support('post-thumbnails'); ?>
-function add_munus()
+
+function my_theme_register_menus()
 {
-    register_nav_menu('submenu',__( 'submenu' ));
+    register_nav_menu('submenu', 'submenu');
 }
-add_action( 'init', 'add_menus');
+add_action( 'init', 'my_theme_register_menus');
