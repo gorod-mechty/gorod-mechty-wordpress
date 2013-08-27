@@ -64,7 +64,7 @@ Tags: simple
 /* ../../desktop.blocks/sidebar/sidebar.css end */
 
 /* ../../desktop.blocks/b-link/b-link.css begin */
-.b-link
+.b-link, .content a
 {
     color: #d23e33;
 }
