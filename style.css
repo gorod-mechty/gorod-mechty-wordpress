@@ -883,7 +883,7 @@ Tags: simple
 /* ../../desktop.blocks/thumb/thumb.css end */
 
 /* ../../desktop.blocks/thumb/_side/thumb_side_left.css begin */
-.thumb_side_left
+.thumb_side_left .size-full
 {
     border-top-left-radius: 30px;
     float: left;
