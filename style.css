@@ -118,7 +118,7 @@ Tags: simple
 /* ../../desktop.blocks/logo/logo.css end */
 
 /* ../../desktop.blocks/submenu/submenu.css begin */
-.submenu, #menu-submenu 
+.submenu, .menu 
 {
     list-style: none;
     clear: both;
@@ -126,7 +126,7 @@ Tags: simple
     width: 140px;
     font-weight: bold;
 }
-.submenu__item, #menu-submenu li
+.submenu__item, .menu li
 {
     margin: 0 auto 20px ;
 }

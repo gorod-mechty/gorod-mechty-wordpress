@@ -1,7 +1,7 @@
 <div class="sidebar">
                 <a class="b-link logo" href="/"></a>
                 <?php if (is_page(33)){ ?>
-                    <?php wp_nav_menu( array( 'theme_location' => 'submenu' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>
                 <?php } else if(in_category(6)){ ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?>
                 <?php } else{ ?>
