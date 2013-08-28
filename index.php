@@ -2,7 +2,7 @@
                 <?php if (is_front_page()){ ?>
                     <?php include(TEMPLATEPATH . '/frontpage.php'); ?>
                 <?php } else{ ?>
-                    <?php if ( is_category(1)|| in_category(6)) { ?>
+                    <?php if ( is_category(1)|| in_category(6)|| in_category(7)) { ?>
                         <div class="content">
                             <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
                             <?php if ( is_category(1)) { ?>
@@ -19,6 +19,7 @@
                                     <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                                 </ul>
                             <?php } else if ( is_category(6)){ ?>
+                            <p>…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему?</p>
                                 <div class="partners">
                                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         <div class="partners__item">
@@ -37,9 +38,13 @@
                                     <?php endif; ?>
                                     <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                                 </div>
+                            <?php } else if ( is_category(7)){ ?>
+                            <p>…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему?</p>
+                        </div>
                             <?php } else{ ?>
                                 <div>0</div>
                             <?php } ?>
+                    <?php if ( is_category(1)|| in_category(6)) { ?>    
                         </div>
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
