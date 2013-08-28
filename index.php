@@ -2,10 +2,10 @@
                 <?php if (is_front_page()){ ?>
                     <?php include(TEMPLATEPATH . '/frontpage.php'); ?>
                 <?php } else{ ?>
-                    <?php if ( is_category(1)|| in_category(6)|| in_category(7)) { ?>
+                    <?php if ( is_category(1)|| in_category(6)|| in_category(7)|| is_archive()) { ?>
                         <div class="content">
                             <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
-                            <?php if ( is_category(1)) { ?>
+                            <?php if ( is_category(1)|| is_archive()) { ?>
                                 <ul class="news">
                                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         <li class="news__item" id="post-<?php the_ID(); ?>">
