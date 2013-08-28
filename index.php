@@ -38,11 +38,10 @@
                                     <?php endif; ?>
                                     <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                                 </div>
-                            <?php } ?>
-                        </div>
-                        <?php if ( is_category(7)){ ?>
+                            <?php } else if ( is_category(7)){ ?>
                             <p>…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему?</p>
-                        <?php } ?>     
+                            <?php } ?>
+                        </div> 
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
                             <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
