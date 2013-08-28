@@ -4,6 +4,8 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>
                 <?php } else if(in_category(6)){ ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?>
+                <?php } else if(in_category(1)){ ?>
+                    <?php wp_get_archives(); ?>
                 <?php } else{ ?>
                 <ul class="submenu">
                     <li class="submenu__item">
