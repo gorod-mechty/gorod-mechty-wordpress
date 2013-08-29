@@ -71,14 +71,10 @@
                                         <?php $text = get_field(text); ?>
                                         <?php if($text = "Приход") { 
                                             echo  '<tr class="table__row table__row_type_cashflow row_state_from">
-                                            <td class="table__cell table__cell_type_sum">'
-                                                .↑1500 грн.
-                                            '</td>'; } ?>
+                                            <td class="table__cell table__cell_type_sum">↑1500 грн.</td>'; } ?>
                                         <?php if($text = "Расход") { 
                                             echo  '<tr class="table__row table__row_type_cashflow row_state_to">
-                                            <td class="table__cell table__cell_type_sum">'
-                                                .↓1500 грн.
-                                            '</td>'; } ?>
+                                            <td class="table__cell table__cell_type_sum">↓1500 грн.</td>'; } ?>
                                             <td class="table__cell table__cell_type_date">
                                                 <?php the_time('j F'); ?>
                                                 <div class="table__br"></div><?php the_time('G:i'); ?>
