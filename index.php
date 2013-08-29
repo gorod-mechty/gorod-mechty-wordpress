@@ -96,7 +96,8 @@
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
                             <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
-                            <div class="projects-columns">
+                        </div>
+                        <div class="projects-columns">
                                 <div class="projects-columns__column">
                                     <div class="projects-columns__title clearfix"><?php echo get_category(3)->category_name; ?></div>
                                     <div class="projects-columns__wrap">
@@ -114,7 +115,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
                     <?php } else{ ?>
                         <div class="content">
                             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
