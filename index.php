@@ -82,7 +82,7 @@
                                                 <a class="b-link b-link_style_italic" href="#"><?php print_r(the_field('project')); ?></a>
                                             </td>
                                             <td class="table__cell table__cell_type_comment">
-                                                <?php the_field('coments'); ?>
+                                                <?php the_field('comments'); ?>
                                             </td>
                                         </tr>
                                     <?php endwhile; else: ?>
