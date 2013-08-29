@@ -99,7 +99,7 @@
                         </div>
                         <div class="projects-columns">
                                 <div class="projects-columns__column">
-                                    <div class="projects-columns__title clearfix"><?php echo get_category(3)->category_name; ?></div>
+                                    <div class="projects-columns__title clearfix"><?php $cat = get_the_category(); echo $cat[3]->cat_name; ?></div>
                                     <div class="projects-columns__wrap">
                                         <?php $posts = get_posts( "category=3&showposts=3" ); ?>
                                         <?php if ($posts) : ?>
