@@ -19,7 +19,7 @@
                                     <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                                 </ul>
                             <?php } else if ( is_category(6)){ ?>
-                            <p>…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему?</p>
+                            <p><?php echo category_description(6); ?></p>
                                 <div class="partners">
                                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                                         <div class="partners__item">
@@ -39,7 +39,7 @@
                                     <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                                 </div>
                             <?php } else if ( is_category(7)){ ?>
-                            <p>…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему?</p>
+                            <p><?php echo category_description(7); ?></p>
                             <?php } ?>
                         </div>
                         <?php if (is_category(7)){ ?>
@@ -95,12 +95,12 @@
                         <?php } ?>
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
-                            <h1 class="heading heading_level_1"><?php $cat = get_category(); echo $cat->name; ?></h1>
+                            <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
                             <?php echo category_description(2); ?> 
                         </div>
                         <div class="projects-columns">
                                 <div class="projects-columns__column">
-                                    <div class="projects-columns__title clearfix"><?php $cat = get_the_category(); echo $cat[3]->cat_name; ?></div>
+                                    <div class="projects-columns__title clearfix">Сделано</div>
                                     <div class="projects-columns__wrap">
                                         <?php $posts = get_posts( "category=3&showposts=3" ); ?>
                                         <?php if ($posts) : ?>
