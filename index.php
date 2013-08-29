@@ -104,19 +104,10 @@
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                                 <div class="projects-columns__item">
-                                                <?php $left_img = get('left_img');
-                                                if ($left_img != "") { ?>
-                                                    <img class="b-icon projects-columns__img-l" src="<?php echo $left_img; ?>" alt="img">
-                                                <?php } ?>
-                                                <?php $right_img = get('right_img');
-                                                if ($right_img != "") { ?>
-                                                    <img class="b-icon projects-columns__img-r" src="<?php echo $right_img; ?>" alt="img">
-                                                <?php } ?>
-                                                <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                                                <?php $comment = get('comment');
-                                                if ($comment != "") { ?>
-                                                    <div class="text text_style_italic"><?php echo $comment; ?></div>
-                                                <?php } ?>
+                                                    <img class="b-icon projects-columns__img-l" src="<?php the_field('left_img'); ?>" alt="img">
+                                                    <img class="b-icon projects-columns__img-r" src="<?php the_field('right_img'); ?>" alt="img">
+                                                    <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                                    <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                                 </div>
                                             <?php endforeach; ?>
                                         <?php endif; ?>
