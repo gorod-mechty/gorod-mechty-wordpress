@@ -69,7 +69,7 @@
                                     </tr>
                                      <?php if (have_posts()) : while (have_posts()) : the_post();
                                         $is_income = get_field("direction") == "Приход"; ?>
-                                            <tr class="table__row table__row_type_cashflow table__row_flow_<?php if ($is_income) echo "income"; ?>">
+                                            <tr class="table__row table__row_type_cashflow table__row_flow_<?php if ($is_income) { echo "income"; } else { echo "outgo"; } ?>">
                                             <td class="table__cell table__cell_type_sum"><?php if ($is_income) { echo "↓"; } else { echo "↑"; } the_field('sum'); ?> грн.</td>
                                             <td class="table__cell table__cell_type_date">
                                                 <?php the_time('j F'); ?>
