@@ -68,22 +68,29 @@
                                         </th>
                                     </tr>
                                      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                                        <tr class="table__row table__row_type_cashflow">
-                                            <td class="table__cell table__cell_type_sum">
-                                                ↑1500 грн
-                                            </td>
+                                        <?php $text = get_field(text); ?>
+                                        <?php if($text = "Приход") { 
+                                            echo  '<tr class="table__row table__row_type_cashflow row_state_from">
+                                            <td class="table__cell table__cell_type_sum">'
+                                                .↑1500 грн.
+                                            '</td>'; } ?>
+                                        <?php if($text = "Расход") { 
+                                            echo  '<tr class="table__row table__row_type_cashflow row_state_to">
+                                            <td class="table__cell table__cell_type_sum">'
+                                                .↓1500 грн.
+                                            '</td>'; } ?>
                                             <td class="table__cell table__cell_type_date">
-                                                08 октября
-                                                <div class="table__br"></div>15:35
+                                                <?php the_time('j F'); ?>
+                                                <div class="table__br"></div><?php the_time('G:i'); ?>
                                             </td>
                                             <td class="table__cell table__cell_type_from">
-                                                Константин Константинопольский
+                                                <?php the_field('from'); ?>
                                             </td>
                                             <td class="table__cell">
-                                                <a class="b-link b-link_style_italic" href="#">Установка новых скамеек в центральном парке</a>
+                                                <a class="b-link b-link_style_italic" href="#"><?php the_field('project'); ?></a>
                                             </td>
                                             <td class="table__cell table__cell_type_comment">
-                                                Закупка материалов
+                                                <?php the_field('coments'); ?>
                                             </td>
                                         </tr>
                                     <?php endwhile; else: ?>
