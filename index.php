@@ -48,6 +48,50 @@
                                 <a class="b-link b-link_type_dashed" href="#">Поступления</a>
                                 <a class="b-link b-link_type_dashed" href="#">Траты</a>
                             </div>
+                            <table class="table">
+                                <tbody>
+                                    <tr class="table__row">
+                                        <th class="table__head">
+                                            Сумма
+                                        </th>
+                                        <th class="table__head">
+                                            Дата/Время
+                                        </th>
+                                        <th class="table__head">
+                                            От кого/аноним
+                                        </th>
+                                        <th class="table__head">
+                                            Проект
+                                        </th>
+                                        <th class="table__head">
+                                            Комментарии
+                                        </th>
+                                    </tr>
+                                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                                        <tr class="table__row table__row_type_cashflow">
+                                            <td class="table__cell table__cell_type_sum">
+                                                ↑1500 грн
+                                            </td>
+                                            <td class="table__cell table__cell_type_date">
+                                                08 октября
+                                                <div class="table__br"></div>15:35
+                                            </td>
+                                            <td class="table__cell table__cell_type_from">
+                                                Константин Константинопольский
+                                            </td>
+                                            <td class="table__cell">
+                                                <a class="b-link b-link_style_italic" href="#">Установка новых скамеек в центральном парке</a>
+                                            </td>
+                                            <td class="table__cell table__cell_type_comment">
+                                                Закупка материалов
+                                            </td>
+                                        </tr>
+                                    <?php endwhile; else: ?>
+                                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                                    <?php endif; ?>
+                                    <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
+                                </tbody>
+                            </table>
                         <?php } ?>
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
@@ -60,10 +104,19 @@
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                                 <div class="projects-columns__item">
-                                                    <?php if ( get_post_meta($post->ID, 'left', true) ) : ?>
-                                                        <a class="b-link" href="http://<?php echo get_post_meta($post->ID, 'left', true) ?>"></a>
-                                                        <img class="b-icon projects-columns__img-l" src="">
-                                                    <?php endif; ?>
+                                                <?php $left_img = get('left_img');
+                                                if ($left_img != "") { ?>
+                                                    <img class="b-icon projects-columns__img-l" src="<?php echo $left_img; ?>" alt="img">
+                                                <?php } ?>
+                                                <?php $right_img = get('right_img');
+                                                if ($right_img != "") { ?>
+                                                    <img class="b-icon projects-columns__img-r" src="<?php echo $right_img; ?>" alt="img">
+                                                <?php } ?>
+                                                <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                                <?php $comment = get('comment');
+                                                if ($comment != "") { ?>
+                                                    <div class="text text_style_italic"><?php echo $comment; ?></div>
+                                                <?php } ?>
                                                 </div>
                                             <?php endforeach; ?>
                                         <?php endif; ?>
