@@ -95,7 +95,8 @@
                         <?php } ?>
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
-                            <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
+                            <h1 class="heading heading_level_1"><?php $cat = get_category(); echo $cat->name; ?></h1>
+                            <?php echo category_description(2); ?> 
                         </div>
                         <div class="projects-columns">
                                 <div class="projects-columns__column">
