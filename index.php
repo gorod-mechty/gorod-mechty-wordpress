@@ -68,8 +68,8 @@
                                         </th>
                                     </tr>
                                      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                                        <?php echo "просто сказать". get_field(text); ?>
-                                        <?php $text = get_field(text); ?>
+                                        <?php echo "просто сказать". get_field("direction"); ?>
+                                        <?php $text = get_field("direction"); ?>
                                         <?php if($text = "Приход") { 
                                             echo  '<tr class="table__row table__row_type_cashflow row_state_from">
                                             <td class="table__cell table__cell_type_sum">↑1500 грн.</td>'; } ?>
