@@ -67,15 +67,10 @@
                                             Комментарии
                                         </th>
                                     </tr>
-                                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                                        <?php echo "просто сказать". get_field("direction"); ?>
-                                        <?php $text = get_field("direction"); ?>
-                                        <?php if($text = "Приход") { 
-                                            echo  '<tr class="table__row table__row_type_cashflow row_state_from">
-                                            <td class="table__cell table__cell_type_sum">↑1500 грн.</td>'; } ?>
-                                        <?php if($text = "Расход") { 
-                                            echo  '<tr class="table__row table__row_type_cashflow row_state_to">
-                                            <td class="table__cell table__cell_type_sum">↓1500 грн.</td>'; } ?>
+                                     <?php if (have_posts()) : while (have_posts()) : the_post();
+                                        $is_income = get_field("direction") == "Приход"; ?>
+                                            <tr class="table__row table__row_type_cashflow table__row_flow_<?php if ($is_income) echo "income"; ?>">
+                                            <td class="table__cell table__cell_type_sum"><?php if ($is_income) echo "↓"; else { echo "↑"; } ?><?php the_field('sum'); ?> грн.</td>'; } ?>
                                             <td class="table__cell table__cell_type_date">
                                                 <?php the_time('j F'); ?>
                                                 <div class="table__br"></div><?php the_time('G:i'); ?>
