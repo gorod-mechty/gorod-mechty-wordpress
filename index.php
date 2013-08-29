@@ -41,7 +41,14 @@
                             <?php } else if ( is_category(7)){ ?>
                             <p>…Сколько раз вы, бывая в других городах и странах и подмечая там аккуратные клумбы, ухоженные аллеи и парки, удобные скамейки и необычные памятники, говорили себе: «Ну, почему так не сделать у нас?» Действительно, почему?</p>
                             <?php } ?>
-                        </div> 
+                        </div>
+                        <?php if (is_category(7)){ ?>
+                            <div class="link-block">
+                                <a class="b-link b-link_type_dashed" href="#">Все</a>
+                                <a class="b-link b-link_type_dashed" href="#">Поступления</a>
+                                <a class="b-link b-link_type_dashed" href="#">Траты</a>
+                            </div>
+                        <?php } ?>
                     <?php } else if ( is_category(2)){ ?>
                         <div class="description">
                             <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
