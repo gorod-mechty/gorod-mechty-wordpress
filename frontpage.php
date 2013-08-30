@@ -1,7 +1,5 @@
             <div class="description">
-                <?php if ( get_post_meta($post->ID, 'description', true) ) : ?>    
-                    <p><?php echo get_post_meta($post->ID, 'description', true) ?></p>
-                <?php endif; ?>
+                <p><?php the_field('description'); ?></p>
             </div>
             <h2 class="heading heading_level_2 main-heading">
                 <a class="b-link b-link_type_main" href="/category/proekty/">Наши проекты</a>
@@ -51,18 +49,15 @@
                 <div class="text">
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
-                <?php if ( get_post_meta($post->ID, 'account', true) ) : ?>    
-                    <p>Счет  <?php echo get_post_meta($post->ID, 'account', true) ?></p>
-                <?php endif; ?>
-                <pre class="banking__details">
-                <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>    
-                    ОКПО  <?php echo get_post_meta($post->ID, 'okpo', true) ?>
-                <?php endif; ?>
+                <pre class="banking__details">    
+                    Счет  <?php the_field('account'); ?>
                 </pre>
-                <pre class="banking__details">
-                <?php if ( get_post_meta($post->ID, 'mfo', true) ) : ?>    
-                    МФО   <?php echo get_post_meta($post->ID, 'mfo', true) ?>
-                <?php endif; ?>
+                <pre class="banking__details">    
+                    ОКПО  <?php the_field('okpo'); ?>
+                </pre>
+                <pre class="banking__details">      
+                    МФО  <?php the_field('mfo'); ?>
+                </pre>
                 </pre>
                 <a class="b-link b-link_type_block" href="/">Быть волонтёром</a>
                 <br>
