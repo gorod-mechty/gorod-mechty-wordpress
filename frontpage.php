@@ -52,7 +52,7 @@
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
                 <?php if ( get_post_meta($post->ID, 'account', true) ) : ?>    
-                <pre class="banking__details">Счет  <?php echo get_post_meta($post->ID, 'account', true) ?></pre>
+                    <p>Счет  <?php echo get_post_meta($post->ID, 'account', true) ?></p>
                 <?php endif; ?>
                 <pre class="banking__details">
                 <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>    
