@@ -51,21 +51,21 @@
                 <div class="text">
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
-                <?php if ( get_post_meta($post->ID, 'account', true) ) : ?>
-                <pre class="banking__details">   
-                    Счет  <?php echo get_post_meta($post->ID, 'account', true) ?>
-                </pre>
+                <pre class="banking__details">
+                <?php if ( get_post_meta($post->ID, 'account', true) ) : ?>    
+                    <?php echo get_post_meta($post->ID, 'account', true) ?>
                 <?php endif; ?>
-                <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>
-                <pre class="banking__details">   
+                </pre>
+                <pre class="banking__details">
+                <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>    
                     ОКПО  <?php echo get_post_meta($post->ID, 'okpo', true) ?>
-                </pre>
                 <?php endif; ?>
-                <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>
-                <pre class="banking__details">   
-                    МФО   <?php echo get_post_meta($post->ID, 'okpo', true) ?>
                 </pre>
+                <pre class="banking__details">
+                <?php if ( get_post_meta($post->ID, 'mfo', true) ) : ?>    
+                    МФО   <?php echo get_post_meta($post->ID, 'mfo', true) ?>
                 <?php endif; ?>
+                </pre>
                 <a class="b-link b-link_type_block" href="/">Быть волонтёром</a>
                 <br>
                 <a class="b-link b-link_type_block" href="/">Стать партнёром</a>
