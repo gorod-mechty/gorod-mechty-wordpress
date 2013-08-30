@@ -6,7 +6,7 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?>
                 <?php } else if(in_category(1)){ ?>
                 <ul class="menu">
-                    <?php wp_get_archives(); ?>
+                    
                 </ul>
                 <?php } else{ ?>
                 <ul class="submenu">
