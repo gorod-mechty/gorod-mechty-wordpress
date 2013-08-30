@@ -3,6 +3,7 @@
             </div>
             <h2 class="heading heading_level_2 main-heading">
                 <a class="b-link b-link_type_main" href="/category/proekty/">Наши проекты</a>
+                <?php the_field('account'); ?>
             </h2>
             <div class="projects clearfix">
                 <div class="projects__item">
