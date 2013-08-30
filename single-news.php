@@ -4,7 +4,7 @@ Template Name Posts: Single News
 */
 ?>
 <?php get_header(); ?>
-<?php } else if(is_post_type_archive('single-news')){ ?>
+<?php if(is_post_type_archive('single-news')){ ?>
     <p>true</p>
 <?php } ?>
 
