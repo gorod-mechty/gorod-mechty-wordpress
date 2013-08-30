@@ -52,9 +52,9 @@
                 <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
                 <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
                 <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
-                <a class="b-link b-link_type_block" href="/">Быть волонтёром</a>
+                <a class="b-link b-link_type_block" href="/volontery">Быть волонтёром</a>
                 <br>
-                <a class="b-link b-link_type_block" href="/">Стать партнёром</a>
+                <a class="b-link b-link_type_block" href="/partnery/">Стать партнёром</a>
             </div>
             <div class="news-list">
                 <h1 class="heading heading_level_1">

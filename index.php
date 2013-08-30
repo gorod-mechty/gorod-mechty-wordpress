@@ -114,6 +114,22 @@
                             <?php endif; ?>
                         </div>
                     </div>
+                    <div class="projects-columns__column">
+                        <div class="projects-columns__title clearfix">Делаем</div>
+                        <div class="projects-columns__wrap">
+                            <?php $posts = get_posts( "category=4&showposts=3" ); ?>
+                            <?php if ($posts) : ?>
+                                <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                    <div class="projects-columns__item">
+                                        <img class="b-icon projects-columns__img-l" src="<?php the_field('left_img'); ?>" alt="img">
+                                        <img class="b-icon projects-columns__img-r" src="<?php the_field('right_img'); ?>" alt="img">
+                                        <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                        <div class="text text_style_italic"><?php the_field('comment'); ?></div>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
+                    </div>
                 </div>
         <?php } else{ ?>
             <div class="content">
