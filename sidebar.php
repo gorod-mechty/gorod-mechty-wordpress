@@ -4,7 +4,7 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>
                 <?php } else if(in_category(6)){ ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?>
-                <?php } else if(is_page_template('single-news.php')){ ?>
+                <?php } else if(is_post_type_archive('single-news')){ ?>
                 <ul class="menu">
                     <li class="submenu__item">
                         <a class="b-link" href="<?php echo site_url(); ?>/?cat=1">К списку новостей</a>
