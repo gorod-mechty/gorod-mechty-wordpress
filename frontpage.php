@@ -2,12 +2,12 @@
                 <p><?php the_field('description'); ?></p>
             </div>
             <h2 class="heading heading_level_2 main-heading">
-                <a class="b-link b-link_type_main" href="/category/proekty/">Наши проекты</a>
+                <a class="b-link b-link_type_main" href="<?php echo site_url(); ?>/?cat=2">Наши проекты</a>
             </h2>
             <div class="projects clearfix">
                 <div class="projects__item">
                     <div class="projects__title">
-                        Сделано <a class="b-link" href="/category/proekty/">(<?php echo get_category(3)->category_count; ?> проектов)</a>
+                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">(<?php echo get_category(3)->category_count; ?> проектов)</a>
                     </div>
                     <?php $posts = get_posts( "category=3&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -18,7 +18,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Делаем <a class="b-link" href="/category/proekty/">(<?php echo get_category(4)->category_count; ?> проектов)</a>
+                        Делаем <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">(<?php echo get_category(4)->category_count; ?> проектов)</a>
                     </div>
                     <?php $posts = get_posts( "category=4&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Планы <a class="b-link" href="/category/proekty/">(<?php echo get_category(5)->category_count; ?> проектов)</a>
+                        Планы <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">(<?php echo get_category(5)->category_count; ?> проектов)</a>
                     </div>
                     <?php $posts = get_posts( "category=5&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -52,7 +52,7 @@
                 <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
                 <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
                 <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
-                <a class="b-link b-link_type_block" href="/volontery">Быть волонтёром</a>
+                <a class="b-link b-link_type_block" href="/volontery/">Быть волонтёром</a>
                 <br>
                 <a class="b-link b-link_type_block" href="/partnery/">Стать партнёром</a>
             </div>
@@ -100,7 +100,7 @@
                         <?php endforeach; ?>
                     <?php endif; ?>
                     <div class="text news__more">
-                        Показать <a class="b-link" href="/category/denezhnyj-potok/">весь список</a>
+                        Показать <a class="b-link" href="<?php echo site_url(); ?>/?cat=7">весь список</a>
                     </div>
                 </div>
             </div>

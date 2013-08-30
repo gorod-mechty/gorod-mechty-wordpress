@@ -4,23 +4,19 @@
                     <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>
                 <?php } else if(in_category(6)){ ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?>
-                <?php } else if(in_category(1)){ ?>
+                <?php } else if(is_page_template('single-news.php')){ ?>
                 <ul class="menu">
-                    
+                    <li class="submenu__item">
+                        <a class="b-link" href="<?php echo site_url(); ?>/?cat=1">К списку новостей</a>
+                    </li>
+                </ul>
+                <?php } else if(is_page_template('single-project.php')){ ?>
+                <ul class="menu">
+                    <li class="submenu__item">
+                        <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">К списку проектов</a>
+                    </li>
                 </ul>
                 <?php } else{ ?>
-                <ul class="submenu">
-                    <li class="submenu__item">
-                        <a class="b-link" href="/">Реквизиты</a>
-                    </li>
-                    <li class="submenu__item">Партнеры
-                    </li>
-                    <li class="submenu__item">
-                        <a class="b-link" href="/">Волонтёры</a>
-                    </li>
-                    <li class="submenu__item">
-                        <a class="b-link" href="/">Расходные материалы</a>
-                    </li>
-                </ul>
+                
                 <?php } ?>
             </div>
