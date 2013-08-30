@@ -1,10 +1,7 @@
             <div class="description">
-                <p>
-                    Всех, кто разделяет нашу озабоченность будущим столицы Крыма и кто не хочет сидеть сложа руки, дожидаясь перемен, мы приглашаем к сотрудничеству.
-                </p>
-                <p>
-                    Предприятия, учреждения, общественные организации и просто неравнодушные люди - вместе мы сможем сделать наш любимый город настоящим Городом Мечты!
-                </p>
+                <?php if ( get_post_meta($post->ID, 'description', true) ) : ?>    
+                    <p><?php echo get_post_meta($post->ID, 'description', true) ?></p>
+                <?php endif; ?>
             </div>
             <h2 class="heading heading_level_2 main-heading">
                 <a class="b-link b-link_type_main" href="/category/proekty/">Наши проекты</a>
