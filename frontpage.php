@@ -91,7 +91,7 @@
                                 <?php if ($is_income) { echo "от"; } else { echo "на"; }; ?>
                             </div>
                             <div class="heading-text">
-                                <?php if ($is_income) { echo the_field('from'); } else { echo the_title(); } the_field('sum'); ?> грн.
+                                <?php if ($is_income) { echo the_field('from'); } else { echo the_title(); }; ?>
                             </div>
                             <div class="cashflow__date">
                                 в <?php the_time('G:i'); ?>, <?php the_time('j F Y'); ?>
