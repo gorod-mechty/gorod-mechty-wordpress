@@ -49,11 +49,9 @@
                 <div class="text">
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
-                <pre class="banking__details">
-                    Счет  <?php the_field('account'); ?>
-                    ОКПО  <?php the_field('okpo'); ?>
-                    МФО  <?php the_field('mfo'); ?>
-                </pre>
+                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
+                <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
+                <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
                 <a class="b-link b-link_type_block" href="/">Быть волонтёром</a>
                 <br>
                 <a class="b-link b-link_type_block" href="/">Стать партнёром</a>
@@ -81,47 +79,26 @@
                 <h1 class="heading heading_level_1">
                     Денежный поток
                 </h1>
-                <div class="cashflow__item">
-                    <div class="title">
-                        ↓150 грн
-                    </div>
-                    <div class="cashflow__target">
-                        от
-                    </div>
-                    <div class="heading-text">
-                        Константина Константинопольского
-                    </div>
-                    <div class="cashflow__date">
-                        в 15:35, 07 июня 2013
-                    </div>
-                </div>
-                <div class="cashflow__item">
-                    <div class="title">
-                        ↑18200 грн
-                    </div>
-                    <div class="cashflow__target">
-                        на
-                    </div>
-                    <div class="heading-text">
-                        закупку материалов для установки скамеек в центральном парке
-                    </div>
-                    <div class="cashflow__date">
-                        в 15:35, 07 июня 2013
-                    </div>
-                </div>
-                <div class="cashflow__item">
-                    <div class="title">
-                        ↓1100 грн
-                    </div>
-                    <div class="cashflow__target">
-                        от
-                    </div>
-                    <div class="heading-text">
-                        Андрея М.
-                    </div>
-                    <div class="cashflow__date">
-                        в 15:35, 07 июня 2013
-                    </div>
+                <?php $posts = get_posts( "category=7&showposts=3" ); ?>
+                    <?php if ($posts) : ?>
+                        <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                             $is_income = get_field("direction") == "Приход"; ?>
+                          <div class="cashflow__item">
+                              <div class="title">
+                                <?php if ($is_income) { echo "↓"; } else { echo "↑"; } the_field('sum'); ?> грн.
+                            </div>
+                            <div class="cashflow__target">
+                                <?php if ($is_income) { echo "от"; } else { echo "на"; }; ?>
+                            </div>
+                            <div class="heading-text">
+                                <?php the_field('from'); ?>
+                            </div>
+                            <div class="cashflow__date">
+                                в <?php the_time('G:i'); ?>, <?php the_time('j F Y'); ?>
+                            </div>
+                          </div>  
+                        <?php endforeach; ?>
+                    <?php endif; ?>
                 </div>
                 <div class="text news__more">
                     Показать <a class="b-link" href="/">весь список</a>
