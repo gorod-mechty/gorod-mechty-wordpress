@@ -944,6 +944,7 @@ Tags: simple
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    width: 280px;
 }
 .project-single__img-r
 {
@@ -955,6 +956,7 @@ Tags: simple
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    width: 280px;
 }
 .project0single__img-big
 {
