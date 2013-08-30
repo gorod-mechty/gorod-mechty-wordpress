@@ -81,7 +81,7 @@
                 </h1>
                 <?php $posts = get_posts( "category=7&showposts=3" ); ?>
                     <?php if ($posts) : ?>
-                        <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                        <?php foreach ($posts as $post) : setup_postdata ($post);
                              $is_income = get_field("direction") == "Приход"; ?>
                           <div class="cashflow__item">
                               <div class="title">
