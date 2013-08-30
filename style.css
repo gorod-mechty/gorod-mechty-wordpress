@@ -596,6 +596,11 @@ Tags: simple
     display: block;
     font-weight: normal;
 }
+.b-link_type_project img
+{
+    max-width: 165px;
+    max-height: 170px;
+}
 /* ../../desktop.blocks/b-link/_type/b-link_type_project.css end */
 
 /* ../../desktop.blocks/b-link/_type/b-link_type_block.css begin */
