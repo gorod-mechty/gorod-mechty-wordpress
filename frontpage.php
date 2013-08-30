@@ -52,14 +52,21 @@
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
                 <pre class="banking__details">
-Счет  26001060922547
-</pre>
+                <?php if ( get_post_meta($post->ID, 'account', true) ) : ?>    
+                    Счет  <?php echo get_post_meta($post->ID, 'account', true) ?>
+                <?php endif; ?>
+                </pre>
                 <pre class="banking__details">
-ОКПО  38711011
-</pre>
+                <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>    
+                    ОКПО  <?php echo get_post_meta($post->ID, 'okpo', true) ?>
+                <?php endif; ?>
+                </pre>
                 <pre class="banking__details">
-МФО   384436
-</pre><a class="b-link b-link_type_block" href="/">Быть волонтёром</a>
+                <?php if ( get_post_meta($post->ID, 'okpo', true) ) : ?>    
+                    МФО   <?php echo get_post_meta($post->ID, 'okpo', true) ?>
+                <?php endif; ?>
+                </pre>
+                <a class="b-link b-link_type_block" href="/">Быть волонтёром</a>
                 <br>
                 <a class="b-link b-link_type_block" href="/">Стать партнёром</a>
             </div>
