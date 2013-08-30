@@ -439,6 +439,7 @@ Tags: simple
 {
     width: 35%;
     float: left;
+    margin: 0 0 0 10px;
 }
 /* ../../desktop.blocks/footer/footer.css end */
 
@@ -471,6 +472,7 @@ Tags: simple
 .copyright
 {
     float: right;
+    margin: 0 10px 0 0;
 }
 
 @media (max-width: 1200px)
