@@ -4,6 +4,11 @@ Template Name Posts: Single News
 */
 ?>
 <?php get_header(); ?>
+<?php } else if(is_post_type_archive('single-news')){ ?>
+    <p>true</p>
+<?php } ?>
+
+
     <div class="content">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <h1 class="heading heading_level_1"><?php the_title(); ?></h1>
