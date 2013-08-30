@@ -99,8 +99,8 @@
                           </div>  
                         <?php endforeach; ?>
                     <?php endif; ?>
-                </div>
-                <div class="text news__more">
-                    Показать <a class="b-link" href="/">весь список</a>
+                    <div class="text news__more">
+                        Показать <a class="b-link" href="/category/denezhnyj-potok/">весь список</a>
+                    </div>
                 </div>
             </div>
