@@ -121,7 +121,7 @@
                             <?php if ($posts) : ?>
                                 <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                     <div class="projects-columns__item">
-                                        <div class="project-images clearfix">
+                                        <div class="project-images clearfix ">
                                             <img class="b-icon projects-columns__img-l" src="<?php the_field('left_img'); ?>" alt="img">
                                             <img class="b-icon projects-columns__img-r" src="<?php the_field('right_img'); ?>" alt="img">
                                         </div>
