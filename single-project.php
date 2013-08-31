@@ -8,7 +8,7 @@ Template Name Posts: Single Project
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <h1 class="heading heading_level_1"><?php the_title(); ?></h1>
         <div class="project-single">
-        <div class="project-images">
+        <div class="project-images clearfix">
             <img class="b-icon project-single__img-l" src="<?php the_field('left_img'); ?>" alt="img">
             <img class="b-icon project-single__img-r" src="<?php the_field('right_img'); ?>" alt="img">
         </div>
