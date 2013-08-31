@@ -14,11 +14,7 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Mono&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <meta name="description" content="Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня">
         <?php wp_head(); ?>
-        <script type="text/javascript">
-            $(function(){
-                alert('ololo')
-            })
-        </script>
+        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     </head>
     <body class="b-page b-page__body b-page_page_main">
         <?php if ( is_front_page()) { ?>
