@@ -1,6 +1,5 @@
             <div class="description">
                 <p><?php the_field('description'); ?></p>
-                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
             </div>
             <h2 class="heading heading_level_2 main-heading">
                 <a class="b-link b-link_type_main" href="<?php echo site_url(); ?>/?cat=2">Наши проекты</a>
@@ -50,9 +49,11 @@
                 <div class="text">
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
-                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
-                <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
-                <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
+                <div>
+                    <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
+                    <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
+                    <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
+                </div>
                 <a class="b-link b-link_type_block" href="/volontery/">Быть волонтёром</a>
                 <br>
                 <a class="b-link b-link_type_block" href="/partnery/">Стать партнёром</a>
