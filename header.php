@@ -7,7 +7,6 @@
             Симферополь - Фонд Город мечты
         </title>
         <link rel="icon" href="/favicon.ico">
-        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
         <script>
 ;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);
         </script>
@@ -15,6 +14,7 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Mono&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <meta name="description" content="Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня">
         <?php wp_head(); ?>
+        <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     </head>
     <body class="b-page b-page__body b-page_page_main">
         <?php if ( is_front_page()) { ?>
