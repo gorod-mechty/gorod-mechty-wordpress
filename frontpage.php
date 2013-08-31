@@ -40,6 +40,8 @@
                 </div>
             </div>
             <div class="banking">
+                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
+            
                 <div class="banking__title">
                     <span class="banking__title-green">Ты</span> тоже <span class="banking__title-green">можешь</span> помочь сделать мир <span class="banking__title-green">лучше!</span>
                 </div>
@@ -47,8 +49,6 @@
                     Перевести деньги
                 </h4>
                 <div class="text">
-                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
-                
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
                 <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
