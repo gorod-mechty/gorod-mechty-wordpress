@@ -1003,7 +1003,7 @@ Tags: simple
 /* ../../desktop.blocks/project-date/project-date.css begin */
 .project-date
 {
-    margin: 0 0 10px 10px;
+    margin: 5px 0 10px 10px;
     color: #000000;
     font-style: italic;
     font-size: 15px;
@@ -1150,7 +1150,7 @@ Tags: simple
 .projects-columns__column .b-link
 {
     font-weight: bold;
-    margin: 10px auto 10px;
+    margin: 0 auto 10px;
     text-align: center;
     display: block;
 }

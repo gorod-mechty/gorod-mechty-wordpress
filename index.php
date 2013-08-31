@@ -44,9 +44,9 @@
             </div>
             <?php if (is_category(7)){ ?>
                 <div class="link-block">
-                    <a class="b-link b-link_type_dashed" href="#">Все</a>
-                    <a class="b-link b-link_type_dashed" href="#">Приход</a>
-                    <a class="b-link b-link_type_dashed" href="#">Расход</a>
+                    <a class="b-link b-link_type_dashed all" href="#">Все</a>
+                    <a class="b-link b-link_type_dashed income" href="#">Приход</a>
+                    <a class="b-link b-link_type_dashed outcome" href="#">Расход</a>
                 </div>
                 <table class="table">
                     <tbody>

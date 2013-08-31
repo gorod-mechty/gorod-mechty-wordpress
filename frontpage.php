@@ -1,5 +1,6 @@
             <div class="description">
                 <p><?php the_field('description'); ?></p>
+                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
             </div>
             <h2 class="heading heading_level_2 main-heading">
                 <a class="b-link b-link_type_main" href="<?php echo site_url(); ?>/?cat=2">Наши проекты</a>
