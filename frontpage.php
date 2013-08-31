@@ -6,8 +6,6 @@
             </h2>
             <div class="projects clearfix">
                 <div class="projects__item">
-                <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
-                
                     <div class="projects__title">
                         Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">(<?php echo get_category(3)->category_count; ?> проектов)</a>
                     </div>

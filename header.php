@@ -12,6 +12,7 @@
         </script>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>"><!--[if gte IE 7]><link rel="stylesheet" href="../merged/_merged.ie.css"/><![endif]-->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Mono&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <script type="text/javascript" src="js/script.js"></script>
         <meta name="description" content="Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня">
         <?php wp_head(); ?>
     </head>
