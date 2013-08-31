@@ -121,8 +121,10 @@
                             <?php if ($posts) : ?>
                                 <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                     <div class="projects-columns__item">
-                                        <img class="b-icon projects-columns__img-l" src="<?php the_field('left_img'); ?>" alt="img">
-                                        <img class="b-icon projects-columns__img-r" src="<?php the_field('right_img'); ?>" alt="img">
+                                        <div class="project-images">
+                                            <img class="b-icon projects-columns__img-l" src="<?php the_field('left_img'); ?>" alt="img">
+                                            <img class="b-icon projects-columns__img-r" src="<?php the_field('right_img'); ?>" alt="img">
+                                        </div>
                                         <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                     </div>
