@@ -13,6 +13,7 @@
             </div>
         </div>
         <?php wp_footer(); ?>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
     </body>
 </html>
