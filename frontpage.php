@@ -39,9 +39,9 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="banking">
                 <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
             
+            <div class="banking">
                 <div class="banking__title">
                     <span class="banking__title-green">Ты</span> тоже <span class="banking__title-green">можешь</span> помочь сделать мир <span class="banking__title-green">лучше!</span>
                 </div>
