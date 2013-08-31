@@ -17,7 +17,7 @@ Template Name Posts: Single Project
                 <pre class="project-cash__item"><a class="b-link" href="/">Собрано:</a>            8000 грн</pre>
                 <pre class="project-cash__item"><a class="b-link" href="/">Потрачено:</a>        2500 грн</pre>
                 <div class="project-cash__docs">
-                    <a class="b-link b-link_style_italic" href="/">Скачать</a> <span>документацию</span>
+                    <a class="b-link b-link_style_italic" href="<?php the_field('doc'); ?>">Скачать</a> <span>документацию</span>
                 </div>
             </div>
             <div class="project-date">
