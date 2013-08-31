@@ -54,7 +54,7 @@
                 <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
                 <a class="b-link b-link_type_block" href="/volontery/">Быть волонтёром</a>
                 <br>
-                <a class="b-link b-link_type_block" href="/partnery/">Стать партнёром</a>
+                <a class="b-link b-link_type_block" href="<?php echo site_url(); ?>/?cat=6">Стать партнёром</a>
             </div>
             <div class="news-list">
                 <h1 class="heading heading_level_1">
