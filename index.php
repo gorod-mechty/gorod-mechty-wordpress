@@ -124,9 +124,17 @@
                                 <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                     <div class="projects-columns__item">
                                         <div class="project-images clearfix ">
-                                            <img class="b-icon projects-columns__img-l" src="<?php the_field('left_img'); ?>" alt="img">
-                                            <img class="b-icon projects-columns__img-r" src="<?php the_field('right_img'); ?>" alt="img">
-                                        </div>
+                                            <?php 
+                                            $left_img = get_field('left_img');
+                                            $right_img = get_field('right_img');
+                                            $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
+                                            $image_l = wp_get_attachment_image_src( $left_img, $size ); 
+                                            $image_r = wp_get_attachment_image_src( $right_img, $size );
+                                            ?>
+
+                                            <img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>" />
+                                            <img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>" />
+                                            </div>
                                         <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                     </div>
@@ -135,7 +143,7 @@
                         </div>
                     </div>
                     <div class="projects-columns__column">
-                        <div class="projects-columns__title clearfix">Делаем</div>
+                        <div class="projects-columns__title clearfix">Планы</div>
                         <div class="projects-columns__wrap">
                             <?php $posts = get_posts( "category=5&showposts=3" ); ?>
                             <?php if ($posts) : ?>
