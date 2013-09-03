@@ -1132,6 +1132,7 @@ Tags: simple
     border-top-right-radius: 30px;
     height: 280px;
     margin: 0 auto 30px;
+    text-align: center;
 }
 .projects-columns__img-l
 {
@@ -1154,7 +1155,7 @@ Tags: simple
     font-weight: bold;
     margin: 0 auto 10px;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 /*@media (min-width: 1200px)
