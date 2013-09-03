@@ -123,9 +123,15 @@
                                             echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
                                         </a>
                                         <div class="text text_style_italic">
-                                            <?php $comment = the_field('comment');
+                                            <?php
+                                            $comment = get_field('comment');
+                                            if( is_array($comment) )
+                                            {
+                                                $comment = @implode(', ',$comment);
+                                            }
                                             $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
-                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; ?>
+                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment;
+                                            ?>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
@@ -157,10 +163,14 @@
                                             echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
                                         </a>
                                         <div class="text text_style_italic">
-                                            <?php $comment = the_field('comment');
-                                            // $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
-                                            // echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; 
-                                            echo gettype($comment);
+                                            <?php
+                                            $comment = get_field('comment');
+                                            if( is_array($comment) )
+                                            {
+                                                $comment = @implode(', ',$comment);
+                                            }
+                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
+                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment;
                                             ?>
                                         </div>
                                     </div>
