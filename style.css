@@ -945,6 +945,7 @@ Tags: simple
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
     width: 280px;
+    max-height: 290px;
 }
 .project-single__img-r
 {
@@ -957,8 +958,9 @@ Tags: simple
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
     width: 280px;
+    max-height: 290px;
 }
-.project0single__img-big
+.project_single__img-big
 {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
