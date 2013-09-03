@@ -8,10 +8,18 @@ Template Name Posts: Single Project
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <h1 class="heading heading_level_1"><?php the_title(); ?></h1>
         <div class="project-single">
-        <div class="project-images clearfix">
-            <img class="b-icon project-single__img-l" src="<?php the_field('left_img'); ?>" alt="img">
-            <img class="b-icon project-single__img-r" src="<?php the_field('right_img'); ?>" alt="img">
-        </div>
+            <div class="project-images clearfix ">
+                <?php 
+                $left_img = get_field('left_img');
+                $right_img = get_field('right_img');
+                $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
+                $image_l = wp_get_attachment_image_src( $left_img, $size ); 
+                $image_r = wp_get_attachment_image_src( $right_img, $size );
+                ?>
+
+                <img class="b-icon project-single__img-l" src="<?php echo $image_l[0]; ?>" />
+                <img class="b-icon project-single__img-r" src="<?php echo $image_r[0]; ?>" />
+            </div>
             <div class="project-cash">
                 <pre class="project-cash__item"><span>Надо собрать:</span>    <?php the_field('need_sum'); ?> грн</pre>
                 <pre class="project-cash__item"><a class="b-link" href="/">Собрано:</a>            8000 грн</pre>
