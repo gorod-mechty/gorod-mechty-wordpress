@@ -158,8 +158,10 @@
                                         </a>
                                         <div class="text text_style_italic">
                                             <?php $comment = the_field('comment');
-                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
-                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; ?>
+                                            // $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
+                                            // echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; 
+                                            echo gettype(the_field('comment'););
+                                            ?>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
