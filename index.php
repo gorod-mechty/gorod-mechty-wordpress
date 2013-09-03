@@ -117,7 +117,7 @@
                                             <img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>" />
                                             <img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>" />
                                         </div>
-                                        <a class="b-link" href="<?php the_permalink() ?>"><?php echo substr(get_the_title(), 2, 5); ?></a>
+                                        <a class="b-link" href="<?php the_permalink() ?>"><?php substr_replace(get_the_title(), '&hellip;', 20); ?></a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                     </div>
                                 <?php endforeach; ?>
