@@ -169,7 +169,7 @@
                                             <img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>" />
                                             <img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>" />
                                         </div>
-                                        <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                        <a class="b-link" href="<?php the_permalink() ?>"><?php echo rtrim(mb_substr(get_the_title(), 0, 20)) . '&hellip;'; ?></a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                     </div>
                                 <?php endforeach; ?>
