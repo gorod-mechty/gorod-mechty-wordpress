@@ -171,7 +171,7 @@
                                         </div>
                                         <a class="b-link" href="<?php the_permalink() ?>">
                                             <?php $title = get_the_title();
-                                            $trimmed_title = rtrim(mb_substr($title, 0, 20));
+                                            $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                             echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
                                         </a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
