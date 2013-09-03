@@ -117,7 +117,11 @@
                                             <img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>" />
                                             <img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>" />
                                         </div>
-                                        <a class="b-link" href="<?php the_permalink() ?>"><?php echo mb_substr(get_the_title(), 0, 10) . '&hellip;'; ?></a>
+                                        <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                            <?php $title = get_the_title();
+                                            $trimmed_title = rtrim(mb_substr($title, 0, 45));
+                                            echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
+                                        </a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                     </div>
                                 <?php endforeach; ?>
@@ -143,7 +147,11 @@
                                             <img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>" />
                                             <img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>" />
                                         </div>
-                                        <a class="b-link" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+                                        <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                            <?php $title = get_the_title();
+                                            $trimmed_title = rtrim(mb_substr($title, 0, 45));
+                                            echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
+                                        </a>
                                         <div class="text text_style_italic"><?php the_field('comment'); ?></div>
                                     </div>
                                 <?php endforeach; ?>
