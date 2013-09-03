@@ -122,7 +122,11 @@
                                             $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                             echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
                                         </a>
-                                        <div class="text text_style_italic"><?php the_field('comment'); ?></div>
+                                        <div class="text text_style_italic">
+                                            <?php $comment = the_field('comment');
+                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
+                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; ?>
+                                        </div>
                                     </div>
                                 <?php endforeach; ?>
                             <?php endif; ?>
@@ -152,7 +156,11 @@
                                             $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                             echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
                                         </a>
-                                        <div class="text text_style_italic"><?php the_field('comment'); ?></div>
+                                        <div class="text text_style_italic">
+                                            <?php $comment = the_field('comment');
+                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
+                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; ?>
+                                        </div>
                                     </div>
                                 <?php endforeach; ?>
                             <?php endif; ?>
@@ -182,7 +190,11 @@
                                             $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                             echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
                                         </a>
-                                        <div class="text text_style_italic"><?php the_field('comment'); ?></div>
+                                        <div class="text text_style_italic">
+                                            <?php $comment = the_field('comment');
+                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
+                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment; ?>
+                                        </div>
                                     </div>
                                 <?php endforeach; ?>
                             <?php endif; ?>
