@@ -49,12 +49,14 @@
                 <div class="text">
                     БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
                 </div>
+                <?php query_posts('page_id=138');  ?>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
                     <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
                     <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
                 <?php endwhile; ?>
                 <?php endif; ?>
+                <?php wp_reset_query(); ?>
                 <a class="b-link b-link_type_block" href="/volontery/">Быть волонтёром</a>
                 <br>
                 <a class="b-link b-link_type_block" href="<?php echo site_url(); ?>/?cat=6">Стать партнёром</a>
