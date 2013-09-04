@@ -6,7 +6,7 @@
         <title>
             Симферополь - Фонд Город мечты
         </title>
-        <link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
+        <link rel="icon" href="/favicon.ico">
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script>
 ;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);
