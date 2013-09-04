@@ -53,7 +53,7 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <pre class="banking__details">Счет  <?php the_field('account'); ?></pre>
                     <pre class="banking__details">ОКПО  <?php the_field('okpo'); ?></pre>
-                    <pre class="banking__details">МФО  <?php the_field('mfo'); ?></pre>
+                    <pre class="banking__details">МФО   <?php the_field('mfo'); ?></pre>
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
