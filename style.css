@@ -26,14 +26,14 @@ Tags: simple
 }
 .b-page__inner_state_main
 {
-   background: url("./img/tree.png") no-repeat top 220px left 100%;
+   background: url("./img/tree.png") no-repeat 100% 220px;
 }
 
 @media (max-width: 1050px)
 {
    .b-page__inner_state_main
     {
-       background: url("./img/tree.png") no-repeat top 220px left 600px;
+       background: url("./img/tree.png") no-repeat 600px 220px;
     }
     .b-page__inner
     {
@@ -44,7 +44,7 @@ Tags: simple
 {
     .b-page__inner_state_main
     {
-       background: url("./img/tree.png") no-repeat top 220px right 30%;
+       background: url("./img/tree.png") no-repeat 70% 220px;
     }
 }
 /* ../../desktop.blocks/b-page/b-page.css end */
@@ -459,7 +459,7 @@ Tags: simple
 }
 .socials__link_type_vk
 {
-    background: url("./img/socials.png") no-repeat top -36px left 0;
+    background: url("./img/socials.png") no-repeat left -36px;
 }
 .socials__link_type_fb
 {
