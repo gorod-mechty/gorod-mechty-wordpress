@@ -125,12 +125,10 @@
                                         <div class="text text_style_italic">
                                             <?php
                                             $comment = get_field('comment');
-                                            if( is_array($comment) )
-                                            {
-                                                $comment = @implode(', ',$comment);
+                                            if (mb_strlen($comment) > 93) {
+                                               $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
                                             }
-                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
-                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment;
+                                            echo $comment;
                                             ?>
                                         </div>
                                     </div>
@@ -165,12 +163,10 @@
                                         <div class="text text_style_italic">
                                             <?php
                                             $comment = get_field('comment');
-                                            if( is_array($comment) )
-                                            {
-                                                $comment = @implode(', ',$comment);
+                                            if (mb_strlen($comment) > 93) {
+                                               $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
                                             }
-                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
-                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment;
+                                            echo $comment;
                                             ?>
                                         </div>
                                     </div>
@@ -205,12 +201,10 @@
                                         <div class="text text_style_italic">
                                             <?php
                                             $comment = get_field('comment');
-                                            if( is_array($comment) )
-                                            {
-                                                $comment = @implode(', ',$comment);
+                                            if (mb_strlen($comment) > 93) {
+                                               $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
                                             }
-                                            $trimmed_comment = rtrim(mb_substr($comment, 0, 93));
-                                            echo mb_strlen($comment) > mb_strlen($trimmed_comment) ? $trimmed_comment . '&hellip;' : $comment;
+                                            echo $comment;
                                             ?>
                                         </div>
                                     </div>
