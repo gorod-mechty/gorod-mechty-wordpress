@@ -19,10 +19,9 @@
                 <ul class="menu">
                     <li class="submenu__item">Новости проекта</li>
                     <?php $news = get_field('project_news'); ?>
-                        <?php echo gettype($news); echo print_r($news); ?>
                         <?php
                             foreach ($news as $news_item) {
-                                echo '<li class="submenu__item"><a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
+                                echo '<li class="submenu__item">'.'<span>'. $news_item->post_date .'</span>'.'<a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
                             }
                             unset($news_item);
                         ?>
