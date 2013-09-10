@@ -19,10 +19,11 @@
                 <ul class="menu">
                     <li class="submenu__item">Новости проекта</li>
                     <?php $news = get_field('project_news'); ?>
+                    <?php  echo date('y-n-d', date_parse_from_format('Y-m-d h:i:s', $news_item->post_date));
+                    ?>
                     <?php print_r($news) ?>
                         <?php
                             foreach ($news as $news_item) {
-                                echo date('y-n-d', date_parse_from_format('Y-m-d h:i:s', $news_item->post_date));
                                 echo '<li class="submenu__item">'.'<span>'. $news_item->post_date .'</span>'.'<a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
                             }
                             unset($news_item);
