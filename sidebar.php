@@ -21,7 +21,7 @@
                     <?php $news = get_field('project_news'); ?>
                         <?php
                             foreach ($news as $news_item) {
-                                echo '<li class="submenu__item">'.'<span>'. date('d-m-Y', strtotime($news_item->post_date)) .'</span>'.'<a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
+                                echo '<li class="submenu__item">'.'<span class="submenu__data">'. date('d-m-Y', strtotime($news_item->post_date)) .'</span>'.'<a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
                             }
                             unset($news_item);
                         ?>

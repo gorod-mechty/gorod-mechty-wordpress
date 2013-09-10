@@ -130,7 +130,12 @@ Tags: simple
 {
     margin: 0 auto 10px ;
 }
-
+.submenu__data
+{
+    font-size: 10px;
+    display: block;
+    color: #504e4e;
+}
 .submenu__item_state_current 
 {
     color: #fff;
