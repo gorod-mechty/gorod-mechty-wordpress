@@ -19,7 +19,7 @@
                 <ul class="menu">
                     <li class="submenu__item">Новости проекта</li>
                     <?php $news = get_field('project_news'); ?>
-                        <?php echo gettype($news); echo get_object_vars($news); ?>
+                        <?php echo gettype($news); echo $news; ?>
                         <?php
                             foreach ($news as $news_item) {
                                 echo '<li class="submenu__item"><a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
