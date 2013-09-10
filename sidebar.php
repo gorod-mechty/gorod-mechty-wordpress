@@ -13,13 +13,13 @@
                 <?php } else if(in_category(2)){ ?>
                 <ul class="menu">
                     <li class="submenu__item">
-                        <a class="b-link b-link__green" href="<?php echo site_url(); ?>/?cat=2">К списку проектов</a>
+                        <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">К списку проектов</a>
                     </li>
                     
                         <?php $news = get_field('project_news'); ?>
                         <?php
                             foreach ($news as $news_item) {
-                                echo '<li class="submenu__item"><a class="b-link" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
+                                echo '<li class="submenu__item"><a class="b-link b-link_style_green" href="' . home_url() . "/" . $news_item->post_name . '">' . $news_item->post_title . '</a></li>';
                             }
                             unset($news_item);
                         ?>
