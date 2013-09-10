@@ -15,10 +15,17 @@
                     <li class="submenu__item">
                         <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">К списку проектов</a>
                     </li>
-                    <li class="submenu__item">
-                        <?php $news = get_field('project_news'); ?>    
-                        <a class="b-link" href="<?php echo home_url(). "/". $news[0]->post_name; ?>"><?php echo $news[0]->post_title; ?></a>
-                    </li>
+                    
+                        <?php $news = get_field('project_news'); ?>
+                        <?php    
+                            foreach ($news as $news_item) {
+                                echo '<li class="submenu__item"><a class="b-link" href="' .
+                                     home_url() . "/". $news_item->post_name . '">' .
+                                     $news_item->post_title . '</a></li>'
+                            }
+                        // <a class="b-link" href="<?php echo home_url(). "/". $news[0]->post_name; ?>"><?php echo $news[0]->post_title; ?></a>
+                        ?>
+                    
                 </ul>
                 <?php } else{ ?>
                 
