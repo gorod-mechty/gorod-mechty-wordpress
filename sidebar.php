@@ -19,7 +19,7 @@
                 <ul class="menu">
                     <li class="submenu__item">Новости проекта</li>
                     <?php $news = get_field('project_news'); ?>
-                    <?php  echo date('y-n-d', date_parse_from_format('Y-m-d h:i:s', $news_item->post_date));
+                    <?php  date('y-n-d', strtotime($news_item->post_date))
                     ?>
                     <?php print_r($news) ?>
                         <?php
