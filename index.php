@@ -126,7 +126,7 @@
                                             <?php
                                             $comment = get_field('comment');
                                             if (mb_strlen($comment) > 80) {
-                                               $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
+                                               $comment = rtrim(mb_substr($comment, 0, 80)) . '&hellip;';
                                             }
                                             echo $comment;
                                             ?>
@@ -164,7 +164,7 @@
                                             <?php
                                             $comment = get_field('comment');
                                             if (mb_strlen($comment) > 80) {
-                                               $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
+                                               $comment = rtrim(mb_substr($comment, 0, 80)) . '&hellip;';
                                             }
                                             echo $comment;
                                             ?>
@@ -202,7 +202,7 @@
                                             <?php
                                             $comment = get_field('comment');
                                             if (mb_strlen($comment) > 80) {
-                                               $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
+                                               $comment = rtrim(mb_substr($comment, 0, 80)) . '&hellip;';
                                             }
                                             echo $comment;
                                             ?>
