@@ -17,13 +17,10 @@
                     </li>
                     
                         <?php $news = get_field('project_news'); ?>
-                        <?php    
+                        <?php
                             foreach ($news as $news_item) {
-                                echo '<li class="submenu__item"><a class="b-link" href="' .
-                                     home_url() . "/". $news_item->post_name . '">' .
-                                     $news_item->post_title . '</a></li>'
+                                echo '<li class="submenu__item"><a class="b-link" href="' . home_url() . "/". $news_item->post_name . '">' . $news_item->post_title . '</a></li>'
                             }
-                        // <a class="b-link" href="<?php echo home_url(). "/". $news[0]->post_name; ?>"><?php echo $news[0]->post_title; ?></a>
                         ?>
                     
                 </ul>
