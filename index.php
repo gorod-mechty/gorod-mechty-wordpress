@@ -125,7 +125,7 @@
                                         <div class="text text_style_italic">
                                             <?php
                                             $comment = get_field('comment');
-                                            if (mb_strlen($comment) > 93) {
+                                            if (mb_strlen($comment) > 80) {
                                                $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
                                             }
                                             echo $comment;
@@ -163,7 +163,7 @@
                                         <div class="text text_style_italic">
                                             <?php
                                             $comment = get_field('comment');
-                                            if (mb_strlen($comment) > 93) {
+                                            if (mb_strlen($comment) > 80) {
                                                $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
                                             }
                                             echo $comment;
@@ -201,7 +201,7 @@
                                         <div class="text text_style_italic">
                                             <?php
                                             $comment = get_field('comment');
-                                            if (mb_strlen($comment) > 93) {
+                                            if (mb_strlen($comment) > 80) {
                                                $comment = rtrim(mb_substr($comment, 0, 93)) . '&hellip;';
                                             }
                                             echo $comment;
