@@ -434,6 +434,13 @@ text-decoration: none;
     clear: both;
     font-size: 15px;
 }
+@media (max-width: 768px)
+{
+    .footer
+    {
+        width: 547px;
+    }
+}
 .footer__text
 {
     margin: 0 10% 0 0;
