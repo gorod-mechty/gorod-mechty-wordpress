@@ -132,6 +132,12 @@ Tags: simple
     width: 140px;
     font-weight: bold;
 }
+.current-menu-item a
+{
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
 .submenu__item, .menu li
 {
     margin: 0 auto 10px ;

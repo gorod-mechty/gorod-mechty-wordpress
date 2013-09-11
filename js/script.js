@@ -25,4 +25,7 @@ $(function(){
         $(this).addClass('cashflow-curent');
         $(this).removeClass('b-link_type_dashed');
     });
+    $('current-menu-item a').on('click', function(event){
+        event.preventDefault();
+    })
 })
