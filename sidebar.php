@@ -16,7 +16,7 @@
                             <a class="b-link" href="<?php echo site_url(); ?>/?cat=2">К списку проектов</a>
                         </li>
                     </ul>
-                    if(get_field('project_news')){
+                    <?php if(get_field('project_news')){ ?>
                         <ul class="menu">
                         <li class="submenu__item">Новости проекта</li>
                         <?php $news = get_field('project_news'); ?>
@@ -27,7 +27,7 @@
                                 unset($news_item);
                             ?>
                         </ul>
-                    }
+                    <?php } ?>
                 <?php } else{ ?>
                 
                 <?php } ?>
