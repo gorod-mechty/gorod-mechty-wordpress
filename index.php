@@ -252,6 +252,90 @@
                     </div>
                 </div>
             </div>
+        <?php } else if ( is_category(4)){ ?>
+        <div class="content">
+            <h1 class="heading heading_level_1">Делаем</h1>
+        </div>
+            <div class="projects-columns">
+                <div class="projects-columns__single">
+                    <div class="projects-columns__wrap">
+                        <?php $posts = get_posts( "category=4" ); ?>
+                        <?php if ($posts) : ?>
+                            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                <div class="projects-columns__item">
+                                    <div class="project-images clearfix ">
+                                        <?php 
+                                        $left_img = get_field('left_img');
+                                        $right_img = get_field('right_img');
+                                        $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
+                                        $image_l = wp_get_attachment_image_src( $left_img, $size ); 
+                                        $image_r = wp_get_attachment_image_src( $right_img, $size );
+                                        ?>
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
+                                    </div>
+                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                        <?php $title = get_the_title();
+                                        $trimmed_title = rtrim(mb_substr($title, 0, 45));
+                                        echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
+                                    </a>
+                                    <div class="text text_style_italic">
+                                        <?php
+                                        $comment = get_field('comment');
+                                        if (mb_strlen($comment) > 80) {
+                                           $comment = rtrim(mb_substr($comment, 0, 80)) . '&hellip;';
+                                        }
+                                        echo $comment;
+                                        ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        <?php } else if ( is_category(5)){ ?>
+        <div class="content">
+            <h1 class="heading heading_level_1">Планы</h1>
+        </div>
+            <div class="projects-columns">
+                <div class="projects-columns__single">
+                    <div class="projects-columns__wrap">
+                        <?php $posts = get_posts( "category=4" ); ?>
+                        <?php if ($posts) : ?>
+                            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                <div class="projects-columns__item">
+                                    <div class="project-images clearfix ">
+                                        <?php 
+                                        $left_img = get_field('left_img');
+                                        $right_img = get_field('right_img');
+                                        $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
+                                        $image_l = wp_get_attachment_image_src( $left_img, $size ); 
+                                        $image_r = wp_get_attachment_image_src( $right_img, $size );
+                                        ?>
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
+                                    </div>
+                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                        <?php $title = get_the_title();
+                                        $trimmed_title = rtrim(mb_substr($title, 0, 45));
+                                        echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
+                                    </a>
+                                    <div class="text text_style_italic">
+                                        <?php
+                                        $comment = get_field('comment');
+                                        if (mb_strlen($comment) > 80) {
+                                           $comment = rtrim(mb_substr($comment, 0, 80)) . '&hellip;';
+                                        }
+                                        echo $comment;
+                                        ?>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
         <?php } else{ ?>
             <div class="content">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
