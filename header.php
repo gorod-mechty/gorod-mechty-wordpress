@@ -21,7 +21,7 @@
         <?php if ( is_front_page()) { ?>
             <div class="b-page__inner b-page__inner_state_main clearfix">
             <div class="logo"></div>
-        <?php } else if ( is_category(2)|| in_category(7)){ ?>
+        <?php } else if ( is_category(2)|| in_category(7) || is_category(3) || is_category(4) || is_category(5)){ ?>
             <div class="b-page__inner clearfix">
             <a class="b-link logo" href="/"></a>
         <?php } else{ ?>

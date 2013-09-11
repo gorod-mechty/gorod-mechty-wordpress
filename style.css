@@ -1147,6 +1147,11 @@ text-decoration: none;
     float: left;
     margin: 35px 3% 0 0;
 }
+.projects-columns__single
+{
+    width: 30%;
+    margin: auto;
+}
 
 .projects-columns__title
 {

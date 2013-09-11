@@ -212,8 +212,7 @@
                 </div>
         <?php } else if ( is_category(3)){ ?>
             <div class="projects-columns">
-                    <div class="projects-columns__column">
-                        <div class="projects-columns__title clearfix">Делаем</div>
+                    <div class="projects-columns__single">
                         <div class="projects-columns__wrap">
                             <?php $posts = get_posts( "category=3" ); ?>
                             <?php if ($posts) : ?>
