@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     <?php if (is_front_page()){ ?>
         <?php include(TEMPLATEPATH . '/frontpage.php'); ?>
-        <?php get_footer(); ?>
     <?php } else{ ?>
         <?php if ( is_category(1)|| in_category(6)|| in_category(7)) { ?>
             <div class="content">

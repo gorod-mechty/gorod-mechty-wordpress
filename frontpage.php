@@ -108,4 +108,5 @@
                         Показать <a class="b-link" href="<?php echo site_url(); ?>/?cat=7">весь список</a>
                     </div>
                 </div>
+            <?php get_footer(); ?>
             </div>
