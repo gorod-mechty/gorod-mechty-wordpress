@@ -399,6 +399,13 @@ Tags: simple
     font-weight: normal;
     padding: 0 20px;
 }
+.cashflow-curent
+{
+color: black !important;
+border: none;
+cursor: default;
+}
+
 
 /*@media (max-width: 960px)
     {
