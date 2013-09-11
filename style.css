@@ -168,7 +168,7 @@ Tags: simple
 {
     .nav
     {
-        width: 550px;
+        width: 547px;
     }
 }
 
@@ -217,6 +217,13 @@ Tags: simple
     margin: 10px 0 60px 5%;
     font-size: 18px;
     color: #504e4e;
+}
+@media (max-width: 768px)
+{
+    .content
+    {
+        width: 547px;
+    }
 }
 .content__italic
 {
