@@ -19,6 +19,7 @@ $(function(){
     $('.outcome').on('click', function(){
         event.preventDefault();
         $('.table__row_flow_income').css({display: 'none'});
+        $('.table__row_flow_outgo').css({display: 'table-row'});
         $('.link-block a').removeClass('cashflow-curent');
         $('.link-block a').addClass('b-link_type_dashed');
         $(this).addClass('cashflow-curent');
