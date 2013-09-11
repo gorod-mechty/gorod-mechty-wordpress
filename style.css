@@ -7,6 +7,13 @@ Author: tadatuta
 Tags: simple
 */
 /* ../../desktop.blocks/b-page/b-page.css begin */
+@media (max-width: 768px)
+{
+    .b-page__inner
+    {
+        width: 768px;
+    }
+}
 .b-page
 {
     background: #f4f8fb;
@@ -194,30 +201,6 @@ Tags: simple
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
 }
-
-/*@media (max-width: 960px)
-{
-    .nav
-    {
-        margin: 20px 0 0 5px;
-    }
-    .nav__item
-    {
-        margin: 20px 0 0 -5px;
-    }
-}
-
-@media (min-width: 1200px)
-{
-    .nav
-    {
-        margin: 20px 0 0 130px;
-    }
-    .nav__item
-    {
-        margin: 20px 0 0 35px;
-    }
-}*/
 /* ../../desktop.blocks/nav/nav.css end */
 
 /* ../../desktop.blocks/content/content.css begin */
@@ -633,22 +616,6 @@ text-decoration: none;
     color: #504e4e;
     padding: 65px 40% 0 140px;
 }
-
-/*@media (max-width: 960px)
-{
-    .description
-    {
-        margin: 10px 0 0 17px;
-    }
-}
-@media (min-width: 1200px)
-{
-    .description
-    {
-        width: 580px;
-        margin: 10px 0 0 180px;
-    }
-}*/
 /* ../../desktop.blocks/description/description.css end */
 
 /* ../../desktop.blocks/heading/_level/heading_level_4.css begin */
