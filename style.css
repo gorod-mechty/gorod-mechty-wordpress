@@ -814,6 +814,13 @@ text-decoration: none;
     width: 19%;
     margin: 35px 0 60px 6%;
 }
+@media (max-width: 768px)
+{
+    .cashflow
+    {
+        width: 138px;
+    }
+}
 .cashflow__item
 {
     font-size: 13px;
