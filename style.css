@@ -636,6 +636,14 @@ text-decoration: none;
     color: #504e4e;
     padding: 65px 40% 0 140px;
 }
+@media (max-width: 768px)
+{
+    .description
+    {
+        width: 693px;
+    }
+}
+
 /* ../../desktop.blocks/description/description.css end */
 
 /* ../../desktop.blocks/heading/_level/heading_level_4.css begin */
