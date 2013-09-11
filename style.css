@@ -7,13 +7,6 @@ Author: tadatuta
 Tags: simple
 */
 /* ../../desktop.blocks/b-page/b-page.css begin */
-@media (max-width: 768px)
-{
-    .b-page__inner
-    {
-        width: 768px;
-    }
-}
 .b-page
 {
     background: #f4f8fb;
@@ -35,7 +28,13 @@ Tags: simple
 {
    background: url("./img/tree.png") no-repeat 100% 220px;
 }
-
+@media (max-width: 768px)
+{
+    .b-page__inner
+    {
+        width: 768px;
+    }
+}
 @media (max-width: 1050px)
 {
    .b-page__inner_state_main
