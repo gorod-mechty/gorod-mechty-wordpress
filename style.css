@@ -34,10 +34,6 @@ Tags: simple
     {
         width: 768px;
     }
-    .nav
-    {
-        width: 550px;
-    }
 }
 @media (max-width: 1050px)
 {
@@ -167,6 +163,13 @@ Tags: simple
     padding: 0;
     float: left;
     text-align: justify;
+}
+@media (max-width: 768px)
+{
+    .nav
+    {
+        width: 550px;
+    }
 }
 
 .nav:after
