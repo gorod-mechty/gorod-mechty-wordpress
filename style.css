@@ -641,14 +641,7 @@ text-decoration: none;
     margin: 10px 0 0 5%;
     font-size: 18px;
     color: #504e4e;
-    padding: 65px 40% 0 140px;
-}
-@media (max-width: 768px)
-{
-    .description
-    {
-        width: 693px;
-    }
+    padding: 65px 10% 0 140px;
 }
 
 /* ../../desktop.blocks/description/description.css end */
@@ -1189,7 +1182,6 @@ text-decoration: none;
     margin: 0 auto 10px;
     text-align: center;
     display: inline-block;
-}
 
 /*@media (min-width: 1200px)
 {
