@@ -4,6 +4,7 @@
             <h2 class="heading heading_level_2 main-heading">
                 <a class="b-link b-link_type_main" href="<?php echo site_url(); ?>/?cat=2">Наши проекты</a>
             </h2>
+<!-- projects block -->
             <div class="projects clearfix">
                 <div class="projects__item">
                     <div class="projects__title">
@@ -39,6 +40,7 @@
                     <?php endif; ?>
                 </div>
             </div>
+<!-- bancing block -->
             <div class="banking">
                 <div class="banking__title">
                     <span class="banking__title-green">Ты</span> тоже <span class="banking__title-green">можешь</span> помочь сделать мир <span class="banking__title-green">лучше!</span>
@@ -61,6 +63,7 @@
                 <br>
                 <a class="b-link b-link_type_block" href="<?php echo site_url(); ?>/?cat=6">Стать партнёром</a>
             </div>
+<!-- news-list block -->
             <div class="news-list">
                 <h1 class="heading heading_level_1">
                     Новости
@@ -80,6 +83,7 @@
                     Больше - <a class="b-link" href="<?php echo site_url(); ?>/?cat=1">в архиве</a>
                 </div>
             </div>
+<!-- cashflow block -->
             <div class="cashflow">
                 <h1 class="heading heading_level_1">
                     Денежный поток
