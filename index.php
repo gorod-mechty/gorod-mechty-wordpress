@@ -211,6 +211,8 @@
                     </div>
                 </div>
         <?php } else if ( is_category(3)){ ?>
+        <div class="content">
+            <h1 class="heading heading_level_1">Сделано</h1>
             <div class="projects-columns">
                     <div class="projects-columns__single">
                         <div class="projects-columns__wrap">
