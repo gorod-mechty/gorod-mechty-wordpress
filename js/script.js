@@ -1,7 +1,7 @@
 $(function(){
     $('.all').on('click', function(){
         if($(this).hasClass('cashflow-curent'){
-            return;
+            return false;
         })
         $('.table__row_flow_income, .table__row_flow_outgo').css({display: 'table-row'});
         $('.link-block a').removeClass('cashflow-curent');
@@ -11,7 +11,7 @@ $(function(){
     });
     $('.income').on('click', function(){
         if($(this).hasClass('cashflow-curent'){
-            return;
+            return false;
         })
         $('.table__row_flow_income').css({display: 'table-row'});
         $('.table__row_flow_outgo').css({display: 'none'});
@@ -22,7 +22,7 @@ $(function(){
     });
     $('.outcome').on('click', function(){
         if($(this).hasClass('cashflow-curent'){
-            return;
+            return false;
         })
         $('.table__row_flow_outgo').css({display: 'table-row'});
         $('.table__row_flow_income').css({display: 'none'});
