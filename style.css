@@ -1119,6 +1119,13 @@ text-decoration: none;
     clear: both;
     max-width: 1280px;
 }
+@media (max-width: 768px)
+{
+    .projects-columns
+    {
+        width: 728px;
+    }
+}
 .projects-columns__column
 {
     width:30%;
