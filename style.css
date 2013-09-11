@@ -34,6 +34,10 @@ Tags: simple
     {
         width: 768px;
     }
+    .nav
+    {
+        width: 550px;
+    }
 }
 @media (max-width: 1050px)
 {
