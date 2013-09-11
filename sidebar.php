@@ -3,7 +3,7 @@
                 <?php if (is_page(33) || is_page(98) || is_page(100) || is_page(196)){ ?>
                     <?php wp_nav_menu( array( 'theme_location' => 'about' ) ); ?>
                 <?php } else if(in_category(6) || is_page(104) || is_page(109) || is_page(111)){ ?>
-                    <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'partners' ) ); ?> 
                 <?php } else if(in_category(1)){ ?>
                 <ul class="menu">
                     <li class="submenu__item">
