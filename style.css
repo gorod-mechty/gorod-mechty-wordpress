@@ -402,8 +402,9 @@ Tags: simple
 .cashflow-curent
 {
 color: black !important;
-border: none;
+border: none !important;
 cursor: default;
+margin: 0 0 0 20px;
 }
 
 
