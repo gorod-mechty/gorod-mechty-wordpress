@@ -28,7 +28,7 @@
             }?>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=3">(<?php //echo getNumEnding($get_category(3)->category_count, $projectArray) ?> )</a>
+                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=3">(<?php echo getNumEnding($get_category(3)->category_count, $projectArray); ?> )</a>
                     </div>
                     <?php $posts = get_posts( "category=3&showposts=1" ); ?>
                     <?php if ($posts) : ?>
