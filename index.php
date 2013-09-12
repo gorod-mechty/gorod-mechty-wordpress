@@ -93,7 +93,7 @@
                         <?php posts_nav_link(' &#8212; ', __('&laquo; Newer Posts'), __('Older Posts &raquo;')); ?>
                     </tbody>
                 </table>
-                <div class="button">
+                <div class="button hidden">
                     <a class="b-link b-link_type_button" href="#">Загрузить ещё</a>
                 </div>
             <?php } ?>
@@ -215,7 +215,7 @@
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="button">
+                <div class="button hidden">
                     <a class="b-link b-link_type_button" href="/">Загрузить ещё</a>
                 </div>
             </div>
