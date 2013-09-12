@@ -817,6 +817,10 @@ text-decoration: none;
 {
     font-size: 13px;
 }
+.news__date a
+{
+    font-style: italic;
+}
 /* ../../desktop.blocks/news/news.css end */
 
 /* ../../desktop.blocks/cashflow/cashflow.css begin */
