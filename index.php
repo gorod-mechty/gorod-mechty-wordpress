@@ -232,7 +232,7 @@
                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                 <div class="projects-columns__item">
                                     <div class="project-images clearfix ">
-                                        <?php 
+                                        <?php
                                         $left_img = get_field('left_img');
                                         $right_img = get_field('right_img');
                                         $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
