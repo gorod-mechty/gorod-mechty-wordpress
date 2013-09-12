@@ -28,7 +28,7 @@
             }?>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=3">(<?php echo get_category(3)->category_count . " " . getNumEnding(get_category(3)->category_count, $projectArray); ?> )</a>
+                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=3">(<?php echo get_category(3)->category_count . " " . getNumEnding(get_category(3)->category_count, $projectArray); ?>)</a>
                     </div>
                     <?php $posts = get_posts( "category=3&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Делаем <a class="b-link" href="<?php echo site_url(); ?>/?cat=4">(<?php echo get_category(4)->category_count; ?> проектов)</a>
+                        Делаем <a class="b-link" href="<?php echo site_url(); ?>/?cat=4">(<<?php echo get_category(4)->category_count . " " . getNumEnding(get_category(4)->category_count, $projectArray); ?>)</a>
                     </div>
                     <?php $posts = get_posts( "category=4&showposts=1" ); ?>
                     <?php if ($posts) : ?>
@@ -50,7 +50,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Планы <a class="b-link" href="<?php echo site_url(); ?>/?cat=5">(<?php echo get_category(5)->category_count; ?> проектов)</a>
+                        Планы <a class="b-link" href="<?php echo site_url(); ?>/?cat=5">(<?php echo get_category(5)->category_count . " " . getNumEnding(get_category(5)->category_count, $projectArray); ?>)</a>
                     </div>
                     <?php $posts = get_posts( "category=5&showposts=1" ); ?>
                     <?php if ($posts) : ?>
