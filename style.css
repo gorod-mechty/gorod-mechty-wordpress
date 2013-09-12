@@ -809,6 +809,10 @@ text-decoration: none;
     color: #909090;
     margin: 30px 0 0  0;
 }
+.news__item a
+{
+    font-style: italic;
+}
 .news__more
 {
     margin: 55px 0 0 0;
@@ -816,10 +820,6 @@ text-decoration: none;
 .news__date
 {
     font-size: 13px;
-}
-.news__date a
-{
-    font-style: italic;
 }
 /* ../../desktop.blocks/news/news.css end */
 
