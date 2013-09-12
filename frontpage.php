@@ -6,9 +6,29 @@
             </h2>
 <!-- projects block -->
             <div class="projects clearfix">
+            <?php $projectArray = array('проект', 'проекта', 'проектов');
+            function getNumEnding($number, $projectArray)
+            {
+                $number = $number % 100;
+                if ($number>=11 && $number<=19) {
+                    $ending=$projectArray[2];
+                }
+                else {
+                    $i = $number % 10;
+                    switch ($i)
+                    {
+                        case (1): $ending = $projectArray[0]; break;
+                        case (2):
+                        case (3):
+                        case (4): $ending = $projectArray[1]; break;
+                        default: $ending=$projectArray[2];
+                    }
+                }
+                return $ending;
+            }?>
                 <div class="projects__item">
                     <div class="projects__title">
-                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=3">(<?php echo get_category(3)->category_count; ?> проектов)</a>
+                        Сделано <a class="b-link" href="<?php echo site_url(); ?>/?cat=3">(<?php echo getNumEnding($get_category(3)->category_count, $projectArray) ?> )</a>
                     </div>
                     <?php $posts = get_posts( "category=3&showposts=1" ); ?>
                     <?php if ($posts) : ?>
