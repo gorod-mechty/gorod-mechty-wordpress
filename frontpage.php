@@ -1,4 +1,4 @@
-            <div class="description">
+            <div class="content">
                 <p><?php the_field('description'); ?></p>
             </div>
             <h2 class="heading heading_level_2 main-heading">

@@ -99,7 +99,7 @@
             <?php } ?>
 <!-- projects page -->
         <?php } else if ( is_category(2)){ ?>
-            <div class="description">
+            <div class="content">
                 <h1 class="heading heading_level_1"><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?></h1>
                 <?php echo category_description(2); ?> 
             </div>
