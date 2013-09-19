@@ -7,7 +7,7 @@ Template Name Posts: Single Project
     <div class="content">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <h1 class="heading heading_level_1"><?php the_title(); ?></h1>
-        <div class="project-single">
+        <div class="project-single clearfix">
             <div class="project-images clearfix ">
                 <?php 
                 $left_img = get_field('left_img');
@@ -33,13 +33,13 @@ Template Name Posts: Single Project
                     Даты реализации:
                 </div><?php the_field('date'); ?>
             </div>
-            <div class="project-content">
-                <?php
-                the_content(__('(more...)'));
-                wp_link_pages();
-                edit_post_link(__('Edit This'));
-                ?>
-            </div>
+        </div>
+        <div class="project-content">
+            <?php
+            the_content(__('(more...)'));
+            wp_link_pages();
+            edit_post_link(__('Edit This'));
+            ?>
         </div>
     <?php endwhile; else: ?>
         <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
