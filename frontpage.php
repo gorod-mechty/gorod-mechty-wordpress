@@ -44,7 +44,7 @@
                     <?php $posts = get_posts( "category=4&showposts=1" ); ?>
                     <?php if ($posts) : ?>
                         <?php foreach ($posts as $post) : setup_postdata ($post); ?>
-                            <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?><?php the_title(); ?></a>
+                            <a class="b-link b-link_type_project" href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail'); ?><?php the_title(); ?></a>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
