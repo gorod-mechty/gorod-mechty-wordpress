@@ -12,7 +12,11 @@
                             <li class="news__item" id="post-<?php the_ID(); ?>">
                                 <div class="news__date">
                                     <?php the_time('j F'); ?>
-                                </div><a class="b-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
+                                </div>
+                                <?php if ( in_category(11)) { ?>
+                                    <div class="project-title">Новость проекта</div>
+                                <?php } ?>             
+                                <a class="b-link" href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?><?php the_title(); ?></a>
                             </li>
                         <?php endwhile; else: ?>
                             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
