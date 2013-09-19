@@ -9,7 +9,7 @@ Tags: simple
 /* ../../desktop.blocks/b-page/b-page.css begin */
 .hidden
 {
-    display: none;
+    display: none !important;
 }
 .b-page
 {
