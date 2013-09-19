@@ -49,12 +49,13 @@
                 <?php } else{ ?>
                     <?php wp_list_categories("title_li=&include=6");?>
                 <?php } ?>
-                <?php if (false): ?>
+                <?php if (false) { ?>
                     <?php if ( is_category(7)) { ?>
                           <!-- <li class="nav__item nav__item_state_current hidden">Деньги</li> -->
                     <?php } else{ ?>
                           <?php wp_list_categories("title_li=&include=7");?> 
-                <?php endif; ?>
+                    <?php } ?>
+                <?php } ?>
                 
                 <?php } ?>
             </ul>
