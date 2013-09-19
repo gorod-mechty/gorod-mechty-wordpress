@@ -5,7 +5,7 @@
                     </div><a class="footer__link" href="mailto:info@gorod-mechty.org">info@gorod-mechty.org</a>
                 </div>
                 <div class="socials">
-                    <a class="socials__link socials__link_type_vk" href="http://vk.com/gorod.mechty">FaceBook</a><a class="socials__link socials__link_type_fb" href="/">ВКонтакте</a>
+                    <a class="socials__link socials__link_type_vk" href="http://vk.com/gorod.mechty">ВКонтакте</a><a class="socials__link socials__link_type_fb" href="/">FaceBook</a>
                 </div>
                 <div class="copyright">
                     Создание сайта - <a class="b-link" href="http://tadatuta.ru">студия «Тадатута»</a>
