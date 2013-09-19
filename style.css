@@ -769,7 +769,7 @@ text-decoration: none;
     margin: 35px 0 60px 6%;
     float: left;
 }
-.news-list__date,
+.news-list__date
 {
     font-size: 13px;
     color: #909090;
