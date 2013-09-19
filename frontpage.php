@@ -84,7 +84,7 @@
                 <a class="b-link b-link_type_block" href="<?php echo site_url(); ?>/?cat=6">Стать партнёром</a>
             </div>
 <!-- news-list block -->
-            <div class="news-list">
+            <div class="news-list hidden">
                 <h1 class="heading heading_level_1">
                     Новости
                 </h1>
@@ -104,7 +104,7 @@
                 </div>
             </div>
 <!-- cashflow block -->
-            <div class="cashflow">
+            <div class="cashflow hidden">
                 <h1 class="heading heading_level_1">
                     Денежный поток
                 </h1>
