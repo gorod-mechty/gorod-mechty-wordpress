@@ -769,11 +769,17 @@ text-decoration: none;
     margin: 35px 0 60px 6%;
     float: left;
 }
-.news-list__date, .project-title
+.news-list__date,
 {
     font-size: 13px;
     color: #909090;
     margin: 5px 0;
+}
+.project-title
+{
+ font-size: 13px;
+ color: #000;
+ margin: 5px 0;   
 }
 
 @media (max-width: 960px)
