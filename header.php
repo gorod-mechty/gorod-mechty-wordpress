@@ -39,11 +39,11 @@
                 <?php } else{ ?>
                     <?php wp_list_categories("title_li=&include=2");?> 
                 <?php } ?>
-                <?php if ( is_category(1)) { ?>
+                <!-- <?php if ( is_category(1)) { ?>
                     <li class="nav__item nav__item_state_current">Новости</li>
                 <?php } else{ ?>
                     <?php wp_list_categories("title_li=&include=1");?> 
-                <?php } ?>
+                <?php } ?> -->
                 <?php if ( is_category(6)) { ?>
                     <li class="nav__item nav__item_state_current">Сотрудничество</li>
                 <?php } else{ ?>
