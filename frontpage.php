@@ -79,9 +79,9 @@
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
-                <a class="b-link b-link_type_block" href="/volontery/">Быть волонтёром</a>
+                <a class="b-link b-link_type_block hidden" href="/volontery/">Быть волонтёром</a>
                 <br>
-                <a class="b-link b-link_type_block" href="<?php echo site_url(); ?>/?cat=6">Стать партнёром</a>
+                <a class="b-link b-link_type_block hidden" href="<?php echo site_url(); ?>/?cat=6">Стать партнёром</a>
             </div>
 <!-- news-list block -->
             <div class="news-list hidden">
