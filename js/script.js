@@ -28,7 +28,4 @@ $(function(){
     $('.current-menu-item a').on('click', function(event){
         event.preventDefault();
     })
-    if(!$('.b-link').attr('href')){
-        this.addClass('hidden')
-    }
 })

@@ -26,9 +26,11 @@ Template Name Posts: Single Project
                 <?php } ?>
                 <pre class="project-cash__item hidden"><a class="b-link" href="<?php echo site_url(); ?>/?cat=7">Собрано:</a>            8000 грн</pre>
                 <pre class="project-cash__item hidden"><a class="b-link" href="<?php echo site_url(); ?>/?cat=7">Потрачено:</a>        2500 грн</pre>
-                <div class="project-cash__docs">
-                    <a class="b-link b-link_style_italic" href="<?php the_field('doc'); ?>">Скачать</a> <span>документацию</span>
-                </div>
+                <?php if (get_field('doc')){ ?>
+                    <div class="project-cash__docs">
+                        <a class="b-link b-link_style_italic" href="<?php the_field('doc'); ?>">Скачать</a> <span>документацию</span>
+                    </div>
+                <?php } ?>
             </div>
             <div class="project-date">
             <?php if (in_category(3)){ ?>
