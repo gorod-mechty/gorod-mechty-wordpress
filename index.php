@@ -126,11 +126,6 @@
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
                                         ?>
                                         <?php 
-                                           if ( !$image_l[0]) {
-                                            $image_l === '<?php bloginfo('template_url'); ?>/img/img2.png'
-                                        }
-                                        ?>
-                                        <?php 
                                            if ( !$image_r[0]) {
                                             $image_r === '<?php bloginfo('template_url'); ?>/img/img2.png'
                                         }
