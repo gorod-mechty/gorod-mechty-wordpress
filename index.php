@@ -162,7 +162,9 @@
                                         $image_l = wp_get_attachment_image_src( $left_img, $size ); 
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
                                         ?>
-                                        <?php echo $image_l[0]; ?>
+                                        <?php if (!$image_r[0];) { ?>
+                                            $image_r === <?php bloginfo('template_url'); ?>/favicon.ico
+                                        <?php } ?>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
                                     </div>
