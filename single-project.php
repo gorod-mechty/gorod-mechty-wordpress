@@ -29,9 +29,15 @@ Template Name Posts: Single Project
                 </div>
             </div>
             <div class="project-date">
+            <?php if (in_category(3)){ ?>
                 <div class="project-date__caption">
-                    Даты реализации:
-                </div><?php the_field('date'); ?>
+                    Дата реализации проекта:
+                </div><?php the_field('date-fin'); ?>
+            <?php } else if (in_category(4)){ ?>
+                <div class="project-date__caption">
+                    Дата начала реализации проекта:
+                </div><?php the_field('date-start'); ?>
+            <?php } ?>
             </div>
         </div>
         <div class="project-content">
