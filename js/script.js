@@ -28,7 +28,7 @@ $(function(){
     $('.current-menu-item a').on('click', function(event){
         event.preventDefault();
     })
-    if ($('.projects-columns__img-r').attr('src') === undefined){
+    if (!$('.projects-columns__img-r').attr('src')){
         $(this).attr('src', '/wp-content/uploads/img/img2.png')
     }
 })
