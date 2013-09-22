@@ -118,12 +118,18 @@
                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                 <div class="projects-columns__item">
                                     <div class="project-images clearfix ">
-                                        <?php 
+                                        <?php
                                         $left_img = get_field('left_img');
                                         $right_img = get_field('right_img');
                                         $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
                                         $image_l = wp_get_attachment_image_src( $left_img, $size ); 
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
+                                        if ( $left_img === '') {
+                                            $left_img === '<?php bloginfo('template_url'); ?>/img/img2.png'
+                                        };
+                                        if ( $right_img === '') {
+                                            $right_img === '<?php bloginfo('template_url'); ?>/img/img2.png'
+                                        };
                                         ?>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
