@@ -2,9 +2,9 @@
                 <div class="footer__banking">
                     <?php query_posts('page_id=138');  ?>
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <span>Счет<?php the_field('account'); ?></span>
-                        <span>ОКПО<?php the_field('okpo'); ?></span>
-                        <span>МФО<?php the_field('mfo'); ?></span>
+                        <span>Счет <?php the_field('account'); ?></span>
+                        <span>ОКПО <?php the_field('okpo'); ?></span>
+                        <span>МФО <?php the_field('mfo'); ?></span>
                     <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
