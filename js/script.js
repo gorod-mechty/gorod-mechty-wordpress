@@ -28,7 +28,7 @@ $(function(){
     $('.current-menu-item a').on('click', function(event){
         event.preventDefault();
     })
-    if($('.b-link').attr('href') === 'undefined'){
+    if($('.b-link').attr('href', 'undefined')){
         this.addClass('hidden')
     }
 })
