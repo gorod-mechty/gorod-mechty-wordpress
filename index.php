@@ -157,16 +157,8 @@
                                 <div class="projects-columns__item">
                                     <div class="project-images clearfix ">
                                         <?php
-                                        if (the_field('left_img')){
-                                            $left_img = get_field('left_img');
-                                        } else {
-                                            $left_img = '<?php bloginfo('template_url'); ?>/img/img2.png'
-                                        };
-                                        if (the_field('right_img')){
-                                            $right_img = get_field('right_img');
-                                        } else {
-                                            $right_img = '<?php bloginfo('template_url'); ?>/img/img2.png'
-                                        };
+                                        $left_img = get_field('left_img');
+                                        $right_img = get_field('right_img');
                                         $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
                                         $image_l = wp_get_attachment_image_src( $left_img, $size ); 
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
