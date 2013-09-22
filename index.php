@@ -126,8 +126,7 @@
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
                                         ?>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
-                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_l[0]; ?>"/></a>
-                                        
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
                                     </div>
                                     <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
@@ -156,7 +155,7 @@
                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                 <div class="projects-columns__item">
                                     <div class="project-images clearfix ">
-                                        <?php
+                                        <?php 
                                         $left_img = get_field('left_img');
                                         $right_img = get_field('right_img');
                                         $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
