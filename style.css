@@ -523,13 +523,13 @@ text-decoration: none;
     margin: 0 10px 0 0;
 }
 
-/*@media (max-width: 1200px)
+@media (max-width: 900px)
 {
     .copyright
         {
             width: 130px;
         }
-}*/
+}
 /* ../../desktop.blocks/copyright/copyright.css end */
 
 /* ../../desktop.blocks/b-link/_type/b-link_type_cur.css begin */
