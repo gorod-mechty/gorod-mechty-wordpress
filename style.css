@@ -458,7 +458,7 @@ text-decoration: none;
 }
 .footer__text
 {
-    margin: 0 10% 0 0;
+    margin: 0 10% 10px 0;
     float: left;
 }
 .footer__link
@@ -1064,6 +1064,9 @@ text-decoration: none;
     font-style: italic;
     color: #504e4e;
     margin: 0 0 20px 0;
+}
+.footer__text pre {
+    margin: 2px;
 }
 /* ../../desktop.blocks/project-mission/project-mission.css end */
 
