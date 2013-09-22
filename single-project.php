@@ -22,7 +22,7 @@ Template Name Posts: Single Project
             </div>
             <div class="project-cash">
                 <?php if (in_category(4)){ ?>
-                    <?php if (the_field('need_sum') != '') { ?>
+                    <?php if (the_field('need_sum')) { ?>
                     <pre class="project-cash__item"><span>Надо собрать:</span>    <?php the_field('need_sum'); ?> грн</pre> 
                     <?php } ?>
                 <?php } ?>
