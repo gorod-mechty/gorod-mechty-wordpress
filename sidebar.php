@@ -17,7 +17,7 @@
                         </li>
                     </ul>
                     <?php if(get_field('project_news')){ ?>
-                        <ul class="menu">
+                        <ul class="menu hidden">
                         <li class="submenu__item">Новости проекта</li>
                         <?php $news = get_field('project_news'); ?>
                             <?php
