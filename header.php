@@ -47,7 +47,7 @@
                 <?php if ( is_category(6)) { ?>
                     <li class="nav__item nav__item_state_current">Сотрудничество</li>
                 <?php } else{ ?>
-                    <?php wp_list_categories("title_li=&include=6");?>
+                    <?php wp_list_pages("title_li=&include=104");?>
                 <?php } ?>
                 <!-- <?php if ( is_category(7)) { ?>
                      <li class="nav__item nav__item_state_current hidden">Деньги</li>
