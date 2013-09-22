@@ -466,16 +466,21 @@ text-decoration: none;
     padding: 0 0 10px 0;
     float: left;
 }
+.footer__banking
+{
+    float: left;
+    width: 320px;
+    margin: 0 0 10px 10px;
+}
 .footer__link
 {
     float: left;
     color: #d23e33;
+    margin: -10px 0 0 0;
 }
 .footer__contacts
 {
-    width: 35%;
-    float: left;
-    margin: 0 0 0 10px;
+    margin: 10px 0 0 0;
 }
 /* ../../desktop.blocks/footer/footer.css end */
 
@@ -484,7 +489,7 @@ text-decoration: none;
 {
     float: left;
     width: 36%;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 15%;
 }
 .socials__link
 {
