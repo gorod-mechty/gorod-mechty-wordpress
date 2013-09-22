@@ -18,7 +18,7 @@
                     <a class="socials__link socials__link_type_vk" href="http://vk.com/gorod.mechty">ВКонтакте</a><a class="socials__link socials__link_type_fb hidden" href="/">FaceBook</a>
                 </div>
                 <div class="copyright">
-                    Создание сайта - <a class="b-link" href="http://tadatuta.ru">студия «Тадатута»</a>
+                    Создание сайта — <a class="b-link" href="http://tadatuta.ru">студия «Тадатута»</a>
                 </div>
             </div>
         </div>
