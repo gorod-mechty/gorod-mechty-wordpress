@@ -138,7 +138,7 @@
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
                                     </div>
-                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                    <a class="b-link projects-columns-text" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
                                         $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                         echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
@@ -185,7 +185,7 @@
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
                                     </div>
-                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                    <a class="b-link projects-columns-text" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
                                         $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                         echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
@@ -232,7 +232,7 @@
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
                                     </div>
-                                    <a class="b-link" href="<?php the_permalink() ?>">
+                                    <a class="b-link projects-columns-text" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
                                         $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                         echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
@@ -288,7 +288,7 @@
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
                                     </div>
-                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                    <a class="b-link projects-columns-text" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
                                         $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                         echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
@@ -341,7 +341,7 @@
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
                                     </div>
-                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                    <a class="b-link projects-columns-text" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
                                         $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                         echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
@@ -394,7 +394,7 @@
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
                                     </div>
-                                    <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
+                                    <a class="b-link projects-columns-text" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
                                         <?php $title = get_the_title();
                                         $trimmed_title = rtrim(mb_substr($title, 0, 45));
                                         echo mb_strlen($title) > mb_strlen($trimmed_title) ? $trimmed_title . '&hellip;' : $title; ?>
