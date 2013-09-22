@@ -1,15 +1,17 @@
 <div class="footer">
-                <div class="footer__contacts">
-                    <div class="footer__text">
-                    © <?php echo date('Y'); ?> БО «Фонд Город Мечты»
+                <div class="footer__banking">
                     <?php query_posts('page_id=138');  ?>
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                        <pre>Счет  <?php the_field('account'); ?></pre>
-                        <pre>ОКПО  <?php the_field('okpo'); ?></pre>
-                        <pre>МФО   <?php the_field('mfo'); ?></pre>
+                        <span>Счет<?php the_field('account'); ?></span>
+                        <span>ОКПО<?php the_field('okpo'); ?></span>
+                        <span>МФО<?php the_field('mfo'); ?></span>
                     <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_query(); ?>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__text">
+                    © <?php echo date('Y'); ?> БО «Фонд Город Мечты»
                     </div><a class="footer__link" href="mailto:info@gorod-mechty.org">info@gorod-mechty.org</a>
                 </div>
                 <div class="socials">
