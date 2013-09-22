@@ -69,7 +69,7 @@
                     Перевести деньги
                 </h4>
                 <div class="text">
-                    БО «Фонд Місто Мрії» в <a class="b-link" href="/">Приватбанке</a>
+                    БО «Фонд Місто Мрії» в <a class="b-link" href="http://privatbank.ua/">Приватбанке</a>
                 </div>
                 <?php query_posts('page_id=138');  ?>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
