@@ -127,7 +127,7 @@
                                         ?>
                                         <?php 
                                            if ( !$image_r[0]) {
-                                            $image_r === '<?php bloginfo('template_url'); ?>/img/img2.png'
+                                            $image_r[0] === '<?php bloginfo('template_url'); ?>/img/img2.png'
                                         }
                                         ?>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
