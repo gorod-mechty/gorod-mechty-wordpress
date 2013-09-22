@@ -456,6 +456,10 @@ text-decoration: none;
         width: 728px;
     }
 }
+.projects-columns-text
+{
+    padding: 0 5px;
+}
 .footer__text
 {
     margin: 0 10% 0 0;
