@@ -124,9 +124,7 @@
                                         $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
                                         $image_l = wp_get_attachment_image_src( $left_img, $size ); 
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
-                                        ?>
-                                        <?php 
-                                           if ( !$image_r[0]) {
+                                        if ( !$image_r[0]) {
                                             $image_r[0] === '<?php bloginfo('template_url'); ?>/img/img2.png'
                                         }
                                         ?>
