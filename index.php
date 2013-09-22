@@ -162,7 +162,12 @@
                                         $image_l = wp_get_attachment_image_src( $left_img, $size ); 
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
                                         ?>
-                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src=
+                                        <?php if (get_field('left_img')) { ?>
+                                            "<?php echo $image_l[0]; ?>"
+                                        <?php } else { ?>
+                                            "<?php echo  bloginfo('template_url');.'/img/img2.png' ?>"
+                                        <?php } ?>/></a>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
                                     </div>
                                     <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
