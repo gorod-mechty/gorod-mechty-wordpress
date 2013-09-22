@@ -190,7 +190,7 @@ Tags: simple
     width: 99%;
 }
 
-.nav__item, .page_item, .cat-item
+.nav__item, .page_item, .nav .cat-item
 {
     margin: 20px 0 0 0;
     padding: 5px 15px;
