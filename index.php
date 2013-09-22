@@ -170,9 +170,9 @@
                                         <?php } ?>/></a>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src=
                                         <?php if (get_field('right_img')) { ?>
-                                            "<?php echo $image_r[0]; ?>"
+                                            <?php echo $image_r[0]; ?>
                                         <?php } else { ?>
-                                            <?php echo "<?php bloginfo('template_url'); ?>/img/img2.png" ?>
+                                            <?php echo  bloginfo('template_url');.'/img/img2.png' ?>
                                         <?php } ?>/></a>
                                     </div>
                                     <a class="b-link" href="<?php the_permalink() ?>"><a class="b-link" href="<?php the_permalink() ?>">
