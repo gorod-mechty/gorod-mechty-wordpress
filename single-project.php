@@ -21,7 +21,7 @@ Template Name Posts: Single Project
                 <img class="b-icon project-single__img-r" src="<?php echo $image_r[0]; ?>" />
             </div>
             <div class="project-cash">
-                <?php if (in_category(4) && the_field('need_sum')){ ?>
+                <?php if (in_category(4) && the_field('need_sum')!= undefined){ ?>
                     <pre class="project-cash__item"><span>Надо собрать:</span>    <?php the_field('need_sum'); ?> грн</pre> 
                 <?php } ?>
                 <pre class="project-cash__item hidden"><a class="b-link" href="<?php echo site_url(); ?>/?cat=7">Собрано:</a>            8000 грн</pre>
@@ -37,7 +37,7 @@ Template Name Posts: Single Project
                 </div><?php the_field('date-fin'); ?>
             <?php } else if (in_category(4)){ ?>
                 <div class="project-date__caption">
-                    Прект начат:
+                    Проект начат:
                 </div><?php the_field('date-start'); ?>
             <?php } ?>
             </div>
