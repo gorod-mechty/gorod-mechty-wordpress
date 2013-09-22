@@ -159,16 +159,8 @@
                                         $left_img = get_field('left_img');
                                         $right_img = get_field('right_img');
                                         $size = "thumbnail"; // (thumbnail, medium, large, full or custom size)
-                                        if (get_field('left_img')){
-                                            $image_l = wp_get_attachment_image_src( $left_img, $size ); 
-                                        } else {
-                                            $image_l = bloginfo('template_url');.'/img/img2.png'
-                                        };
-                                        if (get_field('right_img')){
-                                            $image_r = wp_get_attachment_image_src( $right_img, $size );
-                                        } else {
-                                            $image_r = bloginfo('template_url');.'/img/img2.png'
-                                        };
+                                        $image_l = wp_get_attachment_image_src( $left_img, $size ); 
+                                        $image_r = wp_get_attachment_image_src( $right_img, $size );
                                         ?>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src="<?php echo $image_r[0]; ?>"/></a>
