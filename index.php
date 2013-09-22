@@ -168,7 +168,7 @@
                                         <?php } else { ?>
                                             src="<?php bloginfo('template_url'); ?>/img/img2.png"
                                         <?php } ?>/></a>
-                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r" src=
+                                        <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r"
                                         <?php if (get_field('right_img')) { ?>
                                             src="<?php echo $image_r[0]; ?>"
                                         <?php } else { ?>
