@@ -22,7 +22,6 @@ Template Name Posts: Single Project
             </div>
             <div class="project-cash">
                 <?php } if (in_category(4) ){ ?>
-                <?php  echo the_field('need_sum'); ?>
                 <pre class="project-cash__item"><span>Надо собрать:</span>    <?php the_field('need_sum'); ?> грн</pre>
                 <?php } ?>
                 <pre class="project-cash__item hidden"><a class="b-link" href="<?php echo site_url(); ?>/?cat=7">Собрано:</a>            8000 грн</pre>
