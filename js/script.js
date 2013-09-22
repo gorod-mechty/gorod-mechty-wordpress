@@ -28,8 +28,7 @@ $(function(){
     $('.current-menu-item a').on('click', function(event){
         event.preventDefault();
     })
-    // if($('.b-link')).attr('href'){
-    //     this.addClass('hidden')
-    // }
-    alert($('.b-link b-link_style_italic').attr('href'))
+    if($('.b-link')).attr('href', 'undefined'){
+        this.addClass('hidden')
+    }
 })
