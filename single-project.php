@@ -17,8 +17,18 @@ Template Name Posts: Single Project
                 $image_r = wp_get_attachment_image_src( $right_img, $size );
                 ?>
 
-                <img class="b-icon project-single__img-l" src="<?php echo $image_l[0]; ?>" />
-                <img class="b-icon project-single__img-r" src="<?php echo $image_r[0]; ?>" />
+                <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l"
+                <?php if (get_field('left_img')) { ?>
+                    src="<?php echo $image_l[0]; ?>"
+                <?php } else { ?>
+                    src="<?php bloginfo('template_url'); ?>/img/img1.png"
+                <?php } ?>/></a>
+                <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-r"
+                <?php if (get_field('right_img')) { ?>
+                    src="<?php echo $image_r[0]; ?>"
+                <?php } else { ?>
+                    src="<?php bloginfo('template_url'); ?>/img/img1.png"
+                <?php } ?>/></a>
             </div>
             <div class="project-cash">
                 <?php if (in_category(4) && get_field('need_sum') !=  0 ){ ?>
