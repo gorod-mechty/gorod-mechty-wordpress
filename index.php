@@ -126,13 +126,13 @@
                                         $image_r = wp_get_attachment_image_src( $right_img, $size );
                                         ?>
                                         <?php 
-                                           if ( $left_img === '') {
-                                            $left_img === '<?php bloginfo('template_url'); ?>/img/img2.png'
+                                           if ( !$image_l[0];) {
+                                            $image_l === '<?php bloginfo('template_url'); ?>/img/img2.png'
                                         }
                                         ?>
                                         <?php 
-                                           if ( $right_img === '') {
-                                            $right_img === '<?php bloginfo('template_url'); ?>/img/img2.png'
+                                           if ( !$image_r[0];) {
+                                            $image_r === '<?php bloginfo('template_url'); ?>/img/img2.png'
                                         }
                                         ?>
                                         <a href="<?php the_permalink() ?>"><img class="b-icon projects-columns__img-l" src="<?php echo $image_l[0]; ?>"/></a>
