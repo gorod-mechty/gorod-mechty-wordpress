@@ -35,7 +35,7 @@ Template Name Posts: Single Project
                 </div><?php the_field('date-fin'); ?>
             <?php } else if (in_category(4)){ ?>
                 <div class="project-date__caption">
-                    Дата начала реализации проекта:
+                    Прект начат:
                 </div><?php the_field('date-start'); ?>
             <?php } ?>
             </div>
