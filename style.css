@@ -488,8 +488,15 @@ text-decoration: none;
 .socials
 {
     float: left;
-    width: 36%;
+    width: 15%;
     margin: 0 0 0 15%;
+}
+@media (max-width: 1200px)
+{
+    .socials
+        {
+            margin: 0 0 0 10%
+        }
 }
 .socials__link
 {
@@ -516,13 +523,13 @@ text-decoration: none;
     margin: 0 10px 0 0;
 }
 
-@media (max-width: 1200px)
+/*@media (max-width: 1200px)
 {
     .copyright
         {
             width: 130px;
         }
-}
+}*/
 /* ../../desktop.blocks/copyright/copyright.css end */
 
 /* ../../desktop.blocks/b-link/_type/b-link_type_cur.css begin */
