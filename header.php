@@ -16,6 +16,12 @@
         <meta name="description" content="Благотворительный фонд «Город мечты» — проекты в области озеленения и благоустройства Симферополя, преобразования его архитектурного облика и повышения культурного уровня">
         <?php wp_head(); ?>
         <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+        <style type="text/css">
+        .ymaps-image-with-content
+        {
+            cursor: url(http://api-maps.yandex.ru/2.0.30/images/ef50ac9e93aaebe3299791c79f277f8e) 16 16, url(http://api-maps.yandex.ru/2.0.30/images/ef50ac9e93aaebe3299791c79f277f8e), move;
+        }
+        </style>
     </head>
     <body class="b-page b-page__body b-page_page_main">
         <?php if ( is_front_page()) { ?>
@@ -31,27 +37,36 @@
             <ul class="nav">
                 <?php if ( is_page(33)) { ?>
                     <li class="nav__item nav__item_state_current">О фонде</li>
+                <?php } else if (is_page(196)){ ?>
+                    <li class="nav__item nav__item_state_current"><a href="/fund/">О фонде</a></li>
                 <?php } else{ ?>
-                    <?php wp_list_pages("title_li=&include=33");?> 
+                    <?php wp_list_pages("title_li=&include=33");?>
                 <?php } ?>
                 <?php if ( is_category(2)) { ?>
                     <li class="nav__item nav__item_state_current">Проекты</li>
+                <?php } else if (in_category(2)){ ?>
+                    <li class="nav__item nav__item_state_current"><a href='/projects/'>Проекты</a></li>
                 <?php } else{ ?>
-                    <?php wp_list_categories("title_li=&include=2");?> 
+                    <?php wp_list_categories("title_li=&include=2");?>
                 <?php } ?>
-                <!-- <?php if ( is_category(1)) { ?>
+                <?php if ( is_category(1)) { ?>
                     <li class="nav__item nav__item_state_current">Новости</li>
                 <?php } else{ ?>
-                    <?php wp_list_categories("title_li=&include=1");?> 
+                    <?php wp_list_categories("title_li=&include=1");?>
                 <?php } ?> -->
                 <?php if ( is_category(6)) { ?>
                     <li class="nav__item nav__item_state_current">Сотрудничество</li>
                 <?php } else{ ?>
+                    <?php wp_list_pages("title_li=&include=6");?>
+                <?php } ?> -->
+                <?php if ( is_page(104)) { ?>
+                    <li class="nav__item nav__item_state_current">Реквизиты</li>
+                <?php } else{ ?>
                     <?php wp_list_pages("title_li=&include=104");?>
                 <?php } ?>
-                <!-- <?php if ( is_category(7)) { ?>
+                <?php if ( is_category(7)) { ?>
                      <li class="nav__item nav__item_state_current hidden">Деньги</li>
-                <?php } else{ ?> 
+                <?php } else{ ?>
                     <?php wp_list_categories("title_li=&include=7");?>  -->
                 <?php } ?>
             </ul>

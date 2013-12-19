@@ -198,7 +198,7 @@ Tags: simple
     width: 75%;
     padding: 0;
     float: left;
-    /*text-align: justify;*/
+    text-align: justify;
 }
 @media (max-width: 768px)
 {
