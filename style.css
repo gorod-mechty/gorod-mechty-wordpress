@@ -28,10 +28,10 @@ Tags: simple
         margin: 0;
     }
 }
-.hidden
+/*.hidden
 {
-    /*display: none !important;*/
-}
+    display: none !important;
+}*/
 .b-page
 {
     background: #f4f8fb;
