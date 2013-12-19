@@ -7,9 +7,30 @@ Author: tadatuta
 Tags: simple
 */
 /* ../../desktop.blocks/b-page/b-page.css begin */
+#map
+{
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+@media (max-width: 1170px)
+{
+    #map
+    {
+        width: 100%;
+        position: static;
+    }
+    .project-single-content
+    {
+        width: 100%;
+        margin: 0;
+    }
+}
 .hidden
 {
-    display: none !important;
+    /*display: none !important;*/
 }
 .b-page
 {
@@ -128,7 +149,7 @@ Tags: simple
 /* ../../desktop.blocks/logo/logo.css end */
 
 /* ../../desktop.blocks/submenu/submenu.css begin */
-.submenu, .menu 
+.submenu, .menu
 {
     list-style: none;
     clear: both;
@@ -143,6 +164,10 @@ Tags: simple
     cursor: default;
     font-size: 15px;
 }
+.menu-item a:hover
+{
+    text-decoration: none;
+}
 .submenu__item, .menu li
 {
     margin: 0 auto 10px ;
@@ -153,7 +178,7 @@ Tags: simple
     display: block;
     color: #504e4e;
 }
-.submenu__item_state_current 
+.submenu__item_state_current
 {
     color: #fff;
     background: #007722;
@@ -170,10 +195,10 @@ Tags: simple
     margin: 20px 0 0 5%;
     list-style: none;
     max-width: 870px;
-    width: 75%; 
+    width: 75%;
     padding: 0;
     float: left;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 @media (max-width: 768px)
 {
@@ -197,11 +222,11 @@ Tags: simple
     font-weight: bold;
     display: inline-block;
 }
-.nav__item, .nav .cat-item
+.nav__item, .nav .cat-item, .nav .page_item
 {
     padding: 5px 15px;
 }
-.nav__item, .page_item, .cat-item a:hover
+.nav__item a:hover, .page_item a:hover, .cat-item a:hover
 {
     text-decoration: none;
 }
@@ -210,17 +235,21 @@ Tags: simple
 {
     color: #fff;
     background: #007722;
-    padding: 5px 15px;
     border: 2px solid #fff;
     font-size: 18px;
     margin: 18px 0 0 0;
-    padding: 5px 13px 5px 13px;
+    padding: 5px 13px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
-
     -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+}
+.nav__item_state_current a
+{
+    color: #fff;
+    padding: 8px 13px;
+    margin: 0 -13px;
 }
 /* ../../desktop.blocks/nav/nav.css end */
 
@@ -229,9 +258,13 @@ Tags: simple
 {
     width: 75%;
     float: left;
-    margin: 10px 0 60px 5%;
+    margin: 10px 0 0 5%;
     font-size: 18px;
     color: #504e4e;
+}
+.content pre
+{
+    margin: 0;
 }
 @media (max-width: 768px)
 {
@@ -329,7 +362,7 @@ Tags: simple
 /* ../../desktop.blocks/b-icon/b-icon.css begin */
 .b-icon
 {
-    
+
 }
 /* ../../desktop.blocks/b-icon/b-icon.css end */
 
@@ -440,14 +473,24 @@ text-decoration: none;
 /* ../../desktop.blocks/table/_type/table_type_mini.css end */
 
 /* ../../desktop.blocks/footer/footer.css begin */
+.footer::before
+{
+    content: "";
+    border-top: 1px solid #000;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 60px;
+}
 .footer
 {
-    border-top: 1px solid #000;
-    padding: 30px 0 35px 0;
+    padding: 90px 0 35px 0;
     width: 100%;
     height: 30px;
     clear: both;
     font-size: 15px;
+    padding-top: 90px;
+    position: relative;
 }
 @media (max-width: 768px)
 {
@@ -460,27 +503,37 @@ text-decoration: none;
 {
     padding: 0 5px;
 }
-.footer__text
-{
-    margin: 0 10% 0 0;
-    padding: 0 0 10px 0;
-    float: left;
-}
-.footer__banking
+.footer__info
 {
     float: left;
-    width: 320px;
+    width: 35%;
     margin: 0 0 30px 10px;
 }
 .footer__link
 {
-    float: left;
     color: #d23e33;
-    margin: -10px 0 0 0;
+    display: block;
 }
 .footer__contacts
 {
-    margin: 10px 0 0 0;
+    min-width: 250px;
+    margin-bottom: 5px;
+}
+@media (min-width: 1000px)
+{
+    .footer__contacts
+    {
+        float: left;
+        margin: 0;
+    }
+    .footer__banking
+    {
+        float: right;
+    }
+    .footer__info
+    {
+        min-width: 450px;
+    }
 }
 /* ../../desktop.blocks/footer/footer.css end */
 
@@ -488,14 +541,15 @@ text-decoration: none;
 .socials
 {
     float: left;
-    width: 15%;
-    margin: 0 0 0 15%;
+    width: 25%;
+    margin: 0 0 0 10%;
 }
-@media (max-width: 1200px)
+@media (max-width: 1000px)
 {
     .socials
         {
-            margin: 0 0 0 10%
+            margin: 0;
+            width: 35%;
         }
 }
 .socials__link
@@ -523,7 +577,7 @@ text-decoration: none;
     margin: 0 10px 0 0;
 }
 
-@media (max-width: 900px)
+@media (max-width: 1230px)
 {
     .copyright
         {
@@ -693,6 +747,10 @@ text-decoration: none;
     clear: both;
     width: 100%
 }
+.projects__title
+{
+    text-align: center;
+}
 .projects__item
 {
     width: 165px;
@@ -700,6 +758,13 @@ text-decoration: none;
     position: relative;
     float: left;
     margin: 0 5% 0 0;
+}
+@media (min-width: 960px)
+{
+    .projects__item
+    {
+        margin: 0 10% 0 0;
+    }
 }
 .projects__item_type_min-title
 {
@@ -767,13 +832,6 @@ text-decoration: none;
     display: block;
     margin: 5px 0 0 0;
 }
-@media (max-width: 960px)
-{
-    .banking
-    {
-        margin: 55px 0 0 0;
-    }
-}
 /* ../../desktop.blocks/banking/banking.css end */
 
 /* ../../desktop.blocks/text/text.css begin */
@@ -799,7 +857,7 @@ text-decoration: none;
 {
  font-size: 13px;
  color: #000;
- margin: 5px 0;   
+ margin: 5px 0;
 }
 
 @media (max-width: 960px)
@@ -943,7 +1001,7 @@ text-decoration: none;
 
 /* ../../desktop.blocks/thumb/thumb.css begin */
 .thumb{
-    
+
 }
 /* ../../desktop.blocks/thumb/thumb.css end */
 
@@ -986,7 +1044,13 @@ text-decoration: none;
 /* ../../desktop.blocks/project-single/project-single.css begin */
 .project-single
 {
-    width:574px;
+    position: relative;
+}
+.project-single-content
+{
+    overflow: hidden;
+    padding-right: 10px;
+    margin-right: 40%;
 }
 .project-single__img-l
 {
@@ -1052,7 +1116,7 @@ text-decoration: none;
 {
     font-size: 15px;
     font-style: italic;
-    margin: 75px 0 0 0;
+    margin: 5px 0 0 0;
 }
 /* ../../desktop.blocks/project-cash/project-cash.css end */
 
@@ -1075,12 +1139,17 @@ text-decoration: none;
 /* ../../desktop.blocks/project-mission/project-mission.css begin */
 .project-content
 {
-    max-width: 574px;
-    float: left;
     font-size: 15px;
     font-style: italic;
     color: #504e4e;
     margin: 0 0 20px 0;
+    clear: both;
+}
+.cboxElement {
+    display: inline-block;
+    margin: 10px;
+    width: 40%;
+    overflow: hidden;
 }
 .footer__text pre {
     margin: 2px;
@@ -1149,7 +1218,7 @@ text-decoration: none;
     cursor: pointer;
     position: absolute;
     left: 530px;
-    top: 35px;  
+    top: 35px;
     padding: 4px 0 0 8px;
     background: rgba(255, 255, 255, 0.3);
     color: #D8D9D7;
@@ -1193,7 +1262,8 @@ text-decoration: none;
 .projects-columns__title
 {
     font: bold 18px 'PT Sans', sans-serif;
-    margin: auto;
+    margin: 0 0 10px 0;
+    text-align: center;
 }
 .projects-columns__item
 {
